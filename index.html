@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Glass-Gable Barn — Concept Board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #f4f1ea; }
+  a { color: #b4522e; } a:hover { color: #8f3f22; }
+  image-slot { display: block; position: relative; overflow: hidden; background: #efece3; }
+  image-slot .is-ph {
+    position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+    text-align: center; padding: 14px; box-sizing: border-box; cursor: pointer;
+    border: 1.5px dashed #b8b0a0; color: #8a8378;
+    font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; line-height: 1.6;
+    transition: border-color .15s, color .15s, background .15s;
+  }
+  image-slot .is-ph:hover, image-slot.is-over .is-ph { border-color: #b4522e; color: #b4522e; background: #f8f1ea; }
+  image-slot img.is-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+  image-slot .is-clear {
+    position: absolute; top: 6px; right: 6px; width: 22px; height: 22px; line-height: 20px;
+    background: rgba(33,29,24,.72); color: #f4f1ea; border: none; cursor: pointer;
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px; padding: 0;
+    opacity: 0; transition: opacity .15s;
+  }
+  image-slot:hover .is-clear { opacity: 1; }
+  @media print { image-slot .is-clear { display: none; } }
+</style>
+</head>
+<body>
+<div style="font-family: 'Archivo', sans-serif; color: #211d18; max-width: 1180px; margin: 0 auto; padding: 56px 40px 96px;">
+
+  <header style="border-bottom: 3px solid #211d18; padding-bottom: 28px; display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap;">
+    <div>
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.14em; color: #b4522e; text-transform: uppercase;">Concept study &middot; Rural Flanders, Belgium</div>
+      <h1 style="font-size: 46px; font-weight: 700; margin: 10px 0 8px; letter-spacing: -0.02em;">The Glass-Gable Barn</h1>
+      <div style="font-size: 17px; color: #5c564c; max-width: 640px; line-height: 1.5;">Demolition and rebuild of the main barn as a single-storey contemporary volume, 17.0 &times; 7.5 m, fully glazed gable to the valley. Side wing, hedges and courtyard retained.</div>
+    </div>
+    <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; color: #5c564c; text-align: right; line-height: 1.9;">
+      <div>Footprint&ensp;17.0 &times; 7.5 m &middot; 127.5 m&sup2;</div>
+      <div>Status&ensp;pre-design / feasibility</div>
+      <div>August 2026</div>
+    </div>
+  </header>
+
+  <div style="display: flex; justify-content: flex-end; align-items: center; gap: 26px; padding-top: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5c564c; flex-wrap: wrap;">
+    <span style="letter-spacing: 0.1em; text-transform: uppercase; color: #8a8378;">Drawings</span>
+    <label style="display: inline-flex; gap: 7px; align-items: center; cursor: pointer;"><input type="checkbox" id="ctl-dims" checked style="accent-color: #b4522e; margin: 0;"> dimensions</label>
+    <span style="display: inline-flex; gap: 12px; align-items: center;">sliding doors:
+      <label style="display: inline-flex; gap: 5px; align-items: center; cursor: pointer;"><input type="radio" name="ctl-doors" value="two" checked style="accent-color: #b4522e; margin: 0;"> two</label>
+      <label style="display: inline-flex; gap: 5px; align-items: center; cursor: pointer;"><input type="radio" name="ctl-doors" value="one" style="accent-color: #b4522e; margin: 0;"> one</label>
+    </span>
+  </div>
+
+
+  <section style="margin-top: 56px;">
+    <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 22px;">
+      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #b4522e;">01</span>
+      <h2 style="font-size: 26px; font-weight: 600; margin: 0; letter-spacing: -0.01em;">Reading the site</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px;">
+      <figure style="margin: 0;">
+        <image-slot id="site-courtyard-gable" shape="rect" src="uploads/pasted-1786384067448-0.png" placeholder="Site photo — courtyard gable — drop image here" style="width: 100%; aspect-ratio: 3/3.4; border: 1px solid #d8d2c4;"></image-slot>
+        <figcaption style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5c564c; margin-top: 10px; line-height: 1.6;"><span style="color: #b4522e; font-weight: 500;">REPLACED</span> &mdash; main barn, courtyard gable. The new volume keeps this footprint and silhouette.</figcaption>
+      </figure>
+      <figure style="margin: 0;">
+        <image-slot id="site-courtyard-approach" shape="rect" src="uploads/pasted-1786384073399-0.png" placeholder="Site photo — courtyard approach — drop image here" style="width: 100%; aspect-ratio: 3/3.4; border: 1px solid #d8d2c4;"></image-slot>
+        <figcaption style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5c564c; margin-top: 10px; line-height: 1.6;"><span style="color: #4c6142; font-weight: 500;">RETAINED</span> &mdash; cobbled court, yew cubes, honey locusts. The new entrance re-uses the barn-door bay.</figcaption>
+      </figure>
+      <figure style="margin: 0;">
+        <image-slot id="site-rear-lawn" shape="rect" src="uploads/pasted-1786384082267-0.png" placeholder="Site photo — rear lawn &amp; gable — drop image here" style="width: 100%; aspect-ratio: 3/3.4; border: 1px solid #d8d2c4;"></image-slot>
+        <figcaption style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5c564c; margin-top: 10px; line-height: 1.6;"><span style="color: #b4522e; font-weight: 500;">THE MOVE</span> &mdash; rear gable faces lawn and open land: this becomes the 7.5 m glass gable. Hedge and neighbouring house untouched.</figcaption>
+      </figure>
+    </div>
+    <div style="display: flex; gap: 40px; margin-top: 28px; padding: 22px 26px; background: #fdfcf9; border: 1px solid #d8d2c4; flex-wrap: wrap;">
+      <div style="flex: 1; min-width: 260px;">
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #b4522e; text-transform: uppercase; margin-bottom: 8px;">Pacing the length</div>
+        <div style="font-size: 15px; line-height: 1.65; color: #3a352d;">A 5&prime;6&Prime; (168 cm) person walks a natural pace of ~0.67&ndash;0.70 m. <strong>25 paces &asymp; 16.8&ndash;17.5 m</strong> &mdash; confirming a 17.0 m long volume. Existing barn depth read from roof proportion: ~7.5 m.</div>
+      </div>
+      <div style="flex: 1; min-width: 260px;">
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #b4522e; text-transform: uppercase; margin-bottom: 8px;">Planning note (Flanders)</div>
+        <div style="font-size: 15px; line-height: 1.65; color: #3a352d;">Rebuilding on the same footprint and comparable volume is the safest permit route for a rural (often zone-foreign) barn. Keeping the pitched silhouette, terracotta roof and brick/timber palette supports the omgevingsvergunning.</div>
+      </div>
+    </div>
+  </section>
+
+  <section style="margin-top: 64px;">
+    <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 22px;">
+      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #b4522e;">02</span>
+      <h2 style="font-size: 26px; font-weight: 600; margin: 0; letter-spacing: -0.01em;">Site plan &mdash; what stays, what changes</h2>
+    </div>
+    <div style="background: #fdfcf9; border: 1px solid #d8d2c4; padding: 30px; display: flex; gap: 36px; flex-wrap: wrap; align-items: center;">
+      <svg viewBox="0 0 560 470" style="flex: 1.4; min-width: 380px; max-width: 620px;">
+        <rect x="60" y="330" width="440" height="120" fill="#e8e3d6"></rect>
+        <text x="280" y="425" font-family="IBM Plex Mono" font-size="11" fill="#8a8378" text-anchor="middle">COBBLED COURTYARD &mdash; RETAINED</text>
+        <rect x="60" y="40" width="440" height="150" fill="#eef0e6"></rect>
+        <text x="280" y="66" font-family="IBM Plex Mono" font-size="11" fill="#8a8378" text-anchor="middle">LAWN / OPEN LAND &mdash; VIEW</text>
+        <g data-dim style="display:inline;">
+          <path d="M 280 78 L 280 108" stroke="#b4522e" stroke-width="1.5" fill="none"></path>
+          <path d="M 274 86 L 280 78 L 286 86" stroke="#b4522e" stroke-width="1.5" fill="none"></path>
+          <text x="292" y="92" font-family="IBM Plex Mono" font-size="10.5" fill="#b4522e">glass gable faces valley</text>
+        </g>
+        <rect x="146" y="190" width="90" height="112" fill="#dedbd2" stroke="#8a8378" stroke-width="1.2" stroke-dasharray="5 4"></rect>
+        <text x="191" y="242" font-family="IBM Plex Mono" font-size="10.5" fill="#6f6a5f" text-anchor="middle">SIDE WING</text>
+        <text x="191" y="256" font-family="IBM Plex Mono" font-size="10.5" fill="#6f6a5f" text-anchor="middle">retained</text>
+        <rect x="236" y="188" width="112" height="118" fill="#f3d9cd" stroke="#b4522e" stroke-width="2.4"></rect>
+        <text x="292" y="240" font-family="IBM Plex Mono" font-size="11" fill="#8f3f22" text-anchor="middle" font-weight="600">NEW BARN</text>
+        <text x="292" y="255" font-family="IBM Plex Mono" font-size="10.5" fill="#8f3f22" text-anchor="middle">7.5 &times; 17.0 m</text>
+        <line x1="236" y1="190" x2="348" y2="190" stroke="#7fa3ad" stroke-width="5"></line>
+        <rect x="118" y="308" width="70" height="46" fill="#6a7a5c"></rect>
+        <rect x="332" y="308" width="70" height="46" fill="#6a7a5c"></rect>
+        <circle cx="153" cy="331" r="34" fill="#93a37f" opacity="0.65"></circle>
+        <circle cx="367" cy="331" r="34" fill="#93a37f" opacity="0.65"></circle>
+        <text x="260" y="345" font-family="IBM Plex Mono" font-size="10" fill="#f4f1ea" text-anchor="middle"></text>
+        <rect x="420" y="196" width="14" height="130" fill="#6a7a5c"></rect>
+        <rect x="60" y="196" width="14" height="110" fill="#6a7a5c"></rect>
+        <text x="450" y="262" font-family="IBM Plex Mono" font-size="10.5" fill="#4c6142" transform="rotate(90 450 262)" text-anchor="middle">HEDGE &mdash; RETAINED</text>
+        <rect x="470" y="60" width="52" height="120" fill="#dedbd2" stroke="#8a8378" stroke-width="1.2" stroke-dasharray="5 4"></rect>
+        <text x="496" y="124" font-family="IBM Plex Mono" font-size="10" fill="#6f6a5f" text-anchor="middle" transform="rotate(90 496 124)">NEIGHBOUR</text>
+        <g data-dim style="display:inline;">
+          <line x1="236" y1="316" x2="348" y2="316" stroke="#211d18" stroke-width="0.8"></line>
+          <text x="292" y="330" font-family="IBM Plex Mono" font-size="10" fill="#211d18" text-anchor="middle">17.0 m</text>
+        </g>
+        <text x="292" y="372" font-family="IBM Plex Mono" font-size="10" fill="#6f6a5f" text-anchor="middle">entry via existing door bay</text>
+        <path d="M 292 362 L 292 310" stroke="#6f6a5f" stroke-width="1" stroke-dasharray="3 3" fill="none"></path>
+      </svg>
+      <div style="flex: 1; min-width: 250px; display: flex; flex-direction: column; gap: 16px;">
+        <div style="display: flex; gap: 12px; align-items: flex-start;"><span style="width: 22px; height: 14px; background: #f3d9cd; border: 2px solid #b4522e; flex-shrink: 0; margin-top: 3px;"></span><div style="font-size: 14.5px; line-height: 1.55; color: #3a352d;"><strong>New construction</strong> &mdash; only the main barn is demolished and rebuilt, same footprint, ridge parallel to courtyard.</div></div>
+        <div style="display: flex; gap: 12px; align-items: flex-start;"><span style="width: 22px; height: 14px; background: #dedbd2; border: 1px dashed #8a8378; flex-shrink: 0; margin-top: 3px;"></span><div style="font-size: 14.5px; line-height: 1.55; color: #3a352d;"><strong>Retained buildings</strong> &mdash; attached side wing and neighbouring house are untouched; junction detailed with a slim expansion joint.</div></div>
+        <div style="display: flex; gap: 12px; align-items: flex-start;"><span style="width: 22px; height: 14px; background: #6a7a5c; flex-shrink: 0; margin-top: 3px;"></span><div style="font-size: 14.5px; line-height: 1.55; color: #3a352d;"><strong>Retained landscape</strong> &mdash; yew cubes, trees, perimeter hedges and cobbles stay; they already frame the entrance perfectly.</div></div>
+        <div style="display: flex; gap: 12px; align-items: flex-start;"><span style="width: 22px; height: 14px; background: #7fa3ad; flex-shrink: 0; margin-top: 3px;"></span><div style="font-size: 14.5px; line-height: 1.55; color: #3a352d;"><strong>Glass gable</strong> &mdash; the north-facing rear gable opens fully to lawn and valley: soft light, no overheating, big view.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="margin-top: 64px;">
+    <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 22px;">
+      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #b4522e;">03</span>
+      <h2 style="font-size: 26px; font-weight: 600; margin: 0; letter-spacing: -0.01em;">The glass gable</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 18px;">
+      <div style="background: #fdfcf9; border: 1px solid #d8d2c4; padding: 26px;">
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #5c564c; text-transform: uppercase; margin-bottom: 14px;">Valley elevation &mdash; 1:75</div>
+        <svg viewBox="0 0 520 400" style="width: 100%;">
+          <line x1="30" y1="345" x2="490" y2="345" stroke="#211d18" stroke-width="2"></line>
+          <polygon points="95,345 95,204 260,113 425,204 425,345" fill="#dce6e6" stroke="#211d18" stroke-width="2.5"></polygon>
+          <polygon points="109,332 109,212 260,129 411,212 411,332" fill="none" stroke="#3a352d" stroke-width="4"></polygon>
+          <line x1="109" y1="252" x2="411" y2="252" stroke="#3a352d" stroke-width="4"></line>
+          <line x1="164" y1="252" x2="164" y2="332" stroke="#3a352d" stroke-width="2.5"></line>
+          <line x1="356" y1="252" x2="356" y2="332" stroke="#3a352d" stroke-width="2.5"></line>
+          <line x1="185" y1="212" x2="185" y2="252" stroke="#3a352d" stroke-width="2"></line>
+          <line x1="335" y1="212" x2="335" y2="252" stroke="#3a352d" stroke-width="2"></line>
+          <line x1="260" y1="129" x2="260" y2="252" stroke="#3a352d" stroke-width="2"></line>
+          <g data-doors="two" style="display:inline;">
+            <line x1="260" y1="252" x2="260" y2="332" stroke="#3a352d" stroke-width="2.5"></line>
+            <path d="M 196 296 L 244 296 M 236 290 L 244 296 L 236 302" stroke="#8f3f22" stroke-width="1.6" fill="none"></path>
+            <path d="M 324 296 L 276 296 M 284 290 L 276 296 L 284 302" stroke="#8f3f22" stroke-width="1.6" fill="none"></path>
+            <text x="260" y="322" font-family="IBM Plex Mono" font-size="10" fill="#8f3f22" text-anchor="middle">2&times; slider</text>
+          </g>
+          <g data-doors="one" style="display:none;">
+            <path d="M 200 296 L 320 296 M 312 290 L 320 296 L 312 302" stroke="#8f3f22" stroke-width="1.6" fill="none"></path>
+            <text x="260" y="322" font-family="IBM Plex Mono" font-size="10" fill="#8f3f22" text-anchor="middle">1&times; slider</text>
+          </g>
+          <g data-dim style="display:inline;">
+            <line x1="95" y1="368" x2="425" y2="368" stroke="#211d18" stroke-width="0.8"></line>
+            <line x1="95" y1="362" x2="95" y2="374" stroke="#211d18" stroke-width="0.8"></line>
+            <line x1="425" y1="362" x2="425" y2="374" stroke="#211d18" stroke-width="0.8"></line>
+            <text x="260" y="384" font-family="IBM Plex Mono" font-size="11" fill="#211d18" text-anchor="middle">7.50 m</text>
+            <line x1="448" y1="345" x2="448" y2="204" stroke="#211d18" stroke-width="0.8"></line>
+            <text x="462" y="278" font-family="IBM Plex Mono" font-size="11" fill="#211d18" transform="rotate(90 462 278)" text-anchor="middle">3.2 m</text>
+            <line x1="66" y1="345" x2="66" y2="113" stroke="#211d18" stroke-width="0.8"></line>
+            <text x="52" y="230" font-family="IBM Plex Mono" font-size="11" fill="#211d18" transform="rotate(-90 52 230)" text-anchor="middle">5.2 m ridge</text>
+            <text x="330" y="160" font-family="IBM Plex Mono" font-size="10" fill="#5c564c">clerestory</text>
+            <text x="120" y="245" font-family="IBM Plex Mono" font-size="10" fill="#5c564c">transom</text>
+          </g>
+        </svg>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 0; background: #211d18; color: #f4f1ea; padding: 26px 28px;">
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #e0906f; text-transform: uppercase; margin-bottom: 16px;">Build-up</div>
+        <div style="display: grid; gap: 14px; font-size: 14.5px; line-height: 1.55;">
+          <div style="display: flex; gap: 12px;"><span style="font-family: 'IBM Plex Mono', monospace; color: #e0906f; font-size: 12.5px; padding-top: 2px;">A</span><span>Laminated-timber (or steel) portal frame carries roof and ridge &mdash; the glass is fully non-structural.</span></div>
+          <div style="display: flex; gap: 12px;"><span style="font-family: 'IBM Plex Mono', monospace; color: #e0906f; font-size: 12.5px; padding-top: 2px;">B</span><span>Fixed triple-glazed panels (Ug &asymp; 0.5) in slim dark-anodised aluminium frames, sightlines &le; 50 mm.</span></div>
+          <div style="display: flex; gap: 12px;"><span style="font-family: 'IBM Plex Mono', monospace; color: #e0906f; font-size: 12.5px; padding-top: 2px;">C</span><span>One or two lift-slide doors, flush threshold to a terrace on the lawn side.</span></div>
+          <div style="display: flex; gap: 12px;"><span style="font-family: 'IBM Plex Mono', monospace; color: #e0906f; font-size: 12.5px; padding-top: 2px;">D</span><span>Triangular clerestory follows the roof pitch above a 3.0 m transom &mdash; light deep into the plan.</span></div>
+          <div style="display: flex; gap: 12px;"><span style="font-family: 'IBM Plex Mono', monospace; color: #e0906f; font-size: 12.5px; padding-top: 2px;">E</span><span>Glazed field &asymp; 7.0 &times; 4.9 m &asymp; 33 m&sup2;; north-facing, so no external shading needed.</span></div>
+        </div>
+        <div style="margin-top: auto; padding-top: 20px; border-top: 1px solid #3a352d; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #a89f90; line-height: 1.7;">Rest of the envelope: reclaimed red-brown brick + vertical dark timber in the old door bays, terracotta tile roof.</div>
+      </div>
+    </div>
+  </section>
+
+  <section style="margin-top: 64px;">
+    <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 22px;">
+      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #b4522e;">04</span>
+      <h2 style="font-size: 26px; font-weight: 600; margin: 0; letter-spacing: -0.01em;">Plan &amp; long elevation</h2>
+    </div>
+    <div style="background: #fdfcf9; border: 1px solid #d8d2c4; padding: 30px;">
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #5c564c; text-transform: uppercase; margin-bottom: 14px;">Floor plan (living / rental fit-out) &mdash; 1:100</div>
+      <svg viewBox="0 0 800 400" style="width: 100%;">
+        <rect x="60" y="60" width="680" height="300" fill="#f4f1ea" stroke="#211d18" stroke-width="7"></rect>
+        <line x1="740" y1="70" x2="740" y2="350" stroke="#7fa3ad" stroke-width="7"></line>
+        <line x1="380" y1="64" x2="380" y2="356" stroke="#211d18" stroke-width="3.5"></line>
+        <line x1="276" y1="64" x2="276" y2="356" stroke="#211d18" stroke-width="3.5"></line>
+        <line x1="64" y1="210" x2="276" y2="210" stroke="#211d18" stroke-width="3.5"></line>
+        <line x1="276" y1="150" x2="380" y2="150" stroke="#211d18" stroke-width="3.5"></line>
+        <rect x="304" y="330" width="52" height="26" fill="#fdfcf9" stroke="#8f3f22" stroke-width="2"></rect>
+        <text x="560" y="196" font-family="IBM Plex Mono" font-size="13" fill="#211d18" text-anchor="middle">LIVING &middot; DINING &middot; KITCHEN</text>
+        <text x="560" y="216" font-family="IBM Plex Mono" font-size="11" fill="#6f6a5f" text-anchor="middle">60 m&sup2; &middot; open to ridge, 5.2 m</text>
+        <text x="328" y="110" font-family="IBM Plex Mono" font-size="11" fill="#211d18" text-anchor="middle">BATH</text>
+        <text x="328" y="126" font-family="IBM Plex Mono" font-size="10" fill="#6f6a5f" text-anchor="middle">+ tech</text>
+        <text x="328" y="250" font-family="IBM Plex Mono" font-size="11" fill="#211d18" text-anchor="middle">ENTRY</text>
+        <text x="328" y="266" font-family="IBM Plex Mono" font-size="10" fill="#6f6a5f" text-anchor="middle">+ storage</text>
+        <text x="170" y="130" font-family="IBM Plex Mono" font-size="11" fill="#211d18" text-anchor="middle">BEDROOM 1</text>
+        <text x="170" y="146" font-family="IBM Plex Mono" font-size="10" fill="#6f6a5f" text-anchor="middle">16 m&sup2;</text>
+        <text x="170" y="290" font-family="IBM Plex Mono" font-size="11" fill="#211d18" text-anchor="middle">BEDROOM 2</text>
+        <text x="170" y="306" font-family="IBM Plex Mono" font-size="10" fill="#6f6a5f" text-anchor="middle">16 m&sup2;</text>
+        <text x="770" y="214" font-family="IBM Plex Mono" font-size="10" fill="#4a7079" transform="rotate(90 770 214)" text-anchor="middle">GLASS GABLE</text>
+        <text x="330" y="378" font-family="IBM Plex Mono" font-size="10" fill="#8f3f22" text-anchor="middle">entry &mdash; courtyard side</text>
+        <g data-dim style="display:inline;">
+          <line x1="60" y1="40" x2="740" y2="40" stroke="#211d18" stroke-width="0.8"></line>
+          <line x1="60" y1="34" x2="60" y2="46" stroke="#211d18" stroke-width="0.8"></line>
+          <line x1="740" y1="34" x2="740" y2="46" stroke="#211d18" stroke-width="0.8"></line>
+          <text x="400" y="30" font-family="IBM Plex Mono" font-size="11" fill="#211d18" text-anchor="middle">17.00 m</text>
+          <line x1="36" y1="60" x2="36" y2="360" stroke="#211d18" stroke-width="0.8"></line>
+          <text x="24" y="210" font-family="IBM Plex Mono" font-size="11" fill="#211d18" transform="rotate(-90 24 210)" text-anchor="middle">7.50 m</text>
+        </g>
+      </svg>
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #5c564c; text-transform: uppercase; margin: 34px 0 14px;">Courtyard elevation &mdash; 1:100</div>
+      <svg viewBox="0 0 800 260" style="width: 100%;">
+        <line x1="30" y1="230" x2="770" y2="230" stroke="#211d18" stroke-width="2"></line>
+        <rect x="60" y="102" width="680" height="128" fill="#e9ddd2" stroke="#211d18" stroke-width="2"></rect>
+        <polygon points="60,102 60,58 740,58 740,102" fill="#e4c1ae" stroke="#211d18" stroke-width="2"></polygon>
+        <text x="400" y="84" font-family="IBM Plex Mono" font-size="10" fill="#8f3f22" text-anchor="middle">terracotta tile roof &middot; eaves 3.2 m &middot; ridge 5.2 m behind</text>
+        <rect x="330" y="122" width="140" height="108" fill="#4b4238" stroke="#211d18" stroke-width="1.5"></rect>
+        <line x1="400" y1="122" x2="400" y2="230" stroke="#211d18" stroke-width="1"></line>
+        <text x="400" y="250" font-family="IBM Plex Mono" font-size="10" fill="#6f6a5f" text-anchor="middle">entry &mdash; dark vertical timber in the old barn-door bay</text>
+        <rect x="130" y="150" width="90" height="52" fill="#dce6e6" stroke="#211d18" stroke-width="1.5"></rect>
+        <rect x="560" y="150" width="90" height="52" fill="#dce6e6" stroke="#211d18" stroke-width="1.5"></rect>
+        <text x="120" y="120" font-family="IBM Plex Mono" font-size="10" fill="#6f6a5f">reclaimed brick facade</text>
+      </svg>
+    </div>
+  </section>
+
+  <section style="margin-top: 64px;">
+    <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 22px;">
+      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #b4522e;">05</span>
+      <h2 style="font-size: 26px; font-weight: 600; margin: 0; letter-spacing: -0.01em;">Concept views</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px;">
+      <div style="background: #fdfcf9; border: 1px solid #d8d2c4; padding: 24px;">
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #5c564c; text-transform: uppercase; margin-bottom: 12px;">Front &mdash; glass gable to the valley</div>
+        <svg id="view-front" viewBox="0 0 800 520" style="width: 100%;">
+          <defs>
+            <linearGradient id="fSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a7c4d4"></stop><stop offset="0.7" stop-color="#dcE8e4"></stop><stop offset="1" stop-color="#f0f2e6"></stop></linearGradient>
+            <linearGradient id="fLawn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d8e0b4"></stop><stop offset="1" stop-color="#a8b788"></stop></linearGradient>
+            <linearGradient id="fBrick" x1="0" y1="0" x2="0.3" y2="1"><stop offset="0" stop-color="#cf9673"></stop><stop offset="1" stop-color="#95593f"></stop></linearGradient>
+            <linearGradient id="fRoof" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ad5f3e"></stop><stop offset="1" stop-color="#743a24"></stop></linearGradient>
+            <linearGradient id="fGlass" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0" stop-color="#8aa6ae"></stop><stop offset="0.55" stop-color="#c4d6d7"></stop><stop offset="1" stop-color="#9db6b8"></stop></linearGradient>
+            <linearGradient id="fGlow" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f5dcae"></stop><stop offset="1" stop-color="#d9a877"></stop></linearGradient>
+            <radialGradient id="fTree" cx="0.35" cy="0.3" r="0.9"><stop offset="0" stop-color="#b9c795"></stop><stop offset="1" stop-color="#5d6e47"></stop></radialGradient>
+            <linearGradient id="fHedge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#82946a"></stop><stop offset="1" stop-color="#46563a"></stop></linearGradient>
+            <radialGradient id="fVin" cx="0.5" cy="0.45" r="0.75"><stop offset="0" stop-color="#1c1a17" stop-opacity="0"></stop><stop offset="0.78" stop-color="#1c1a17" stop-opacity="0"></stop><stop offset="1" stop-color="#1c1a17" stop-opacity="0.28"></stop></radialGradient>
+            <pattern id="fBrickP" width="48" height="26" patternUnits="userSpaceOnUse">
+              <rect width="48" height="26" fill="none"></rect>
+              <line x1="0" y1="0" x2="48" y2="0" stroke="#e2cdb6" stroke-width="1.3" opacity="0.7"></line>
+              <line x1="0" y1="13" x2="48" y2="13" stroke="#e2cdb6" stroke-width="1.3" opacity="0.7"></line>
+              <line x1="24" y1="0" x2="24" y2="13" stroke="#e2cdb6" stroke-width="1.2" opacity="0.6"></line>
+              <line x1="0" y1="13" x2="0" y2="26" stroke="#e2cdb6" stroke-width="1.2" opacity="0.6"></line>
+              <line x1="48" y1="13" x2="48" y2="26" stroke="#e2cdb6" stroke-width="1.2" opacity="0.6"></line>
+              <rect x="0" y="1" width="23" height="11" fill="#8a4f38" opacity="0.35"></rect>
+              <rect x="25" y="14" width="22" height="11" fill="#c98f6a" opacity="0.35"></rect>
+            </pattern>
+            <pattern id="fTileP" width="40" height="13" patternUnits="userSpaceOnUse">
+              <line x1="0" y1="12" x2="40" y2="12" stroke="#4f2716" stroke-width="1.3" opacity="0.55"></line>
+              <line x1="10" y1="6" x2="10" y2="12" stroke="#4f2716" stroke-width="1" opacity="0.35"></line>
+              <line x1="30" y1="6" x2="30" y2="12" stroke="#4f2716" stroke-width="1" opacity="0.35"></line>
+            </pattern>
+            <filter id="fBlur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="7"></feGaussianBlur></filter>
+            <filter id="fSoft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="3.5"></feGaussianBlur></filter>
+            <filter id="fGrainF"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" result="n"></feTurbulence><feColorMatrix in="n" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"></feColorMatrix></filter>
+          </defs>
+          <rect x="40" y="40" width="720" height="302" fill="url(#fSky)"></rect>
+          <circle cx="628" cy="112" r="46" fill="#fff6df" opacity="0.55" filter="url(#fSoft)"></circle>
+          <circle cx="628" cy="112" r="24" fill="#fffbef" opacity="0.9" filter="url(#fSoft)"></circle>
+          <ellipse cx="240" cy="98" rx="90" ry="16" fill="#ffffff" opacity="0.5" filter="url(#fSoft)"></ellipse>
+          <ellipse cx="300" cy="112" rx="60" ry="12" fill="#ffffff" opacity="0.35" filter="url(#fSoft)"></ellipse>
+          <ellipse cx="520" cy="170" rx="70" ry="11" fill="#ffffff" opacity="0.3" filter="url(#fSoft)"></ellipse>
+          <rect x="40" y="328" width="720" height="16" fill="#7c8d68" opacity="0.6" filter="url(#fSoft)"></rect>
+          <rect x="40" y="342" width="720" height="88" fill="url(#fLawn)"></rect>
+          <ellipse cx="366" cy="437" rx="220" ry="13" fill="#2c3a26" opacity="0.3" filter="url(#fBlur)"></ellipse>
+          <ellipse cx="118" cy="433" rx="64" ry="9" fill="#2c3a26" opacity="0.28" filter="url(#fBlur)"></ellipse>
+          <line x1="112" y1="308" x2="112" y2="430" stroke="#453729" stroke-width="7"></line>
+          <circle cx="112" cy="240" r="74" fill="url(#fTree)"></circle>
+          <circle cx="90" cy="212" r="30" fill="#ccd6a6" opacity="0.45" filter="url(#fSoft)"></circle>
+          <circle cx="140" cy="270" r="26" fill="#41522f" opacity="0.35" filter="url(#fSoft)"></circle>
+          <polygon points="352,191 640,228 680,306 525,283" fill="url(#fRoof)" stroke="#5f3220" stroke-width="1.5"></polygon>
+          <polygon points="352,191 640,228 680,306 525,283" fill="url(#fTileP)" opacity="0.8"></polygon>
+          <polygon points="525,283 680,306 680,430 525,430" fill="#7e4c38" stroke="#4a2c1e" stroke-width="1.5"></polygon>
+          <polygon points="525,283 680,306 680,430 525,430" fill="url(#fBrickP)" opacity="0.28"></polygon>
+          <rect x="525" y="283" width="155" height="150" fill="#2c1c12" opacity="0.22"></rect>
+          <polygon points="180,430 180,283 352,191 525,283 525,430" fill="url(#fBrick)" stroke="#5f3220" stroke-width="2"></polygon>
+          <polygon points="180,430 180,283 352,191 525,283 525,430" fill="url(#fBrickP)" opacity="0.5"></polygon>
+          <path d="M 180 283 L 352 191 L 525 283" fill="none" stroke="#3d2115" stroke-width="7" opacity="0.55"></path>
+          <path d="M 186 292 L 352 203 L 519 292" fill="none" stroke="#000000" stroke-width="5" opacity="0.18" filter="url(#fSoft)"></path>
+          <polygon points="196,418 196,292 352,205 508,292 508,418" fill="url(#fGlass)" stroke="#26221c" stroke-width="5"></polygon>
+          <polygon points="274,418 274,318 430,318 430,418" fill="url(#fGlow)" opacity="0.55" filter="url(#fSoft)"></polygon>
+          <polygon points="214,300 268,270 236,418 204,418" fill="#ffffff" opacity="0.22"></polygon>
+          <polygon points="380,240 424,216 402,300 368,300" fill="#ffffff" opacity="0.18"></polygon>
+          <polygon points="450,300 478,300 500,418 470,418" fill="#ffffff" opacity="0.12"></polygon>
+          <line x1="196" y1="312" x2="508" y2="312" stroke="#26221c" stroke-width="4"></line>
+          <line x1="352" y1="205" x2="352" y2="418" stroke="#26221c" stroke-width="2.5"></line>
+          <line x1="274" y1="312" x2="274" y2="418" stroke="#26221c" stroke-width="2"></line>
+          <line x1="430" y1="312" x2="430" y2="418" stroke="#26221c" stroke-width="2"></line>
+          <line x1="252" y1="262" x2="252" y2="312" stroke="#26221c" stroke-width="1.6"></line>
+          <line x1="452" y1="262" x2="452" y2="312" stroke="#26221c" stroke-width="1.6"></line>
+          <rect x="170" y="430" width="365" height="14" fill="#cfc6b2" stroke="#6f6657" stroke-width="1"></rect>
+          <line x1="230" y1="430" x2="230" y2="444" stroke="#a89d87" stroke-width="1"></line>
+          <line x1="310" y1="430" x2="310" y2="444" stroke="#a89d87" stroke-width="1"></line>
+          <line x1="400" y1="430" x2="400" y2="444" stroke="#a89d87" stroke-width="1"></line>
+          <line x1="480" y1="430" x2="480" y2="444" stroke="#a89d87" stroke-width="1"></line>
+          <rect x="56" y="366" width="92" height="64" fill="url(#fHedge)"></rect>
+          <rect x="56" y="366" width="92" height="10" fill="#96a878" opacity="0.7"></rect>
+          <rect x="656" y="380" width="86" height="50" fill="url(#fHedge)"></rect>
+          <rect x="656" y="380" width="86" height="9" fill="#96a878" opacity="0.7"></rect>
+          <path d="M 60 428 l 4 -10 M 74 429 l 3 -9 M 152 430 l 4 -9 M 550 442 l 4 -10 M 590 448 l 3 -9 M 640 440 l 4 -9 M 120 452 l 4 -10 M 250 456 l 3 -9" stroke="#7c8d5e" stroke-width="1.6" opacity="0.8"></path>
+          <circle cx="472" cy="384" r="6" fill="#26221c"></circle>
+          <line x1="472" y1="390" x2="472" y2="428" stroke="#26221c" stroke-width="3"></line>
+          <line x1="40" y1="430" x2="760" y2="430" stroke="#211d18" stroke-width="2"></line>
+          <rect x="40" y="40" width="720" height="390" filter="url(#fGrainF)"></rect>
+          <rect x="40" y="40" width="720" height="390" fill="url(#fVin)"></rect>
+          <text x="352" y="472" font-family="IBM Plex Mono" font-size="11" fill="#5c564c" text-anchor="middle">glazed gable 7.5 m wide &#183; ridge 5.2 m &#183; eaves 3.2 m &#183; flush terrace</text>
+          <text x="640" y="472" font-family="IBM Plex Mono" font-size="11" fill="#5c564c" text-anchor="middle">reclaimed brick</text>
+        </svg>
+      </div>
+      <div style="background: #fdfcf9; border: 1px solid #d8d2c4; padding: 24px;">
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #5c564c; text-transform: uppercase; margin-bottom: 12px;">Side &mdash; garden elevation, 17 m</div>
+        <svg id="view-side" viewBox="0 0 800 520" style="width: 100%;">
+          <defs>
+            <linearGradient id="sSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a7c4d4"></stop><stop offset="0.7" stop-color="#dce8e4"></stop><stop offset="1" stop-color="#f0f2e6"></stop></linearGradient>
+            <linearGradient id="sLawn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d8e0b4"></stop><stop offset="1" stop-color="#a8b788"></stop></linearGradient>
+            <linearGradient id="sBrick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cd9271"></stop><stop offset="1" stop-color="#96593f"></stop></linearGradient>
+            <linearGradient id="sRoof" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b26446"></stop><stop offset="1" stop-color="#7a3e27"></stop></linearGradient>
+            <linearGradient id="sGlass" x1="0" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#8fa9b1"></stop><stop offset="1" stop-color="#c9dadb"></stop></linearGradient>
+            <radialGradient id="sTree" cx="0.35" cy="0.3" r="0.9"><stop offset="0" stop-color="#b9c795"></stop><stop offset="1" stop-color="#5d6e47"></stop></radialGradient>
+            <linearGradient id="sHedge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#82946a"></stop><stop offset="1" stop-color="#46563a"></stop></linearGradient>
+            <radialGradient id="sVin" cx="0.5" cy="0.45" r="0.75"><stop offset="0" stop-color="#1c1a17" stop-opacity="0"></stop><stop offset="0.78" stop-color="#1c1a17" stop-opacity="0"></stop><stop offset="1" stop-color="#1c1a17" stop-opacity="0.28"></stop></radialGradient>
+            <pattern id="sBrickP" width="48" height="26" patternUnits="userSpaceOnUse">
+              <line x1="0" y1="0" x2="48" y2="0" stroke="#e2cdb6" stroke-width="1.3" opacity="0.7"></line>
+              <line x1="0" y1="13" x2="48" y2="13" stroke="#e2cdb6" stroke-width="1.3" opacity="0.7"></line>
+              <line x1="24" y1="0" x2="24" y2="13" stroke="#e2cdb6" stroke-width="1.2" opacity="0.6"></line>
+              <line x1="0" y1="13" x2="0" y2="26" stroke="#e2cdb6" stroke-width="1.2" opacity="0.6"></line>
+              <line x1="48" y1="13" x2="48" y2="26" stroke="#e2cdb6" stroke-width="1.2" opacity="0.6"></line>
+              <rect x="0" y="1" width="23" height="11" fill="#8a4f38" opacity="0.35"></rect>
+              <rect x="25" y="14" width="22" height="11" fill="#c98f6a" opacity="0.35"></rect>
+            </pattern>
+            <pattern id="sTileP" width="40" height="13" patternUnits="userSpaceOnUse">
+              <line x1="0" y1="12" x2="40" y2="12" stroke="#4f2716" stroke-width="1.3" opacity="0.55"></line>
+              <line x1="10" y1="6" x2="10" y2="12" stroke="#4f2716" stroke-width="1" opacity="0.35"></line>
+              <line x1="30" y1="6" x2="30" y2="12" stroke="#4f2716" stroke-width="1" opacity="0.35"></line>
+            </pattern>
+            <filter id="sBlur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="7"></feGaussianBlur></filter>
+            <filter id="sSoft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="3.5"></feGaussianBlur></filter>
+            <filter id="sGrainF"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" result="n"></feTurbulence><feColorMatrix in="n" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"></feColorMatrix></filter>
+          </defs>
+          <rect x="40" y="120" width="720" height="290" fill="url(#sSky)"></rect>
+          <ellipse cx="560" cy="160" rx="90" ry="15" fill="#ffffff" opacity="0.45" filter="url(#sSoft)"></ellipse>
+          <ellipse cx="620" cy="175" rx="55" ry="10" fill="#ffffff" opacity="0.3" filter="url(#sSoft)"></ellipse>
+          <rect x="40" y="410" width="720" height="60" fill="url(#sLawn)"></rect>
+          <ellipse cx="400" cy="416" rx="335" ry="10" fill="#2c3a26" opacity="0.3" filter="url(#sBlur)"></ellipse>
+          <rect x="90" y="148" width="620" height="70" fill="url(#sRoof)" stroke="#5f3220" stroke-width="2"></rect>
+          <rect x="90" y="148" width="620" height="70" fill="url(#sTileP)" opacity="0.85"></rect>
+          <line x1="90" y1="150" x2="710" y2="150" stroke="#d99e7c" stroke-width="2" opacity="0.7"></line>
+          <rect x="100" y="218" width="600" height="192" fill="url(#sBrick)" stroke="#5f3220" stroke-width="2"></rect>
+          <rect x="100" y="218" width="600" height="192" fill="url(#sBrickP)" opacity="0.5"></rect>
+          <rect x="100" y="218" width="600" height="14" fill="#2c1c12" opacity="0.4" filter="url(#sSoft)"></rect>
+          <rect x="360" y="300" width="80" height="110" fill="#42382d" stroke="#211d18" stroke-width="1.5"></rect>
+          <rect x="360" y="300" width="10" height="110" fill="#5c4f40"></rect>
+          <line x1="380" y1="300" x2="380" y2="410" stroke="#211d18" stroke-width="1"></line>
+          <line x1="400" y1="300" x2="400" y2="410" stroke="#211d18" stroke-width="1"></line>
+          <line x1="420" y1="300" x2="420" y2="410" stroke="#211d18" stroke-width="1"></line>
+          <rect x="160" y="312" width="120" height="62" fill="url(#sGlass)" stroke="#26221c" stroke-width="3"></rect>
+          <polygon points="168,312 200,312 178,374 160,374" fill="#ffffff" opacity="0.28"></polygon>
+          <rect x="156" y="374" width="128" height="6" fill="#b3a894"></rect>
+          <rect x="520" y="312" width="120" height="62" fill="url(#sGlass)" stroke="#26221c" stroke-width="3"></rect>
+          <polygon points="528,312 560,312 538,374 520,374" fill="#ffffff" opacity="0.28"></polygon>
+          <rect x="516" y="374" width="128" height="6" fill="#b3a894"></rect>
+          <rect x="700" y="218" width="10" height="192" fill="#7fa3ad"></rect>
+          <ellipse cx="162" cy="428" rx="40" ry="7" fill="#2c3a26" opacity="0.28" filter="url(#sBlur)"></ellipse>
+          <line x1="160" y1="428" x2="160" y2="150" stroke="#453729" stroke-width="8"></line>
+          <circle cx="160" cy="150" r="66" fill="url(#sTree)"></circle>
+          <circle cx="140" cy="126" r="26" fill="#ccd6a6" opacity="0.45" filter="url(#sSoft)"></circle>
+          <rect x="726" y="330" width="34" height="80" fill="url(#sHedge)"></rect>
+          <path d="M 130 448 l 4 -10 M 250 452 l 3 -9 M 480 450 l 4 -10 M 680 446 l 3 -9 M 320 456 l 4 -9" stroke="#7c8d5e" stroke-width="1.6" opacity="0.8"></path>
+          <circle cx="620" cy="392" r="6" fill="#211d18"></circle>
+          <line x1="620" y1="398" x2="620" y2="430" stroke="#211d18" stroke-width="3"></line>
+          <line x1="40" y1="410" x2="760" y2="410" stroke="#211d18" stroke-width="2"></line>
+          <rect x="40" y="120" width="720" height="350" filter="url(#sGrainF)"></rect>
+          <rect x="40" y="120" width="720" height="350" fill="url(#sVin)"></rect>
+          <text x="240" y="452" font-family="IBM Plex Mono" font-size="11" fill="#5c564c" text-anchor="middle">17.0 m long &#183; terracotta tiles</text>
+          <text x="400" y="472" font-family="IBM Plex Mono" font-size="11" fill="#5c564c" text-anchor="middle">dark timber bay in the old barn-door position</text>
+          <text x="660" y="452" font-family="IBM Plex Mono" font-size="11" fill="#4a7079" text-anchor="middle">glass gable edge</text>
+        </svg>
+      </div>
+    </div>
+    <div style="background: #fdfcf9; border: 1px solid #d8d2c4; padding: 24px; margin-top: 18px;">
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #5c564c; text-transform: uppercase; margin-bottom: 12px;">Interior &mdash; living hall towards the glass gable</div>
+      <svg id="view-interior" viewBox="0 0 800 500" style="width: 100%; max-height: 560px;">
+          <defs>
+            <linearGradient id="iFloor" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#c6b493"></stop><stop offset="1" stop-color="#efe6d1"></stop></linearGradient>
+            <linearGradient id="iWall" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f0e9db"></stop><stop offset="1" stop-color="#d7cab4"></stop></linearGradient>
+            <linearGradient id="iWallR" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#f0e9db"></stop><stop offset="1" stop-color="#d7cab4"></stop></linearGradient>
+            <linearGradient id="iRoof" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eadcc4"></stop><stop offset="1" stop-color="#cfbd9d"></stop></linearGradient>
+            <linearGradient id="iSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9c6d5"></stop><stop offset="1" stop-color="#e8f0e8"></stop></linearGradient>
+            <radialGradient id="iVin" cx="0.5" cy="0.45" r="0.8"><stop offset="0" stop-color="#1c1a17" stop-opacity="0"></stop><stop offset="0.8" stop-color="#1c1a17" stop-opacity="0"></stop><stop offset="1" stop-color="#1c1a17" stop-opacity="0.22"></stop></radialGradient>
+            <clipPath id="iClip"><polygon points="270,390 270,215 400,140 530,215 530,390"></polygon></clipPath>
+            <filter id="iBlur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="6"></feGaussianBlur></filter>
+            <filter id="iSoft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="3"></feGaussianBlur></filter>
+            <filter id="iGrainF"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" result="n"></feTurbulence><feColorMatrix in="n" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0"></feColorMatrix></filter>
+          </defs>
+          <polygon points="40,500 760,500 530,390 270,390" fill="url(#iFloor)"></polygon>
+          <polygon points="40,500 40,105 270,215 270,390" fill="url(#iWall)"></polygon>
+          <polygon points="760,500 760,105 530,215 530,390" fill="url(#iWallR)"></polygon>
+          <polygon points="40,105 270,215 400,140 400,8" fill="url(#iRoof)"></polygon>
+          <polygon points="760,105 530,215 400,140 400,8" fill="url(#iRoof)"></polygon>
+          <line x1="400" y1="30" x2="93" y2="130" stroke="#b3a082" stroke-width="2.5"></line>
+          <line x1="400" y1="60" x2="152" y2="158" stroke="#b3a082" stroke-width="2.5"></line>
+          <line x1="400" y1="95" x2="215" y2="188" stroke="#b3a082" stroke-width="2.5"></line>
+          <line x1="400" y1="30" x2="707" y2="130" stroke="#b3a082" stroke-width="2.5"></line>
+          <line x1="400" y1="60" x2="648" y2="158" stroke="#b3a082" stroke-width="2.5"></line>
+          <line x1="400" y1="95" x2="585" y2="188" stroke="#b3a082" stroke-width="2.5"></line>
+          <g clip-path="url(#iClip)">
+            <rect x="268" y="138" width="264" height="180" fill="url(#iSky)"></rect>
+            <ellipse cx="340" cy="180" rx="55" ry="10" fill="#ffffff" opacity="0.5" filter="url(#iSoft)"></ellipse>
+            <ellipse cx="460" cy="220" rx="40" ry="8" fill="#ffffff" opacity="0.35" filter="url(#iSoft)"></ellipse>
+            <rect x="268" y="318" width="264" height="20" fill="#8a9a74"></rect>
+            <rect x="268" y="336" width="264" height="54" fill="#c3cf9d"></rect>
+            <circle cx="330" cy="296" r="27" fill="#71835c" filter="url(#iSoft)"></circle>
+            <circle cx="488" cy="304" r="16" fill="#71835c" opacity="0.8" filter="url(#iSoft)"></circle>
+          </g>
+          <polygon points="270,390 530,390 650,468 150,468" fill="#fff6df" opacity="0.16" filter="url(#iSoft)"></polygon>
+          <line x1="270" y1="300" x2="530" y2="300" stroke="#26221c" stroke-width="3.5"></line>
+          <line x1="335" y1="300" x2="335" y2="390" stroke="#26221c" stroke-width="2"></line>
+          <line x1="465" y1="300" x2="465" y2="390" stroke="#26221c" stroke-width="2"></line>
+          <line x1="400" y1="140" x2="400" y2="390" stroke="#26221c" stroke-width="2"></line>
+          <polygon points="270,390 270,215 400,140 530,215 530,390" fill="none" stroke="#26221c" stroke-width="4"></polygon>
+          <path d="M 212 418 L 212 187 L 400 107 L 588 187 L 588 418" fill="none" stroke="#4b4238" stroke-width="6"></path>
+          <path d="M 216 418 L 216 189 L 400 111" fill="none" stroke="#6b5f4d" stroke-width="2" opacity="0.7"></path>
+          <path d="M 132 456 L 132 149 L 400 61 L 668 149 L 668 456" fill="none" stroke="#3f372e" stroke-width="9"></path>
+          <path d="M 137 456 L 137 151 L 400 65" fill="none" stroke="#645846" stroke-width="2.5" opacity="0.7"></path>
+          <line x1="150" y1="500" x2="295" y2="390" stroke="#af9d7c" stroke-width="1.5" opacity="0.7"></line>
+          <line x1="310" y1="500" x2="345" y2="390" stroke="#af9d7c" stroke-width="1.5" opacity="0.7"></line>
+          <line x1="490" y1="500" x2="455" y2="390" stroke="#af9d7c" stroke-width="1.5" opacity="0.7"></line>
+          <line x1="650" y1="500" x2="505" y2="390" stroke="#af9d7c" stroke-width="1.5" opacity="0.7"></line>
+          <ellipse cx="640" cy="493" rx="110" ry="10" fill="#2c2519" opacity="0.3" filter="url(#iBlur)"></ellipse>
+          <rect x="560" y="424" width="150" height="62" fill="#302b23"></rect>
+          <rect x="560" y="424" width="150" height="8" fill="#4a4335"></rect>
+          <polygon points="560,424 710,424 736,410 586,410" fill="#5a5240"></polygon>
+          <line x1="620" y1="410" x2="620" y2="330" stroke="#211d18" stroke-width="1.5"></line>
+          <line x1="680" y1="410" x2="680" y2="322" stroke="#211d18" stroke-width="1.5"></line>
+          <circle cx="620" cy="338" r="14" fill="#f3d9ae" opacity="0.45" filter="url(#iSoft)"></circle>
+          <circle cx="680" cy="330" r="14" fill="#f3d9ae" opacity="0.45" filter="url(#iSoft)"></circle>
+          <circle cx="620" cy="338" r="9" fill="#26221c"></circle>
+          <circle cx="680" cy="330" r="9" fill="#26221c"></circle>
+          <ellipse cx="205" cy="495" rx="118" ry="10" fill="#2c2519" opacity="0.3" filter="url(#iBlur)"></ellipse>
+          <rect x="110" y="438" width="180" height="52" fill="#807a6c"></rect>
+          <rect x="110" y="438" width="180" height="10" fill="#9d9787"></rect>
+          <rect x="110" y="414" width="26" height="76" fill="#665f51"></rect>
+          <circle cx="438" cy="352" r="7" fill="#26221c"></circle>
+          <line x1="438" y1="359" x2="438" y2="390" stroke="#26221c" stroke-width="3"></line>
+          <rect x="40" y="8" width="720" height="484" filter="url(#iGrainF)"></rect>
+          <rect x="40" y="8" width="720" height="484" fill="url(#iVin)"></rect>
+          <text x="400" y="478" font-family="IBM Plex Mono" font-size="11.5" fill="#5c564c" text-anchor="middle">open to the ridge (5.2 m) &#183; laminated portal frames &#183; clerestory light &#183; polished screed + oak</text>
+        </svg>
+    </div>
+    <div style="background: #fdfcf9; border: 1px solid #d8d2c4; padding: 24px; margin-top: 18px;">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 6px;">
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #5c564c; text-transform: uppercase;">Photoreal renders &mdash; drop zone</div>
+        <div style="font-size: 13px; color: #6f6a5f;">Copy a prompt into Midjourney / DALL&middot;E / your render tool, then drag the result onto its slot. Attach your site photos as style reference for best results.</div>
+      </div>
+      <div style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr); gap: 18px; margin-top: 14px;">
+        <div style="display: flex; flex-direction: column; gap: 10px; min-width: 0;">
+          <image-slot id="render-front" shape="rect" src="renders/render-front.png" style="width: 100%; height: 210px;" placeholder="Drop front render here"></image-slot>
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; line-height: 1.6; color: #5c564c; background: #f4f1ea; border: 1px solid #e6e0d2; padding: 10px 12px; height: 128px; overflow: auto;" id="prompt-front"></div>
+          <button data-copy="front" style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; padding: 8px 12px; background: #211d18; color: #f4f1ea; border: none; cursor: pointer;">copy prompt</button>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 10px; min-width: 0;">
+          <image-slot id="render-side" shape="rect" src="renders/render-side.png" style="width: 100%; height: 210px;" placeholder="Drop side render here"></image-slot>
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; line-height: 1.6; color: #5c564c; background: #f4f1ea; border: 1px solid #e6e0d2; padding: 10px 12px; height: 128px; overflow: auto;" id="prompt-side"></div>
+          <button data-copy="side" style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; padding: 8px 12px; background: #211d18; color: #f4f1ea; border: none; cursor: pointer;">copy prompt</button>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 10px; min-width: 0;">
+          <image-slot id="render-interior" shape="rect" src="renders/render-interior.png" style="width: 100%; height: 210px;" placeholder="Drop interior render here"></image-slot>
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; line-height: 1.6; color: #5c564c; background: #f4f1ea; border: 1px solid #e6e0d2; padding: 10px 12px; height: 128px; overflow: auto;" id="prompt-interior"></div>
+          <button data-copy="interior" style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; padding: 8px 12px; background: #211d18; color: #f4f1ea; border: none; cursor: pointer;">copy prompt</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="margin-top: 64px;">
+    <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 22px;">
+      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #b4522e;">06</span>
+      <h2 style="font-size: 26px; font-weight: 600; margin: 0; letter-spacing: -0.01em;">Three ways to use 127.5 m&sup2;</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px;">
+      <div style="background: #fdfcf9; border: 1px solid #d8d2c4; border-top: 4px solid #b4522e; padding: 24px;">
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #b4522e; text-transform: uppercase;">Scenario A</div>
+        <h3 style="font-size: 19px; margin: 8px 0 10px; font-weight: 600;">Own living space</h3>
+        <p style="font-size: 14px; line-height: 1.6; color: #3a352d; margin: 0 0 14px;">2-bed single-storey home, living hall open to the ridge behind the glass gable. Ages-in-place: no stairs.</p>
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; line-height: 2; color: #5c564c;">Spec&ensp;high finish, full HVAC<br>VAT&ensp;<strong style="color: #211d18;">6%</strong> if sole &amp; own home &le; 200 m&sup2;</div>
+      </div>
+      <div style="background: #fdfcf9; border: 1px solid #d8d2c4; border-top: 4px solid #b4522e; padding: 24px;">
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #b4522e; text-transform: uppercase;">Scenario B</div>
+        <h3 style="font-size: 19px; margin: 8px 0 10px; font-weight: 600;">Long-term rental</h3>
+        <p style="font-size: 14px; line-height: 1.6; color: #3a352d; margin: 0 0 14px;">Same plan, robust mid-range finish. Rural 2-bed with this quality rents around &euro;1,100&ndash;1,400/month in Flanders.</p>
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; line-height: 2; color: #5c564c;">Spec&ensp;durable mid-range<br>VAT&ensp;<strong style="color: #211d18;">6%</strong> if rented &ge; 15 yrs as main residence</div>
+      </div>
+      <div style="background: #fdfcf9; border: 1px solid #d8d2c4; border-top: 4px solid #8a8378; padding: 24px;">
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #6f6a5f; text-transform: uppercase;">Scenario C</div>
+        <h3 style="font-size: 19px; margin: 8px 0 10px; font-weight: 600;">Hobby / atelier</h3>
+        <p style="font-size: 14px; line-height: 1.6; color: #3a352d; margin: 0 0 14px;">Insulated open shell: workshop, studio or car bay. Slab, envelope, glass gable, minimal services &mdash; fit out later.</p>
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; line-height: 2; color: #5c564c;">Spec&ensp;shell + utilities only<br>VAT&ensp;<strong style="color: #211d18;">21%</strong> (non-residential use)</div>
+      </div>
+    </div>
+  </section>
+
+  <section style="margin-top: 64px;">
+    <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 22px;">
+      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #b4522e;">07</span>
+      <h2 style="font-size: 26px; font-weight: 600; margin: 0; letter-spacing: -0.01em;">Cost estimate &mdash; rural Flanders, 2026</h2>
+    </div>
+    <div style="background: #fff7f0; border: 1px solid #e4c1ae; padding: 16px 22px; margin-bottom: 20px; font-size: 14px; line-height: 1.6; color: #6b3a24;"><strong>Full demolition assumed.</strong> Walls and roof structure are structurally unsound, so nothing is retained from the main barn. A documented structural report supports both the permit and the 6% demolition-&amp;-rebuild VAT regime; reclaimed bricks can still be sorted and re-used in the new facade.</div>
+    <div style="background: #fdfcf9; border: 1px solid #d8d2c4; padding: 26px 30px;">
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #5c564c; text-transform: uppercase; margin-bottom: 14px;">Breakdown &mdash; residential version (A/B), 127.5 m&sup2;, excl. VAT &amp; fees</div>
+      <table style="width: 100%; border-collapse: collapse; font-size: 14.5px;">
+        <tbody>
+          <tr style="border-bottom: 1px solid #e6e0d2;"><td style="padding: 9px 0; color: #3a352d;">Demolition, sorting &amp; disposal (structurally unsound barn)</td><td style="padding: 9px 0; text-align: right; font-family: 'IBM Plex Mono', monospace; white-space: nowrap;">&euro;15,000 &ndash; 25,000</td></tr>
+          <tr style="border-bottom: 1px solid #e6e0d2;"><td style="padding: 9px 0; color: #3a352d;">Foundations &amp; insulated floor slab</td><td style="padding: 9px 0; text-align: right; font-family: 'IBM Plex Mono', monospace; white-space: nowrap;">&euro;20,000 &ndash; 26,000</td></tr>
+          <tr style="border-bottom: 1px solid #e6e0d2;"><td style="padding: 9px 0; color: #3a352d;">Shell: masonry/timber-frame walls + laminated portal frame</td><td style="padding: 9px 0; text-align: right; font-family: 'IBM Plex Mono', monospace; white-space: nowrap;">&euro;60,000 &ndash; 78,000</td></tr>
+          <tr style="border-bottom: 1px solid #e6e0d2;"><td style="padding: 9px 0; color: #3a352d;">Roof: structure, sarking insulation, terracotta tiles</td><td style="padding: 9px 0; text-align: right; font-family: 'IBM Plex Mono', monospace; white-space: nowrap;">&euro;34,000 &ndash; 44,000</td></tr>
+          <tr style="border-bottom: 1px solid #e6e0d2;"><td style="padding: 9px 0; color: #3a352d;">Glass gable: &asymp;33 m&sup2; triple glazing, slim frames, 1&ndash;2 lift-slide doors</td><td style="padding: 9px 0; text-align: right; font-family: 'IBM Plex Mono', monospace; white-space: nowrap;">&euro;32,000 &ndash; 45,000</td></tr>
+          <tr style="border-bottom: 1px solid #e6e0d2;"><td style="padding: 9px 0; color: #3a352d;">Other windows &amp; doors</td><td style="padding: 9px 0; text-align: right; font-family: 'IBM Plex Mono', monospace; white-space: nowrap;">&euro;12,000 &ndash; 16,000</td></tr>
+          <tr style="border-bottom: 1px solid #e6e0d2;"><td style="padding: 9px 0; color: #3a352d;">Techniques: heat pump + floor heating, ventilation D, electrics, sanitary</td><td style="padding: 9px 0; text-align: right; font-family: 'IBM Plex Mono', monospace; white-space: nowrap;">&euro;48,000 &ndash; 62,000</td></tr>
+          <tr style="border-bottom: 1px solid #e6e0d2;"><td style="padding: 9px 0; color: #3a352d;">Interior finish: screed, floors, walls, kitchen, bathroom</td><td style="padding: 9px 0; text-align: right; font-family: 'IBM Plex Mono', monospace; white-space: nowrap;">&euro;48,000 &ndash; 66,000</td></tr>
+          <tr><td style="padding: 9px 0; color: #3a352d;">PV 6 kWp + 10,000 L rainwater recovery</td><td style="padding: 9px 0; text-align: right; font-family: 'IBM Plex Mono', monospace; white-space: nowrap;">&euro;11,000 &ndash; 15,000</td></tr>
+          <tr style="border-top: 2px solid #211d18;"><td style="padding: 12px 0; font-weight: 600;">Construction total (&asymp; &euro;2,200 &ndash; 3,000 / m&sup2;)</td><td style="padding: 12px 0; text-align: right; font-family: 'IBM Plex Mono', monospace; font-weight: 500; white-space: nowrap;">&euro;280,000 &ndash; 377,000</td></tr>
+        </tbody>
+      </table>
+      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; margin-top: 24px;">
+        <div style="border: 1px solid #d8d2c4; padding: 18px 20px;">
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.08em; color: #b4522e; text-transform: uppercase; margin-bottom: 8px;">A &middot; Own home &middot; 6% VAT</div>
+          <div style="font-size: 22px; font-weight: 700; letter-spacing: -0.01em;">&euro;297k &ndash; 400k</div>
+          <div style="font-size: 13px; color: #6f6a5f; margin-top: 6px; line-height: 1.5;">incl. VAT, excl. fees. At 21%: &euro;339k &ndash; 456k.</div>
+        </div>
+        <div style="border: 1px solid #d8d2c4; padding: 18px 20px;">
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.08em; color: #b4522e; text-transform: uppercase; margin-bottom: 8px;">B &middot; Rental &middot; 6% VAT</div>
+          <div style="font-size: 22px; font-weight: 700; letter-spacing: -0.01em;">&euro;286k &ndash; 371k</div>
+          <div style="font-size: 13px; color: #6f6a5f; margin-top: 6px; line-height: 1.5;">mid-range finish (&euro;270k&ndash;350k excl.), 15-yr rental condition.</div>
+        </div>
+        <div style="border: 1px solid #d8d2c4; padding: 18px 20px;">
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.08em; color: #6f6a5f; text-transform: uppercase; margin-bottom: 8px;">C &middot; Hobby shell &middot; 21% VAT</div>
+          <div style="font-size: 22px; font-weight: 700; letter-spacing: -0.01em;">&euro;194k &ndash; 248k</div>
+          <div style="font-size: 13px; color: #6f6a5f; margin-top: 6px; line-height: 1.5;">shell + glass gable + basic services (&euro;160k&ndash;205k excl.).</div>
+        </div>
+      </div>
+      <div style="margin-top: 22px; font-size: 13.5px; line-height: 1.7; color: #5c564c;">Add professional fees on top of any scenario: architect + stability engineer 8&ndash;12% of works, EPB reporter + safety coordinator &asymp; &euro;4,000&ndash;6,000. Benchmarks: Belgian new-build averages &euro;1,800&ndash;2,500/m&sup2; excl. VAT (2026); rural labour rates sit at the low end, but the 33 m&sup2; structural-glass gable and portal frame push this design toward the upper-middle of the band.</div>
+    </div>
+  </section>
+
+  <section style="margin-top: 64px;">
+    <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 22px;">
+      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #b4522e;">08</span>
+      <h2 style="font-size: 26px; font-weight: 600; margin: 0; letter-spacing: -0.01em;">Certification &mdash; Silver, Gold or Passivhaus?</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: 1.15fr 1fr; gap: 18px;">
+      <div style="background: #fdfcf9; border: 1px solid #d8d2c4; padding: 26px;">
+        <div style="font-size: 15px; line-height: 1.7; color: #3a352d;">Honest note first: <strong>LEED is rarely certified for single homes in Belgium</strong> &mdash; BREEAM dominates here, and every Flemish new build must already meet near-zero-energy rules (E-level &le; E30), which overlaps heavily with LEED&rsquo;s energy credits. The smart move: pick the performance tier first, then decide whether to pay for the plaque. All three tiers below are buildable by local firms &mdash; Passivhaus especially, since Brussels has required near-passive levels for all new builds since 2015 and Flanders has many certified passive/timber-frame builders.</div>
+        <div style="display: grid; gap: 12px; margin-top: 20px;">
+          <div style="display: flex; gap: 12px; font-size: 14px; line-height: 1.55; color: #3a352d;"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #b4522e; padding-top: 2px;">EA</span><span>Air-source heat pump + floor heating, balanced ventilation with heat recovery, airtightness &le; 1.0 ACH, 6 kWp PV &mdash; the E30 package already scores most Energy &amp; Atmosphere points.</span></div>
+          <div style="display: flex; gap: 12px; font-size: 14px; line-height: 1.55; color: #3a352d;"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #b4522e; padding-top: 2px;">MR</span><span>Re-use of sorted bricks from the demolished barn, FSC laminated timber portal, construction-waste sorting plan.</span></div>
+          <div style="display: flex; gap: 12px; font-size: 14px; line-height: 1.55; color: #3a352d;"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #b4522e; padding-top: 2px;">WE</span><span>10,000 L rainwater cistern feeding WCs and garden (standard Flemish requirement, easy LEED water points).</span></div>
+          <div style="display: flex; gap: 12px; font-size: 14px; line-height: 1.55; color: #3a352d;"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #b4522e; padding-top: 2px;">SS/LT</span><span>Rebuild on an existing footprint, retained hedges and trees, permeable cobbles &mdash; site credits come almost for free.</span></div>
+        </div>
+      </div>
+      <div style="background: #211d18; color: #f4f1ea; padding: 26px 28px; display: flex; flex-direction: column; gap: 16px;">
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #e0906f; text-transform: uppercase;">Premium over the E30 base build</div>
+        <div style="border-bottom: 1px solid #3a352d; padding-bottom: 13px;">
+          <div style="display: flex; justify-content: space-between; font-size: 15px; font-weight: 600;"><span>LEED Silver (50&ndash;59 pts)</span><span style="font-family: 'IBM Plex Mono', monospace;">+ &euro;16k &ndash; 29k</span></div>
+          <div style="font-size: 12.5px; color: #a89f90; margin-top: 5px; line-height: 1.6;">Measures &euro;10&ndash;20k + certification &euro;6&ndash;9k &middot; &asymp;3&ndash;6%. Mostly already in the base spec.</div>
+        </div>
+        <div style="border-bottom: 1px solid #3a352d; padding-bottom: 13px;">
+          <div style="display: flex; justify-content: space-between; font-size: 15px; font-weight: 600;"><span>LEED Gold (60&ndash;79 pts)</span><span style="font-family: 'IBM Plex Mono', monospace;">+ &euro;27k &ndash; 45k</span></div>
+          <div style="font-size: 12.5px; color: #a89f90; margin-top: 5px; line-height: 1.6;">Better envelope, enhanced commissioning, low-VOC/EPD materials, extra water &amp; waste credits &euro;20&ndash;35k + certification &euro;7&ndash;10k &middot; &asymp;7&ndash;12%.</div>
+        </div>
+        <div style="border-bottom: 1px solid #3a352d; padding-bottom: 13px;">
+          <div style="display: flex; justify-content: space-between; font-size: 15px; font-weight: 600;"><span>Certified Passivhaus</span><span style="font-family: 'IBM Plex Mono', monospace;">+ &euro;26k &ndash; 49k</span></div>
+          <div style="font-size: 12.5px; color: #a89f90; margin-top: 5px; line-height: 1.6;">Airtightness &le;0.6 ACH, thermal-bridge-free details, PH-certified glazing (Uw &le; 0.8), PHPP design &euro;20&ndash;40k + certification &euro;6&ndash;9k &middot; &asymp;7&ndash;13%. Heating drops to &le;15 kWh/m&sup2;&middot;yr &mdash; a smaller heat pump partly pays it back.</div>
+        </div>
+        <div style="margin-top: auto; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #a89f90; line-height: 1.7;">Recommendation: Passivhaus if you keep or rent it long-term (local builders, real energy payback, EPC A+ rents faster); LEED Gold only if the plaque itself matters.</div>
+      </div>
+    </div>
+    <div style="background: #fff7f0; border: 1px solid #e4c1ae; padding: 16px 22px; margin-top: 18px; font-size: 14px; line-height: 1.6; color: #6b3a24;"><strong>Design watch-point for Passivhaus:</strong> the 33 m&sup2; glass gable faces north &mdash; pure heat loss, no solar gain. It stays certifiable with Uw &le; 0.8 frames and Ug &asymp; 0.5 triple glazing, but PHPP will demand a thicker envelope elsewhere (&asymp;35&ndash;40 cm walls, &asymp;45 cm roof). Budget the premium glazing inside the &euro;32&ndash;45k gable line, not on top.</div>
+  </section>
+
+  <footer style="margin-top: 72px; border-top: 1px solid #d8d2c4; padding-top: 18px; font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: #8a8378; line-height: 1.8;">Pre-design estimate, not a quotation. Cost basis: Belgian new-build market ranges 2026 (&euro;1,800&ndash;2,500/m&sup2; excl. VAT; Nieuwbouwbarometer 2025 avg. &euro;2,478/m&sup2; all-in). VAT: 6% demolition-&amp;-rebuild regime permanent since 1 July 2025 (Programmawet 29/07/2025) &mdash; own sole home &le; 200 m&sup2;, or &ge; 15-year private rental as main residence; otherwise 21%. Verify eligibility with your notary/accountant and the omgevingsvergunning with the municipality.</footer>
+</div>
+<script>
+// ---- <image-slot>: drag/drop or click-to-browse image placeholder.
+// Persists drops to localStorage; falls back to the src attribute when the
+// file exists next to the page (e.g. uploads/*.png).
+class ImageSlot extends HTMLElement {
+  connectedCallback() {
+    if (this._init) return; this._init = true;
+    const key = 'imgslot:' + (this.id || Math.random());
+    const ph = document.createElement('div');
+    ph.className = 'is-ph';
+    ph.textContent = this.getAttribute('placeholder') || 'Drop image here';
+    this.appendChild(ph);
+    const input = document.createElement('input');
+    input.type = 'file'; input.accept = 'image/*'; input.style.display = 'none';
+    this.appendChild(input);
+
+    const show = (url, clearable) => {
+      this.querySelectorAll('img.is-img, .is-clear').forEach(el => el.remove());
+      const img = document.createElement('img');
+      img.className = 'is-img'; img.alt = ph.textContent; img.src = url;
+      img.onerror = () => { img.remove(); this.querySelector('.is-clear')?.remove(); };
+      this.appendChild(img);
+      if (clearable) {
+        const x = document.createElement('button');
+        x.className = 'is-clear'; x.textContent = '\u00d7'; x.title = 'Remove image';
+        x.onclick = e => { e.stopPropagation(); localStorage.removeItem(key); img.remove(); x.remove(); tryStaticSrc(); };
+        this.appendChild(x);
+      }
+    };
+    const tryStaticSrc = () => { const src = this.getAttribute('src'); if (src) show(src, false); };
+
+    const stored = localStorage.getItem(key);
+    if (stored) show(stored, true); else tryStaticSrc();
+
+    const accept = file => {
+      if (!file || !file.type.startsWith('image/')) return;
+      const r = new FileReader();
+      r.onload = () => {
+        try { localStorage.setItem(key, r.result); } catch (e) { /* too big for quota: show without persisting */ }
+        show(r.result, true);
+      };
+      r.readAsDataURL(file);
+    };
+    ph.addEventListener('click', () => input.click());
+    input.addEventListener('change', () => accept(input.files[0]));
+    this.addEventListener('dragover', e => { e.preventDefault(); this.classList.add('is-over'); });
+    this.addEventListener('dragleave', () => this.classList.remove('is-over'));
+    this.addEventListener('drop', e => {
+      e.preventDefault(); this.classList.remove('is-over');
+      accept(e.dataTransfer.files[0]);
+    });
+  }
+}
+customElements.define('image-slot', ImageSlot);
+
+// ---- render prompts (front / side / interior) + copy buttons
+const prompts = {
+    front: "Use the attached line render as a strict structure reference and keep its exact proportions. Photorealistic architectural photography, contemporary rebuilt Flemish barn in rural Belgium. Exact dimensions: building 7.5m wide, gable eaves at 3.2m, ridge at 5.2m, 45-degree roof pitch. Fully glazed gable end 7.0m wide x 4.9m high: transom at 3.0m, triangular clerestory above following the roofline, slim dark anodised aluminium mullions (50mm), two lift-slide glass doors at centre. Steep terracotta tile roof, reclaimed red-brown brick walls, flush natural stone terrace, trimmed square yew hedge cubes left and right, honey locust tree, view from the lawn at golden hour, 35mm lens, ultra realistic, high detail",
+    side: "Use the attached line render as a strict structure reference and keep its exact proportions. Photorealistic architectural photography, long garden elevation of a contemporary rebuilt Flemish barn in rural Belgium. Exact dimensions: 17.0m long, eaves at 3.2m, ridge at 5.2m, single storey. Reclaimed red-brown brick with visible coursing, steep terracotta tile roof, dark vertical timber cladding filling the old barn-door bay as the entrance (2.0m wide, centred), one large fixed window with slim dark frame each side, tall beech hedge and mature tree, rural Belgian farmland, overcast soft daylight, 35mm lens, ultra realistic",
+    interior: "Use the attached line render as a strict structure reference and keep its exact proportions and one-point perspective. Photorealistic interior photography, living hall of a rebuilt contemporary barn in rural Belgium. Exact dimensions: room 6.7m wide, ceiling open to the ridge at 5.2m, eaves line at 3.2m. Two exposed laminated timber portal frames, polished concrete floor with oak accents, dark oak kitchen island right with two black pendant lights, low grey sofa left, full-height triple-glazed gable wall ahead (transom at 3.0m, triangular clerestory above, slim dark mullions), view onto flat Flemish farmland and hedges, soft north light, minimalist Belgian design, ultra realistic, wide angle 24mm"
+};
+document.getElementById('prompt-front').textContent = prompts.front;
+document.getElementById('prompt-side').textContent = prompts.side;
+document.getElementById('prompt-interior').textContent = prompts.interior;
+document.querySelectorAll('[data-copy]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    navigator.clipboard.writeText(prompts[btn.dataset.copy]);
+    btn.textContent = 'copied \u2713';
+    clearTimeout(btn._t);
+    btn._t = setTimeout(() => { btn.textContent = 'copy prompt'; }, 1600);
+  });
+});
+
+// ---- drawing options
+document.getElementById('ctl-dims').addEventListener('change', e => {
+  document.querySelectorAll('[data-dim]').forEach(g => { g.style.display = e.target.checked ? 'inline' : 'none'; });
+});
+document.querySelectorAll('input[name="ctl-doors"]').forEach(r => {
+  r.addEventListener('change', () => {
+    document.querySelectorAll('[data-doors]').forEach(g => { g.style.display = g.dataset.doors === r.value ? 'inline' : 'none'; });
+  });
+});
+</script>
+</body>
+</html>
