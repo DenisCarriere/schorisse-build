@@ -30,6 +30,16 @@ every image is a drag-and-drop slot (drops persist in the browser via localStora
 prompts shown on the board. Regenerate or replace them by dropping any image onto
 the matching slot.
 
+## 3D model
+
+`models/` holds a starter massing model generated from the concept dimensions
+(section 09 of the board shows it in an interactive viewer):
+
+- `barn.stl` — building shell for **SketchUp Free** (import with units set to meters)
+- `barn.glb` — coloured glTF scene for Blender / three.js / AR
+
+Regenerate from source dimensions with `gen_model.py` (see git history).
+
 ## Site photos
 
 The original site photos are not in the repo — see [`uploads/README.md`](uploads/README.md)
