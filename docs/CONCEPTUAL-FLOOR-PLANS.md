@@ -1,119 +1,244 @@
 # Conceptual Floor Plans
 
-- Status: **pre-design spatial study**
+- Status: **spatial feasibility study — not permit-ready**
+- Revision: **02 — comfort and circulation layout**
 - External envelope: **17.0 × 7.5 m**
 - Levels shown: ground floor and partial upper mezzanine
-- Current sleeping brief: **one ground-floor master bedroom**
+- Sleeping brief: **one ground-floor master bedroom**
 
-These plans describe room relationships inside the selected Belgian Brick
-Lantern shell. They are not measured drawings, permit plans or construction
-documents. Wall thicknesses, room dimensions, areas, furniture, plumbing,
-structure and circulation require coordinated architectural design.
+These plans replace the first zoning diagrams. The revision treats the external
+dimensions as the outside of the thick wall shell, stacks the stair on both
+levels and reserves credible space for doors, wardrobes, sanitary fixtures,
+kitchen aisles, circulation and building services.
+
+They are still concept drawings. A measured survey, architect, structural
+engineer and building-services designer must replace every assumed dimension
+before planning or construction.
 
 ## Visual plans
 
-- [Ground-floor SVG](../renders/web/plan-ground-floor.svg)
-- [Upper-mezzanine SVG](../renders/web/plan-mezzanine.svg)
+- [Revised ground-floor SVG](../renders/web/plan-ground-floor.svg)
+- [Revised upper-mezzanine SVG](../renders/web/plan-mezzanine.svg)
 
-## Planning direction
+## Dimensional basis
 
-The building is organized from the private rear gable toward the valley-facing
-glass gable:
+| Item | Revision 02 assumption |
+|---|---:|
+| External envelope | 17.0 × 7.5 m |
+| Placeholder external wall build-up | 420 mm |
+| Approximate internal clear shell | 16.2 × 6.7 m |
+| Rear master zone | 4.8 m external length |
+| Central service and stair zone | 4.3 m external length |
+| Front open-living zone | 7.9 m external length |
+| Mezzanine floor | approximately +2.45 m |
+| Mezzanine extent | rear 9.1 m of the envelope |
 
-1. rear master-bedroom zone;
-2. bathroom, powder room, entrance, storage/technical and stair transition;
-3. open kitchen, dining and living hall;
-4. full clear front glass gable;
-5. open mezzanine above the rear private/service zone, overlooking the living
-   hall.
+The 420 mm wall is a planning placeholder within the previously identified
+35–45 cm ICF, insulation, cavity, brick and finish range. The actual proprietary
+system, reinforcement, cavity and inner finish may move every internal face.
 
-This current single-master arrangement supersedes the earlier two-bedroom
-diagram. It prioritizes a generous daily-living floor and keeps every essential
-residential function on the ground level.
+## Ground-floor planning sequence
 
-## Ground floor
+The daily route is deliberately simple:
 
-### Master bedroom
+1. enter from the retained cobbled courtyard through the smoked-oak portal;
+2. arrive in a roughly 1.2 m clear gallery with coats, shoe bench and utility
+   storage immediately available;
+3. turn rearward into the private master suite or forward into the open living
+   hall without crossing a bathroom or stair flight;
+4. continue along an unobstructed courtyard-side route to an operable leaf in
+   the valley glass gable.
 
-- one generous rear master bedroom;
-- concept allowance approximately 25–28 m² including full-height wardrobe space;
-- both rear/private-zone windows can serve the same room;
-- no bedroom is placed upstairs.
+The stair foot opens from the living/core boundary. It does not sit in the
+entrance door swing or interrupt the private bedroom route.
 
-### Main bathroom
+## Rear master suite
 
-- Italian-style walk-in shower with a continuous flush floor;
-- concept shower size approximately 1.2 × 1.8 m;
-- one fixed glass screen rather than an enclosed shower tray;
-- double vanity and bathroom storage;
-- final waterproofing, falls, drainage, ventilation and accessibility require
-  specialist design.
+The master occupies the full clear width of the rear zone.
+
+- approximate clear room shell before cabinetry: **4.3 × 6.6 m**;
+- 1.80 × 2.10 m bed centered on the solid rear wall;
+- more than 1 m of usable clearance at the bed sides and foot;
+- approximately 3.7 m total of 600–650 mm-deep full-height wardrobes on the
+  core wall;
+- two modest shared-lane windows and one courtyard-side window provide daylight
+  and potential cross-ventilation without putting glazing behind the headboard;
+- a solid-core hinged master door opens into the bedroom against a blank wall,
+  keeping the bed out of the entrance sightline;
+- the master connects directly to the entry gallery and never requires passage
+  through the bathroom.
+
+### Private main bathroom
+
+The only full bathroom is a roughly 2.1 × 3.6 m master ensuite. This keeps wet
+functions private while the separate powder room serves visitors.
+
+- 1.20 × 1.80 m threshold-free Italian shower;
+- fixed glass screen with a generous open entrance rather than a small hinged
+  shower door;
+- approximately 1.4 m vanity;
+- wall-hung WC;
+- linen tower;
+- pocket door in a dry, non-plumbed wall so no door leaf collides with the
+  vanity or a person using the room;
+- mechanical extract routed through the central service spine.
+
+Final falls, waterproofing, drainage, grab-wall backing, ventilation and pocket
+door acoustic performance require specialist design.
+
+## Entrance and service core
+
+### Courtyard entrance
+
+- nominal 1.0 m entrance leaf, targeting approximately 0.9 m clear passage;
+- flush transition coordinated with the retained cobbles and drainage;
+- inward swing parks against a clear wall rather than the coat storage;
+- gallery widens around the entrance and maintains an approximately 1.2 m
+  route toward the living room.
+
+These are adaptable-living comfort targets, not a claim that a specific private
+dwelling accessibility rule applies.
 
 ### Powder room
 
-The powder room contains only:
+The approximately 1.35 × 1.9 m powder room contains only:
 
-- one toilet;
-- one compact hand-washing sink.
+- one wall-hung toilet;
+- one compact hand-washing basin.
 
-It remains separate from the main bathroom and close to the courtyard entrance
-and living space.
+An acoustic pocket door removes the earlier door/toilet collision and avoids
+blocking the entrance gallery. A future fully wheelchair-accessible WC would
+need a larger study.
 
-### Entrance and service transition
+### Storage, laundry and plant
 
-- smoked-oak courtyard entrance in the deep timber-lined portal;
-- coat storage and technical/laundry provision near the entrance;
-- direct sightline from the entry toward the glass gable;
-- stair placed beside the tall shared-lane window.
+- full-height coat cupboard beside the entrance;
+- built-in shoe bench;
+- separate approximately 1.55 × 1.9 m laundry/plant cupboard with stacked
+  appliances, ventilation equipment and service access;
+- additional usable volume below the lower stair flight;
+- kitchen pantry, refrigerator and ovens grouped in a tall bank at the
+  service/living boundary.
 
-### Kitchen and open living space
+Actual heat-pump, hot-water, electrical, ventilation and utility equipment may
+require a larger or externally accessed plant space.
 
-- kitchen along the shared-lane wall with the large picture window above the
-  worktop;
-- central island for preparation and informal seating;
-- dining between kitchen and living zones;
-- living area remains open to the roof and full glass gable;
-- no partition separates kitchen, dining and living.
+## Stair
 
-The diagram divides the 17 m length into approximately 5.0 m private, 3.4 m
-service/entry and 8.6 m open-living bands. These are planning proportions rather
-than construction dimensions.
+The symbolic stair in Revision 01 did not stack and arrived under the low eaves.
+Revision 02 uses one U-shaped stair in the central core:
+
+- two approximately 0.95–1.0 m clear parallel flights;
+- concept basis of 14 risers to an approximately +2.45 m mezzanine floor;
+- full half-landing pulled toward the tall shared-lane window;
+- upper flight returns toward a roughly 1.1 m landing on the roof ridge;
+- no bathroom, cupboard or entrance door swings across either landing;
+- stair opening and mezzanine void receive continuous guards.
+
+Rise, going, nosings, handrails, guard height, headroom, fire protection and the
+exact opening must be developed as one coordinated section by the architect and
+engineer.
+
+## Kitchen, dining and living hall
+
+The open front zone is approximately **7.4 × 6.6 m clear**, or about 49 m² before
+fixed cabinetry.
+
+### Kitchen
+
+- 4 m low counter run on the shared-lane wall;
+- sink centered below the large picture window;
+- hob and preparation surface remain clear of the glazing;
+- refrigerator, ovens and pantry in the tall core-side bank;
+- approximately 3.0 × 1.0 m island;
+- approximately 1.1 m working aisle between counter and island;
+- seating faces the dining/living side rather than the working aisle.
+
+### Dining and living
+
+- table sized for six to eight people in the brighter lane-side half;
+- living furniture sits perpendicular to the glass gable so no sofa forms a
+  barrier across the view or doors;
+- low furniture preserves the full-height gable composition;
+- approximately 1.2 m continuous route stays clear along the courtyard side to
+  the operable lift-slide leaf;
+- the fixed and operable glass panels must be resolved in the façade and
+  threshold package rather than drawn as one uninterrupted fixed wall.
 
 ## Upper mezzanine
 
-The mezzanine is one completely open-concept room. It can combine:
+The rear and core zones support one completely open room. There is no upstairs
+bathroom, toilet, sink, kitchenette, wet bar, bedroom wall or enclosed corridor.
 
-- lounge and reading space;
-- library shelving;
-- studio, work or project table;
-- low-eaves benches and built-in storage.
+- approximately 56 m² gross deck;
+- approximately 51 m² after the stair opening;
+- guarded open edge overlooking the double-height living hall;
+- guarded stair opening and a proper top landing;
+- broad rear triangular gable window kept clear of tall shelving;
+- seated work/project table near the ridge;
+- low lounge furniture in the transition-height zone;
+- 700–900 mm-deep storage, library shelves, benches and drawers at the low
+  eaves;
+- an unfurnished central route from the stair landing toward the rear window.
 
-There is **no plumbing upstairs**: no bathroom, toilet, sink, kitchenette or wet
-bar. The mezzanine uses the broad triangular rear gable window and overlooks the
-double-height living hall across a guarded open edge.
-
-The concept shows approximately 52 m² of gross deck. The fixed 3.2 m eaves,
-5.2 m ridge and approximately 28.1° roof mean only a narrower central band will
-have comfortable standing height. Surveyed roof build-up, usable-area rules,
-structure, stair headroom, guards and fire strategy may reduce or reshape the
-deck.
+The net deck is not the same as comfortable standing area. The revised drawing
+shows indicative headroom bands instead of presenting the whole floor as an
+ordinary second storey. With the fixed shallow roof, only the narrow ridge band
+may provide about 2 m or more after the floor and roof build-ups. The surveyed
+section may reduce this further.
 
 ## Exterior-opening alignment
 
-The plans preserve the current elevation logic:
+The revised plan keeps the elevation logic legible:
 
-- two rear-zone windows serve the single master bedroom;
-- one tall shared-lane window lights the stair;
-- one larger shared-lane picture window serves the kitchen/open living zone;
-- the broad rear triangular window serves the mezzanine;
+- two modest lane-side windows and one courtyard-side window serve the master;
+- the rear ground-floor wall remains solid behind the bed;
+- the tall shared-lane slot lights the stair half-landing;
+- the large shared-lane picture window sits over the kitchen worktop;
+- the courtyard entrance remains inside the service core;
+- one courtyard-side opening lights the dining/living zone;
+- the broad rear triangular window serves only the open mezzanine;
 - the full front glass gable serves the double-height living hall.
+
+No door or projecting element is added to the shared tractor lane.
+
+## Building-performance logic applied
+
+- Habitable dry rooms remain against exterior walls for daylight and supply
+  ventilation; bathroom, powder and plant functions use the internal core.
+- The ventilation path should run from supply in the master and living room,
+  through circulation transfer, to extract in the kitchen, ensuite, powder and
+  utility spaces.
+- The bedroom has a short, direct route to the courtyard exit that does not pass
+  through the kitchen.
+- Smoke detection should be reserved at the ground-floor hall/stair route and
+  on the mezzanine level; the open stair and living hall must be reviewed as a
+  connected smoke volume.
+- Level thresholds, generous circulation and the flush shower are treated as
+  comfort and future-adaptability choices.
+
+## Current official references
+
+These sources inform the concept but do not replace project-specific advice:
+
+- [Wonen in Vlaanderen: natural-light assessment](https://vlok.vlaanderen.be/woningkwaliteitsnormen/Topics/21_LICHT.htm)
+- [Flemish ventilation overview](https://www.vlaanderen.be/bouwen-wonen-en-energie/veilig-gezond-en-kwaliteitsvol-wonen/verluchting-en-ventilatie)
+- [VEKA residential ventilation design flows](https://www.vlaanderen.be/epb-pedia/technieken/ventilatie/hygienische-ventilatie/hygienische-ventilatie-nieuwbouw-en-ier-residentieel/minimaal-geeiste-ontwerpdebiet-residentieel)
+- [Wonen in Vlaanderen: floor-area and mezzanine parameters](https://vlok.vlaanderen.be/woningkwaliteitsnormen/Topics/1_PARAMETERS.htm)
+- [Flemish smoke-detector guidance](https://www.vlaanderen.be/bouwen-wonen-en-energie/veilig-gezond-en-kwaliteitsvol-wonen/woningkwaliteitsnormen/rookmelders)
+- [Inter: door design recommendations](https://www.toegankelijkgebouw.be/Handboek/Toegangen/Deuren/tabid/253/Default.aspx)
+- [Inter: threshold-free shower guidance](https://www.toegankelijkgebouw.be/Home/Sanitair/Douche/tabid/258/Default.aspx)
+- [Flemish renovation, permit and architect guidance](https://www.vlaanderen.be/omgevingsvergunning/stedenbouwkundige-handelingen/renoveren)
 
 ## Required professional checks
 
-1. Measured survey, boundaries, levels and actual internal clear dimensions.
-2. ICF and brick wall build-up, reinforced openings and structural grid.
-3. Stair width, rise, going, headroom, landing and guarding.
-4. Accessible entrance, internal circulation and shower falls.
-5. Bathroom drainage, ventilation, waterproofing and service routes.
-6. Fire separation, detection, escape and the open mezzanine relationship.
-7. Furniture clearances, daylight, privacy and opening ventilation.
+1. Measured survey, levels, orientation and actual internal clear dimensions.
+2. ICF, brick, cavity and inner-finish build-up at every wall and opening.
+3. Master furniture and wardrobe clearances at full architectural scale.
+4. Door clear widths, hardware, pocket cavities and acoustic separation.
+5. Stair rise, going, landings, headroom, handrails and guards in section.
+6. Mezzanine structure, vibration, usable headroom and loading.
+7. Accessible threshold and Italian-shower drainage/waterproofing.
+8. Ventilation flows, transfer paths, kitchen extract and plant clearances.
+9. Fire detection, escape and the open mezzanine/living-room relationship.
+10. Permit, change-of-use, EPB and any local or heritage constraints.

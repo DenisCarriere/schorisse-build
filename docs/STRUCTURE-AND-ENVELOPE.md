@@ -95,13 +95,16 @@ the actual orientation before overheating and heat-loss conclusions are made.
 
 ## Partial loft structure
 
-The open mezzanine sits over approximately 7–8.5 m of the rear master-bedroom
-and service core.
+The revised open mezzanine sits over the rear 9.1 m of the external envelope,
+covering the master-bedroom and service core. The diagram shows approximately
+56 m² gross deck and approximately 51 m² after the stair opening; neither figure
+is a verified usable-area calculation.
 
 - concept floor level: +2.40–2.45 m;
 - central zone uses the available ridge height;
 - low edges are non-standing storage/seating zones;
-- stair approaches the loft near the ridge;
+- a U-shaped stair brings its half-landing to the tall lane window and returns
+  its upper flight to a guarded landing at the ridge;
 - front living hall remains open to the ridge.
 
 The loft must be coordinated with portal spacing and should not introduce new

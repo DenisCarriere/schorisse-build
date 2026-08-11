@@ -1,95 +1,110 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1400" height="850" viewBox="0 0 1400 850" role="img" aria-labelledby="title desc">
-  <title id="title">Conceptual upper mezzanine plan for the Belgian Brick Lantern</title>
-  <desc id="desc">An open mezzanine lounge, library and studio above the private rear ground-floor zone, with no plumbing upstairs and a guard overlooking the double-height kitchen and living room.</desc>
+  <title id="title">Revised conceptual open-mezzanine plan for the Belgian Brick Lantern</title>
+  <desc id="desc">A fully open rear mezzanine with no plumbing, a correctly stacked dog-leg stair arriving at the ridge, a protected landing, continuous guards, honest headroom bands, low-eaves storage and an unobstructed rear triangular window.</desc>
   <defs>
-    <pattern id="timber" width="22" height="22" patternUnits="userSpaceOnUse">
-      <path d="M0 5H22M0 15H22" fill="none" stroke="#c5b6a2" stroke-width="1" opacity=".65"/>
+    <pattern id="timber" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M0 5H20M0 14H20" fill="none" stroke="#c1b29f" stroke-width="1" opacity=".6"/>
     </pattern>
-    <pattern id="hatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-      <path d="M0 0V12" stroke="#c7c1b6" stroke-width="3"/>
+    <pattern id="lowhatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <path d="M0 0V12" fill="none" stroke="#bbb4a8" stroke-width="4"/>
+    </pattern>
+    <pattern id="transitionhatch" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <path d="M0 0V14" fill="none" stroke="#d4cbbb" stroke-width="2"/>
     </pattern>
     <style>
-      .bg{fill:#f4f0e7}.shell{fill:#ece8df;stroke:#1f1d19;stroke-width:24}.deck{fill:url(#timber);stroke:#38342e;stroke-width:4}.void{fill:#e2e7de;stroke:#9b968d;stroke-width:3;stroke-dasharray:12 10}.low{fill:url(#hatch);opacity:.75}.guard{stroke:#1f1d19;stroke-width:8}.rail{stroke:#1f1d19;stroke-width:2}.window{stroke:#386773;stroke-width:14}.glass{stroke:#386773;stroke-width:18}.fixture{fill:none;stroke:#514c44;stroke-width:3}.furniture{fill:#d0c0aa;stroke:#514c44;stroke-width:3}.furniture-dark{fill:#625b51;stroke:#34312c;stroke-width:3}.dim{fill:none;stroke:#777168;stroke-width:1.5}.tick{stroke:#777168;stroke-width:1.5}.label{font:700 18px Arial,sans-serif;letter-spacing:1.2px;fill:#211f1b}.sub{font:14px Arial,sans-serif;fill:#686158}.small{font:12px Arial,sans-serif;fill:#686158}.micro{font:700 10px Arial,sans-serif;letter-spacing:1px;fill:#8e4e2f}.dimension{font:13px Arial,sans-serif;fill:#686158}.title{font:700 34px Arial,sans-serif;fill:#1d1b18}.kicker{font:700 12px Arial,sans-serif;letter-spacing:2px;fill:#b4522e}.note{font:13px Arial,sans-serif;fill:#4f4a43}.pill{fill:#1f1d19}.pilltext{font:700 12px Arial,sans-serif;letter-spacing:1.2px;fill:#fff}.arrow{fill:none;stroke:#b4522e;stroke-width:2.5;marker-end:url(#arrow)}
+      .bg{fill:#f4f0e7}.shell{fill:#211f1b}.deck{fill:#eee6d8}.grain{fill:url(#timber)}.void{fill:#e2e7de;stroke:#9b968d;stroke-width:3;stroke-dasharray:12 10}.low{fill:url(#lowhatch);opacity:.72}.transition{fill:url(#transitionhatch);opacity:.72}.standing{fill:#e5dccd;opacity:.82}.guard{fill:none;stroke:#211f1b;stroke-width:8}.rail{stroke:#211f1b;stroke-width:2}.window{stroke:#386773;stroke-width:16}.glass{stroke:#386773;stroke-width:19}.fixture{fill:none;stroke:#514c44;stroke-width:3}.furniture{fill:#d0c0aa;stroke:#514c44;stroke-width:3}.cabinet{fill:#625b51;stroke:#34312c;stroke-width:3}.dim{fill:none;stroke:#777168;stroke-width:1.5}.tick{stroke:#777168;stroke-width:1.5}.label{font:700 17px Arial,sans-serif;letter-spacing:1px;fill:#211f1b}.sub{font:14px Arial,sans-serif;fill:#686158}.small{font:12px Arial,sans-serif;fill:#686158}.micro{font:700 10px Arial,sans-serif;letter-spacing:.9px;fill:#9a472a}.dimension{font:13px Arial,sans-serif;fill:#686158}.title{font:700 32px Arial,sans-serif;fill:#1d1b18}.kicker{font:700 12px Arial,sans-serif;letter-spacing:2px;fill:#b4522e}.note{font:12px Arial,sans-serif;fill:#4f4a43}.pill{fill:#211f1b}.pilltext{font:700 11px Arial,sans-serif;letter-spacing:1px;fill:#fff}.arrow{fill:none;stroke:#b4522e;stroke-width:2.5;marker-end:url(#arrow)}
     </style>
     <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#b4522e"/></marker>
   </defs>
 
   <rect class="bg" width="1400" height="850"/>
-  <text class="kicker" x="76" y="62">CONCEPT PLAN · OPTION 01</text>
-  <text class="title" x="76" y="105">Upper mezzanine — one completely open room</text>
-  <text class="sub" x="76" y="132">Open lounge · library · studio · no bathroom, sink or kitchen upstairs</text>
-  <rect class="pill" x="1030" y="72" width="274" height="42" rx="21"/>
-  <text class="pilltext" x="1167" y="98" text-anchor="middle">NO PLUMBING UPSTAIRS</text>
+  <text class="kicker" x="76" y="58">REVISED SPATIAL STUDY · REV 02</text>
+  <text class="title" x="76" y="98">Upper mezzanine — one open room, honest headroom</text>
+  <text class="sub" x="76" y="126">Stair and standing uses align with the ridge · low eaves become fitted storage and seated space</text>
+  <rect class="pill" x="1052" y="72" width="250" height="38" rx="19"/>
+  <text class="pilltext" x="1177" y="96" text-anchor="middle">NO PLUMBING · NO BEDROOM WALLS</text>
 
-  <!-- dimensions -->
-  <path class="dim" d="M120 175V150M1240 175V150M120 158H1240"/>
-  <path class="tick" d="M120 151V165M1240 151V165"/>
-  <text class="dimension" x="680" y="153" text-anchor="middle">17.0 m EXTERNAL ENVELOPE</text>
+  <!-- overall dimensions and orientation -->
+  <path class="dim" d="M120 174V148M1240 174V148M120 157H1240"/>
+  <path class="tick" d="M120 150V164M1240 150V164"/>
+  <text class="dimension" x="680" y="151" text-anchor="middle">17.0 m EXTERNAL ENVELOPE</text>
   <path class="dim" d="M88 185H58M88 679H58M66 185V679"/>
   <path class="tick" d="M59 185H73M59 679H73"/>
   <text class="dimension" x="44" y="432" text-anchor="middle" transform="rotate(-90 44 432)">7.5 m EXTERNAL</text>
+  <text class="micro" x="142" y="176">REAR GABLE / TRIANGULAR WINDOW</text>
+  <text class="micro" x="1218" y="176" text-anchor="end">VALLEY / FULL GLASS GABLE</text>
+  <text class="micro" x="680" y="176" text-anchor="middle">SHARED TRACTOR LANE</text>
 
-  <text class="micro" x="142" y="171">REAR GABLE / LOFT WINDOW</text>
-  <text class="micro" x="1217" y="171" text-anchor="end">VALLEY / GLASS GABLE</text>
-  <text class="micro" x="680" y="171" text-anchor="middle">SHARED TRACTOR LANE</text>
-
-  <!-- whole envelope and mezzanine deck -->
+  <!-- exact thick shell, open deck and front void -->
   <rect class="shell" x="120" y="185" width="1120" height="494"/>
-  <rect class="deck" x="132" y="197" width="550" height="470"/>
-  <rect class="void" x="682" y="197" width="546" height="470"/>
-  <rect class="low" x="144" y="209" width="526" height="66"/>
-  <rect class="low" x="144" y="589" width="526" height="66"/>
+  <rect class="deck" x="148" y="213" width="568" height="438"/>
+  <rect class="grain" x="148" y="213" width="568" height="438"/>
+  <rect class="void" x="724" y="213" width="488" height="438"/>
 
-  <!-- rear loft window, front glass and guard -->
-  <path class="window" d="M120 264V600"/>
+  <!-- roof headroom zones derived from the fixed shallow roof -->
+  <rect class="low" x="148" y="213" width="568" height="101"/>
+  <rect class="transition" x="148" y="314" width="568" height="67"/>
+  <rect class="standing" x="148" y="381" width="568" height="102"/>
+  <rect class="transition" x="148" y="483" width="568" height="67"/>
+  <rect class="low" x="148" y="550" width="568" height="101"/>
+  <path class="dim" d="M730 314H748M730 381H748M730 483H748M730 550H748"/>
+  <text class="micro" x="760" y="270">LOW EAVES · &lt;≈1.5 m</text>
+  <text class="micro" x="760" y="351">TRANSITION · ≈1.5–2.0 m</text>
+  <text class="micro" x="760" y="437">RIDGE BAND · ≈2.0 m OR MORE</text>
+  <text class="micro" x="760" y="522">TRANSITION · ≈1.5–2.0 m</text>
+  <text class="micro" x="760" y="603">LOW EAVES · &lt;≈1.5 m</text>
+
+  <!-- rear loft glass and front glazing -->
+  <path class="window" d="M120 319V545"/>
   <path class="glass" d="M1240 213V651"/>
-  <path class="guard" d="M682 197V667"/>
-  <path class="rail" d="M666 210H698M666 244H698M666 278H698M666 312H698M666 346H698M666 380H698M666 414H698M666 448H698M666 482H698M666 516H698M666 550H698M666 584H698M666 618H698M666 652H698"/>
+  <path class="arrow" d="M236 707L138 548"/>
+  <text class="micro" x="244" y="708">TRIANGULAR REAR WINDOW KEPT CLEAR · LOW-SILL GUARD TO BE DESIGNED</text>
 
-  <!-- stair opening -->
-  <rect x="535" y="209" width="135" height="126" fill="#f4f0e7" stroke="#514c44" stroke-width="3"/>
-  <path class="fixture" d="M546 221V322M566 221V322M586 221V322M606 221V322M626 221V322M646 221V322"/>
-  <path class="arrow" d="M650 311H548"/>
-  <text class="micro" x="602" y="356" text-anchor="middle">STAIR ARRIVAL</text>
+  <!-- dog-leg stair opening exactly stacks with ground floor -->
+  <rect x="586" y="240" width="124" height="198" fill="#f4f0e7" stroke="#514c44" stroke-width="4"/>
+  <rect x="586" y="240" width="124" height="66" fill="#c8bdad" stroke="#514c44" stroke-width="3"/>
+  <path class="fixture" d="M648 314V428M666 314V428M684 314V428M702 314V428M594 314V428M612 314V428M630 314V428"/>
+  <path class="fixture" d="M648 306V438"/>
+  <path class="arrow" d="M638 317V420"/>
+  <rect x="586" y="438" width="124" height="72" fill="#e5dccd" stroke="#514c44" stroke-width="3"/>
+  <text class="micro" x="648" y="470" text-anchor="middle">1.1 m TOP LANDING</text>
+  <text class="small" x="648" y="490" text-anchor="middle">arrival at ridge</text>
 
-  <!-- open studio furniture -->
-  <rect class="furniture-dark" x="166" y="292" width="34" height="242" rx="2"/>
-  <path class="fixture" d="M174 310H192M174 338H192M174 366H192M174 394H192M174 422H192M174 450H192M174 478H192M174 506H192"/>
-  <text class="micro" x="183" y="558" text-anchor="middle" transform="rotate(-90 183 558)" style="fill:#f4f0e7">FULL-HEIGHT LIBRARY AT GABLE</text>
+  <!-- full guard to void and stair returns -->
+  <path class="guard" d="M720 213V651"/>
+  <path class="rail" d="M704 226H736M704 258H736M704 290H736M704 322H736M704 354H736M704 386H736M704 418H736M704 450H736M704 482H736M704 514H736M704 546H736M704 578H736M704 610H736M704 638H736"/>
+  <path class="guard" d="M582 236H714V438M582 236V438"/>
 
-  <rect class="furniture" x="252" y="332" width="180" height="72" rx="26"/>
-  <rect class="furniture" x="268" y="450" width="105" height="54" rx="18"/>
-  <rect class="furniture" x="392" y="446" width="62" height="62" rx="20"/>
-  <rect class="furniture-dark" x="326" y="420" width="86" height="42" rx="16"/>
-  <text class="micro" x="347" y="528" text-anchor="middle">LOUNGE / READING</text>
+  <!-- low-eaves fitted uses -->
+  <rect class="cabinet" x="225" y="232" width="305" height="42" rx="3"/>
+  <text class="small" x="377" y="258" text-anchor="middle" style="fill:#f4f0e7">700–900 mm DEEP LOW STORAGE / LIBRARY</text>
+  <rect class="cabinet" x="210" y="586" width="330" height="42" rx="3"/>
+  <text class="small" x="375" y="612" text-anchor="middle" style="fill:#f4f0e7">LOW BENCH · DRAWERS · MEDIA STORAGE</text>
 
-  <rect class="furniture" x="472" y="397" width="150" height="64" rx="8"/>
-  <circle class="furniture" cx="495" cy="378" r="15"/><circle class="furniture" cx="548" cy="378" r="15"/><circle class="furniture" cx="600" cy="378" r="15"/>
-  <circle class="furniture" cx="495" cy="480" r="15"/><circle class="furniture" cx="548" cy="480" r="15"/><circle class="furniture" cx="600" cy="480" r="15"/>
-  <text class="micro" x="548" y="521" text-anchor="middle">WORK / PROJECT TABLE</text>
+  <!-- open lounge and work zone; the ridge circulation stays unfurnished -->
+  <rect class="furniture" x="222" y="494" width="154" height="48" rx="20"/>
+  <rect class="furniture" x="238" y="551" width="70" height="30" rx="14"/>
+  <rect class="furniture" x="330" y="551" width="58" height="30" rx="14"/>
+  <rect class="cabinet" x="289" y="540" width="76" height="32" rx="14"/>
+  <text class="micro" x="304" y="487" text-anchor="middle">LOW LOUNGE / READING</text>
 
-  <!-- low eaves uses -->
-  <rect class="furniture-dark" x="220" y="224" width="270" height="32" rx="3"/>
-  <rect class="furniture-dark" x="220" y="608" width="340" height="30" rx="3"/>
-  <text class="small" x="355" y="247" text-anchor="middle" style="fill:#f4f0e7">LOW-EAVES STORAGE</text>
-  <text class="small" x="390" y="630" text-anchor="middle" style="fill:#f4f0e7">BUILT-IN BENCH + STORAGE</text>
+  <rect class="furniture" x="375" y="320" width="130" height="54" rx="8"/>
+  <circle class="furniture" cx="398" cy="305" r="13"/><circle class="furniture" cx="440" cy="305" r="13"/><circle class="furniture" cx="482" cy="305" r="13"/>
+  <circle class="furniture" cx="398" cy="389" r="13"/><circle class="furniture" cx="440" cy="389" r="13"/><circle class="furniture" cx="482" cy="389" r="13"/>
+  <text class="micro" x="440" y="408" text-anchor="middle">SEATED WORK / PROJECT TABLE</text>
+  <path class="arrow" d="M560 454H405H185"/>
+  <text class="micro" x="350" y="444" text-anchor="middle">UNFURNISHED RIDGE CIRCULATION</text>
 
-  <!-- open to below -->
-  <text class="label" x="954" y="396" text-anchor="middle">OPEN TO BELOW</text>
-  <text class="sub" x="954" y="425" text-anchor="middle">double-height kitchen · dining · living</text>
-  <text class="small" x="954" y="451" text-anchor="middle">guarded mezzanine edge</text>
-  <path class="arrow" d="M1088 490H1206"/>
-  <text class="micro" x="1090" y="516">VIEW THROUGH FRONT GLASS GABLE</text>
+  <!-- open void and visual connection -->
+  <text class="label" x="968" y="340" text-anchor="middle">OPEN TO BELOW</text>
+  <text class="sub" x="968" y="368" text-anchor="middle">double-height kitchen · dining · living</text>
+  <text class="small" x="968" y="394" text-anchor="middle">continuous guard · one shared smoke volume</text>
+  <path class="arrow" d="M1070 486H1186"/>
+  <text class="micro" x="1072" y="510">VIEW THROUGH FRONT GLASS GABLE</text>
 
-  <!-- gable callout and area note -->
-  <path class="arrow" d="M222 721L137 611"/>
-  <text class="micro" x="232" y="720">BROAD TRIANGULAR LOFT WINDOW ABOVE REAR GABLE</text>
-  <text class="label" x="407" y="573" text-anchor="middle">OPEN-CONCEPT MEZZANINE</text>
-  <text class="sub" x="407" y="594" text-anchor="middle">approximately 52 m² gross deck</text>
-
-  <!-- floor length segmentation -->
-  <path class="dim" d="M120 770V746M682 770V746M1240 770V746M120 758H1240"/>
-  <text class="dimension" x="401" y="790" text-anchor="middle">APPROX. 8.5 m MEZZANINE ZONE</text>
-  <text class="dimension" x="961" y="790" text-anchor="middle">APPROX. 8.5 m DOUBLE-HEIGHT VOID</text>
-  <text class="note" x="76" y="824">Full deck is open, but the comfortable standing band is narrower under the 28.1° roof. Verify structure, headroom, guard, stair and fire strategy.</text>
+  <!-- length segmentation and caution -->
+  <path class="dim" d="M120 770V747M720 770V747M1240 770V747M120 758H1240"/>
+  <text class="dimension" x="420" y="790" text-anchor="middle">9.1 m MEZZANINE · ≈51 m² NET AFTER STAIR</text>
+  <text class="dimension" x="980" y="790" text-anchor="middle">7.9 m DOUBLE-HEIGHT LIVING VOID</text>
+  <text class="note" x="76" y="827">Headroom bands are indicative and deliberately conservative. Architect must verify the surveyed roof profile, floor and roof build-ups, stair, landing, guards, low glazing, usable area and fire strategy.</text>
 </svg>
