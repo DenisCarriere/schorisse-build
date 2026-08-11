@@ -68,7 +68,7 @@ windows on the exterior.
 
 ```mermaid
 flowchart LR
-    A[Rear / courtyard end<br/>Master bedroom + wardrobes] --> B[Middle transition<br/>Bath + powder + technical + entry + stair]
+    A[Rear / courtyard end<br/>Master bedroom + wardrobes] --> B[Middle transition<br/>Ensuite + powder + laundry/plant + entry + U-stair]
     B --> C[Front / valley end<br/>Double-height living + dining + kitchen]
     C --> D[Full glass gable<br/>Terrace + valley outlook]
     E[Open mezzanine<br/>above rear private core] -. overlooks .-> C
@@ -78,9 +78,9 @@ flowchart LR
 
 | Zone | Concept use |
 |---|---|
-| Rear private zone | One master bedroom, approximately 25–28 m² including full-height wardrobe space |
-| Middle service zone | Bathroom with Italian walk-in shower, separate toilet-and-sink powder room, technical/storage space, courtyard entrance and stair |
-| Front living zone | Approximately 60 m² open living, dining and kitchen space |
+| Rear private zone | 4.8 m external zone with one approximately 4.3 × 6.6 m clear master bedroom and 3.7 m of full-height wardrobes |
+| Middle service zone | 4.3 m external zone with private ensuite, separate toilet-and-sink powder room, laundry/plant, courtyard entrance and ridge-arriving U-stair |
+| Front living zone | 7.9 m external zone; approximately 49 m² clear open living, dining and kitchen space before cabinetry |
 | Valley end | Full-height glazed gable with one or two lift-slide door leaves |
 
 Core daily living remains on the ground floor. The mezzanine is extra living
@@ -151,22 +151,26 @@ The interior concept follows the same opening order as the exterior elevations.
 Looking from the front glass gable toward the rear loft, the larger lane-facing
 living window sits above the kitchen worktop, the tall stair window lights the
 stair, and the broad triangular rear gable window forms the outlook behind the
-loft lounge. The two rear bedroom windows both serve the single enclosed master
-suite beneath the loft and therefore do not open into the living hall.
+loft lounge. Two modest lane-side windows and one courtyard-side window serve
+the single enclosed master suite beneath the loft. The ground-floor rear gable
+stays solid behind the bed.
 
 ## Partial open mezzanine
 
 The loft is a compact rear mezzanine, not a full second storey.
 
-- concept length: approximately 7–8.5 m over the master/service zone;
-- front 8.5–10 m remains double-height;
+- concept extent: rear 9.1 m of the external envelope over the master/service
+  zone, approximately 51 m² net after the stair opening;
+- front 7.9 m remains double-height;
 - concept loft floor: approximately +2.40–2.45 m;
-- stair rises near the ridge at the transition;
+- a U-shaped stair uses the tall lane window at its half-landing and returns to
+  a guarded upper landing at the ridge;
 - low-eaves edges become storage, shelving and seating;
 - the rear triangular gable window brings daylight and an outlook directly into
   the loft without extending glazing down into the master bedroom;
-- preliminary comfortable standing area: approximately 10–18 m² after allowing
-  for structure and insulation.
+- only a narrow central band is expected to provide approximately 2 m or more
+  headroom after the floor and roof build-ups; the final usable area must come
+  from a surveyed section.
 
 Inner roof geometry, clear heights, stair headroom, structure, guarding, fire
 strategy and permitting require measured design by the architect and engineer.

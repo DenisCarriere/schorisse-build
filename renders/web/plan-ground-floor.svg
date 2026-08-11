@@ -1,144 +1,173 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1400" height="850" viewBox="0 0 1400 850" role="img" aria-labelledby="title desc">
-  <title id="title">Conceptual ground-floor plan for the Belgian Brick Lantern</title>
-  <desc id="desc">A seventeen by seven point five metre barn plan with one master bedroom, bathroom with Italian walk-in shower, powder room, courtyard entrance, stair, kitchen, dining and open living area facing the glass gable.</desc>
+  <title id="title">Revised conceptual ground-floor plan for the Belgian Brick Lantern</title>
+  <desc id="desc">A scaled seventeen by seven point five metre barn plan with a thick ICF and brick shell, one rear master suite, Italian walk-in shower, separate powder room, courtyard entrance, laundry and plant storage, a ridge-arriving dog-leg stair, and an open kitchen, dining and living hall facing the glass gable.</desc>
   <defs>
-    <pattern id="tiles" width="18" height="18" patternUnits="userSpaceOnUse">
-      <path d="M18 0H0V18" fill="none" stroke="#b9b5ac" stroke-width="1"/>
+    <pattern id="tiles" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M16 0H0V16" fill="none" stroke="#b8b3a9" stroke-width="1"/>
     </pattern>
-    <pattern id="wood" width="20" height="20" patternUnits="userSpaceOnUse">
-      <path d="M0 4H20M0 12H20" fill="none" stroke="#c5b6a2" stroke-width="1" opacity=".6"/>
+    <pattern id="wood" width="18" height="18" patternUnits="userSpaceOnUse">
+      <path d="M0 5H18M0 13H18" fill="none" stroke="#bcae9b" stroke-width="1" opacity=".65"/>
     </pattern>
     <style>
-      .bg{fill:#f4f0e7}.wall{fill:none;stroke:#1f1d19;stroke-width:24;stroke-linejoin:miter}.partition{fill:none;stroke:#38342e;stroke-width:8}.window{stroke:#386773;stroke-width:12;stroke-linecap:square}.glass{stroke:#386773;stroke-width:18}.door{fill:none;stroke:#8e4e2f;stroke-width:3}.dim{fill:none;stroke:#777168;stroke-width:1.5}.tick{stroke:#777168;stroke-width:1.5}.zone-master{fill:#e8ded1}.zone-service{fill:#dedbd2}.zone-living{fill:#e2e7de}.fixture{fill:none;stroke:#514c44;stroke-width:3}.furniture{fill:#d0c0aa;stroke:#514c44;stroke-width:3}.furniture-dark{fill:#625b51;stroke:#34312c;stroke-width:3}.label{font:700 18px Arial,sans-serif;letter-spacing:1.2px;fill:#211f1b}.sub{font:14px Arial,sans-serif;fill:#686158}.small{font:12px Arial,sans-serif;fill:#686158}.micro{font:700 10px Arial,sans-serif;letter-spacing:1px;fill:#8e4e2f}.dimension{font:13px Arial,sans-serif;fill:#686158}.title{font:700 34px Arial,sans-serif;fill:#1d1b18}.kicker{font:700 12px Arial,sans-serif;letter-spacing:2px;fill:#b4522e}.note{font:13px Arial,sans-serif;fill:#4f4a43}.accent{fill:#b4522e}.white{fill:#fff}.arrow{fill:none;stroke:#b4522e;stroke-width:2.5;marker-end:url(#arrow)}
+      .bg{fill:#f4f0e7}.shell{fill:#211f1b}.master{fill:#e8ded1}.service{fill:#dedbd2}.living{fill:#e2e7de}.partition{fill:none;stroke:#39352f;stroke-width:8;stroke-linejoin:miter}.thinwall{fill:none;stroke:#514c44;stroke-width:4}.window{stroke:#386773;stroke-width:15;stroke-linecap:square}.glass{stroke:#386773;stroke-width:19}.door{fill:none;stroke:#a64d2d;stroke-width:3}.pocket{fill:none;stroke:#a64d2d;stroke-width:4}.route{fill:none;stroke:#b4522e;stroke-width:3;stroke-dasharray:10 8;marker-end:url(#arrow)}.dim{fill:none;stroke:#777168;stroke-width:1.5}.tick{stroke:#777168;stroke-width:1.5}.fixture{fill:none;stroke:#514c44;stroke-width:3}.furniture{fill:#d0c0aa;stroke:#514c44;stroke-width:3}.cabinet{fill:#625b51;stroke:#34312c;stroke-width:3}.label{font:700 17px Arial,sans-serif;letter-spacing:1px;fill:#211f1b}.sub{font:14px Arial,sans-serif;fill:#686158}.small{font:12px Arial,sans-serif;fill:#686158}.micro{font:700 10px Arial,sans-serif;letter-spacing:.9px;fill:#9a472a}.dimension{font:13px Arial,sans-serif;fill:#686158}.title{font:700 32px Arial,sans-serif;fill:#1d1b18}.kicker{font:700 12px Arial,sans-serif;letter-spacing:2px;fill:#b4522e}.note{font:12px Arial,sans-serif;fill:#4f4a43}.pill{fill:#211f1b}.pilltext{font:700 11px Arial,sans-serif;letter-spacing:1px;fill:#fff}.arrow{fill:none;stroke:#b4522e;stroke-width:2.5;marker-end:url(#arrow)}
     </style>
     <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#b4522e"/></marker>
   </defs>
 
   <rect class="bg" width="1400" height="850"/>
-  <text class="kicker" x="76" y="62">CONCEPT PLAN · OPTION 01</text>
-  <text class="title" x="76" y="105">Ground floor — daily living on one level</text>
-  <text class="sub" x="76" y="132">External envelope 17.0 × 7.5 m · diagrammatic only · room sizes to measured design</text>
+  <text class="kicker" x="76" y="58">REVISED SPATIAL STUDY · REV 02</text>
+  <text class="title" x="76" y="98">Ground floor — privacy, storage and clear circulation</text>
+  <text class="sub" x="76" y="126">Scaled from the 17.0 × 7.5 m external envelope · assumed 420 mm ICF / insulation / brick build-up</text>
+  <rect class="pill" x="1056" y="72" width="246" height="38" rx="19"/>
+  <text class="pilltext" x="1179" y="96" text-anchor="middle">ALL DAILY NEEDS ON ONE LEVEL</text>
 
-  <!-- overall dimensions -->
-  <path class="dim" d="M120 175V150M1240 175V150M120 158H1240"/>
-  <path class="tick" d="M120 151V165M1240 151V165"/>
-  <text class="dimension" x="680" y="153" text-anchor="middle">17.0 m EXTERNAL</text>
+  <!-- overall dimensions and orientation -->
+  <path class="dim" d="M120 174V148M1240 174V148M120 157H1240"/>
+  <path class="tick" d="M120 150V164M1240 150V164"/>
+  <text class="dimension" x="680" y="151" text-anchor="middle">17.0 m EXTERNAL</text>
   <path class="dim" d="M88 185H58M88 679H58M66 185V679"/>
   <path class="tick" d="M59 185H73M59 679H73"/>
   <text class="dimension" x="44" y="432" text-anchor="middle" transform="rotate(-90 44 432)">7.5 m EXTERNAL</text>
+  <text class="micro" x="142" y="176">REAR / PRIVATE GABLE</text>
+  <text class="micro" x="1218" y="176" text-anchor="end">VALLEY / FULL GLASS GABLE</text>
+  <text class="micro" x="680" y="176" text-anchor="middle">SHARED TRACTOR LANE</text>
 
-  <!-- orientation -->
-  <text class="micro" x="142" y="171">REAR / COURTYARD GABLE</text>
-  <text class="micro" x="1217" y="171" text-anchor="end">VALLEY / FULL GLASS GABLE</text>
-  <text class="micro" x="680" y="171" text-anchor="middle">SHARED TRACTOR LANE</text>
+  <!-- exact external shell and assumed clear interior -->
+  <rect class="shell" x="120" y="185" width="1120" height="494"/>
+  <rect class="master" x="148" y="213" width="284" height="438"/>
+  <rect class="service" x="440" y="213" width="276" height="438"/>
+  <rect class="living" x="716" y="213" width="496" height="438"/>
 
-  <!-- zone fills -->
-  <rect class="zone-master" x="132" y="197" width="318" height="470"/>
-  <rect class="zone-service" x="450" y="197" width="224" height="470"/>
-  <rect class="zone-living" x="674" y="197" width="554" height="470"/>
-
-  <!-- external and internal walls -->
-  <rect class="wall" x="120" y="185" width="1120" height="494"/>
-  <path class="partition" d="M450 197V408M450 492V667"/>
-  <path class="partition" d="M450 408H620M450 492H550M620 197V338M620 408V492M550 492V667"/>
-  <path class="partition" d="M450 568H550"/>
-
-  <!-- exterior windows: blue -->
-  <path class="window" d="M195 185H275M320 185H400"/>
-  <path class="window" d="M120 285V360M120 450V525"/>
-  <path class="window" d="M700 185H748"/>
-  <path class="window" d="M865 185H1045"/>
-  <path class="window" d="M255 679H345M755 679H835"/>
+  <!-- external openings; blue elements stay within the wall plane -->
+  <path class="window" d="M201 185H267M323 185H389"/>
+  <path class="window" d="M255 679H337"/>
+  <path class="window" d="M613 185H681"/>
+  <path class="window" d="M804 185H1014"/>
+  <path class="window" d="M835 679H931"/>
   <path class="glass" d="M1240 213V651"/>
 
-  <!-- courtyard entrance and internal doors -->
-  <rect x="585" y="661" width="74" height="22" fill="#7a5138"/>
-  <path class="door" d="M585 659V585A74 74 0 0 1 659 659"/>
-  <text class="micro" x="622" y="711" text-anchor="middle">OAK ENTRANCE</text>
-  <path class="door" d="M450 408H390A60 60 0 0 0 450 468"/>
-  <path class="door" d="M620 408V350A58 58 0 0 0 562 408"/>
-  <path class="door" d="M550 520H500A50 50 0 0 1 550 570"/>
+  <!-- master/core separation with two non-conflicting pocket openings -->
+  <rect x="432" y="380" width="8" height="64" fill="#e3ddd5"/>
+  <rect x="432" y="468" width="8" height="64" fill="#e3ddd5"/>
+  <path class="partition" d="M436 213V380M436 444V468M436 532V651"/>
+  <path class="pocket" d="M421 384V440M451 384V440M423 412H449"/>
+  <text class="micro" x="409" y="412" text-anchor="end">ENSUITE POCKET</text>
+  <path class="door" d="M436 472A60 60 0 0 0 376 532M436 532H376"/>
+  <text class="micro" x="409" y="500" text-anchor="end">MASTER DOOR</text>
 
-  <!-- master bedroom furniture -->
-  <rect x="190" y="296" width="185" height="235" rx="5" fill="url(#wood)" stroke="#514c44" stroke-width="3"/>
-  <rect class="furniture" x="205" y="312" width="73" height="42" rx="9"/>
-  <rect class="furniture" x="286" y="312" width="73" height="42" rx="9"/>
-  <path class="fixture" d="M282 356V516"/>
-  <rect class="furniture-dark" x="383" y="240" width="40" height="170" rx="2"/>
-  <path class="fixture" d="M390 252H416M390 276H416M390 300H416M390 324H416M390 348H416M390 372H416"/>
-  <circle class="furniture" cx="403" cy="488" r="25"/>
-  <text class="label" x="284" y="578" text-anchor="middle">MASTER BEDROOM</text>
-  <text class="sub" x="284" y="601" text-anchor="middle">sleeping + full-height wardrobes</text>
-  <text class="small" x="284" y="622" text-anchor="middle">approximately 25–28 m²</text>
+  <!-- bedroom at real furniture scale -->
+  <rect x="170" y="372" width="138" height="119" rx="4" fill="url(#wood)" stroke="#514c44" stroke-width="3"/>
+  <rect class="furniture" x="181" y="383" width="56" height="28" rx="8"/>
+  <rect class="furniture" x="241" y="383" width="56" height="28" rx="8"/>
+  <path class="fixture" d="M239 414V480"/>
+  <rect class="cabinet" x="388" y="226" width="40" height="148" rx="2"/>
+  <rect class="cabinet" x="388" y="538" width="40" height="100" rx="2"/>
+  <path class="fixture" d="M397 238H419M397 262H419M397 286H419M397 310H419M397 334H419M397 550H419M397 574H419M397 598H419"/>
+  <rect class="furniture" x="194" y="555" width="50" height="50" rx="22"/>
+  <rect class="cabinet" x="282" y="224" width="91" height="28" rx="2"/>
+  <text class="label" x="276" y="294" text-anchor="middle">MASTER BEDROOM</text>
+  <text class="sub" x="276" y="316" text-anchor="middle">1.80 × 2.10 m bed · clear on three sides</text>
+  <text class="small" x="276" y="337" text-anchor="middle">≈ 4.3 × 6.6 m clear before cabinetry</text>
+  <text class="micro" x="408" y="300" text-anchor="middle" transform="rotate(-90 408 300)" style="fill:#f4f0e7">FULL-HEIGHT WARDROBES</text>
 
-  <!-- main bathroom -->
-  <rect x="462" y="209" width="146" height="186" fill="url(#tiles)"/>
-  <rect class="fixture" x="472" y="221" width="124" height="83" rx="2"/>
-  <path d="M482 304H586" stroke="#386773" stroke-width="4"/>
-  <circle cx="492" cy="236" r="5" fill="#386773"/>
-  <path class="fixture" d="M485 245c25 18 53 18 78 0"/>
-  <rect class="fixture" x="470" y="327" width="110" height="42" rx="4"/>
-  <circle class="fixture" cx="497" cy="348" r="10"/><circle class="fixture" cx="553" cy="348" r="10"/>
-  <text class="label" x="535" y="383" text-anchor="middle">BATHROOM</text>
-  <text class="small" x="535" y="251" text-anchor="middle">ITALIAN WALK-IN SHOWER</text>
-  <text class="small" x="535" y="269" text-anchor="middle">flush floor · fixed screen</text>
+  <!-- private ensuite -->
+  <rect x="440" y="213" width="138" height="237" fill="url(#tiles)"/>
+  <path class="partition" d="M578 213V450M440 454H578"/>
+  <rect class="fixture" x="448" y="222" width="120" height="80" rx="2"/>
+  <path d="M456 302H515" stroke="#386773" stroke-width="4"/>
+  <circle cx="554" cy="236" r="5" fill="#386773"/>
+  <path class="fixture" d="M545 245c-20 16-44 16-64 0"/>
+  <ellipse class="fixture" cx="470" cy="353" rx="18" ry="25"/>
+  <rect class="fixture" x="519" y="320" width="47" height="94" rx="3"/>
+  <ellipse class="fixture" cx="542" cy="349" rx="13" ry="10"/>
+  <rect class="cabinet" x="449" y="402" width="34" height="40" rx="2"/>
+  <text class="micro" x="508" y="267" text-anchor="middle">ITALIAN SHOWER</text>
+  <text class="small" x="508" y="286" text-anchor="middle">1.20 × 1.80 m</text>
+  <text class="micro" x="509" y="442" text-anchor="middle">ENSUITE · ≈7.2 m²</text>
 
-  <!-- powder room -->
-  <rect x="462" y="504" width="76" height="52" fill="url(#tiles)"/>
-  <ellipse class="fixture" cx="484" cy="532" rx="13" ry="17"/>
-  <rect class="fixture" x="508" y="513" width="20" height="16" rx="3"/>
-  <text class="micro" x="500" y="586" text-anchor="middle">POWDER</text>
-  <text class="small" x="500" y="604" text-anchor="middle">toilet + sink only</text>
+  <!-- stacked U stair: two flights, half landing at tall lane window, ridge-side arrival -->
+  <rect x="586" y="240" width="124" height="198" fill="#d7cfc2" stroke="#514c44" stroke-width="3"/>
+  <rect x="586" y="240" width="124" height="66" fill="#c8bdad" stroke="#514c44" stroke-width="3"/>
+  <path class="fixture" d="M648 314V428M666 314V428M684 314V428M702 314V428M594 314V428M612 314V428M630 314V428"/>
+  <path class="thinwall" d="M648 306V438"/>
+  <path class="arrow" d="M695 420V317M638 317V420"/>
+  <text class="micro" x="648" y="262" text-anchor="middle">HALF-LANDING</text>
+  <text class="micro" x="648" y="278" text-anchor="middle">AT TALL WINDOW</text>
+  <text class="micro" x="648" y="397" text-anchor="middle">U-STAIR · UP</text>
 
-  <!-- entry / storage -->
-  <rect class="furniture-dark" x="562" y="505" width="42" height="120" rx="2"/>
-  <path class="fixture" d="M570 520H596M570 544H596M570 568H596M570 592H596"/>
-  <text class="micro" x="614" y="538">COATS</text>
-  <text class="micro" x="614" y="556">+ TECH</text>
-  <text class="label" x="565" y="454" text-anchor="middle">ENTRY HALL</text>
-  <text class="small" x="565" y="475" text-anchor="middle">direct sightline to glass gable</text>
+  <!-- entry gallery, powder, utility and storage -->
+  <rect x="440" y="524" width="90" height="127" fill="url(#tiles)"/>
+  <path class="partition" d="M440 520H456M514 520H530M534 520V651"/>
+  <path class="pocket" d="M458 507H512M458 533H512"/>
+  <ellipse class="fixture" cx="475" cy="590" rx="17" ry="24"/>
+  <rect class="fixture" x="500" y="540" width="22" height="18" rx="3"/>
+  <text class="label" x="485" y="628" text-anchor="middle">POWDER</text>
+  <text class="micro" x="485" y="644" text-anchor="middle">WC + BASIN ONLY</text>
 
-  <!-- stair aligned to tall exterior window -->
-  <rect x="630" y="209" width="188" height="119" fill="#d6cec0" stroke="#514c44" stroke-width="3"/>
-  <path class="fixture" d="M648 221V316M669 221V316M690 221V316M711 221V316M732 221V316M753 221V316M774 221V316M795 221V316"/>
-  <path class="arrow" d="M648 309H795"/>
-  <text class="micro" x="724" y="348" text-anchor="middle">STAIR UP</text>
+  <rect x="612" y="524" width="104" height="127" fill="#cbc7be" stroke="#514c44" stroke-width="3"/>
+  <rect x="626" y="518" width="76" height="12" fill="#dedbd2"/>
+  <path class="pocket" d="M628 518H700M628 530H700"/>
+  <rect class="fixture" x="622" y="536" width="39" height="48" rx="3"/>
+  <circle class="fixture" cx="641" cy="560" r="13"/>
+  <rect class="fixture" x="622" y="590" width="39" height="48" rx="3"/>
+  <circle class="fixture" cx="641" cy="614" r="13"/>
+  <rect class="cabinet" x="670" y="536" width="35" height="102" rx="2"/>
+  <text class="micro" x="688" y="589" text-anchor="middle" transform="rotate(-90 688 589)">PLANT + VENTILATION</text>
+  <text class="micro" x="664" y="644" text-anchor="middle">LAUNDRY / PLANT</text>
 
-  <!-- kitchen -->
-  <rect class="furniture-dark" x="842" y="215" width="226" height="58" rx="2"/>
-  <circle cx="880" cy="244" r="13" fill="none" stroke="#ddd5ca" stroke-width="2"/>
-  <circle cx="918" cy="244" r="13" fill="none" stroke="#ddd5ca" stroke-width="2"/>
-  <rect x="990" y="229" width="52" height="28" rx="3" fill="none" stroke="#ddd5ca" stroke-width="2"/>
-  <rect class="furniture-dark" x="790" y="326" width="238" height="70" rx="3"/>
-  <circle class="furniture" cx="835" cy="420" r="18"/>
-  <circle class="furniture" cx="890" cy="420" r="18"/>
-  <circle class="furniture" cx="945" cy="420" r="18"/>
-  <text class="label" x="930" y="301" text-anchor="middle">KITCHEN</text>
-  <text class="sub" x="930" y="319" text-anchor="middle">picture window + island</text>
+  <rect class="cabinet" x="674" y="450" width="34" height="66" rx="2"/>
+  <text class="micro" x="691" y="484" text-anchor="middle" transform="rotate(-90 691 484)">COATS</text>
+  <rect class="furniture" x="544" y="474" width="92" height="28" rx="4"/>
 
-  <!-- dining -->
-  <rect class="furniture" x="1000" y="458" width="145" height="68" rx="28"/>
-  <circle class="furniture" cx="1025" cy="444" r="13"/><circle class="furniture" cx="1073" cy="444" r="13"/><circle class="furniture" cx="1121" cy="444" r="13"/>
-  <circle class="furniture" cx="1025" cy="540" r="13"/><circle class="furniture" cx="1073" cy="540" r="13"/><circle class="furniture" cx="1121" cy="540" r="13"/>
-  <text class="micro" x="1073" y="568" text-anchor="middle">DINING</text>
+  <!-- smoked-oak entry; leaf parks against a clear wall -->
+  <rect x="538" y="647" width="66" height="32" fill="#7a5138"/>
+  <path class="door" d="M538 647V581A66 66 0 0 1 604 647"/>
+  <text class="micro" x="571" y="700" text-anchor="middle">1.0 m OAK ENTRY · FLUSH THRESHOLD</text>
+  <text class="micro" x="486" y="478">ENTRY</text>
+  <text class="small" x="486" y="497">≈1.2 m gallery</text>
 
-  <!-- living -->
-  <path class="furniture" d="M1088 284h104v55h-64v72h-40z"/>
-  <rect class="furniture" x="1040" y="338" width="84" height="48" rx="18"/>
-  <rect class="furniture-dark" x="1172" y="462" width="32" height="100" rx="14"/>
-  <text class="label" x="1136" y="605" text-anchor="middle">OPEN LIVING</text>
-  <text class="small" x="1136" y="625" text-anchor="middle">double-height · valley-facing</text>
+  <!-- kitchen: tall bank, 600 mm counter, working aisle and island -->
+  <rect class="cabinet" x="731" y="226" width="43" height="142" rx="2"/>
+  <path class="fixture" d="M740 236H765M740 271H765M740 306H765M740 341H765"/>
+  <text class="micro" x="751" y="296" text-anchor="middle" transform="rotate(-90 751 296)">FRIDGE · OVENS · PANTRY</text>
+  <rect class="cabinet" x="788" y="222" width="264" height="42" rx="2"/>
+  <rect x="844" y="232" width="58" height="22" rx="3" fill="none" stroke="#ddd5ca" stroke-width="2"/>
+  <circle cx="980" cy="243" r="11" fill="none" stroke="#ddd5ca" stroke-width="2"/>
+  <circle cx="1013" cy="243" r="11" fill="none" stroke="#ddd5ca" stroke-width="2"/>
+  <rect class="cabinet" x="792" y="338" width="198" height="67" rx="3"/>
+  <circle class="furniture" cx="828" cy="427" r="16"/><circle class="furniture" cx="884" cy="427" r="16"/><circle class="furniture" cx="940" cy="427" r="16"/>
+  <path class="dim" d="M1006 266H1022M1006 338H1022M1014 266V338"/>
+  <text class="dimension" x="1032" y="305">1.1 m</text>
+  <text class="label" x="918" y="301" text-anchor="middle">KITCHEN</text>
+  <text class="small" x="918" y="320" text-anchor="middle">sink below picture window · 3.0 m island</text>
 
-  <!-- plan callouts -->
-  <path class="arrow" d="M1305 432H1256"/>
-  <text class="micro" x="1312" y="407" text-anchor="end">UNOBSTRUCTED</text>
-  <text class="micro" x="1312" y="424" text-anchor="end">GLASS GABLE</text>
-  <text class="micro" x="680" y="741" text-anchor="middle">COURTYARD / COBBLED ARRIVAL</text>
+  <!-- dining in the brighter lane-side half -->
+  <rect class="furniture" x="1026" y="283" width="132" height="66" rx="24"/>
+  <circle class="furniture" cx="1048" cy="270" r="12"/><circle class="furniture" cx="1092" cy="270" r="12"/><circle class="furniture" cx="1136" cy="270" r="12"/>
+  <circle class="furniture" cx="1048" cy="362" r="12"/><circle class="furniture" cx="1092" cy="362" r="12"/><circle class="furniture" cx="1136" cy="362" r="12"/>
+  <text class="micro" x="1092" y="387" text-anchor="middle">DINING FOR 6–8</text>
 
-  <!-- segment dimensions -->
-  <path class="dim" d="M120 770V746M450 770V746M674 770V746M1240 770V746M120 758H1240"/>
-  <text class="dimension" x="285" y="790" text-anchor="middle">5.0 m PRIVATE</text>
-  <text class="dimension" x="562" y="790" text-anchor="middle">3.4 m SERVICE / ENTRY</text>
-  <text class="dimension" x="957" y="790" text-anchor="middle">8.6 m OPEN LIVING</text>
-  <text class="note" x="76" y="828">Concept only — verify wall build-up, accessibility, structure, stair, fire strategy, services and all room dimensions with the architect.</text>
+  <!-- living furniture perpendicular to glazing, keeping front and courtyard route clear -->
+  <rect class="furniture" x="980" y="454" width="48" height="120" rx="18"/>
+  <rect class="furniture" x="1072" y="452" width="52" height="52" rx="20"/>
+  <rect class="furniture" x="1072" y="525" width="52" height="52" rx="20"/>
+  <rect class="cabinet" x="1038" y="485" width="56" height="56" rx="18"/>
+  <rect class="cabinet" x="1158" y="430" width="30" height="130" rx="3"/>
+  <text class="label" x="1085" y="615" text-anchor="middle">VALLEY LIVING</text>
+  <text class="small" x="1085" y="634" text-anchor="middle">seating faces glass · no furniture across doors</text>
+
+  <!-- continuous circulation to operable glass -->
+  <path class="route" d="M572 636V595H750H1187"/>
+  <text class="micro" x="822" y="586">CONTINUOUS ≈1.2 m ROUTE TO GARDEN</text>
+  <path class="arrow" d="M1218 510V590"/>
+  <text class="micro" x="1201" y="548" text-anchor="middle" transform="rotate(-90 1201 548)">OPERABLE LIFT-SLIDE LEAF</text>
+
+  <!-- clear-width and zone dimensions -->
+  <path class="dim" d="M148 694V716M1212 694V716M148 707H1212"/>
+  <text class="dimension" x="680" y="730" text-anchor="middle">≈16.2 m INTERNAL CLEAR LENGTH · ≈6.7 m INTERNAL CLEAR WIDTH</text>
+  <path class="dim" d="M120 770V747M436 770V747M720 770V747M1240 770V747M120 758H1240"/>
+  <text class="dimension" x="278" y="790" text-anchor="middle">4.8 m MASTER</text>
+  <text class="dimension" x="578" y="790" text-anchor="middle">4.3 m SERVICE / STAIR</text>
+  <text class="dimension" x="980" y="790" text-anchor="middle">7.9 m OPEN LIVING</text>
+  <text class="note" x="76" y="827">Spatial feasibility study only — measured survey and architect must verify wall build-up, room sizes, door clearances, stair geometry, structure, services, ventilation, accessibility and fire strategy.</text>
 </svg>

@@ -127,13 +127,15 @@ architectural view.
 
 The fixed 3.2 m eaves and 5.2 m ridge create a shallow approximately 28.1° roof.
 The mezzanine therefore has a narrow central standing band rather than full
-second-floor headroom. Preliminary visual studies suggest approximately 10–18 m²
-of comfortable standing area, with low storage/seating around it.
+second-floor headroom. The revised plan distinguishes low eaves, transitional
+height and a narrow central band that may provide approximately 2 m or more
+headroom. The gross and net deck areas must not be read as comfortable standing
+area. Low storage and seated uses remain appropriate around the edges.
 
 Feasibility depends on the real internal roof profile, required ceiling height
-over the master and service zone, structural floor depth, stair headroom,
-guarding, escape and fire strategy. Do not treat the rendered loft as a measured
-room.
+over the master and service zone, structural floor depth, U-stair headroom,
+guarding, low-window protection, escape and fire strategy. Do not treat the
+rendered loft or its indicative height bands as a measured room.
 
 ## Decisions for the next phase
 
