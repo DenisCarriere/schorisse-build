@@ -10,7 +10,8 @@ optional partial open loft.
 
 The mobile-first gallery focuses on the photoreal concepts and the real property
 context: glass gable, shared tractor lane, cobbled courtyard, valley-facing
-living hall, rear open loft and a small set of alternative material directions.
+living hall, rear open loft, a complete four-view Brick Veil direction and a
+small set of alternative material studies.
 
 The GitHub Pages workflow publishes only `index.html` and the optimized images
 under `renders/web/`. Original references, source renders, models and project
@@ -23,11 +24,13 @@ notes remain in the repository but are not part of the public Pages artifact.
 - [Feasibility and performance](docs/FEASIBILITY-AND-PERFORMANCE.md)
 - [Cost assumptions](docs/COSTS.md)
 - [Image constraints and prompt record](renders/site-concepts/README.md)
+- [Brick Veil concept set and exact prompts](renders/brick-veil/README.md)
 - [Site-reference mapping](uploads/README.md)
 
 ## Source assets
 
 - `renders/site-concepts/` — final site-grounded concept PNGs and earlier variants.
+- `renders/brick-veil/` — developed front, side, back and interior-loft concept PNGs.
 - `renders/concepts/` — broader material explorations.
 - `renders/web/` — responsive JPEG derivatives used by the gallery.
 - `uploads/site-reference/` — four original property photographs.
