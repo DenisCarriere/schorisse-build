@@ -6,11 +6,16 @@ This is the selected development of Option B. It keeps the complete ICF wall
 shell but uses one consistent exterior wall finish:
 
 - all exterior walls: warm Belgian/Flemish fired-clay facing brick;
-- no fibre cement, timber siding or material transition;
+- no fibre cement, timber wall cladding or material transition;
 - all windows and the glass gable: deep matte-black aluminium liners and frames;
 - roof: black gently curved hollow ceramic Flemish tiles, not standing-seam metal;
 - rear loft: one broad triangular black-framed gable window above the bedrooms;
-- courtyard entrance: smoked oak within a deep black frame and brick returns;
+- courtyard entrance: smoked oak door and vertical timber-lined recess within a
+  deep matte-black portal; brick remains continuous outside the entrance recess;
+- exterior lighting: shielded warm pier and eaves lights with no projection into
+  the shared tractor lane;
+- interior openings: rear loft gable, lane-facing living window and stair window
+  aligned with the exterior elevations;
 - glass: clear and unobstructed;
 - existing tractor lane, gate, hedges, neighbour, cobbles and trees: retained.
 
@@ -115,11 +120,96 @@ and rear.
 >
 > No mixed wall finish, fibre cement, standing-seam roof, full-height rear glazing, glass at bedroom level, annex, canopy, porch, terrace, new paving, cars, people, outdoor furniture, signage, text, logos or watermark.
 
+### Front integrated-lighting revision
+
+> Use case: precise-object-edit
+> Asset type: photoreal architectural concept — selected Belgian Brick Lantern FRONT glass-gable elevation with integrated exterior lighting.
+> Input images: Image 1 is the edit target and controls the exact building, camera, crop, perspective, site, neighbouring building, hedge, lawn, black tiled roof, continuous Belgian brick and full unobstructed front glass gable.
+>
+> Primary request: add a restrained, credible exterior lighting scheme to the TARGET BARN so the architecture is prepared for night use. Add one slim matte-black shielded downlight high on each of the two brick gable piers flanking the front glass wall, mounted flush or nearly flush to the brick and casting soft warm pools down the brick and threshold. Add a very subtle warm concealed linear glow within the deep black perimeter reveal at the base of the glass gable, not a bright outline. The fixtures must look permanent, minimal, weatherproof and architecturally integrated.
+>
+> Lighting/mood: preserve the existing natural late-afternoon/early-evening sky, green lawn, visible landscape and realistic daylight. The new lights are switched on but subtle, warm 2700K, demonstrating evening use without converting the image into darkness or overpowering the glass. Preserve the warm occupied interior.
+>
+> LOCK EVERYTHING ELSE: exact 17.0 x 7.5 m envelope, 3.2 m eaves, 5.2 m ridge, approximately 28-degree roof; continuous Belgian/Flemish brick on all exterior walls; black hollow ceramic Flemish roof tiles; deep matte-black glass frame; clear unobstructed glazing; same furniture, hedge, neighbour building, paved path, terrain, grass, trees, camera and composition. Do not alter window mullions, add doors, change the roof, extend the footprint or add landscaping.
+>
+> Avoid: wall lanterns with historic ornament, bright spotlights, uplights that cause glare, exposed cables, bollards, posts, projecting fixtures, signage, people, cars, terrace furniture, new paving, mixed wall finishes, fibre cement, text, logo or watermark.
+
+### Shared-lane integrated-lighting revision
+
+> Use case: precise-object-edit
+> Asset type: photoreal architectural concept — selected Belgian Brick Lantern SHARED TRACTOR-LANE elevation with integrated exterior lighting.
+> Input images: Image 1 is the edit target and controls the exact portrait camera, crop, perspective, lane, gate, hedge, neighbour screen, roof, continuous Belgian brick, front glass gable and every existing opening.
+>
+> Primary request: add a restrained, tractor-safe exterior lighting scheme along the target barn's long brick wall. Install three very low-profile matte-black shielded downlights directly beneath the eaves, aligned respectively with the rear bedroom-window zone, the tall stair window, and the larger living-room window. They should project only a few centimetres and cast soft narrow warm washes down the brick, enough to define the path and openings after dark without lighting the neighbour or pasture. Keep the lane completely unobstructed: no ground fixtures, bollards, posts or projecting arms.
+>
+> Lighting/mood: preserve the existing blue-sky late-afternoon scene, green lane and readable landscape. Switch the new fixtures on with a subtle 2700K glow; deepen the light only slightly toward early evening so both the building and lighting effect remain clear and photorealistic. Add a quiet warm occupied glow behind the front glass gable and larger living window, with realistic reflections.
+>
+> CRITICAL WINDOW LOCK: from the rear gate toward the glass front, preserve exactly two small black-framed bedroom windows, then one tall narrow black-framed stair window, then one larger horizontal black-framed living-room window, then the full glass front gable. Do not move, resize, delete, duplicate or replace any opening. Do not turn the tall stair window into a door.
+>
+> LOCK EVERYTHING ELSE: exact 17.0 x 7.5 m envelope, 3.2 m eaves, 5.2 m ridge, approximately 28-degree black hollow ceramic Flemish roof; continuous Belgian/Flemish brick on all walls; same gutter/downpipe; same tractor wheel tracks, grass, hedge, gate, fence/screen, trees, camera and composition.
+>
+> Avoid: entrance doors on this lane, wall lanterns with historic ornament, glaring spotlights, exposed cables, bollards, posts, path pavers, gravel, vehicles, people, new landscaping, mixed wall finishes, fibre cement, text, logo or watermark.
+
+### Timber-lined courtyard entrance revision
+
+> Use case: precise-object-edit
+> Asset type: photoreal architectural concept — selected Belgian Brick Lantern REAR courtyard with a welcoming identifiable side entrance.
+> Input images: Image 1 is the edit target and controls the exact portrait camera, crop, perspective, building envelope, Belgian brick, roof, broad triangular rear loft window, ground-floor windows, courtyard cobbles, curbs, hedges, hydrangeas, mature trees and lighting.
+>
+> Primary request: restyle only the existing entrance on the long courtyard-facing wall so it is unmistakably the home's entrance and feels welcoming. Keep the doorway in exactly its current location. Form a deep matte-black rectangular portal approximately 1.5–1.7 m wide, recessed within the thick ICF wall. Line the entire inside of that recess—both side returns, soffit, and the wall panel immediately around the door—with refined vertical smoked-oak boards. Use one full-height smoked-oak pivot or hinged door within the timber lining, a long slim matte-black pull handle, and a narrow black shadow gap around the door. Add one concealed warm 2700K downlight in the timber soffit, softly illuminating the oak face and existing cobble threshold. The portal may extend visually to the eaves line but must remain a recess, not an exterior wall-cladding field.
+>
+> Entrance hierarchy: the oak-lined opening should read clearly from across the courtyard as the primary entrance, warmer and more generous than the adjacent black-framed windows, yet restrained and contemporary. Keep the hedge opening and path exactly where they are. No canopy is needed.
+>
+> LOCK EVERYTHING ELSE: preserve the broad upper triangular black-framed loft window, the two ground-floor rear-gable bedroom windows, every long-wall window, continuous Belgian/Flemish brick everywhere outside the entrance recess, black hollow ceramic Flemish roof tiles, two flush rooflights, gutters/downpipes, exact 17.0 x 7.5 m footprint, 3.2 m eaves, 5.2 m ridge and approximately 28-degree roof. Preserve all cobbles, curbs, hedge geometry, hydrangeas, mature trees, access routes, shadows and camera composition.
+>
+> Lighting/mood: retain natural late-afternoon documentary photography. Let the entrance light be visibly warm but subtle; add no other lighting changes.
+>
+> Avoid: timber or fibre-cement cladding across the exterior walls, mixed wall fields, projecting porch, projecting canopy, steps that alter accessibility, new paving, terrace, signage, house numbers, sidelights that widen the structural opening, glass door, historic lantern, people, cars, furniture, text, logo or watermark.
+
+#### Final rooflight correction
+
+> Use case: precise-object-edit
+> Asset type: photoreal architectural concept correction — rear courtyard entrance concept.
+> Input images: Image 1 is the EDIT TARGET and must remain unchanged except for one rooflight correction. Image 2 is the approved previous rear reference confirming that the selected roof has exactly two flush rooflights total on the visible roof plane.
+>
+> Primary request: remove only the unintended extra far-left rooflight from Image 1—the rooflight highest/leftmost and partially nearest the foliage. Reconstruct continuous matching black curved ceramic Flemish roof tiles beneath it. Keep exactly the two rooflights nearer the rear gable, in their current positions and sizes.
+>
+> LOCK EVERYTHING ELSE FROM IMAGE 1 PIXEL-CLOSE: preserve the clearly identifiable smoked-oak entrance door, deep matte-black portal, vertical timber-lined recess, concealed warm soffit light, black pull handle, all Belgian brick, every window including the broad rear triangular loft window, roof shape, ridge, gutters, downpipes, hedges, hydrangeas, cobbles, curbs, trees, shadows, sky, camera, crop, perspective and color. Do not move or redesign the entrance. Do not add or remove any other opening.
+>
+> Avoid: any third rooflight, roof patch, mismatched tiles, dormer, canopy, new fixtures, new landscaping, people, cars, text, logo or watermark.
+
+### Interior opening-alignment revision
+
+> Use case: precise-object-edit
+> Asset type: photoreal architectural concept — selected Belgian Brick Lantern OPEN LIVING HALL AND REAR LOFT, with interior openings aligned to the approved exterior elevations.
+> Input images: Image 1 is the EDIT TARGET and strictly controls the wide landscape camera, front-to-rear viewpoint, room proportions, open living/kitchen layout, rear mezzanine, stair, materials, furniture, timber portal frames and lighting. Image 2 is the authoritative SHARED-LANE ELEVATION reference for the left exterior wall opening order and proportions. Image 3 is the authoritative REAR GABLE reference for the broad upper triangular loft window. Do not copy their outdoor cameras into Image 1.
+>
+> Primary request: revise only the exterior-wall openings visible from inside so the interior and exterior describe the same building.
+>
+> REAR LOFT GABLE WINDOW: replace the solid triangular upper rear wall behind the loft furniture with the same broad, black-framed triangular gable window shown in Image 3. Its base sits just above the loft floor/guard line, it tapers below the ridge, and a substantial plastered ICF reveal remains around both sloping sides and ridge. Use one slim central vertical mullion and a restrained base transom. Through it show softly focused courtyard tree canopy and blue sky with realistic reflections. The loft reading table and chairs remain visible in front of the glass.
+>
+> LEFT SHARED-LANE WALL ALIGNMENT: Image 2 orders the openings from the rear toward the front as bedroom pair, tall stair window, larger living-room window, then front glass gable. In Image 1 the camera stands near the front glass gable and looks toward the rear, so:
+> - insert the larger black-framed horizontal living-room picture window into the left plastered wall in the foreground, directly above/behind the kitchen worktop and sink; give it a deep ICF reveal and a view of the retained lane hedge;
+> - insert one tall narrow black-framed stair window beside the stair landing on that same left wall, partially visible behind the stair and extending vertically to light the stair;
+> - do NOT put the two rear bedroom windows into the open hall because they belong inside the enclosed rooms beneath the loft, behind their doors.
+>
+> Preserve the front glass gable behind the camera; do not create another front wall. Keep the right wall restrained because it faces the neighbouring house/courtyard and is not the shared-lane elevation.
+>
+> LOCK EVERYTHING ELSE FROM IMAGE 1: exact 17.0 x 7.5 m envelope, 3.2 m eaves, 5.2 m ridge, approximately 28-degree roof; compact rear mezzanine rather than full second storey; same stair position; same kitchen island, dining table, sofa, fireplace, bedroom/service doors, black balustrade, two rooflights, oak structural frames, pale mineral-plastered ICF interior, polished floor, furniture, camera, composition and warm natural light. The thick external walls and deep window reveals must remain evident.
+>
+> Style/medium: premium photoreal Belgian architectural interior photography, coherent natural daylight and warm 2700K interior lights, accurate plaster, oak, black aluminium and glass textures, not glossy CGI.
+>
+> Avoid: blank rear gable, missing side windows, random extra windows, bedroom windows opening into the living room, moving the stair, changing the loft depth, full-height rear glazing down to the bedrooms, balcony, dormer, altered roof, exposed brick inside, black exterior cladding inside, mixed wall finishes, people, text, logo or watermark.
+
 ## Output files
 
 | View | Source output |
 |---|---|
-| Front glass gable | `belgian-brick-front-site.png` |
-| Shared tractor-lane side | `belgian-brick-side-tractor-lane.png` |
-| Selected rear courtyard with loft glass | `belgian-brick-back-loft-window.png` |
+| Selected front with integrated lighting | `belgian-brick-front-lighting.png` |
+| Selected shared lane with integrated lighting | `belgian-brick-side-lighting.png` |
+| Selected rear with loft glass and oak entrance | `belgian-brick-back-oak-entrance.png` |
+| Selected aligned living hall and loft | `belgian-brick-interior-aligned-windows.png` |
+| Superseded unlit front | `belgian-brick-front-site.png` |
+| Superseded unlit shared lane | `belgian-brick-side-tractor-lane.png` |
+| Superseded rear before entrance revision | `belgian-brick-back-loft-window.png` |
 | Superseded closed rear study | `belgian-brick-back-courtyard.png` |

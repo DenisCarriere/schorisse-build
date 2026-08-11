@@ -123,9 +123,18 @@ properly tied around the opening.
 - Coordinate proprietary window and door bucks, reinforcement, fixings, flashings
   and cavity closers through the ICF/rainscreen build-up.
 - Coordinate the recessed courtyard entrance with retained cobbles and drainage.
+- Treat the smoked-oak boards as protected entrance-recess lining and joinery,
+  not as a general rainscreen. Coordinate the deep black portal, door frame,
+  fixings, threshold, concealed soffit light, airtightness and fire performance
+  with the reinforced ICF opening and brick cavity closures.
 - Resolve level access at the glass gable without compromising weathering.
 - Keep rooflights small, flush and within the rear loft zone if they remain in the
   developed design.
+
+Exterior light fittings must remain shallow and independently fixed into designed
+support zones. Their penetrations, cables and drivers must preserve the ICF
+airtightness, drainage and insulation continuity. No fitting may reduce the
+required shared-lane tractor clearance.
 
 ## Fire, acoustic and services coordination
 

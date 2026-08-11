@@ -19,6 +19,8 @@ them.
   roof were **not separately priced** in the carried-forward board estimate;
   replace the shell and roof allowances with coordinated supplier/contractor
   quotes.
+- The custom smoked-oak entrance portal, concealed entrance light and shielded
+  exterior building-lighting scheme were not separately priced.
 - Site access, neighbour protection, temporary works and unknown ground conditions
   may materially change the estimate.
 
@@ -90,6 +92,11 @@ The partial loft requires a separate allowance for:
 - fire-safety measures;
 - lighting, electrical and ventilation changes;
 - additional design and engineering.
+
+Allow separately in the main-envelope design for the custom full-height oak door,
+vertical timber recess lining, deep black portal, long pull handle, flush drained
+threshold, concealed entrance light, eaves downlights, wiring, drivers and lighting
+controls.
 
 Price it only after the internal roof profile and usable area are measured.
 
