@@ -95,7 +95,8 @@ the actual orientation before overheating and heat-loss conclusions are made.
 
 ## Partial loft structure
 
-The optional loft sits over approximately 7–8.5 m of the rear private core.
+The open mezzanine sits over approximately 7–8.5 m of the rear master-bedroom
+and service core.
 
 - concept floor level: +2.40–2.45 m;
 - central zone uses the available ridge height;
@@ -141,7 +142,7 @@ required shared-lane tractor clearance.
 The partial loft changes the fire and escape strategy. Design development must
 confirm detection, escape travel, guarding, stair geometry, protected or
 compartmented zones where required, and the relationship between open living
-space and sleeping rooms.
+space and the master bedroom.
 
 Services should preserve the calm roof volume. Coordinate ventilation routes,
 lighting, smoke detection, acoustic separation, kitchen extraction and any

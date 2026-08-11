@@ -14,7 +14,7 @@ them.
 - Full demolition of the target barn assumed, subject to structural report.
 - Residential version includes a high/mid-range fit-out, services and glazing.
 - Professional fees are excluded from the construction subtotal.
-- The optional loft, stair and rooflights are **not included** in the base range.
+- The mezzanine, stair and rooflights are **not included** in the dated base range.
 - The current ICF shell, continuous Belgian brick veneer and black ceramic-tile
   roof were **not separately priced** in the carried-forward board estimate;
   replace the shell and roof allowances with coordinated supplier/contractor
@@ -54,7 +54,8 @@ and fees.
 | Hobby/atelier shell | Shell, glass gable and basic services | €194k–248k including assumed 21% VAT |
 
 The rental scenario used an unverified indicative rent of €1,100–1,400/month for
-a rural two-bedroom property of this quality.
+the earlier two-bedroom study. It has not been reworked for the current
+single-master plan and should not be used as a current rental assumption.
 
 ## VAT assumptions
 
@@ -80,7 +81,7 @@ Also budget separately for survey, soil investigation, planning costs, utility
 changes, façade/glazing engineering, interior design, landscape repair,
 contingency, finance and insurance as applicable.
 
-## Optional loft exclusion
+## Mezzanine exclusion from the dated base range
 
 The partial loft requires a separate allowance for:
 

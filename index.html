@@ -363,6 +363,34 @@
 
     .developed-grid .media-card { background: #20201f; }
 
+    .plan-brief {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 clamp(26px, 4vw, 44px);
+      padding: 0;
+      list-style: none;
+    }
+
+    .plan-brief li {
+      padding: 9px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--paper);
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .plan-stack {
+      display: grid;
+      gap: clamp(38px, 7vw, 86px);
+    }
+
+    .plan-stack figure { min-width: 0; margin: 0; }
+    .plan-stack .media-card { background: #f4f0e7; }
+    .plan-stack .media-card img { aspect-ratio: 1400 / 850; object-fit: contain; }
+    .full-plan-link { color: var(--ink); text-underline-offset: 3px; }
+
     .site-footer {
       width: min(100%, var(--content));
       margin: 0 auto;
@@ -536,6 +564,7 @@
       <a href="#interior">Living hall</a>
       <a href="#loft">Open loft</a>
       <a href="#brick-lantern">Brick Lantern</a>
+      <a href="#plans">Plans</a>
     </nav>
   </header>
 
@@ -551,7 +580,7 @@
       <ul class="hero-facts" aria-label="Project summary">
         <li>17.0 × 7.5 m envelope</li>
         <li>Valley-facing glass gable</li>
-        <li>Optional rear loft</li>
+        <li>Open rear mezzanine</li>
       </ul>
     </div>
   </section>
@@ -666,7 +695,7 @@
       <header class="chapter-heading">
         <span class="chapter-index">03 · Open loft</span>
         <h2 id="loft-title">Extra living space, without losing the volume.</h2>
-        <p>A compact lounge and library sits above the private rear rooms. The front living hall remains completely double-height.</p>
+        <p>A compact lounge and library sits above the rear master and service core. The front living hall remains completely double-height.</p>
       </header>
       <figure class="loft-stage">
         <button class="media-card zoom" type="button" data-full="renders/web/belgian-brick-interior-aligned-1536.jpg" data-caption="Rear open mezzanine with its triangular gable window and lane-facing living and stair windows aligned to the exterior" aria-label="Expand open-loft concept">
@@ -713,6 +742,38 @@
         </figure>
       </div>
     </section>
+
+    <section class="chapter" id="plans" aria-labelledby="plans-title">
+      <header class="chapter-heading">
+        <span class="chapter-index">05 · Conceptual floor plans</span>
+        <h2 id="plans-title">One home, two connected levels.</h2>
+        <p>The ground floor carries every daily essential. Above the private rear zone, one completely open mezzanine becomes flexible extra living space—with no plumbing upstairs.</p>
+      </header>
+
+      <ul class="plan-brief" aria-label="Floor plan essentials">
+        <li>1 ground-floor master bedroom</li>
+        <li>Italian walk-in shower</li>
+        <li>Separate toilet + sink</li>
+        <li>Open kitchen + living hall</li>
+        <li>Open mezzanine · no plumbing</li>
+      </ul>
+
+      <div class="plan-stack" aria-label="Ground-floor and mezzanine concept plans">
+        <figure>
+          <button class="media-card zoom" type="button" data-full="renders/web/plan-ground-floor.svg" data-caption="Ground floor: master bedroom, Italian walk-in shower, separate powder room, entry, kitchen and open living hall" aria-label="Expand conceptual ground-floor plan">
+            <img src="renders/web/plan-ground-floor.svg" width="1400" height="850" alt="Dimensioned conceptual ground-floor plan with one master bedroom, bathroom, powder room, kitchen and open living space" loading="lazy" decoding="async">
+          </button>
+          <figcaption><span class="image-label">Ground floor</span><span>All daily living · <a class="full-plan-link" href="renders/web/plan-ground-floor.svg" target="_blank" rel="noopener">open full plan ↗</a></span></figcaption>
+        </figure>
+
+        <figure>
+          <button class="media-card zoom" type="button" data-full="renders/web/plan-mezzanine.svg" data-caption="Upper mezzanine: one undivided lounge, library and studio overlooking the double-height living hall, with no plumbing" aria-label="Expand conceptual mezzanine plan">
+            <img src="renders/web/plan-mezzanine.svg" width="1400" height="850" alt="Dimensioned conceptual upper mezzanine plan with one open room, stair, low-eaves storage and no plumbing" loading="lazy" decoding="async">
+          </button>
+          <figcaption><span class="image-label">Upper mezzanine</span><span>No plumbing · <a class="full-plan-link" href="renders/web/plan-mezzanine.svg" target="_blank" rel="noopener">open full plan ↗</a></span></figcaption>
+        </figure>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -720,6 +781,7 @@
       <p>This website is the visual concept presentation. Dimensions, structural thinking, feasibility and cost assumptions are maintained separately as project documents.</p>
       <nav class="document-links" aria-label="Project documents">
         <a href="https://github.com/DenisCarriere/schorisse-build/blob/main/docs/ARCHITECTURAL-CONCEPT.md">Architecture</a>
+        <a href="https://github.com/DenisCarriere/schorisse-build/blob/main/docs/CONCEPTUAL-FLOOR-PLANS.md">Floor plans</a>
         <a href="https://github.com/DenisCarriere/schorisse-build/blob/main/docs/STRUCTURE-AND-ENVELOPE.md">Structure</a>
         <a href="https://github.com/DenisCarriere/schorisse-build/blob/main/docs/FEASIBILITY-AND-PERFORMANCE.md">Feasibility</a>
         <a href="https://github.com/DenisCarriere/schorisse-build/blob/main/docs/COSTS.md">Costs</a>
