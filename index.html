@@ -1,818 +1,835 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="data:,">
-<title>The Glass-Gable Barn — Concept Board</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
-<style>
-  body { margin: 0; background: #f4f1ea; }
-  a { color: #b4522e; } a:hover { color: #8f3f22; }
-  image-slot { display: block; position: relative; overflow: hidden; background: #efece3; }
-  image-slot .is-ph {
-    position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
-    text-align: center; padding: 14px; box-sizing: border-box; cursor: pointer;
-    border: 1.5px dashed #b8b0a0; color: #8a8378;
-    font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; line-height: 1.6;
-    transition: border-color .15s, color .15s, background .15s;
-  }
-  image-slot .is-ph:hover, image-slot.is-over .is-ph { border-color: #b4522e; color: #b4522e; background: #f8f1ea; }
-  image-slot img.is-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
-  image-slot .is-clear {
-    position: absolute; top: 6px; right: 6px; width: 22px; height: 22px; line-height: 20px;
-    background: rgba(33,29,24,.72); color: #f4f1ea; border: none; cursor: pointer;
-    font-family: 'IBM Plex Mono', monospace; font-size: 12px; padding: 0;
-    opacity: 0; transition: opacity .15s;
-  }
-  image-slot:hover .is-clear { opacity: 1; }
-  @media print { image-slot .is-clear { display: none; } }
-</style>
-<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#171512">
+  <meta name="description" content="A visual concept study for the Glass-Gable Barn in Schorisse, Belgium.">
+  <meta property="og:title" content="The Glass-Gable Barn">
+  <meta property="og:description" content="A site-grounded visual concept study in rural Flanders.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://deniscarriere.github.io/schorisse-build/">
+  <meta property="og:image" content="https://deniscarriere.github.io/schorisse-build/renders/web/og-glass-gable-barn.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="629">
+  <meta property="og:image:alt" content="The Glass-Gable Barn visual concept overlooking the Schorisse valley">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:,">
+  <title>The Glass-Gable Barn — Visual Concept</title>
+  <style>
+    :root {
+      --ivory: #f3f0e9;
+      --paper: #fbfaf7;
+      --ink: #171512;
+      --muted: #6f6a61;
+      --line: #d6d0c5;
+      --clay: #b45432;
+      --olive: #66705b;
+      --header-height: 72px;
+      --gutter: clamp(16px, 4vw, 64px);
+      --content: 1440px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--ink);
+      color-scheme: light;
+    }
+
+    body {
+      margin: 0;
+      overflow-x: hidden;
+      background: var(--ivory);
+      color: var(--ink);
+      font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body.is-locked { overflow: hidden; }
+
+    button, a { -webkit-tap-highlight-color: transparent; }
+    button { font: inherit; }
+    a { color: inherit; }
+    img { display: block; max-width: 100%; }
+
+    .skip-link {
+      position: fixed;
+      top: 8px;
+      left: 8px;
+      z-index: 100;
+      transform: translateY(-150%);
+      padding: 12px 16px;
+      background: var(--paper);
+      color: var(--ink);
+    }
+
+    .skip-link:focus { transform: none; }
+
+    :focus-visible {
+      outline: 3px solid #f3a17e;
+      outline-offset: 3px;
+    }
+
+    .site-header {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 30;
+      min-height: var(--header-height);
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      padding: max(10px, env(safe-area-inset-top)) var(--gutter) 10px;
+      border-bottom: 1px solid rgba(255,255,255,.2);
+      background: rgba(23,21,18,.8);
+      color: white;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    .brand {
+      flex: 0 0 auto;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .chapter-nav {
+      display: flex;
+      gap: 6px;
+      min-width: 0;
+      margin-left: auto;
+      overflow-x: auto;
+      overscroll-behavior-inline: contain;
+      scrollbar-width: none;
+    }
+
+    .chapter-nav::-webkit-scrollbar { display: none; }
+
+    .chapter-nav a {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      padding: 0 13px;
+      border-radius: 999px;
+      color: rgba(255,255,255,.78);
+      font-size: 13px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .chapter-nav a:hover { color: white; background: rgba(255,255,255,.1); }
+
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      display: grid;
+      align-items: end;
+      overflow: hidden;
+      background: #40382f;
+      color: white;
+    }
+
+    .hero picture,
+    .hero-media {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .hero-media {
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(18,16,13,.24) 0%, rgba(18,16,13,0) 32%),
+        linear-gradient(0deg, rgba(18,16,13,.86) 0%, rgba(18,16,13,.08) 64%);
+    }
+
+    .hero-copy {
+      position: relative;
+      z-index: 1;
+      width: min(100%, var(--content));
+      margin: 0 auto;
+      padding: calc(var(--header-height) + 48px) var(--gutter) max(36px, env(safe-area-inset-bottom));
+    }
+
+    .eyebrow,
+    .chapter-index,
+    .image-label {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 11px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow { color: #f1a182; }
+
+    h1 {
+      max-width: 920px;
+      margin: 14px 0 16px;
+      font-size: clamp(3rem, 9vw, 7.5rem);
+      font-weight: 650;
+      letter-spacing: -.065em;
+      line-height: .88;
+      text-wrap: balance;
+    }
+
+    .hero-intro {
+      max-width: 620px;
+      margin: 0;
+      color: rgba(255,255,255,.82);
+      font-size: clamp(16px, 2vw, 20px);
+      line-height: 1.5;
+    }
+
+    .hero-facts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 24px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .hero-facts li {
+      padding: 9px 12px;
+      border: 1px solid rgba(255,255,255,.3);
+      border-radius: 999px;
+      background: rgba(23,21,18,.28);
+      font-size: 12px;
+      backdrop-filter: blur(8px);
+    }
+
+    main { background: var(--ivory); }
+
+    .chapter {
+      width: min(100%, var(--content));
+      margin: 0 auto;
+      padding: clamp(76px, 10vw, 150px) var(--gutter) 0;
+      scroll-margin-top: calc(var(--header-height) + 12px);
+    }
+
+    .chapter-heading {
+      display: grid;
+      gap: 14px;
+      max-width: 850px;
+      margin-bottom: clamp(30px, 5vw, 58px);
+    }
+
+    .chapter-index { color: var(--clay); }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(2.3rem, 6vw, 5.3rem);
+      font-weight: 600;
+      letter-spacing: -.055em;
+      line-height: .98;
+      text-wrap: balance;
+    }
+
+    .chapter-heading p {
+      max-width: 660px;
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(16px, 1.8vw, 19px);
+      line-height: 1.55;
+    }
+
+    .comparison-story + .comparison-story { margin-top: clamp(72px, 10vw, 140px); }
+
+    .story-header {
+      display: grid;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .story-header h3 {
+      margin: 0;
+      font-size: clamp(1.65rem, 3.6vw, 3rem);
+      letter-spacing: -.04em;
+      line-height: 1.05;
+    }
+
+    .story-header p {
+      max-width: 680px;
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .compare-switch {
+      display: inline-grid;
+      grid-template-columns: 1fr 1fr;
+      width: 100%;
+      margin: 4px 0 16px;
+      padding: 4px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--paper);
+    }
+
+    .compare-switch button {
+      min-height: 44px;
+      border: 0;
+      border-radius: 999px;
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+    }
+
+    .compare-switch button[aria-pressed="true"] {
+      background: var(--ink);
+      color: white;
+    }
+
+    .compare-media { display: grid; }
+
+    .compare-media figure { display: none; margin: 0; }
+    .comparison-story[data-view="existing"] [data-panel="existing"],
+    .comparison-story[data-view="concept"] [data-panel="concept"] { display: block; }
+
+    .media-card {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      border: 0;
+      background: #d7d0c3;
+      color: inherit;
+      cursor: zoom-in;
+      text-align: left;
+    }
+
+    .media-card img {
+      width: 100%;
+      height: auto;
+      transition: transform .5s ease;
+    }
+
+    .media-card:hover img { transform: scale(1.012); }
+
+    figcaption {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding-top: 10px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .image-label { color: var(--clay); }
+
+    .feature-figure { margin: 0; }
+    .feature-figure .media-card img { width: 100%; }
+
+    .proof-grid {
+      display: grid;
+      gap: 24px;
+      align-items: end;
+    }
+
+    .proof-grid .reference-card { margin: 0; }
+
+    .loft-stage {
+      margin-inline: calc(var(--gutter) * -1);
+      background: var(--ink);
+      color: white;
+    }
+
+    .loft-stage .media-card { background: #322c25; }
+    .loft-stage figcaption { padding: 12px var(--gutter) 20px; color: rgba(255,255,255,.65); }
+
+    .direction-rail {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: min(86vw, 520px);
+      gap: 14px;
+      margin-inline: calc(var(--gutter) * -1);
+      padding-inline: var(--gutter);
+      overflow-x: auto;
+      overscroll-behavior-inline: contain;
+      scroll-snap-type: inline mandatory;
+      scrollbar-width: none;
+    }
+
+    .direction-rail::-webkit-scrollbar { display: none; }
+
+    .direction-rail figure {
+      margin: 0;
+      scroll-snap-align: start;
+    }
+
+    .direction-rail .media-card { aspect-ratio: 3 / 2; }
+    .direction-rail img { width: 100%; height: 100%; object-fit: cover; }
+
+    .site-footer {
+      width: min(100%, var(--content));
+      margin: 0 auto;
+      padding: clamp(76px, 10vw, 140px) var(--gutter) max(32px, env(safe-area-inset-bottom));
+    }
+
+    .footer-panel {
+      display: grid;
+      gap: 28px;
+      padding-top: 26px;
+      border-top: 1px solid var(--line);
+    }
+
+    .footer-panel p { max-width: 520px; margin: 0; color: var(--muted); line-height: 1.6; }
+
+    .document-links { display: flex; flex-wrap: wrap; gap: 8px; }
+
+    .document-links a {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      padding: 0 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--paper);
+      font-size: 13px;
+      text-decoration: none;
+    }
+
+    .document-links a:hover { border-color: var(--ink); }
+
+    dialog {
+      width: 100%;
+      max-width: none;
+      height: 100%;
+      max-height: none;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background: rgba(12,11,9,.96);
+      color: white;
+    }
+
+    dialog::backdrop { background: rgba(12,11,9,.96); }
+
+    .lightbox-inner {
+      min-height: 100%;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 12px;
+      padding: max(14px, env(safe-area-inset-top)) 14px max(14px, env(safe-area-inset-bottom));
+    }
+
+    .lightbox-toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .lightbox-count {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 12px;
+      color: rgba(255,255,255,.65);
+    }
+
+    .icon-button {
+      min-width: 44px;
+      min-height: 44px;
+      display: inline-grid;
+      place-items: center;
+      border: 1px solid rgba(255,255,255,.28);
+      border-radius: 999px;
+      background: rgba(255,255,255,.06);
+      color: white;
+      cursor: pointer;
+    }
+
+    .lightbox-stage {
+      min-height: 0;
+      display: grid;
+      grid-template-columns: 44px minmax(0, 1fr) 44px;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .lightbox-stage img {
+      width: 100%;
+      height: 100%;
+      max-height: calc(100svh - 150px);
+      object-fit: contain;
+      user-select: none;
+    }
+
+    .lightbox-caption {
+      min-height: 22px;
+      margin: 0 auto;
+      color: rgba(255,255,255,.78);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    @media (min-width: 700px) {
+      .compare-switch { display: none; }
+
+      .compare-media {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+
+      .compare-media figure,
+      .comparison-story[data-view] .compare-media figure { display: block; }
+
+      .proof-grid {
+        grid-template-columns: minmax(0, 1.6fr) minmax(260px, .65fr);
+        gap: clamp(24px, 4vw, 64px);
+      }
+
+      .loft-stage { margin-inline: 0; }
+      .loft-stage figcaption { padding-inline: 14px; }
+      .footer-panel { grid-template-columns: 1fr auto; align-items: end; }
+      .document-links { justify-content: flex-end; }
+    }
+
+    @media (min-width: 960px) {
+      .site-header { gap: 42px; }
+      .chapter-nav { gap: 10px; }
+      .chapter-nav a { padding-inline: 16px; }
+
+      .story-header {
+        grid-template-columns: minmax(280px, .7fr) minmax(320px, 1fr);
+        align-items: end;
+        gap: 40px;
+      }
+
+      .story-header p { justify-self: end; }
+
+      .direction-rail {
+        grid-auto-flow: initial;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-columns: auto;
+        margin-inline: 0;
+        padding-inline: 0;
+        overflow: visible;
+      }
+    }
+
+    @media (max-width: 620px) {
+      :root { --header-height: 64px; }
+      .site-header { padding-inline: 16px; }
+      .brand { font-size: 11px; }
+      .chapter-nav a { padding-inline: 10px; font-size: 12px; }
+      .hero { min-height: 92svh; }
+      .hero-copy { padding-bottom: 28px; }
+      h1 { font-size: clamp(3.1rem, 16vw, 5rem); }
+      .hero-intro { max-width: 34ch; }
+      .lightbox-stage { grid-template-columns: 1fr; }
+      .lightbox-stage > .icon-button { position: fixed; z-index: 2; bottom: max(20px, env(safe-area-inset-bottom)); }
+      #lightbox-prev { left: 18px; }
+      #lightbox-next { right: 18px; }
+      .lightbox-caption { padding-inline: 56px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+    }
+  </style>
 </head>
 <body>
-<div style="font-family: 'Archivo', sans-serif; color: #211d18; max-width: 1180px; margin: 0 auto; padding: 56px 40px 96px;">
+  <a class="skip-link" href="#main">Skip to concepts</a>
 
-  <header style="border-bottom: 3px solid #211d18; padding-bottom: 28px; display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap;">
-    <div>
-      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.14em; color: #b4522e; text-transform: uppercase;">Concept study &middot; Rural Flanders, Belgium</div>
-      <h1 style="font-size: 46px; font-weight: 700; margin: 10px 0 8px; letter-spacing: -0.02em;">The Glass-Gable Barn</h1>
-      <div style="font-size: 17px; color: #5c564c; max-width: 640px; line-height: 1.5;">Demolition and rebuild of the main barn as a contemporary low volume, 17.0 &times; 7.5 m, with a fully glazed gable to the valley and an optional partial open loft inside the rear roof volume. Side wing, tractor lane, hedges and courtyard retained.</div>
-    </div>
-    <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; color: #5c564c; text-align: right; line-height: 1.9;">
-      <div>Footprint&ensp;17.0 &times; 7.5 m &middot; 127.5 m&sup2;</div>
-      <div>Status&ensp;pre-design / feasibility</div>
-      <div>August 2026</div>
-    </div>
+  <header class="site-header">
+    <a class="brand" href="#overview">Glass-Gable Barn</a>
+    <nav class="chapter-nav" aria-label="Concept chapters">
+      <a href="#exterior">Exterior</a>
+      <a href="#interior">Living hall</a>
+      <a href="#loft">Open loft</a>
+      <a href="#directions">Directions</a>
+    </nav>
   </header>
 
-  <div style="display: flex; justify-content: flex-end; align-items: center; gap: 26px; padding-top: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5c564c; flex-wrap: wrap;">
-    <span style="letter-spacing: 0.1em; text-transform: uppercase; color: #8a8378;">Drawings</span>
-    <label style="display: inline-flex; gap: 7px; align-items: center; cursor: pointer;"><input type="checkbox" id="ctl-dims" checked style="accent-color: #b4522e; margin: 0;"> dimensions</label>
-    <span style="display: inline-flex; gap: 12px; align-items: center;">sliding doors:
-      <label style="display: inline-flex; gap: 5px; align-items: center; cursor: pointer;"><input type="radio" name="ctl-doors" value="two" checked style="accent-color: #b4522e; margin: 0;"> two</label>
-      <label style="display: inline-flex; gap: 5px; align-items: center; cursor: pointer;"><input type="radio" name="ctl-doors" value="one" style="accent-color: #b4522e; margin: 0;"> one</label>
-    </span>
-  </div>
-
-
-  <section style="margin-top: 56px;">
-    <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 22px;">
-      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #b4522e;">01</span>
-      <h2 style="font-size: 26px; font-weight: 600; margin: 0; letter-spacing: -0.01em;">Reading the site</h2>
+  <section class="hero" id="overview" aria-labelledby="hero-title">
+    <picture>
+      <source media="(max-width: 699px)" srcset="renders/web/hero-valley-900.jpg">
+      <img class="hero-media" src="renders/web/hero-valley-1536.jpg" width="1536" height="1024" alt="Double-height barn living room looking through a full glass gable toward the Schorisse valley" fetchpriority="high">
+    </picture>
+    <div class="hero-copy">
+      <div class="eyebrow">Visual concept · Schorisse, Belgium</div>
+      <h1 id="hero-title">The Glass-Gable Barn</h1>
+      <p class="hero-intro">A restrained Flemish barn outside. A warm, open living hall framing the valley inside.</p>
+      <ul class="hero-facts" aria-label="Project summary">
+        <li>17.0 × 7.5 m envelope</li>
+        <li>Valley-facing glass gable</li>
+        <li>Optional rear loft</li>
+      </ul>
     </div>
-    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 18px;">
-      <figure style="margin: 0;">
-        <image-slot id="site-shared-lane" shape="rect" src="uploads/site-reference/photo-1-shared-laneway.jpg" placeholder="Site photo — shared tractor lane — drop image here" style="width: 100%; aspect-ratio: 3/3.4; border: 1px solid #d8d2c4;"></image-slot>
-        <figcaption style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5c564c; margin-top: 10px; line-height: 1.6;"><span style="color: #4c6142; font-weight: 500;">ACCESS</span> &mdash; shared tractor lane, hedge and pasture gate stay fully clear.</figcaption>
+  </section>
+
+  <main id="main">
+    <section class="chapter" id="exterior" aria-labelledby="exterior-title">
+      <header class="chapter-heading">
+        <span class="chapter-index">01 · Exterior</span>
+        <h2 id="exterior-title">A contemporary barn, grounded in its place.</h2>
+        <p>The architecture changes. The working lane, neighbouring building, hedges, trees and cobbled courtyard do not.</p>
+      </header>
+
+      <article class="comparison-story" data-compare data-view="concept">
+        <header class="story-header">
+          <h3>The glass gable</h3>
+          <p>The living room opens toward the valley while the narrow paved passage and neighbouring brick building remain exactly where they are.</p>
+        </header>
+        <div class="compare-switch" role="group" aria-label="Glass gable view">
+          <button type="button" data-show="existing" aria-pressed="false">Existing</button>
+          <button type="button" data-show="concept" aria-pressed="true">Concept</button>
+        </div>
+        <div class="compare-media">
+          <figure data-panel="existing">
+            <button class="media-card zoom" type="button" data-full="renders/web/existing-glass-gable-900.jpg" data-caption="Existing glass-gable site: hedge, passage and neighbouring building retained" aria-label="Expand existing glass-gable site photograph">
+              <img src="renders/web/existing-glass-gable-900.jpg" width="900" height="675" alt="Existing brick barn gable between a hedge and neighbouring brick building" loading="lazy" decoding="async">
+            </button>
+            <figcaption><span class="image-label">Existing</span><span>Retained context</span></figcaption>
+          </figure>
+          <figure data-panel="concept">
+            <button class="media-card zoom" type="button" data-full="renders/web/glass-gable-1448.jpg" data-caption="Glass-gable concept within the retained hedge-and-neighbour setting" aria-label="Expand glass-gable concept">
+              <img src="renders/web/glass-gable-900.jpg" srcset="renders/web/glass-gable-900.jpg 900w, renders/web/glass-gable-1448.jpg 1448w" sizes="(min-width: 700px) 48vw, 100vw" width="1448" height="1086" alt="Modern brick barn with a full-height glass gable viewed from the lawn" loading="lazy" decoding="async">
+            </button>
+            <figcaption><span class="image-label">Concept</span><span>Living room to valley</span></figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="comparison-story" data-compare data-view="concept">
+        <header class="story-header">
+          <h3>The shared lane</h3>
+          <p>Bedroom windows sit toward the rear, the stair marks the transition, and the larger living opening faces the valley end—without narrowing tractor access.</p>
+        </header>
+        <div class="compare-switch" role="group" aria-label="Shared tractor lane view">
+          <button type="button" data-show="existing" aria-pressed="false">Existing</button>
+          <button type="button" data-show="concept" aria-pressed="true">Concept</button>
+        </div>
+        <div class="compare-media">
+          <figure data-panel="existing">
+            <button class="media-card zoom" type="button" data-full="renders/web/existing-laneway-720.jpg" data-caption="Existing shared tractor lane and pasture access" aria-label="Expand existing shared tractor lane photograph">
+              <img src="renders/web/existing-laneway-720.jpg" width="720" height="960" alt="Existing grass tractor lane beside the brick barn, hedge and pasture gate" loading="lazy" decoding="async">
+            </button>
+            <figcaption><span class="image-label">Existing</span><span>Working access retained</span></figcaption>
+          </figure>
+          <figure data-panel="concept">
+            <button class="media-card zoom" type="button" data-full="renders/web/laneway-1086.jpg" data-caption="Program-aware lane elevation with bedroom, stair and living openings" aria-label="Expand shared-lane concept">
+              <img src="renders/web/laneway-720.jpg" srcset="renders/web/laneway-720.jpg 720w, renders/web/laneway-1086.jpg 1086w" sizes="(min-width: 700px) 48vw, 100vw" width="1086" height="1448" alt="Modern long-format brick barn elevation along the preserved tractor lane" loading="lazy" decoding="async">
+            </button>
+            <figcaption><span class="image-label">Concept</span><span>Rooms expressed outside</span></figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="comparison-story" data-compare data-view="concept">
+        <header class="story-header">
+          <h3>The courtyard arrival</h3>
+          <p>A recessed oak entrance and discreet rooflights sit behind the established hedges and hydrangeas. The cobbles and mature canopy remain the foreground.</p>
+        </header>
+        <div class="compare-switch" role="group" aria-label="Cobbled courtyard view">
+          <button type="button" data-show="existing" aria-pressed="false">Existing</button>
+          <button type="button" data-show="concept" aria-pressed="true">Concept</button>
+        </div>
+        <div class="compare-media">
+          <figure data-panel="existing">
+            <button class="media-card zoom" type="button" data-full="renders/web/existing-courtyard-720.jpg" data-caption="Existing cobbled courtyard, hedges, hydrangeas and mature trees" aria-label="Expand existing courtyard photograph">
+              <img src="renders/web/existing-courtyard-720.jpg" width="720" height="960" alt="Existing cobbled courtyard framed by hedges and mature trees in front of the brick barn" loading="lazy" decoding="async">
+            </button>
+            <figcaption><span class="image-label">Existing</span><span>Landscape retained</span></figcaption>
+          </figure>
+          <figure data-panel="concept">
+            <button class="media-card zoom" type="button" data-full="renders/web/courtyard-1086.jpg" data-caption="Courtyard concept with a recessed side entrance and flush loft rooflights" aria-label="Expand courtyard concept">
+              <img src="renders/web/courtyard-720.jpg" srcset="renders/web/courtyard-720.jpg 720w, renders/web/courtyard-1086.jpg 1086w" sizes="(min-width: 700px) 48vw, 100vw" width="1086" height="1448" alt="Modern brick barn with an oak side entrance behind the preserved cobbled courtyard and hedges" loading="lazy" decoding="async">
+            </button>
+            <figcaption><span class="image-label">Concept</span><span>Quiet courtyard entrance</span></figcaption>
+          </figure>
+        </div>
+      </article>
+    </section>
+
+    <section class="chapter" id="interior" aria-labelledby="interior-title">
+      <header class="chapter-heading">
+        <span class="chapter-index">02 · Living hall</span>
+        <h2 id="interior-title">The valley becomes the room.</h2>
+        <p>The front half stays open to the ridge, bringing kitchen, dining and living together around the real Schorisse outlook.</p>
+      </header>
+      <div class="proof-grid">
+        <figure class="feature-figure">
+          <button class="media-card zoom" type="button" data-full="renders/web/hero-valley-1536.jpg" data-caption="Double-height living hall with the actual valley outlook" aria-label="Expand valley-facing living hall concept">
+            <img src="renders/web/hero-valley-900.jpg" srcset="renders/web/hero-valley-900.jpg 900w, renders/web/hero-valley-1536.jpg 1536w" sizes="(min-width: 700px) 70vw, 100vw" width="1536" height="1024" alt="Warm minimalist living hall with exposed timber frames and a full glass gable overlooking fields" loading="lazy" decoding="async">
+          </button>
+          <figcaption><span class="image-label">Concept</span><span>Living · dining · kitchen</span></figcaption>
+        </figure>
+        <figure class="reference-card">
+          <button class="media-card zoom" type="button" data-full="renders/web/existing-valley-720.jpg" data-caption="The actual Schorisse valley outlook used in the interior concept" aria-label="Expand actual valley view">
+            <img src="renders/web/existing-valley-720.jpg" width="720" height="960" alt="Actual view across the lawn to rolling fields and tree lines" loading="lazy" decoding="async">
+          </button>
+          <figcaption><span class="image-label">Actual outlook</span><span>Fields and tree line</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="chapter" id="loft" aria-labelledby="loft-title">
+      <header class="chapter-heading">
+        <span class="chapter-index">03 · Open loft</span>
+        <h2 id="loft-title">Extra living space, without losing the volume.</h2>
+        <p>A compact lounge and library sits above the private rear rooms. The front living hall remains completely double-height.</p>
+      </header>
+      <figure class="loft-stage">
+        <button class="media-card zoom" type="button" data-full="renders/web/loft-1536.jpg" data-caption="Rear open mezzanine over the bedroom and service zone" aria-label="Expand open-loft concept">
+          <img src="renders/web/loft-900.jpg" srcset="renders/web/loft-900.jpg 900w, renders/web/loft-1536.jpg 1536w" sizes="(min-width: 700px) 90vw, 100vw" width="1536" height="1024" alt="Open mezzanine lounge with bookshelves above the rear rooms and a central stair" loading="lazy" decoding="async">
+        </button>
+        <figcaption><span class="image-label">Concept</span><span>Rear mezzanine · front living hall stays open to ridge</span></figcaption>
       </figure>
-      <figure style="margin: 0;">
-        <image-slot id="site-glass-gable" shape="rect" src="uploads/site-reference/photo-2-glass-gable-site.jpg" placeholder="Site photo — future glass gable — drop image here" style="width: 100%; aspect-ratio: 3/3.4; border: 1px solid #d8d2c4;"></image-slot>
-        <figcaption style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5c564c; margin-top: 10px; line-height: 1.6;"><span style="color: #b4522e; font-weight: 500;">GLASS END</span> &mdash; retained building, narrow path and left hedge set the real gable context.</figcaption>
-      </figure>
-      <figure style="margin: 0;">
-        <image-slot id="site-valley-outlook" shape="rect" src="uploads/site-reference/photo-3-valley-outlook.jpg" placeholder="Site photo — actual valley outlook — drop image here" style="width: 100%; aspect-ratio: 3/3.4; border: 1px solid #d8d2c4;"></image-slot>
-        <figcaption style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5c564c; margin-top: 10px; line-height: 1.6;"><span style="color: #4a7079; font-weight: 500;">THE VIEW</span> &mdash; actual fields, tree line and right hedge seen from the living room.</figcaption>
-      </figure>
-      <figure style="margin: 0;">
-        <image-slot id="site-cobbled-courtyard" shape="rect" src="uploads/site-reference/photo-4-cobbled-courtyard.jpg" placeholder="Site photo — cobbled courtyard — drop image here" style="width: 100%; aspect-ratio: 3/3.4; border: 1px solid #d8d2c4;"></image-slot>
-        <figcaption style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5c564c; margin-top: 10px; line-height: 1.6;"><span style="color: #4c6142; font-weight: 500;">RETAINED</span> &mdash; cobbles, hedges, hydrangeas and mature canopy frame the rooms and side entrance.</figcaption>
-      </figure>
-    </div>
-    <div style="display: flex; gap: 40px; margin-top: 28px; padding: 22px 26px; background: #fdfcf9; border: 1px solid #d8d2c4; flex-wrap: wrap;">
-      <div style="flex: 1; min-width: 260px;">
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #b4522e; text-transform: uppercase; margin-bottom: 8px;">Pacing the length</div>
-        <div style="font-size: 15px; line-height: 1.65; color: #3a352d;">A 5&prime;6&Prime; (168 cm) person walks a natural pace of ~0.67&ndash;0.70 m. <strong>25 paces &asymp; 16.8&ndash;17.5 m</strong> &mdash; confirming a 17.0 m long volume. Existing barn depth read from roof proportion: ~7.5 m.</div>
-      </div>
-      <div style="flex: 1; min-width: 260px;">
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #b4522e; text-transform: uppercase; margin-bottom: 8px;">Planning note (Flanders)</div>
-        <div style="font-size: 15px; line-height: 1.65; color: #3a352d;">Rebuilding on the same footprint and comparable volume is the safest permit route for a rural (often zone-foreign) barn. Keeping the pitched silhouette, terracotta roof and brick/timber palette supports the omgevingsvergunning.</div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section style="margin-top: 64px;">
-    <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 22px;">
-      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #b4522e;">02</span>
-      <h2 style="font-size: 26px; font-weight: 600; margin: 0; letter-spacing: -0.01em;">Site plan &mdash; what stays, what changes</h2>
-    </div>
-    <div style="background: #fdfcf9; border: 1px solid #d8d2c4; padding: 30px; display: flex; gap: 36px; flex-wrap: wrap; align-items: center;">
-      <svg viewBox="0 0 560 470" style="flex: 1.4; min-width: 380px; max-width: 620px;">
-        <rect x="60" y="330" width="440" height="120" fill="#e8e3d6"></rect>
-        <text x="280" y="425" font-family="IBM Plex Mono" font-size="11" fill="#8a8378" text-anchor="middle">COBBLED COURTYARD &mdash; RETAINED</text>
-        <rect x="60" y="40" width="440" height="150" fill="#eef0e6"></rect>
-        <text x="280" y="66" font-family="IBM Plex Mono" font-size="11" fill="#8a8378" text-anchor="middle">LAWN / OPEN LAND &mdash; VIEW</text>
-        <g data-dim style="display:inline;">
-          <path d="M 280 78 L 280 108" stroke="#b4522e" stroke-width="1.5" fill="none"></path>
-          <path d="M 274 86 L 280 78 L 286 86" stroke="#b4522e" stroke-width="1.5" fill="none"></path>
-          <text x="292" y="92" font-family="IBM Plex Mono" font-size="10.5" fill="#b4522e">glass gable faces valley</text>
-        </g>
-        <rect x="146" y="190" width="90" height="112" fill="#dedbd2" stroke="#8a8378" stroke-width="1.2" stroke-dasharray="5 4"></rect>
-        <text x="191" y="242" font-family="IBM Plex Mono" font-size="10.5" fill="#6f6a5f" text-anchor="middle">SIDE WING</text>
-        <text x="191" y="256" font-family="IBM Plex Mono" font-size="10.5" fill="#6f6a5f" text-anchor="middle">retained</text>
-        <rect x="236" y="188" width="112" height="118" fill="#f3d9cd" stroke="#b4522e" stroke-width="2.4"></rect>
-        <text x="292" y="240" font-family="IBM Plex Mono" font-size="11" fill="#8f3f22" text-anchor="middle" font-weight="600">NEW BARN</text>
-        <text x="292" y="255" font-family="IBM Plex Mono" font-size="10.5" fill="#8f3f22" text-anchor="middle">7.5 &times; 17.0 m</text>
-        <line x1="236" y1="190" x2="348" y2="190" stroke="#7fa3ad" stroke-width="5"></line>
-        <rect x="118" y="308" width="70" height="46" fill="#6a7a5c"></rect>
-        <rect x="332" y="308" width="70" height="46" fill="#6a7a5c"></rect>
-        <circle cx="153" cy="331" r="34" fill="#93a37f" opacity="0.65"></circle>
-        <circle cx="367" cy="331" r="34" fill="#93a37f" opacity="0.65"></circle>
-        <text x="260" y="345" font-family="IBM Plex Mono" font-size="10" fill="#f4f1ea" text-anchor="middle"></text>
-        <rect x="420" y="196" width="14" height="130" fill="#6a7a5c"></rect>
-        <rect x="60" y="196" width="14" height="110" fill="#6a7a5c"></rect>
-        <text x="450" y="262" font-family="IBM Plex Mono" font-size="10.5" fill="#4c6142" transform="rotate(90 450 262)" text-anchor="middle">HEDGE &mdash; RETAINED</text>
-        <rect x="470" y="60" width="52" height="120" fill="#dedbd2" stroke="#8a8378" stroke-width="1.2" stroke-dasharray="5 4"></rect>
-        <text x="496" y="124" font-family="IBM Plex Mono" font-size="10" fill="#6f6a5f" text-anchor="middle" transform="rotate(90 496 124)">NEIGHBOUR</text>
-        <g data-dim style="display:inline;">
-          <line x1="236" y1="316" x2="348" y2="316" stroke="#211d18" stroke-width="0.8"></line>
-          <text x="292" y="330" font-family="IBM Plex Mono" font-size="10" fill="#211d18" text-anchor="middle">17.0 m</text>
-        </g>
-        <text x="292" y="372" font-family="IBM Plex Mono" font-size="10" fill="#6f6a5f" text-anchor="middle">entry via existing door bay</text>
-        <path d="M 292 362 L 292 310" stroke="#6f6a5f" stroke-width="1" stroke-dasharray="3 3" fill="none"></path>
-      </svg>
-      <div style="flex: 1; min-width: 250px; display: flex; flex-direction: column; gap: 16px;">
-        <div style="display: flex; gap: 12px; align-items: flex-start;"><span style="width: 22px; height: 14px; background: #f3d9cd; border: 2px solid #b4522e; flex-shrink: 0; margin-top: 3px;"></span><div style="font-size: 14.5px; line-height: 1.55; color: #3a352d;"><strong>New construction</strong> &mdash; only the main barn is demolished and rebuilt, same footprint, ridge parallel to courtyard.</div></div>
-        <div style="display: flex; gap: 12px; align-items: flex-start;"><span style="width: 22px; height: 14px; background: #dedbd2; border: 1px dashed #8a8378; flex-shrink: 0; margin-top: 3px;"></span><div style="font-size: 14.5px; line-height: 1.55; color: #3a352d;"><strong>Retained buildings</strong> &mdash; attached side wing and neighbouring house are untouched; junction detailed with a slim expansion joint.</div></div>
-        <div style="display: flex; gap: 12px; align-items: flex-start;"><span style="width: 22px; height: 14px; background: #6a7a5c; flex-shrink: 0; margin-top: 3px;"></span><div style="font-size: 14.5px; line-height: 1.55; color: #3a352d;"><strong>Retained landscape</strong> &mdash; yew cubes, trees, perimeter hedges and cobbles stay; they already frame the entrance perfectly.</div></div>
-        <div style="display: flex; gap: 12px; align-items: flex-start;"><span style="width: 22px; height: 14px; background: #7fa3ad; flex-shrink: 0; margin-top: 3px;"></span><div style="font-size: 14.5px; line-height: 1.55; color: #3a352d;"><strong>Glass gable</strong> &mdash; the north-facing rear gable opens fully to lawn and valley: soft light, no overheating, big view.</div></div>
+    <section class="chapter" id="directions" aria-labelledby="directions-title">
+      <header class="chapter-heading">
+        <span class="chapter-index">04 · Material directions</span>
+        <h2 id="directions-title">One form, several characters.</h2>
+        <p>The site-grounded brick concept is the lead direction. These earlier studies remain as a compact palette of possible architectural moods.</p>
+      </header>
+      <div class="direction-rail" aria-label="Alternative material concepts">
+        <figure>
+          <button class="media-card zoom" type="button" data-full="renders/web/direction-black-barn.jpg" data-caption="Black Barn Lantern material study" aria-label="Expand Black Barn Lantern material study">
+            <img src="renders/web/direction-black-barn.jpg" width="720" height="480" alt="Dark contemporary barn material study with a luminous glass gable" loading="lazy" decoding="async">
+          </button>
+          <figcaption><span class="image-label">Study A</span><span>Black Barn Lantern</span></figcaption>
+        </figure>
+        <figure>
+          <button class="media-card zoom" type="button" data-full="renders/web/direction-quiet-flemish.jpg" data-caption="Quiet Flemish Lantern material study" aria-label="Expand Quiet Flemish Lantern material study">
+            <img src="renders/web/direction-quiet-flemish.jpg" width="720" height="480" alt="Warm brick Flemish barn material study with restrained contemporary detailing" loading="lazy" decoding="async">
+          </button>
+          <figcaption><span class="image-label">Study B</span><span>Quiet Flemish Lantern</span></figcaption>
+        </figure>
+        <figure>
+          <button class="media-card zoom" type="button" data-full="renders/web/direction-chalk-barn.jpg" data-caption="Chalk Barn material study" aria-label="Expand Chalk Barn material study">
+            <img src="renders/web/direction-chalk-barn.jpg" width="720" height="480" alt="Pale mineral-finished barn material study with terracotta roof" loading="lazy" decoding="async">
+          </button>
+          <figcaption><span class="image-label">Study C</span><span>Chalk Barn</span></figcaption>
+        </figure>
+        <figure>
+          <button class="media-card zoom" type="button" data-full="renders/web/direction-brick-veil.jpg" data-caption="Brick Veil material study" aria-label="Expand Brick Veil material study">
+            <img src="renders/web/direction-brick-veil.jpg" width="720" height="480" alt="Textural long-format brick barn material study" loading="lazy" decoding="async">
+          </button>
+          <figcaption><span class="image-label">Study D</span><span>Brick Veil</span></figcaption>
+        </figure>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <section style="margin-top: 64px;">
-    <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 22px;">
-      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #b4522e;">03</span>
-      <h2 style="font-size: 26px; font-weight: 600; margin: 0; letter-spacing: -0.01em;">The glass gable</h2>
+  <footer class="site-footer">
+    <div class="footer-panel">
+      <p>This website is the visual concept presentation. Dimensions, structural thinking, feasibility and cost assumptions are maintained separately as project documents.</p>
+      <nav class="document-links" aria-label="Project documents">
+        <a href="https://github.com/DenisCarriere/schorisse-build/blob/main/docs/ARCHITECTURAL-CONCEPT.md">Architecture</a>
+        <a href="https://github.com/DenisCarriere/schorisse-build/blob/main/docs/STRUCTURE-AND-ENVELOPE.md">Structure</a>
+        <a href="https://github.com/DenisCarriere/schorisse-build/blob/main/docs/FEASIBILITY-AND-PERFORMANCE.md">Feasibility</a>
+        <a href="https://github.com/DenisCarriere/schorisse-build/blob/main/docs/COSTS.md">Costs</a>
+      </nav>
     </div>
-    <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 18px;">
-      <div style="background: #fdfcf9; border: 1px solid #d8d2c4; padding: 26px;">
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #5c564c; text-transform: uppercase; margin-bottom: 14px;">Valley elevation &mdash; 1:75</div>
-        <svg viewBox="0 0 520 400" style="width: 100%;">
-          <line x1="30" y1="345" x2="490" y2="345" stroke="#211d18" stroke-width="2"></line>
-          <polygon points="95,345 95,204 260,113 425,204 425,345" fill="#dce6e6" stroke="#211d18" stroke-width="2.5"></polygon>
-          <polygon points="109,332 109,212 260,129 411,212 411,332" fill="none" stroke="#3a352d" stroke-width="4"></polygon>
-          <line x1="109" y1="252" x2="411" y2="252" stroke="#3a352d" stroke-width="4"></line>
-          <line x1="164" y1="252" x2="164" y2="332" stroke="#3a352d" stroke-width="2.5"></line>
-          <line x1="356" y1="252" x2="356" y2="332" stroke="#3a352d" stroke-width="2.5"></line>
-          <line x1="185" y1="212" x2="185" y2="252" stroke="#3a352d" stroke-width="2"></line>
-          <line x1="335" y1="212" x2="335" y2="252" stroke="#3a352d" stroke-width="2"></line>
-          <line x1="260" y1="129" x2="260" y2="252" stroke="#3a352d" stroke-width="2"></line>
-          <g data-doors="two" style="display:inline;">
-            <line x1="260" y1="252" x2="260" y2="332" stroke="#3a352d" stroke-width="2.5"></line>
-            <path d="M 196 296 L 244 296 M 236 290 L 244 296 L 236 302" stroke="#8f3f22" stroke-width="1.6" fill="none"></path>
-            <path d="M 324 296 L 276 296 M 284 290 L 276 296 L 284 302" stroke="#8f3f22" stroke-width="1.6" fill="none"></path>
-            <text x="260" y="322" font-family="IBM Plex Mono" font-size="10" fill="#8f3f22" text-anchor="middle">2&times; slider</text>
-          </g>
-          <g data-doors="one" style="display:none;">
-            <path d="M 200 296 L 320 296 M 312 290 L 320 296 L 312 302" stroke="#8f3f22" stroke-width="1.6" fill="none"></path>
-            <text x="260" y="322" font-family="IBM Plex Mono" font-size="10" fill="#8f3f22" text-anchor="middle">1&times; slider</text>
-          </g>
-          <g data-dim style="display:inline;">
-            <line x1="95" y1="368" x2="425" y2="368" stroke="#211d18" stroke-width="0.8"></line>
-            <line x1="95" y1="362" x2="95" y2="374" stroke="#211d18" stroke-width="0.8"></line>
-            <line x1="425" y1="362" x2="425" y2="374" stroke="#211d18" stroke-width="0.8"></line>
-            <text x="260" y="384" font-family="IBM Plex Mono" font-size="11" fill="#211d18" text-anchor="middle">7.50 m</text>
-            <line x1="448" y1="345" x2="448" y2="204" stroke="#211d18" stroke-width="0.8"></line>
-            <text x="462" y="278" font-family="IBM Plex Mono" font-size="11" fill="#211d18" transform="rotate(90 462 278)" text-anchor="middle">3.2 m</text>
-            <line x1="66" y1="345" x2="66" y2="113" stroke="#211d18" stroke-width="0.8"></line>
-            <text x="52" y="230" font-family="IBM Plex Mono" font-size="11" fill="#211d18" transform="rotate(-90 52 230)" text-anchor="middle">5.2 m ridge</text>
-            <text x="330" y="160" font-family="IBM Plex Mono" font-size="10" fill="#5c564c">clerestory</text>
-            <text x="120" y="245" font-family="IBM Plex Mono" font-size="10" fill="#5c564c">transom</text>
-          </g>
-        </svg>
-      </div>
-      <div style="display: flex; flex-direction: column; gap: 0; background: #211d18; color: #f4f1ea; padding: 26px 28px;">
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #e0906f; text-transform: uppercase; margin-bottom: 16px;">Build-up</div>
-        <div style="display: grid; gap: 14px; font-size: 14.5px; line-height: 1.55;">
-          <div style="display: flex; gap: 12px;"><span style="font-family: 'IBM Plex Mono', monospace; color: #e0906f; font-size: 12.5px; padding-top: 2px;">A</span><span>Laminated-timber (or steel) portal frame carries roof and ridge &mdash; the glass is fully non-structural.</span></div>
-          <div style="display: flex; gap: 12px;"><span style="font-family: 'IBM Plex Mono', monospace; color: #e0906f; font-size: 12.5px; padding-top: 2px;">B</span><span>Fixed triple-glazed panels (Ug &asymp; 0.5) in slim dark-anodised aluminium frames, sightlines &le; 50 mm.</span></div>
-          <div style="display: flex; gap: 12px;"><span style="font-family: 'IBM Plex Mono', monospace; color: #e0906f; font-size: 12.5px; padding-top: 2px;">C</span><span>One or two lift-slide doors, flush threshold to a terrace on the lawn side.</span></div>
-          <div style="display: flex; gap: 12px;"><span style="font-family: 'IBM Plex Mono', monospace; color: #e0906f; font-size: 12.5px; padding-top: 2px;">D</span><span>Triangular clerestory follows the roof pitch above a 3.0 m transom &mdash; light deep into the plan.</span></div>
-          <div style="display: flex; gap: 12px;"><span style="font-family: 'IBM Plex Mono', monospace; color: #e0906f; font-size: 12.5px; padding-top: 2px;">E</span><span>Glazed field &asymp; 7.0 &times; 4.9 m &asymp; 33 m&sup2;; north-facing, so no external shading needed.</span></div>
-        </div>
-        <div style="margin-top: auto; padding-top: 20px; border-top: 1px solid #3a352d; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #a89f90; line-height: 1.7;">Rest of the envelope: reclaimed red-brown brick + vertical dark timber in the old door bays, terracotta tile roof.</div>
-      </div>
-    </div>
-  </section>
+  </footer>
 
-  <section style="margin-top: 64px;">
-    <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 22px;">
-      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #b4522e;">04</span>
-      <h2 style="font-size: 26px; font-weight: 600; margin: 0; letter-spacing: -0.01em;">Plan &amp; long elevation</h2>
+  <dialog id="lightbox" aria-label="Expanded concept image">
+    <div class="lightbox-inner">
+      <div class="lightbox-toolbar">
+        <span class="lightbox-count" id="lightbox-count"></span>
+        <button class="icon-button" id="lightbox-close" type="button" aria-label="Close expanded image">×</button>
+      </div>
+      <div class="lightbox-stage">
+        <button class="icon-button" id="lightbox-prev" type="button" aria-label="Previous image">←</button>
+        <img id="lightbox-image" src="" alt="">
+        <button class="icon-button" id="lightbox-next" type="button" aria-label="Next image">→</button>
+      </div>
+      <p class="lightbox-caption" id="lightbox-caption"></p>
     </div>
-    <div style="background: #fdfcf9; border: 1px solid #d8d2c4; padding: 30px;">
-      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #5c564c; text-transform: uppercase; margin-bottom: 14px;">Floor plan (living / rental fit-out) &mdash; 1:100</div>
-      <svg viewBox="0 0 800 400" style="width: 100%;">
-        <rect x="60" y="60" width="680" height="300" fill="#f4f1ea" stroke="#211d18" stroke-width="7"></rect>
-        <line x1="740" y1="70" x2="740" y2="350" stroke="#7fa3ad" stroke-width="7"></line>
-        <line x1="380" y1="64" x2="380" y2="356" stroke="#211d18" stroke-width="3.5"></line>
-        <line x1="276" y1="64" x2="276" y2="356" stroke="#211d18" stroke-width="3.5"></line>
-        <line x1="64" y1="210" x2="276" y2="210" stroke="#211d18" stroke-width="3.5"></line>
-        <line x1="276" y1="150" x2="380" y2="150" stroke="#211d18" stroke-width="3.5"></line>
-        <rect x="304" y="330" width="52" height="26" fill="#fdfcf9" stroke="#8f3f22" stroke-width="2"></rect>
-        <text x="560" y="196" font-family="IBM Plex Mono" font-size="13" fill="#211d18" text-anchor="middle">LIVING &middot; DINING &middot; KITCHEN</text>
-        <text x="560" y="216" font-family="IBM Plex Mono" font-size="11" fill="#6f6a5f" text-anchor="middle">60 m&sup2; &middot; open to ridge, 5.2 m</text>
-        <text x="328" y="110" font-family="IBM Plex Mono" font-size="11" fill="#211d18" text-anchor="middle">BATH</text>
-        <text x="328" y="126" font-family="IBM Plex Mono" font-size="10" fill="#6f6a5f" text-anchor="middle">+ tech</text>
-        <text x="328" y="250" font-family="IBM Plex Mono" font-size="11" fill="#211d18" text-anchor="middle">ENTRY</text>
-        <text x="328" y="266" font-family="IBM Plex Mono" font-size="10" fill="#6f6a5f" text-anchor="middle">+ storage</text>
-        <text x="170" y="130" font-family="IBM Plex Mono" font-size="11" fill="#211d18" text-anchor="middle">BEDROOM 1</text>
-        <text x="170" y="146" font-family="IBM Plex Mono" font-size="10" fill="#6f6a5f" text-anchor="middle">16 m&sup2;</text>
-        <text x="170" y="290" font-family="IBM Plex Mono" font-size="11" fill="#211d18" text-anchor="middle">BEDROOM 2</text>
-        <text x="170" y="306" font-family="IBM Plex Mono" font-size="10" fill="#6f6a5f" text-anchor="middle">16 m&sup2;</text>
-        <text x="770" y="214" font-family="IBM Plex Mono" font-size="10" fill="#4a7079" transform="rotate(90 770 214)" text-anchor="middle">GLASS GABLE</text>
-        <text x="330" y="378" font-family="IBM Plex Mono" font-size="10" fill="#8f3f22" text-anchor="middle">entry &mdash; courtyard side</text>
-        <g data-dim style="display:inline;">
-          <line x1="60" y1="40" x2="740" y2="40" stroke="#211d18" stroke-width="0.8"></line>
-          <line x1="60" y1="34" x2="60" y2="46" stroke="#211d18" stroke-width="0.8"></line>
-          <line x1="740" y1="34" x2="740" y2="46" stroke="#211d18" stroke-width="0.8"></line>
-          <text x="400" y="30" font-family="IBM Plex Mono" font-size="11" fill="#211d18" text-anchor="middle">17.00 m</text>
-          <line x1="36" y1="60" x2="36" y2="360" stroke="#211d18" stroke-width="0.8"></line>
-          <text x="24" y="210" font-family="IBM Plex Mono" font-size="11" fill="#211d18" transform="rotate(-90 24 210)" text-anchor="middle">7.50 m</text>
-        </g>
-      </svg>
-      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #5c564c; text-transform: uppercase; margin: 34px 0 14px;">Courtyard elevation &mdash; 1:100</div>
-      <svg viewBox="0 0 800 260" style="width: 100%;">
-        <line x1="30" y1="230" x2="770" y2="230" stroke="#211d18" stroke-width="2"></line>
-        <rect x="60" y="102" width="680" height="128" fill="#e9ddd2" stroke="#211d18" stroke-width="2"></rect>
-        <polygon points="60,102 60,58 740,58 740,102" fill="#e4c1ae" stroke="#211d18" stroke-width="2"></polygon>
-        <text x="400" y="84" font-family="IBM Plex Mono" font-size="10" fill="#8f3f22" text-anchor="middle">terracotta tile roof &middot; eaves 3.2 m &middot; ridge 5.2 m behind</text>
-        <rect x="330" y="122" width="140" height="108" fill="#4b4238" stroke="#211d18" stroke-width="1.5"></rect>
-        <line x1="400" y1="122" x2="400" y2="230" stroke="#211d18" stroke-width="1"></line>
-        <text x="400" y="250" font-family="IBM Plex Mono" font-size="10" fill="#6f6a5f" text-anchor="middle">entry &mdash; dark vertical timber in the old barn-door bay</text>
-        <rect x="130" y="150" width="90" height="52" fill="#dce6e6" stroke="#211d18" stroke-width="1.5"></rect>
-        <rect x="560" y="150" width="90" height="52" fill="#dce6e6" stroke="#211d18" stroke-width="1.5"></rect>
-        <text x="120" y="120" font-family="IBM Plex Mono" font-size="10" fill="#6f6a5f">reclaimed brick facade</text>
-      </svg>
-    </div>
-  </section>
+  </dialog>
 
-  <section style="margin-top: 64px;">
-    <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 22px;">
-      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #b4522e;">05</span>
-      <h2 style="font-size: 26px; font-weight: 600; margin: 0; letter-spacing: -0.01em;">Early massing views</h2>
-    </div>
-    <div style="font-size: 13.5px; color: #5c564c; line-height: 1.6; margin: -8px 0 18px 30px;">These diagrammatic views establish the envelope only. Section 10 supersedes their facade, windows and landscape with the real-site, program-aware photoreal concepts.</div>
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px;">
-      <div style="background: #fdfcf9; border: 1px solid #d8d2c4; padding: 24px;">
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #5c564c; text-transform: uppercase; margin-bottom: 12px;">Front &mdash; glass gable to the valley</div>
-        <svg id="view-front" viewBox="0 0 800 520" style="width: 100%;">
-          <defs>
-            <linearGradient id="fSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a7c4d4"></stop><stop offset="0.7" stop-color="#dcE8e4"></stop><stop offset="1" stop-color="#f0f2e6"></stop></linearGradient>
-            <linearGradient id="fLawn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d8e0b4"></stop><stop offset="1" stop-color="#a8b788"></stop></linearGradient>
-            <linearGradient id="fBrick" x1="0" y1="0" x2="0.3" y2="1"><stop offset="0" stop-color="#cf9673"></stop><stop offset="1" stop-color="#95593f"></stop></linearGradient>
-            <linearGradient id="fRoof" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ad5f3e"></stop><stop offset="1" stop-color="#743a24"></stop></linearGradient>
-            <linearGradient id="fGlass" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0" stop-color="#8aa6ae"></stop><stop offset="0.55" stop-color="#c4d6d7"></stop><stop offset="1" stop-color="#9db6b8"></stop></linearGradient>
-            <linearGradient id="fGlow" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f5dcae"></stop><stop offset="1" stop-color="#d9a877"></stop></linearGradient>
-            <radialGradient id="fTree" cx="0.35" cy="0.3" r="0.9"><stop offset="0" stop-color="#b9c795"></stop><stop offset="1" stop-color="#5d6e47"></stop></radialGradient>
-            <linearGradient id="fHedge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#82946a"></stop><stop offset="1" stop-color="#46563a"></stop></linearGradient>
-            <radialGradient id="fVin" cx="0.5" cy="0.45" r="0.75"><stop offset="0" stop-color="#1c1a17" stop-opacity="0"></stop><stop offset="0.78" stop-color="#1c1a17" stop-opacity="0"></stop><stop offset="1" stop-color="#1c1a17" stop-opacity="0.28"></stop></radialGradient>
-            <pattern id="fBrickP" width="48" height="26" patternUnits="userSpaceOnUse">
-              <rect width="48" height="26" fill="none"></rect>
-              <line x1="0" y1="0" x2="48" y2="0" stroke="#e2cdb6" stroke-width="1.3" opacity="0.7"></line>
-              <line x1="0" y1="13" x2="48" y2="13" stroke="#e2cdb6" stroke-width="1.3" opacity="0.7"></line>
-              <line x1="24" y1="0" x2="24" y2="13" stroke="#e2cdb6" stroke-width="1.2" opacity="0.6"></line>
-              <line x1="0" y1="13" x2="0" y2="26" stroke="#e2cdb6" stroke-width="1.2" opacity="0.6"></line>
-              <line x1="48" y1="13" x2="48" y2="26" stroke="#e2cdb6" stroke-width="1.2" opacity="0.6"></line>
-              <rect x="0" y="1" width="23" height="11" fill="#8a4f38" opacity="0.35"></rect>
-              <rect x="25" y="14" width="22" height="11" fill="#c98f6a" opacity="0.35"></rect>
-            </pattern>
-            <pattern id="fTileP" width="40" height="13" patternUnits="userSpaceOnUse">
-              <line x1="0" y1="12" x2="40" y2="12" stroke="#4f2716" stroke-width="1.3" opacity="0.55"></line>
-              <line x1="10" y1="6" x2="10" y2="12" stroke="#4f2716" stroke-width="1" opacity="0.35"></line>
-              <line x1="30" y1="6" x2="30" y2="12" stroke="#4f2716" stroke-width="1" opacity="0.35"></line>
-            </pattern>
-            <filter id="fBlur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="7"></feGaussianBlur></filter>
-            <filter id="fSoft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="3.5"></feGaussianBlur></filter>
-            <filter id="fGrainF"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" result="n"></feTurbulence><feColorMatrix in="n" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"></feColorMatrix></filter>
-          </defs>
-          <rect x="40" y="40" width="720" height="302" fill="url(#fSky)"></rect>
-          <circle cx="628" cy="112" r="46" fill="#fff6df" opacity="0.55" filter="url(#fSoft)"></circle>
-          <circle cx="628" cy="112" r="24" fill="#fffbef" opacity="0.9" filter="url(#fSoft)"></circle>
-          <ellipse cx="240" cy="98" rx="90" ry="16" fill="#ffffff" opacity="0.5" filter="url(#fSoft)"></ellipse>
-          <ellipse cx="300" cy="112" rx="60" ry="12" fill="#ffffff" opacity="0.35" filter="url(#fSoft)"></ellipse>
-          <ellipse cx="520" cy="170" rx="70" ry="11" fill="#ffffff" opacity="0.3" filter="url(#fSoft)"></ellipse>
-          <rect x="40" y="328" width="720" height="16" fill="#7c8d68" opacity="0.6" filter="url(#fSoft)"></rect>
-          <rect x="40" y="342" width="720" height="88" fill="url(#fLawn)"></rect>
-          <ellipse cx="366" cy="437" rx="220" ry="13" fill="#2c3a26" opacity="0.3" filter="url(#fBlur)"></ellipse>
-          <ellipse cx="118" cy="433" rx="64" ry="9" fill="#2c3a26" opacity="0.28" filter="url(#fBlur)"></ellipse>
-          <line x1="112" y1="308" x2="112" y2="430" stroke="#453729" stroke-width="7"></line>
-          <circle cx="112" cy="240" r="74" fill="url(#fTree)"></circle>
-          <circle cx="90" cy="212" r="30" fill="#ccd6a6" opacity="0.45" filter="url(#fSoft)"></circle>
-          <circle cx="140" cy="270" r="26" fill="#41522f" opacity="0.35" filter="url(#fSoft)"></circle>
-          <polygon points="352,191 640,228 680,306 525,283" fill="url(#fRoof)" stroke="#5f3220" stroke-width="1.5"></polygon>
-          <polygon points="352,191 640,228 680,306 525,283" fill="url(#fTileP)" opacity="0.8"></polygon>
-          <polygon points="525,283 680,306 680,430 525,430" fill="#7e4c38" stroke="#4a2c1e" stroke-width="1.5"></polygon>
-          <polygon points="525,283 680,306 680,430 525,430" fill="url(#fBrickP)" opacity="0.28"></polygon>
-          <rect x="525" y="283" width="155" height="150" fill="#2c1c12" opacity="0.22"></rect>
-          <polygon points="180,430 180,283 352,191 525,283 525,430" fill="url(#fBrick)" stroke="#5f3220" stroke-width="2"></polygon>
-          <polygon points="180,430 180,283 352,191 525,283 525,430" fill="url(#fBrickP)" opacity="0.5"></polygon>
-          <path d="M 180 283 L 352 191 L 525 283" fill="none" stroke="#3d2115" stroke-width="7" opacity="0.55"></path>
-          <path d="M 186 292 L 352 203 L 519 292" fill="none" stroke="#000000" stroke-width="5" opacity="0.18" filter="url(#fSoft)"></path>
-          <polygon points="196,418 196,292 352,205 508,292 508,418" fill="url(#fGlass)" stroke="#26221c" stroke-width="5"></polygon>
-          <polygon points="274,418 274,318 430,318 430,418" fill="url(#fGlow)" opacity="0.55" filter="url(#fSoft)"></polygon>
-          <polygon points="214,300 268,270 236,418 204,418" fill="#ffffff" opacity="0.22"></polygon>
-          <polygon points="380,240 424,216 402,300 368,300" fill="#ffffff" opacity="0.18"></polygon>
-          <polygon points="450,300 478,300 500,418 470,418" fill="#ffffff" opacity="0.12"></polygon>
-          <line x1="196" y1="312" x2="508" y2="312" stroke="#26221c" stroke-width="4"></line>
-          <line x1="352" y1="205" x2="352" y2="418" stroke="#26221c" stroke-width="2.5"></line>
-          <line x1="274" y1="312" x2="274" y2="418" stroke="#26221c" stroke-width="2"></line>
-          <line x1="430" y1="312" x2="430" y2="418" stroke="#26221c" stroke-width="2"></line>
-          <line x1="252" y1="262" x2="252" y2="312" stroke="#26221c" stroke-width="1.6"></line>
-          <line x1="452" y1="262" x2="452" y2="312" stroke="#26221c" stroke-width="1.6"></line>
-          <rect x="170" y="430" width="365" height="14" fill="#cfc6b2" stroke="#6f6657" stroke-width="1"></rect>
-          <line x1="230" y1="430" x2="230" y2="444" stroke="#a89d87" stroke-width="1"></line>
-          <line x1="310" y1="430" x2="310" y2="444" stroke="#a89d87" stroke-width="1"></line>
-          <line x1="400" y1="430" x2="400" y2="444" stroke="#a89d87" stroke-width="1"></line>
-          <line x1="480" y1="430" x2="480" y2="444" stroke="#a89d87" stroke-width="1"></line>
-          <rect x="56" y="366" width="92" height="64" fill="url(#fHedge)"></rect>
-          <rect x="56" y="366" width="92" height="10" fill="#96a878" opacity="0.7"></rect>
-          <rect x="656" y="380" width="86" height="50" fill="url(#fHedge)"></rect>
-          <rect x="656" y="380" width="86" height="9" fill="#96a878" opacity="0.7"></rect>
-          <path d="M 60 428 l 4 -10 M 74 429 l 3 -9 M 152 430 l 4 -9 M 550 442 l 4 -10 M 590 448 l 3 -9 M 640 440 l 4 -9 M 120 452 l 4 -10 M 250 456 l 3 -9" stroke="#7c8d5e" stroke-width="1.6" opacity="0.8"></path>
-          <circle cx="472" cy="384" r="6" fill="#26221c"></circle>
-          <line x1="472" y1="390" x2="472" y2="428" stroke="#26221c" stroke-width="3"></line>
-          <line x1="40" y1="430" x2="760" y2="430" stroke="#211d18" stroke-width="2"></line>
-          <rect x="40" y="40" width="720" height="390" filter="url(#fGrainF)"></rect>
-          <rect x="40" y="40" width="720" height="390" fill="url(#fVin)"></rect>
-          <text x="352" y="472" font-family="IBM Plex Mono" font-size="11" fill="#5c564c" text-anchor="middle">glazed gable 7.5 m wide &#183; ridge 5.2 m &#183; eaves 3.2 m &#183; flush terrace</text>
-          <text x="640" y="472" font-family="IBM Plex Mono" font-size="11" fill="#5c564c" text-anchor="middle">reclaimed brick</text>
-        </svg>
-      </div>
-      <div style="background: #fdfcf9; border: 1px solid #d8d2c4; padding: 24px;">
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #5c564c; text-transform: uppercase; margin-bottom: 12px;">Side &mdash; garden elevation, 17 m</div>
-        <svg id="view-side" viewBox="0 0 800 520" style="width: 100%;">
-          <defs>
-            <linearGradient id="sSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a7c4d4"></stop><stop offset="0.7" stop-color="#dce8e4"></stop><stop offset="1" stop-color="#f0f2e6"></stop></linearGradient>
-            <linearGradient id="sLawn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d8e0b4"></stop><stop offset="1" stop-color="#a8b788"></stop></linearGradient>
-            <linearGradient id="sBrick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cd9271"></stop><stop offset="1" stop-color="#96593f"></stop></linearGradient>
-            <linearGradient id="sRoof" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b26446"></stop><stop offset="1" stop-color="#7a3e27"></stop></linearGradient>
-            <linearGradient id="sGlass" x1="0" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#8fa9b1"></stop><stop offset="1" stop-color="#c9dadb"></stop></linearGradient>
-            <radialGradient id="sTree" cx="0.35" cy="0.3" r="0.9"><stop offset="0" stop-color="#b9c795"></stop><stop offset="1" stop-color="#5d6e47"></stop></radialGradient>
-            <linearGradient id="sHedge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#82946a"></stop><stop offset="1" stop-color="#46563a"></stop></linearGradient>
-            <radialGradient id="sVin" cx="0.5" cy="0.45" r="0.75"><stop offset="0" stop-color="#1c1a17" stop-opacity="0"></stop><stop offset="0.78" stop-color="#1c1a17" stop-opacity="0"></stop><stop offset="1" stop-color="#1c1a17" stop-opacity="0.28"></stop></radialGradient>
-            <pattern id="sBrickP" width="48" height="26" patternUnits="userSpaceOnUse">
-              <line x1="0" y1="0" x2="48" y2="0" stroke="#e2cdb6" stroke-width="1.3" opacity="0.7"></line>
-              <line x1="0" y1="13" x2="48" y2="13" stroke="#e2cdb6" stroke-width="1.3" opacity="0.7"></line>
-              <line x1="24" y1="0" x2="24" y2="13" stroke="#e2cdb6" stroke-width="1.2" opacity="0.6"></line>
-              <line x1="0" y1="13" x2="0" y2="26" stroke="#e2cdb6" stroke-width="1.2" opacity="0.6"></line>
-              <line x1="48" y1="13" x2="48" y2="26" stroke="#e2cdb6" stroke-width="1.2" opacity="0.6"></line>
-              <rect x="0" y="1" width="23" height="11" fill="#8a4f38" opacity="0.35"></rect>
-              <rect x="25" y="14" width="22" height="11" fill="#c98f6a" opacity="0.35"></rect>
-            </pattern>
-            <pattern id="sTileP" width="40" height="13" patternUnits="userSpaceOnUse">
-              <line x1="0" y1="12" x2="40" y2="12" stroke="#4f2716" stroke-width="1.3" opacity="0.55"></line>
-              <line x1="10" y1="6" x2="10" y2="12" stroke="#4f2716" stroke-width="1" opacity="0.35"></line>
-              <line x1="30" y1="6" x2="30" y2="12" stroke="#4f2716" stroke-width="1" opacity="0.35"></line>
-            </pattern>
-            <filter id="sBlur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="7"></feGaussianBlur></filter>
-            <filter id="sSoft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="3.5"></feGaussianBlur></filter>
-            <filter id="sGrainF"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" result="n"></feTurbulence><feColorMatrix in="n" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"></feColorMatrix></filter>
-          </defs>
-          <rect x="40" y="120" width="720" height="290" fill="url(#sSky)"></rect>
-          <ellipse cx="560" cy="160" rx="90" ry="15" fill="#ffffff" opacity="0.45" filter="url(#sSoft)"></ellipse>
-          <ellipse cx="620" cy="175" rx="55" ry="10" fill="#ffffff" opacity="0.3" filter="url(#sSoft)"></ellipse>
-          <rect x="40" y="410" width="720" height="60" fill="url(#sLawn)"></rect>
-          <ellipse cx="400" cy="416" rx="335" ry="10" fill="#2c3a26" opacity="0.3" filter="url(#sBlur)"></ellipse>
-          <rect x="90" y="148" width="620" height="70" fill="url(#sRoof)" stroke="#5f3220" stroke-width="2"></rect>
-          <rect x="90" y="148" width="620" height="70" fill="url(#sTileP)" opacity="0.85"></rect>
-          <line x1="90" y1="150" x2="710" y2="150" stroke="#d99e7c" stroke-width="2" opacity="0.7"></line>
-          <rect x="100" y="218" width="600" height="192" fill="url(#sBrick)" stroke="#5f3220" stroke-width="2"></rect>
-          <rect x="100" y="218" width="600" height="192" fill="url(#sBrickP)" opacity="0.5"></rect>
-          <rect x="100" y="218" width="600" height="14" fill="#2c1c12" opacity="0.4" filter="url(#sSoft)"></rect>
-          <rect x="360" y="300" width="80" height="110" fill="#42382d" stroke="#211d18" stroke-width="1.5"></rect>
-          <rect x="360" y="300" width="10" height="110" fill="#5c4f40"></rect>
-          <line x1="380" y1="300" x2="380" y2="410" stroke="#211d18" stroke-width="1"></line>
-          <line x1="400" y1="300" x2="400" y2="410" stroke="#211d18" stroke-width="1"></line>
-          <line x1="420" y1="300" x2="420" y2="410" stroke="#211d18" stroke-width="1"></line>
-          <rect x="160" y="312" width="120" height="62" fill="url(#sGlass)" stroke="#26221c" stroke-width="3"></rect>
-          <polygon points="168,312 200,312 178,374 160,374" fill="#ffffff" opacity="0.28"></polygon>
-          <rect x="156" y="374" width="128" height="6" fill="#b3a894"></rect>
-          <rect x="520" y="312" width="120" height="62" fill="url(#sGlass)" stroke="#26221c" stroke-width="3"></rect>
-          <polygon points="528,312 560,312 538,374 520,374" fill="#ffffff" opacity="0.28"></polygon>
-          <rect x="516" y="374" width="128" height="6" fill="#b3a894"></rect>
-          <rect x="700" y="218" width="10" height="192" fill="#7fa3ad"></rect>
-          <ellipse cx="162" cy="428" rx="40" ry="7" fill="#2c3a26" opacity="0.28" filter="url(#sBlur)"></ellipse>
-          <line x1="160" y1="428" x2="160" y2="150" stroke="#453729" stroke-width="8"></line>
-          <circle cx="160" cy="150" r="66" fill="url(#sTree)"></circle>
-          <circle cx="140" cy="126" r="26" fill="#ccd6a6" opacity="0.45" filter="url(#sSoft)"></circle>
-          <rect x="726" y="330" width="34" height="80" fill="url(#sHedge)"></rect>
-          <path d="M 130 448 l 4 -10 M 250 452 l 3 -9 M 480 450 l 4 -10 M 680 446 l 3 -9 M 320 456 l 4 -9" stroke="#7c8d5e" stroke-width="1.6" opacity="0.8"></path>
-          <circle cx="620" cy="392" r="6" fill="#211d18"></circle>
-          <line x1="620" y1="398" x2="620" y2="430" stroke="#211d18" stroke-width="3"></line>
-          <line x1="40" y1="410" x2="760" y2="410" stroke="#211d18" stroke-width="2"></line>
-          <rect x="40" y="120" width="720" height="350" filter="url(#sGrainF)"></rect>
-          <rect x="40" y="120" width="720" height="350" fill="url(#sVin)"></rect>
-          <text x="240" y="452" font-family="IBM Plex Mono" font-size="11" fill="#5c564c" text-anchor="middle">17.0 m long &#183; terracotta tiles</text>
-          <text x="400" y="472" font-family="IBM Plex Mono" font-size="11" fill="#5c564c" text-anchor="middle">dark timber bay in the old barn-door position</text>
-          <text x="660" y="452" font-family="IBM Plex Mono" font-size="11" fill="#4a7079" text-anchor="middle">glass gable edge</text>
-        </svg>
-      </div>
-    </div>
-    <div style="background: #fdfcf9; border: 1px solid #d8d2c4; padding: 24px; margin-top: 18px;">
-      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #5c564c; text-transform: uppercase; margin-bottom: 12px;">Interior &mdash; living hall towards the glass gable</div>
-      <svg id="view-interior" viewBox="0 0 800 500" style="width: 100%; max-height: 560px;">
-          <defs>
-            <linearGradient id="iFloor" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#c6b493"></stop><stop offset="1" stop-color="#efe6d1"></stop></linearGradient>
-            <linearGradient id="iWall" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f0e9db"></stop><stop offset="1" stop-color="#d7cab4"></stop></linearGradient>
-            <linearGradient id="iWallR" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#f0e9db"></stop><stop offset="1" stop-color="#d7cab4"></stop></linearGradient>
-            <linearGradient id="iRoof" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eadcc4"></stop><stop offset="1" stop-color="#cfbd9d"></stop></linearGradient>
-            <linearGradient id="iSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9c6d5"></stop><stop offset="1" stop-color="#e8f0e8"></stop></linearGradient>
-            <radialGradient id="iVin" cx="0.5" cy="0.45" r="0.8"><stop offset="0" stop-color="#1c1a17" stop-opacity="0"></stop><stop offset="0.8" stop-color="#1c1a17" stop-opacity="0"></stop><stop offset="1" stop-color="#1c1a17" stop-opacity="0.22"></stop></radialGradient>
-            <clipPath id="iClip"><polygon points="270,390 270,215 400,140 530,215 530,390"></polygon></clipPath>
-            <filter id="iBlur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="6"></feGaussianBlur></filter>
-            <filter id="iSoft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="3"></feGaussianBlur></filter>
-            <filter id="iGrainF"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" result="n"></feTurbulence><feColorMatrix in="n" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0"></feColorMatrix></filter>
-          </defs>
-          <polygon points="40,500 760,500 530,390 270,390" fill="url(#iFloor)"></polygon>
-          <polygon points="40,500 40,105 270,215 270,390" fill="url(#iWall)"></polygon>
-          <polygon points="760,500 760,105 530,215 530,390" fill="url(#iWallR)"></polygon>
-          <polygon points="40,105 270,215 400,140 400,8" fill="url(#iRoof)"></polygon>
-          <polygon points="760,105 530,215 400,140 400,8" fill="url(#iRoof)"></polygon>
-          <line x1="400" y1="30" x2="93" y2="130" stroke="#b3a082" stroke-width="2.5"></line>
-          <line x1="400" y1="60" x2="152" y2="158" stroke="#b3a082" stroke-width="2.5"></line>
-          <line x1="400" y1="95" x2="215" y2="188" stroke="#b3a082" stroke-width="2.5"></line>
-          <line x1="400" y1="30" x2="707" y2="130" stroke="#b3a082" stroke-width="2.5"></line>
-          <line x1="400" y1="60" x2="648" y2="158" stroke="#b3a082" stroke-width="2.5"></line>
-          <line x1="400" y1="95" x2="585" y2="188" stroke="#b3a082" stroke-width="2.5"></line>
-          <g clip-path="url(#iClip)">
-            <rect x="268" y="138" width="264" height="180" fill="url(#iSky)"></rect>
-            <ellipse cx="340" cy="180" rx="55" ry="10" fill="#ffffff" opacity="0.5" filter="url(#iSoft)"></ellipse>
-            <ellipse cx="460" cy="220" rx="40" ry="8" fill="#ffffff" opacity="0.35" filter="url(#iSoft)"></ellipse>
-            <rect x="268" y="318" width="264" height="20" fill="#8a9a74"></rect>
-            <rect x="268" y="336" width="264" height="54" fill="#c3cf9d"></rect>
-            <circle cx="330" cy="296" r="27" fill="#71835c" filter="url(#iSoft)"></circle>
-            <circle cx="488" cy="304" r="16" fill="#71835c" opacity="0.8" filter="url(#iSoft)"></circle>
-          </g>
-          <polygon points="270,390 530,390 650,468 150,468" fill="#fff6df" opacity="0.16" filter="url(#iSoft)"></polygon>
-          <line x1="270" y1="300" x2="530" y2="300" stroke="#26221c" stroke-width="3.5"></line>
-          <line x1="335" y1="300" x2="335" y2="390" stroke="#26221c" stroke-width="2"></line>
-          <line x1="465" y1="300" x2="465" y2="390" stroke="#26221c" stroke-width="2"></line>
-          <line x1="400" y1="140" x2="400" y2="390" stroke="#26221c" stroke-width="2"></line>
-          <polygon points="270,390 270,215 400,140 530,215 530,390" fill="none" stroke="#26221c" stroke-width="4"></polygon>
-          <path d="M 212 418 L 212 187 L 400 107 L 588 187 L 588 418" fill="none" stroke="#4b4238" stroke-width="6"></path>
-          <path d="M 216 418 L 216 189 L 400 111" fill="none" stroke="#6b5f4d" stroke-width="2" opacity="0.7"></path>
-          <path d="M 132 456 L 132 149 L 400 61 L 668 149 L 668 456" fill="none" stroke="#3f372e" stroke-width="9"></path>
-          <path d="M 137 456 L 137 151 L 400 65" fill="none" stroke="#645846" stroke-width="2.5" opacity="0.7"></path>
-          <line x1="150" y1="500" x2="295" y2="390" stroke="#af9d7c" stroke-width="1.5" opacity="0.7"></line>
-          <line x1="310" y1="500" x2="345" y2="390" stroke="#af9d7c" stroke-width="1.5" opacity="0.7"></line>
-          <line x1="490" y1="500" x2="455" y2="390" stroke="#af9d7c" stroke-width="1.5" opacity="0.7"></line>
-          <line x1="650" y1="500" x2="505" y2="390" stroke="#af9d7c" stroke-width="1.5" opacity="0.7"></line>
-          <ellipse cx="640" cy="493" rx="110" ry="10" fill="#2c2519" opacity="0.3" filter="url(#iBlur)"></ellipse>
-          <rect x="560" y="424" width="150" height="62" fill="#302b23"></rect>
-          <rect x="560" y="424" width="150" height="8" fill="#4a4335"></rect>
-          <polygon points="560,424 710,424 736,410 586,410" fill="#5a5240"></polygon>
-          <line x1="620" y1="410" x2="620" y2="330" stroke="#211d18" stroke-width="1.5"></line>
-          <line x1="680" y1="410" x2="680" y2="322" stroke="#211d18" stroke-width="1.5"></line>
-          <circle cx="620" cy="338" r="14" fill="#f3d9ae" opacity="0.45" filter="url(#iSoft)"></circle>
-          <circle cx="680" cy="330" r="14" fill="#f3d9ae" opacity="0.45" filter="url(#iSoft)"></circle>
-          <circle cx="620" cy="338" r="9" fill="#26221c"></circle>
-          <circle cx="680" cy="330" r="9" fill="#26221c"></circle>
-          <ellipse cx="205" cy="495" rx="118" ry="10" fill="#2c2519" opacity="0.3" filter="url(#iBlur)"></ellipse>
-          <rect x="110" y="438" width="180" height="52" fill="#807a6c"></rect>
-          <rect x="110" y="438" width="180" height="10" fill="#9d9787"></rect>
-          <rect x="110" y="414" width="26" height="76" fill="#665f51"></rect>
-          <circle cx="438" cy="352" r="7" fill="#26221c"></circle>
-          <line x1="438" y1="359" x2="438" y2="390" stroke="#26221c" stroke-width="3"></line>
-          <rect x="40" y="8" width="720" height="484" filter="url(#iGrainF)"></rect>
-          <rect x="40" y="8" width="720" height="484" fill="url(#iVin)"></rect>
-          <text x="400" y="478" font-family="IBM Plex Mono" font-size="11.5" fill="#5c564c" text-anchor="middle">open to the ridge (5.2 m) &#183; laminated portal frames &#183; clerestory light &#183; polished screed + oak</text>
-        </svg>
-    </div>
-    <div style="background: #fdfcf9; border: 1px solid #d8d2c4; padding: 24px; margin-top: 18px;">
-      <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 6px;">
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #5c564c; text-transform: uppercase;">Photoreal renders &mdash; drop zone</div>
-        <div style="font-size: 13px; color: #6f6a5f;">Copy a prompt into Midjourney / DALL&middot;E / your render tool, then drag the result onto its slot. Attach your site photos as style reference for best results.</div>
-      </div>
-      <div style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr); gap: 18px; margin-top: 14px;">
-        <div style="display: flex; flex-direction: column; gap: 10px; min-width: 0;">
-          <image-slot id="render-front" shape="rect" src="renders/render-front.png" style="width: 100%; height: 210px;" placeholder="Drop front render here"></image-slot>
-          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; line-height: 1.6; color: #5c564c; background: #f4f1ea; border: 1px solid #e6e0d2; padding: 10px 12px; height: 128px; overflow: auto;" id="prompt-front"></div>
-          <button data-copy="front" style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; padding: 8px 12px; background: #211d18; color: #f4f1ea; border: none; cursor: pointer;">copy prompt</button>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 10px; min-width: 0;">
-          <image-slot id="render-side" shape="rect" src="renders/render-side.png" style="width: 100%; height: 210px;" placeholder="Drop side render here"></image-slot>
-          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; line-height: 1.6; color: #5c564c; background: #f4f1ea; border: 1px solid #e6e0d2; padding: 10px 12px; height: 128px; overflow: auto;" id="prompt-side"></div>
-          <button data-copy="side" style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; padding: 8px 12px; background: #211d18; color: #f4f1ea; border: none; cursor: pointer;">copy prompt</button>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 10px; min-width: 0;">
-          <image-slot id="render-interior" shape="rect" src="renders/render-interior.png" style="width: 100%; height: 210px;" placeholder="Drop interior render here"></image-slot>
-          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; line-height: 1.6; color: #5c564c; background: #f4f1ea; border: 1px solid #e6e0d2; padding: 10px 12px; height: 128px; overflow: auto;" id="prompt-interior"></div>
-          <button data-copy="interior" style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; padding: 8px 12px; background: #211d18; color: #f4f1ea; border: none; cursor: pointer;">copy prompt</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section style="margin-top: 64px;">
-    <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 22px;">
-      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #b4522e;">06</span>
-      <h2 style="font-size: 26px; font-weight: 600; margin: 0; letter-spacing: -0.01em;">Three ways to use 127.5 m&sup2;</h2>
-    </div>
-    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px;">
-      <div style="background: #fdfcf9; border: 1px solid #d8d2c4; border-top: 4px solid #b4522e; padding: 24px;">
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #b4522e; text-transform: uppercase;">Scenario A</div>
-        <h3 style="font-size: 19px; margin: 8px 0 10px; font-weight: 600;">Own living space</h3>
-        <p style="font-size: 14px; line-height: 1.6; color: #3a352d; margin: 0 0 14px;">2-bed ground-floor home, living hall open to the ridge behind the glass gable, with an optional rear lounge/library loft. Core daily living remains stair-free.</p>
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; line-height: 2; color: #5c564c;">Spec&ensp;high finish, full HVAC<br>VAT&ensp;<strong style="color: #211d18;">6%</strong> if sole &amp; own home &le; 200 m&sup2;</div>
-      </div>
-      <div style="background: #fdfcf9; border: 1px solid #d8d2c4; border-top: 4px solid #b4522e; padding: 24px;">
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #b4522e; text-transform: uppercase;">Scenario B</div>
-        <h3 style="font-size: 19px; margin: 8px 0 10px; font-weight: 600;">Long-term rental</h3>
-        <p style="font-size: 14px; line-height: 1.6; color: #3a352d; margin: 0 0 14px;">Same plan, robust mid-range finish. Rural 2-bed with this quality rents around &euro;1,100&ndash;1,400/month in Flanders.</p>
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; line-height: 2; color: #5c564c;">Spec&ensp;durable mid-range<br>VAT&ensp;<strong style="color: #211d18;">6%</strong> if rented &ge; 15 yrs as main residence</div>
-      </div>
-      <div style="background: #fdfcf9; border: 1px solid #d8d2c4; border-top: 4px solid #8a8378; padding: 24px;">
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #6f6a5f; text-transform: uppercase;">Scenario C</div>
-        <h3 style="font-size: 19px; margin: 8px 0 10px; font-weight: 600;">Hobby / atelier</h3>
-        <p style="font-size: 14px; line-height: 1.6; color: #3a352d; margin: 0 0 14px;">Insulated open shell: workshop, studio or car bay. Slab, envelope, glass gable, minimal services &mdash; fit out later.</p>
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; line-height: 2; color: #5c564c;">Spec&ensp;shell + utilities only<br>VAT&ensp;<strong style="color: #211d18;">21%</strong> (non-residential use)</div>
-      </div>
-    </div>
-  </section>
-
-  <section style="margin-top: 64px;">
-    <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 22px;">
-      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #b4522e;">07</span>
-      <h2 style="font-size: 26px; font-weight: 600; margin: 0; letter-spacing: -0.01em;">Cost estimate &mdash; rural Flanders, 2026</h2>
-    </div>
-    <div style="background: #fff7f0; border: 1px solid #e4c1ae; padding: 16px 22px; margin-bottom: 20px; font-size: 14px; line-height: 1.6; color: #6b3a24;"><strong>Full demolition assumed.</strong> Walls and roof structure are structurally unsound, so nothing is retained from the main barn. A documented structural report supports both the permit and the 6% demolition-&amp;-rebuild VAT regime; reclaimed bricks can still be sorted and re-used in the new facade.</div>
-    <div style="background: #fdfcf9; border: 1px solid #d8d2c4; padding: 26px 30px;">
-      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #5c564c; text-transform: uppercase; margin-bottom: 14px;">Breakdown &mdash; residential version (A/B), 127.5 m&sup2;, excl. VAT &amp; fees</div>
-      <table style="width: 100%; border-collapse: collapse; font-size: 14.5px;">
-        <tbody>
-          <tr style="border-bottom: 1px solid #e6e0d2;"><td style="padding: 9px 0; color: #3a352d;">Demolition, sorting &amp; disposal (structurally unsound barn)</td><td style="padding: 9px 0; text-align: right; font-family: 'IBM Plex Mono', monospace; white-space: nowrap;">&euro;15,000 &ndash; 25,000</td></tr>
-          <tr style="border-bottom: 1px solid #e6e0d2;"><td style="padding: 9px 0; color: #3a352d;">Foundations &amp; insulated floor slab</td><td style="padding: 9px 0; text-align: right; font-family: 'IBM Plex Mono', monospace; white-space: nowrap;">&euro;20,000 &ndash; 26,000</td></tr>
-          <tr style="border-bottom: 1px solid #e6e0d2;"><td style="padding: 9px 0; color: #3a352d;">Shell: masonry/timber-frame walls + laminated portal frame</td><td style="padding: 9px 0; text-align: right; font-family: 'IBM Plex Mono', monospace; white-space: nowrap;">&euro;60,000 &ndash; 78,000</td></tr>
-          <tr style="border-bottom: 1px solid #e6e0d2;"><td style="padding: 9px 0; color: #3a352d;">Roof: structure, sarking insulation, terracotta tiles</td><td style="padding: 9px 0; text-align: right; font-family: 'IBM Plex Mono', monospace; white-space: nowrap;">&euro;34,000 &ndash; 44,000</td></tr>
-          <tr style="border-bottom: 1px solid #e6e0d2;"><td style="padding: 9px 0; color: #3a352d;">Glass gable: &asymp;33 m&sup2; triple glazing, slim frames, 1&ndash;2 lift-slide doors</td><td style="padding: 9px 0; text-align: right; font-family: 'IBM Plex Mono', monospace; white-space: nowrap;">&euro;32,000 &ndash; 45,000</td></tr>
-          <tr style="border-bottom: 1px solid #e6e0d2;"><td style="padding: 9px 0; color: #3a352d;">Other windows &amp; doors</td><td style="padding: 9px 0; text-align: right; font-family: 'IBM Plex Mono', monospace; white-space: nowrap;">&euro;12,000 &ndash; 16,000</td></tr>
-          <tr style="border-bottom: 1px solid #e6e0d2;"><td style="padding: 9px 0; color: #3a352d;">Techniques: heat pump + floor heating, ventilation D, electrics, sanitary</td><td style="padding: 9px 0; text-align: right; font-family: 'IBM Plex Mono', monospace; white-space: nowrap;">&euro;48,000 &ndash; 62,000</td></tr>
-          <tr style="border-bottom: 1px solid #e6e0d2;"><td style="padding: 9px 0; color: #3a352d;">Interior finish: screed, floors, walls, kitchen, bathroom</td><td style="padding: 9px 0; text-align: right; font-family: 'IBM Plex Mono', monospace; white-space: nowrap;">&euro;48,000 &ndash; 66,000</td></tr>
-          <tr><td style="padding: 9px 0; color: #3a352d;">PV 6 kWp + 10,000 L rainwater recovery</td><td style="padding: 9px 0; text-align: right; font-family: 'IBM Plex Mono', monospace; white-space: nowrap;">&euro;11,000 &ndash; 15,000</td></tr>
-          <tr style="border-top: 2px solid #211d18;"><td style="padding: 12px 0; font-weight: 600;">Construction total (&asymp; &euro;2,200 &ndash; 3,000 / m&sup2;)</td><td style="padding: 12px 0; text-align: right; font-family: 'IBM Plex Mono', monospace; font-weight: 500; white-space: nowrap;">&euro;280,000 &ndash; 377,000</td></tr>
-        </tbody>
-      </table>
-      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; margin-top: 24px;">
-        <div style="border: 1px solid #d8d2c4; padding: 18px 20px;">
-          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.08em; color: #b4522e; text-transform: uppercase; margin-bottom: 8px;">A &middot; Own home &middot; 6% VAT</div>
-          <div style="font-size: 22px; font-weight: 700; letter-spacing: -0.01em;">&euro;297k &ndash; 400k</div>
-          <div style="font-size: 13px; color: #6f6a5f; margin-top: 6px; line-height: 1.5;">incl. VAT, excl. fees. At 21%: &euro;339k &ndash; 456k.</div>
-        </div>
-        <div style="border: 1px solid #d8d2c4; padding: 18px 20px;">
-          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.08em; color: #b4522e; text-transform: uppercase; margin-bottom: 8px;">B &middot; Rental &middot; 6% VAT</div>
-          <div style="font-size: 22px; font-weight: 700; letter-spacing: -0.01em;">&euro;286k &ndash; 371k</div>
-          <div style="font-size: 13px; color: #6f6a5f; margin-top: 6px; line-height: 1.5;">mid-range finish (&euro;270k&ndash;350k excl.), 15-yr rental condition.</div>
-        </div>
-        <div style="border: 1px solid #d8d2c4; padding: 18px 20px;">
-          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.08em; color: #6f6a5f; text-transform: uppercase; margin-bottom: 8px;">C &middot; Hobby shell &middot; 21% VAT</div>
-          <div style="font-size: 22px; font-weight: 700; letter-spacing: -0.01em;">&euro;194k &ndash; 248k</div>
-          <div style="font-size: 13px; color: #6f6a5f; margin-top: 6px; line-height: 1.5;">shell + glass gable + basic services (&euro;160k&ndash;205k excl.).</div>
-        </div>
-      </div>
-      <div style="margin-top: 22px; font-size: 13.5px; line-height: 1.7; color: #5c564c;">Add professional fees on top of any scenario: architect + stability engineer 8&ndash;12% of works, EPB reporter + safety coordinator &asymp; &euro;4,000&ndash;6,000. Benchmarks: Belgian new-build averages &euro;1,800&ndash;2,500/m&sup2; excl. VAT (2026); rural labour rates sit at the low end, but the 33 m&sup2; structural-glass gable and portal frame push this design toward the upper-middle of the band.</div>
-    </div>
-  </section>
-
-  <section style="margin-top: 64px;">
-    <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 22px;">
-      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #b4522e;">08</span>
-      <h2 style="font-size: 26px; font-weight: 600; margin: 0; letter-spacing: -0.01em;">Certification &mdash; Silver, Gold or Passivhaus?</h2>
-    </div>
-    <div style="display: grid; grid-template-columns: 1.15fr 1fr; gap: 18px;">
-      <div style="background: #fdfcf9; border: 1px solid #d8d2c4; padding: 26px;">
-        <div style="font-size: 15px; line-height: 1.7; color: #3a352d;">Honest note first: <strong>LEED is rarely certified for single homes in Belgium</strong> &mdash; BREEAM dominates here, and every Flemish new build must already meet near-zero-energy rules (E-level &le; E30), which overlaps heavily with LEED&rsquo;s energy credits. The smart move: pick the performance tier first, then decide whether to pay for the plaque. All three tiers below are buildable by local firms &mdash; Passivhaus especially, since Brussels has required near-passive levels for all new builds since 2015 and Flanders has many certified passive/timber-frame builders.</div>
-        <div style="display: grid; gap: 12px; margin-top: 20px;">
-          <div style="display: flex; gap: 12px; font-size: 14px; line-height: 1.55; color: #3a352d;"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #b4522e; padding-top: 2px;">EA</span><span>Air-source heat pump + floor heating, balanced ventilation with heat recovery, airtightness &le; 1.0 ACH, 6 kWp PV &mdash; the E30 package already scores most Energy &amp; Atmosphere points.</span></div>
-          <div style="display: flex; gap: 12px; font-size: 14px; line-height: 1.55; color: #3a352d;"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #b4522e; padding-top: 2px;">MR</span><span>Re-use of sorted bricks from the demolished barn, FSC laminated timber portal, construction-waste sorting plan.</span></div>
-          <div style="display: flex; gap: 12px; font-size: 14px; line-height: 1.55; color: #3a352d;"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #b4522e; padding-top: 2px;">WE</span><span>10,000 L rainwater cistern feeding WCs and garden (standard Flemish requirement, easy LEED water points).</span></div>
-          <div style="display: flex; gap: 12px; font-size: 14px; line-height: 1.55; color: #3a352d;"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #b4522e; padding-top: 2px;">SS/LT</span><span>Rebuild on an existing footprint, retained hedges and trees, permeable cobbles &mdash; site credits come almost for free.</span></div>
-        </div>
-      </div>
-      <div style="background: #211d18; color: #f4f1ea; padding: 26px 28px; display: flex; flex-direction: column; gap: 16px;">
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #e0906f; text-transform: uppercase;">Premium over the E30 base build</div>
-        <div style="border-bottom: 1px solid #3a352d; padding-bottom: 13px;">
-          <div style="display: flex; justify-content: space-between; font-size: 15px; font-weight: 600;"><span>LEED Silver (50&ndash;59 pts)</span><span style="font-family: 'IBM Plex Mono', monospace;">+ &euro;16k &ndash; 29k</span></div>
-          <div style="font-size: 12.5px; color: #a89f90; margin-top: 5px; line-height: 1.6;">Measures &euro;10&ndash;20k + certification &euro;6&ndash;9k &middot; &asymp;3&ndash;6%. Mostly already in the base spec.</div>
-        </div>
-        <div style="border-bottom: 1px solid #3a352d; padding-bottom: 13px;">
-          <div style="display: flex; justify-content: space-between; font-size: 15px; font-weight: 600;"><span>LEED Gold (60&ndash;79 pts)</span><span style="font-family: 'IBM Plex Mono', monospace;">+ &euro;27k &ndash; 45k</span></div>
-          <div style="font-size: 12.5px; color: #a89f90; margin-top: 5px; line-height: 1.6;">Better envelope, enhanced commissioning, low-VOC/EPD materials, extra water &amp; waste credits &euro;20&ndash;35k + certification &euro;7&ndash;10k &middot; &asymp;7&ndash;12%.</div>
-        </div>
-        <div style="border-bottom: 1px solid #3a352d; padding-bottom: 13px;">
-          <div style="display: flex; justify-content: space-between; font-size: 15px; font-weight: 600;"><span>Certified Passivhaus</span><span style="font-family: 'IBM Plex Mono', monospace;">+ &euro;26k &ndash; 49k</span></div>
-          <div style="font-size: 12.5px; color: #a89f90; margin-top: 5px; line-height: 1.6;">Airtightness &le;0.6 ACH, thermal-bridge-free details, PH-certified glazing (Uw &le; 0.8), PHPP design &euro;20&ndash;40k + certification &euro;6&ndash;9k &middot; &asymp;7&ndash;13%. Heating drops to &le;15 kWh/m&sup2;&middot;yr &mdash; a smaller heat pump partly pays it back.</div>
-        </div>
-        <div style="margin-top: auto; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #a89f90; line-height: 1.7;">Recommendation: Passivhaus if you keep or rent it long-term (local builders, real energy payback, EPC A+ rents faster); LEED Gold only if the plaque itself matters.</div>
-      </div>
-    </div>
-    <div style="background: #fff7f0; border: 1px solid #e4c1ae; padding: 16px 22px; margin-top: 18px; font-size: 14px; line-height: 1.6; color: #6b3a24;"><strong>Design watch-point for Passivhaus:</strong> the 33 m&sup2; glass gable faces north &mdash; pure heat loss, no solar gain. It stays certifiable with Uw &le; 0.8 frames and Ug &asymp; 0.5 triple glazing, but PHPP will demand a thicker envelope elsewhere (&asymp;35&ndash;40 cm walls, &asymp;45 cm roof). Budget the premium glazing inside the &euro;32&ndash;45k gable line, not on top.</div>
-  </section>
-
-
-  <section style="margin-top: 64px;">
-    <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 22px;">
-      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #b4522e;">09</span>
-      <h2 style="font-size: 26px; font-weight: 600; margin: 0; letter-spacing: -0.01em;">3D massing model</h2>
-    </div>
-    <div style="display: grid; grid-template-columns: 1.6fr 1fr; gap: 18px;">
-      <div style="background: #fdfcf9; border: 1px solid #d8d2c4; padding: 12px;">
-        <model-viewer src="models/barn.glb" camera-controls camera-orbit="215deg 75deg 28m" min-camera-orbit="auto 55deg 12m" max-camera-orbit="auto 88deg 55m" shadow-intensity="0.6" exposure="0.9" interaction-prompt="none" style="width: 100%; height: 460px; background: #f4f1ea;"></model-viewer>
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: #8a8378; padding: 10px 8px 4px;">drag to orbit &middot; scroll to zoom &middot; generated from the board's dimensions</div>
-      </div>
-      <div style="background: #fdfcf9; border: 1px solid #d8d2c4; padding: 26px; display: flex; flex-direction: column; gap: 14px;">
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #5c564c; text-transform: uppercase;">Take it into a 3D tool</div>
-        <div style="font-size: 14.5px; line-height: 1.6; color: #3a352d;">Starter massing model built from the exact concept dimensions: 17.0 &times; 7.5 m footprint, eaves 3.2 m, ridge 5.2 m, glazed gable with 3.0 m transom, timber door bay on the courtyard side.</div>
-        <a href="models/barn.stl" download style="display: block; text-decoration: none; border: 1px solid #211d18; padding: 12px 16px; color: #211d18;"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500;">barn.stl</span><br><span style="font-size: 12.5px; color: #5c564c;">Import into SketchUp Free (units: meters) &mdash; building only</span></a>
-        <a href="models/barn.glb" download style="display: block; text-decoration: none; border: 1px solid #211d18; padding: 12px 16px; color: #211d18;"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500;">barn.glb</span><br><span style="font-size: 12.5px; color: #5c564c;">Coloured 3D scene &mdash; Blender, three.js, AR quick look</span></a>
-        <div style="margin-top: auto; font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: #8a8378; line-height: 1.7;">SketchUp Free: New model &rarr; folder icon &rarr; Import &rarr; barn.stl, set import units to meters. The volume is a reference shell &mdash; model interiors over it.</div>
-      </div>
-    </div>
-  </section>
-
-  <section style="margin-top: 64px;">
-    <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 22px;">
-      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #b4522e;">10</span>
-      <h2 style="font-size: 26px; font-weight: 600; margin: 0; letter-spacing: -0.01em;">Site-grounded concept + open loft</h2>
-    </div>
-    <div style="background: #211d18; color: #f4f1ea; padding: 22px 26px; margin-bottom: 18px; display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px; align-items: start;">
-      <div style="font-size: 15px; line-height: 1.65;">The real site photographs now control the context. The neighbouring brick building, shared tractor lane, pasture gate, hedges, mature trees, narrow passage and cobbled courtyard stay exactly where they are. The architecture moves to a cleaner long-format brick language while keeping the fixed 17.0 &times; 7.5 m envelope.</div>
-      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; line-height: 1.75; color: #c8c0b3;">LOFT STRATEGY<br>rear 7&ndash;8.5 m mezzanine<br>front 8.5&ndash;10 m double-height<br>floor &asymp; +2.40&ndash;2.45 m<br>ridge stays 5.20 m</div>
-    </div>
-    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px;">
-      <div style="background: #fdfcf9; border: 1px solid #d8d2c4; padding: 14px;">
-        <image-slot id="site-concept-glass" shape="rect" src="renders/site-concepts/site-glass-gable-modern-brick-loft.png" placeholder="Glass gable concept — drop image here" style="width: 100%; aspect-ratio: 3/2; border: 1px solid #d8d2c4;"></image-slot>
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: #5c564c; margin-top: 10px; line-height: 1.6;"><span style="color: #b4522e;">GLASS GABLE</span> &mdash; living room within the retained hedge-and-neighbour setting</div>
-      </div>
-      <div style="background: #fdfcf9; border: 1px solid #d8d2c4; padding: 14px;">
-        <image-slot id="site-concept-lane" shape="rect" src="renders/site-concepts/site-shared-tractor-laneway-zoned-modern-brick.png" placeholder="Tractor laneway concept — drop image here" style="width: 100%; aspect-ratio: 3/2; border: 1px solid #d8d2c4;"></image-slot>
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: #5c564c; margin-top: 10px; line-height: 1.6;"><span style="color: #b4522e;">SHARED LANE</span> &mdash; bedrooms rear, stair marker centre, living window toward valley</div>
-      </div>
-      <div style="background: #fdfcf9; border: 1px solid #d8d2c4; padding: 14px;">
-        <image-slot id="site-concept-courtyard" shape="rect" src="renders/site-concepts/site-cobbled-courtyard-modern-brick-loft.png" placeholder="Cobbled courtyard concept — drop image here" style="width: 100%; aspect-ratio: 3/2; border: 1px solid #d8d2c4;"></image-slot>
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: #5c564c; margin-top: 10px; line-height: 1.6;"><span style="color: #b4522e;">COURTYARD</span> &mdash; rooms, recessed side entrance and flush loft rooflights</div>
-      </div>
-      <div style="background: #fdfcf9; border: 1px solid #d8d2c4; padding: 14px;">
-        <image-slot id="site-concept-view" shape="rect" src="renders/site-concepts/site-interior-real-valley.png" placeholder="Living room valley view — drop image here" style="width: 100%; aspect-ratio: 3/2; border: 1px solid #d8d2c4;"></image-slot>
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: #5c564c; margin-top: 10px; line-height: 1.6;"><span style="color: #b4522e;">LIVING HALL</span> &mdash; the real Schorisse valley view through the glass</div>
-      </div>
-      <div style="background: #fdfcf9; border: 1px solid #d8d2c4; padding: 14px;">
-        <image-slot id="site-concept-loft" shape="rect" src="renders/site-concepts/site-interior-open-loft-reverse.png" placeholder="Open loft concept — drop image here" style="width: 100%; aspect-ratio: 3/2; border: 1px solid #d8d2c4;"></image-slot>
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: #5c564c; margin-top: 10px; line-height: 1.6;"><span style="color: #b4522e;">OPEN LOFT</span> &mdash; lounge / library above the rear private core</div>
-      </div>
-      <div style="background: #fdfcf9; border: 1px solid #d8d2c4; padding: 14px;">
-        <image-slot id="site-reference-valley" shape="rect" src="uploads/site-reference/photo-3-valley-outlook.jpg" placeholder="Actual valley reference — drop image here" style="width: 100%; aspect-ratio: 3/2; border: 1px solid #d8d2c4;"></image-slot>
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: #5c564c; margin-top: 10px; line-height: 1.6;"><span style="color: #b4522e;">ACTUAL OUTLOOK</span> &mdash; field pattern, tree line and hedge retained in concepts</div>
-      </div>
-    </div>
-
-    <div style="display: grid; grid-template-columns: 1.35fr 1fr; gap: 18px; margin-top: 18px;">
-      <div style="background: #fdfcf9; border: 1px solid #d8d2c4; padding: 24px;">
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #5c564c; text-transform: uppercase; margin-bottom: 14px;">Plan logic &mdash; 17.0 &times; 7.5 m envelope</div>
-        <svg viewBox="0 0 800 430" style="width: 100%;">
-          <defs>
-            <pattern id="loftHatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-              <line x1="0" y1="0" x2="0" y2="10" stroke="#b4522e" stroke-width="2" opacity="0.28"></line>
-            </pattern>
-          </defs>
-          <rect x="60" y="70" width="680" height="300" fill="#f4f1ea" stroke="#211d18" stroke-width="6"></rect>
-          <line x1="380" y1="74" x2="380" y2="366" stroke="#211d18" stroke-width="3"></line>
-          <line x1="275" y1="74" x2="275" y2="366" stroke="#211d18" stroke-width="3"></line>
-          <line x1="64" y1="220" x2="275" y2="220" stroke="#211d18" stroke-width="3"></line>
-          <rect x="380" y="74" width="356" height="292" fill="#dce6e6"></rect>
-          <rect x="64" y="74" width="316" height="292" fill="url(#loftHatch)"></rect>
-          <line x1="740" y1="70" x2="740" y2="370" stroke="#4a7079" stroke-width="7"></line>
-          <rect x="292" y="228" width="70" height="132" fill="#e4c1ae" stroke="#8f3f22" stroke-width="2"></rect>
-          <path d="M 327 342 L 327 250 M 320 262 L 327 250 L 334 262" stroke="#8f3f22" stroke-width="2" fill="none"></path>
-          <text x="168" y="145" font-family="IBM Plex Mono" font-size="12" fill="#211d18" text-anchor="middle">BEDROOM 1</text>
-          <text x="168" y="295" font-family="IBM Plex Mono" font-size="12" fill="#211d18" text-anchor="middle">BEDROOM 2</text>
-          <text x="327" y="145" font-family="IBM Plex Mono" font-size="11" fill="#211d18" text-anchor="middle">BATH + TECH</text>
-          <text x="327" y="210" font-family="IBM Plex Mono" font-size="10.5" fill="#8f3f22" text-anchor="middle">STAIR AT TRANSITION</text>
-          <text x="558" y="205" font-family="IBM Plex Mono" font-size="13" fill="#211d18" text-anchor="middle">DOUBLE-HEIGHT</text>
-          <text x="558" y="226" font-family="IBM Plex Mono" font-size="13" fill="#211d18" text-anchor="middle">LIVING + DINING + KITCHEN</text>
-          <text x="558" y="248" font-family="IBM Plex Mono" font-size="10.5" fill="#5c564c" text-anchor="middle">&asymp;9.0 m long &middot; open to ridge</text>
-          <text x="220" y="96" font-family="IBM Plex Mono" font-size="10.5" fill="#8f3f22" text-anchor="middle">LOFT ABOVE REAR &asymp;8.0 m</text>
-          <text x="770" y="220" font-family="IBM Plex Mono" font-size="10.5" fill="#4a7079" transform="rotate(90 770 220)" text-anchor="middle">VALLEY GLASS GABLE</text>
-          <text x="60" y="397" font-family="IBM Plex Mono" font-size="10.5" fill="#5c564c">CLOSED / COURTYARD END</text>
-          <text x="740" y="397" font-family="IBM Plex Mono" font-size="10.5" fill="#5c564c" text-anchor="end">VALLEY / LIVING END</text>
-          <line x1="60" y1="415" x2="740" y2="415" stroke="#211d18" stroke-width="0.8"></line>
-          <line x1="60" y1="408" x2="60" y2="422" stroke="#211d18" stroke-width="0.8"></line>
-          <line x1="740" y1="408" x2="740" y2="422" stroke="#211d18" stroke-width="0.8"></line>
-          <text x="400" y="428" font-family="IBM Plex Mono" font-size="11" fill="#211d18" text-anchor="middle">17.00 m</text>
-        </svg>
-      </div>
-      <div style="background: #fdfcf9; border: 1px solid #d8d2c4; padding: 24px;">
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #5c564c; text-transform: uppercase; margin-bottom: 14px;">Loft cross-section &mdash; concept only</div>
-        <svg viewBox="0 0 520 360" style="width: 100%;">
-          <line x1="60" y1="310" x2="460" y2="310" stroke="#211d18" stroke-width="4"></line>
-          <path d="M 90 310 L 90 160 L 260 70 L 430 160 L 430 310" fill="#f4f1ea" stroke="#211d18" stroke-width="4"></path>
-          <line x1="105" y1="201" x2="415" y2="201" stroke="#8f3f22" stroke-width="5"></line>
-          <rect x="105" y="176" width="87" height="25" fill="#e4c1ae" opacity="0.85"></rect>
-          <rect x="328" y="176" width="87" height="25" fill="#e4c1ae" opacity="0.85"></rect>
-          <rect x="210" y="107" width="100" height="94" fill="#dce6e6" opacity="0.75"></rect>
-          <line x1="260" y1="201" x2="260" y2="70" stroke="#4a7079" stroke-width="1.5" stroke-dasharray="5 5"></line>
-          <text x="260" y="125" font-family="IBM Plex Mono" font-size="10.5" fill="#4a7079" text-anchor="middle">CENTRAL STANDING BAND</text>
-          <text x="148" y="192" font-family="IBM Plex Mono" font-size="9.5" fill="#6b3a24" text-anchor="middle">LOW STORAGE</text>
-          <text x="372" y="192" font-family="IBM Plex Mono" font-size="9.5" fill="#6b3a24" text-anchor="middle">LOW SEATING</text>
-          <text x="260" y="222" font-family="IBM Plex Mono" font-size="10.5" fill="#8f3f22" text-anchor="middle">LOFT FLOOR &asymp; +2.40&ndash;2.45 m</text>
-          <text x="260" y="290" font-family="IBM Plex Mono" font-size="11" fill="#211d18" text-anchor="middle">BEDROOM / SERVICE ROOMS BELOW</text>
-          <line x1="60" y1="336" x2="460" y2="336" stroke="#211d18" stroke-width="0.8"></line>
-          <text x="260" y="352" font-family="IBM Plex Mono" font-size="11" fill="#211d18" text-anchor="middle">7.50 m</text>
-          <text x="73" y="238" font-family="IBM Plex Mono" font-size="10" fill="#5c564c" transform="rotate(-90 73 238)" text-anchor="middle">3.20 m eaves</text>
-          <text x="247" y="63" font-family="IBM Plex Mono" font-size="10" fill="#5c564c" text-anchor="end">5.20 m ridge</text>
-        </svg>
-        <div style="font-size: 13.5px; color: #5c564c; line-height: 1.65; margin-top: 8px;">The shallow roof makes this a compact mezzanine, not a full second floor. Expect roughly 10&ndash;18 m&sup2; of comfortable standing area after structure and insulation, with useful low storage around it. Inner roof geometry, stair headroom, structure, fire safety and permitting need measured design by the project architect and engineer. The section 07 budget remains the ground-floor base case and does not yet include the loft, stair or rooflights.</div>
-      </div>
-    </div>
-  </section>
-
-  <footer style="margin-top: 72px; border-top: 1px solid #d8d2c4; padding-top: 18px; font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: #8a8378; line-height: 1.8;">Pre-design estimate, not a quotation. Cost basis: Belgian new-build market ranges 2026 (&euro;1,800&ndash;2,500/m&sup2; excl. VAT; Nieuwbouwbarometer 2025 avg. &euro;2,478/m&sup2; all-in). VAT: 6% demolition-&amp;-rebuild regime permanent since 1 July 2025 (Programmawet 29/07/2025) &mdash; own sole home &le; 200 m&sup2;, or &ge; 15-year private rental as main residence; otherwise 21%. Verify eligibility with your notary/accountant and the omgevingsvergunning with the municipality.</footer>
-</div>
-<script>
-// ---- <image-slot>: drag/drop or click-to-browse image placeholder.
-// Persists drops to localStorage; falls back to the src attribute when the
-// file exists next to the page (e.g. uploads/*.png).
-class ImageSlot extends HTMLElement {
-  connectedCallback() {
-    if (this._init) return; this._init = true;
-    const key = 'imgslot:' + (this.id || Math.random());
-    const ph = document.createElement('div');
-    ph.className = 'is-ph';
-    ph.textContent = this.getAttribute('placeholder') || 'Drop image here';
-    this.appendChild(ph);
-    const input = document.createElement('input');
-    input.type = 'file'; input.accept = 'image/*'; input.style.display = 'none';
-    this.appendChild(input);
-
-    const show = (url, clearable) => {
-      this.querySelectorAll('img.is-img, .is-clear').forEach(el => el.remove());
-      const img = document.createElement('img');
-      img.className = 'is-img'; img.alt = ph.textContent; img.src = url;
-      img.onerror = () => { img.remove(); this.querySelector('.is-clear')?.remove(); };
-      this.appendChild(img);
-      if (clearable) {
-        const x = document.createElement('button');
-        x.className = 'is-clear'; x.textContent = '\u00d7'; x.title = 'Remove image';
-        x.onclick = e => { e.stopPropagation(); localStorage.removeItem(key); img.remove(); x.remove(); tryStaticSrc(); };
-        this.appendChild(x);
-      }
-    };
-    const tryStaticSrc = () => { const src = this.getAttribute('src'); if (src) show(src, false); };
-
-    const stored = localStorage.getItem(key);
-    if (stored) show(stored, true); else tryStaticSrc();
-
-    const accept = file => {
-      if (!file || !file.type.startsWith('image/')) return;
-      const r = new FileReader();
-      r.onload = () => {
-        try { localStorage.setItem(key, r.result); } catch (e) { /* too big for quota: show without persisting */ }
-        show(r.result, true);
-      };
-      r.readAsDataURL(file);
-    };
-    ph.addEventListener('click', () => input.click());
-    input.addEventListener('change', () => accept(input.files[0]));
-    this.addEventListener('dragover', e => { e.preventDefault(); this.classList.add('is-over'); });
-    this.addEventListener('dragleave', () => this.classList.remove('is-over'));
-    this.addEventListener('drop', e => {
-      e.preventDefault(); this.classList.remove('is-over');
-      accept(e.dataTransfer.files[0]);
+  <script>
+    document.querySelectorAll('[data-compare]').forEach((comparison) => {
+      comparison.querySelectorAll('[data-show]').forEach((button) => {
+        button.addEventListener('click', () => {
+          const view = button.dataset.show;
+          comparison.dataset.view = view;
+          comparison.querySelectorAll('[data-show]').forEach((item) => {
+            item.setAttribute('aria-pressed', String(item === button));
+          });
+        });
+      });
     });
-  }
-}
-customElements.define('image-slot', ImageSlot);
 
-// ---- render prompts (front / side / interior) + copy buttons
-const prompts = {
-    front: "Use the attached line render as a strict structure reference and keep its exact proportions. Photorealistic architectural photography, contemporary rebuilt Flemish barn in rural Belgium. Exact dimensions: building 7.5m wide, gable eaves at 3.2m, ridge at 5.2m, symmetric 2.0m roof rise (approximately 28.1-degree pitch). Fully glazed gable end 7.0m wide x 4.9m high: transom at 3.0m, triangular clerestory above following the roofline, slim dark anodised aluminium mullions (50mm), two lift-slide glass doors at centre. Terracotta tile roof, reclaimed red-brown brick walls, flush natural stone terrace, trimmed square yew hedge cubes left and right, honey locust tree, view from the lawn at golden hour, 35mm lens, ultra realistic, high detail",
-    side: "Use the attached line render as a strict structure reference and keep its exact proportions. Photorealistic architectural photography, long elevation of a contemporary rebuilt Flemish barn in rural Belgium. Exact dimensions: 17.0m long, 7.5m wide, eaves at 3.2m, ridge at 5.2m, symmetric 2.0m roof rise (approximately 28.1-degree pitch); optional partial loft remains inside the rear roof volume. Use sophisticated long-format fired brick in warm umber and red-brown tones, thin dark terracotta tiles and slim dark-bronze frames. Express the plan rather than spacing windows evenly: modest bedroom windows at the rear, a tall narrow stair marker at the middle transition, and a larger living-room opening toward the valley glass gable. No dormers or exterior volume change, rural Belgian context, soft daylight, 35mm lens, ultra realistic",
-    interior: "Use the attached line render as a strict structure reference and keep its exact proportions and one-point perspective. Photorealistic interior photography, living hall of a rebuilt contemporary barn in rural Belgium. Exact dimensions: room 6.7m wide, ceiling open to the ridge at 5.2m, eaves line at 3.2m. Two exposed laminated timber portal frames, polished concrete floor with oak accents, dark oak kitchen island right with two black pendant lights, low grey sofa left, full-height triple-glazed gable wall ahead (transom at 3.0m, triangular clerestory above, slim dark mullions), view onto flat Flemish farmland and hedges, soft north light, minimalist Belgian design, ultra realistic, wide angle 24mm"
-};
-document.getElementById('prompt-front').textContent = prompts.front;
-document.getElementById('prompt-side').textContent = prompts.side;
-document.getElementById('prompt-interior').textContent = prompts.interior;
-document.querySelectorAll('[data-copy]').forEach(btn => {
-  btn.addEventListener('click', () => {
-    navigator.clipboard.writeText(prompts[btn.dataset.copy]);
-    btn.textContent = 'copied \u2713';
-    clearTimeout(btn._t);
-    btn._t = setTimeout(() => { btn.textContent = 'copy prompt'; }, 1600);
-  });
-});
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    const lightboxCount = document.getElementById('lightbox-count');
+    const zoomButtons = [...document.querySelectorAll('.zoom')];
+    let activeIndex = 0;
+    let returnFocus = null;
+    let touchStartX = 0;
 
-// ---- drawing options
-document.getElementById('ctl-dims').addEventListener('change', e => {
-  document.querySelectorAll('[data-dim]').forEach(g => { g.style.display = e.target.checked ? 'inline' : 'none'; });
-});
-document.querySelectorAll('input[name="ctl-doors"]').forEach(r => {
-  r.addEventListener('change', () => {
-    document.querySelectorAll('[data-doors]').forEach(g => { g.style.display = g.dataset.doors === r.value ? 'inline' : 'none'; });
-  });
-});
-</script>
+    function showImage(index) {
+      activeIndex = (index + zoomButtons.length) % zoomButtons.length;
+      const source = zoomButtons[activeIndex];
+      const preview = source.querySelector('img');
+      lightboxImage.src = source.dataset.full || preview.currentSrc || preview.src;
+      lightboxImage.alt = preview.alt;
+      lightboxCaption.textContent = source.dataset.caption || preview.alt;
+      lightboxCount.textContent = `${activeIndex + 1} / ${zoomButtons.length}`;
+    }
+
+    function openLightbox(index, trigger) {
+      returnFocus = trigger;
+      showImage(index);
+      document.body.classList.add('is-locked');
+      lightbox.showModal();
+      document.getElementById('lightbox-close').focus();
+    }
+
+    function closeLightbox() {
+      lightbox.close();
+    }
+
+    lightbox.addEventListener('close', () => {
+      document.body.classList.remove('is-locked');
+      lightboxImage.src = '';
+      returnFocus?.focus();
+    });
+
+    zoomButtons.forEach((button, index) => {
+      button.addEventListener('click', () => openLightbox(index, button));
+    });
+
+    document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+    document.getElementById('lightbox-prev').addEventListener('click', () => showImage(activeIndex - 1));
+    document.getElementById('lightbox-next').addEventListener('click', () => showImage(activeIndex + 1));
+
+    lightbox.addEventListener('click', (event) => {
+      if (event.target === lightbox) closeLightbox();
+    });
+
+    lightbox.addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowLeft') showImage(activeIndex - 1);
+      if (event.key === 'ArrowRight') showImage(activeIndex + 1);
+    });
+
+    lightboxImage.addEventListener('touchstart', (event) => {
+      touchStartX = event.changedTouches[0].clientX;
+    }, { passive: true });
+
+    lightboxImage.addEventListener('touchend', (event) => {
+      const distance = event.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(distance) < 50) return;
+      showImage(activeIndex + (distance < 0 ? 1 : -1));
+    }, { passive: true });
+  </script>
 </body>
 </html>
