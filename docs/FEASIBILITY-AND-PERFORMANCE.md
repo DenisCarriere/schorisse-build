@@ -32,6 +32,8 @@ and project architect.
 - Retain the neighbouring brick building and narrow paved passage.
 - Preserve the cobbled courtyard, curbs, clipped hedges, hydrangeas and mature
   trees as far as construction access allows.
+- Keep all lane lighting flush or shallow, shielded downward and free of ground
+  obstacles; assess glare and spill toward the neighbour and pasture.
 - Develop a construction logistics plan for the constrained site.
 
 ## Baseline energy direction
@@ -89,6 +91,22 @@ The rear triangular loft window should be included in the same model. Its smalle
 area and courtyard orientation may behave differently from the front gable, but
 orientation, privacy, glare, opening ventilation and safety glazing still require
 project-specific design.
+
+The aligned lane-facing living and stair windows must be modelled together with
+the front and rear gables. Confirm useful daylight, privacy, summer glare and
+opening ventilation without adding exterior screens that obstruct the selected
+clear-window language.
+
+## Entrance and exterior lighting
+
+The timber-lined courtyard entrance is a visual hierarchy device, not a change to
+the all-brick wall strategy. Design development should confirm weather protection
+inside the recess, durable timber specification, slip-resistant flush threshold,
+drainage, accessibility, door security, lighting maintenance and fire behaviour.
+
+Use warm shielded exterior fixtures with controlled beams. Confirm dark-sky,
+neighbour, ecology and local planning expectations, and provide switching,
+dimming and presence control so the building is not continuously over-lit.
 
 ## Summer comfort and dark cladding
 

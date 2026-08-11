@@ -108,10 +108,15 @@ The openings communicate the interior sequence:
 
 There is no entrance on the tractor-lane facade. All windows remain clear and
 unobstructed; the thick wall build-up is expressed through deep reveals.
+Three low-profile shielded downlights sit beneath the eaves to identify the room
+sequence after dark without introducing posts, bollards or projections into the
+working lane.
 
 ### Courtyard elevation
 
-- recessed smoked-oak entrance within the rear/service zone;
+- one clearly identifiable entrance in the rear/service zone: a full-height
+  smoked-oak door and vertical timber-lined recess inside a deep matte-black
+  portal, with a concealed warm soffit light;
 - clear residential windows aligned with the rooms rather than formal symmetry;
 - one broad triangular black-framed window in the upper rear gable, lighting the
   open loft while remaining smaller and quieter than the front glass wall;
@@ -131,6 +136,20 @@ mullions. A black roof of small gently curved hollow ceramic Flemish tiles,
 black rainwater details and a smoked-oak courtyard entrance complete the exterior.
 The masonry is a non-load-bearing exterior finish over the ICF shell, not a
 reconstruction of the existing brickwork.
+
+Timber remains limited to the joinery and inner lining of the recessed entrance;
+it does not become a second exterior wall finish. The front gable piers receive
+restrained shielded warm downlights, while the lane uses shallow eaves-mounted
+fixtures that preserve tractor clearance and limit spill toward the neighbour.
+
+### Interior and exterior opening alignment
+
+The interior concept follows the same opening order as the exterior elevations.
+Looking from the front glass gable toward the rear loft, the larger lane-facing
+living window sits above the kitchen worktop, the tall stair window lights the
+stair, and the broad triangular rear gable window forms the outlook behind the
+loft lounge. The two rear bedroom windows remain inside the enclosed bedroom
+zone beneath the loft and therefore do not open into the living hall.
 
 ## Optional partial open loft
 

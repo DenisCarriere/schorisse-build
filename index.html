@@ -363,29 +363,6 @@
 
     .developed-grid .media-card { background: #20201f; }
 
-    .direction-rail {
-      display: grid;
-      grid-auto-flow: column;
-      grid-auto-columns: min(86vw, 520px);
-      gap: 14px;
-      margin-inline: calc(var(--gutter) * -1);
-      padding-inline: var(--gutter);
-      overflow-x: auto;
-      overscroll-behavior-inline: contain;
-      scroll-snap-type: inline mandatory;
-      scrollbar-width: none;
-    }
-
-    .direction-rail::-webkit-scrollbar { display: none; }
-
-    .direction-rail figure {
-      margin: 0;
-      scroll-snap-align: start;
-    }
-
-    .direction-rail .media-card { aspect-ratio: 3 / 2; }
-    .direction-rail img { width: 100%; height: 100%; object-fit: cover; }
-
     .site-footer {
       width: min(100%, var(--content));
       margin: 0 auto;
@@ -525,14 +502,6 @@
 
       .story-header p { justify-self: end; }
 
-      .direction-rail {
-        grid-auto-flow: initial;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-columns: auto;
-        margin-inline: 0;
-        padding-inline: 0;
-        overflow: visible;
-      }
     }
 
     @media (max-width: 620px) {
@@ -567,7 +536,6 @@
       <a href="#interior">Living hall</a>
       <a href="#loft">Open loft</a>
       <a href="#brick-lantern">Brick Lantern</a>
-      <a href="#directions">Directions</a>
     </nav>
   </header>
 
@@ -613,10 +581,10 @@
             <figcaption><span class="image-label">Existing</span><span>Retained context</span></figcaption>
           </figure>
           <figure data-panel="concept">
-            <button class="media-card zoom" type="button" data-full="renders/web/belgian-brick-front-1448.jpg" data-caption="Selected Belgian Brick Lantern concept within the retained hedge-and-neighbour setting" aria-label="Expand glass-gable concept">
-              <img src="renders/web/belgian-brick-front-900.jpg" srcset="renders/web/belgian-brick-front-900.jpg 900w, renders/web/belgian-brick-front-1448.jpg 1448w" sizes="(min-width: 700px) 48vw, 100vw" width="1448" height="1086" alt="Belgian brick barn with deep black framing around a fully unobstructed glass gable" loading="lazy" decoding="async">
+            <button class="media-card zoom" type="button" data-full="renders/web/belgian-brick-front-lighting-1448.jpg" data-caption="Selected Belgian Brick Lantern glass gable with warm shielded lighting on the brick piers" aria-label="Expand glass-gable concept">
+              <img src="renders/web/belgian-brick-front-lighting-900.jpg" srcset="renders/web/belgian-brick-front-lighting-900.jpg 900w, renders/web/belgian-brick-front-lighting-1448.jpg 1448w" sizes="(min-width: 700px) 48vw, 100vw" width="1448" height="1086" alt="Belgian brick barn with deep black framing, a fully unobstructed glass gable and warm integrated exterior lights" loading="lazy" decoding="async">
             </button>
-            <figcaption><span class="image-label">Concept</span><span>Living room to valley</span></figcaption>
+            <figcaption><span class="image-label">Concept</span><span>Living room to valley · evening light</span></figcaption>
           </figure>
         </div>
       </article>
@@ -638,10 +606,10 @@
             <figcaption><span class="image-label">Existing</span><span>Working access retained</span></figcaption>
           </figure>
           <figure data-panel="concept">
-            <button class="media-card zoom" type="button" data-full="renders/web/belgian-brick-side-1086.jpg" data-caption="Corrected lane elevation: two bedroom windows, tall stair glass, larger living window and the front glass gable" aria-label="Expand shared-lane concept">
-              <img src="renders/web/belgian-brick-side-720.jpg" srcset="renders/web/belgian-brick-side-720.jpg 720w, renders/web/belgian-brick-side-1086.jpg 1086w" sizes="(min-width: 700px) 48vw, 100vw" width="1086" height="1448" alt="All-brick ICF barn with correctly ordered bedroom, stair and living windows along the preserved tractor lane" loading="lazy" decoding="async">
+            <button class="media-card zoom" type="button" data-full="renders/web/belgian-brick-side-lighting-1086.jpg" data-caption="Lane elevation with bedroom pair, stair glass, larger living window and low-profile shielded eaves lighting" aria-label="Expand shared-lane concept">
+              <img src="renders/web/belgian-brick-side-lighting-720.jpg" srcset="renders/web/belgian-brick-side-lighting-720.jpg 720w, renders/web/belgian-brick-side-lighting-1086.jpg 1086w" sizes="(min-width: 700px) 48vw, 100vw" width="1086" height="1448" alt="All-brick ICF barn with aligned bedroom, stair and living windows plus tractor-safe eaves lighting along the preserved lane" loading="lazy" decoding="async">
             </button>
-            <figcaption><span class="image-label">Concept</span><span>Rooms expressed outside</span></figcaption>
+            <figcaption><span class="image-label">Concept</span><span>Rooms aligned · lane kept clear</span></figcaption>
           </figure>
         </div>
       </article>
@@ -649,7 +617,7 @@
       <article class="comparison-story" data-compare data-view="concept">
         <header class="story-header">
           <h3>The courtyard arrival</h3>
-          <p>A recessed oak entrance and discreet rooflights sit behind the established hedges and hydrangeas. The cobbles and mature canopy remain the foreground.</p>
+          <p>A timber-lined oak entrance portal and discreet rooflights sit behind the established hedges and hydrangeas. The cobbles and mature canopy remain the foreground.</p>
         </header>
         <div class="compare-switch" role="group" aria-label="Cobbled courtyard view">
           <button type="button" data-show="existing" aria-pressed="false">Existing</button>
@@ -663,10 +631,10 @@
             <figcaption><span class="image-label">Existing</span><span>Landscape retained</span></figcaption>
           </figure>
           <figure data-panel="concept">
-            <button class="media-card zoom" type="button" data-full="renders/web/belgian-brick-back-loft-window-1086.jpg" data-caption="Belgian brick courtyard concept with a wide triangular loft window, bedroom windows below and the recessed oak entrance" aria-label="Expand courtyard concept">
-              <img src="renders/web/belgian-brick-back-loft-window-720.jpg" srcset="renders/web/belgian-brick-back-loft-window-720.jpg 720w, renders/web/belgian-brick-back-loft-window-1086.jpg 1086w" sizes="(min-width: 700px) 48vw, 100vw" width="1086" height="1448" alt="Belgian brick ICF barn with a wide black-framed triangular loft window above the bedroom level and a recessed oak side entrance" loading="lazy" decoding="async">
+            <button class="media-card zoom" type="button" data-full="renders/web/belgian-brick-back-oak-entrance-1086.jpg" data-caption="Belgian brick courtyard with a broad loft window and a welcoming smoked-oak entrance inside a deep black portal" aria-label="Expand courtyard concept">
+              <img src="renders/web/belgian-brick-back-oak-entrance-720.jpg" srcset="renders/web/belgian-brick-back-oak-entrance-720.jpg 720w, renders/web/belgian-brick-back-oak-entrance-1086.jpg 1086w" sizes="(min-width: 700px) 48vw, 100vw" width="1086" height="1448" alt="Belgian brick ICF barn with a triangular loft window and a warm illuminated smoked-oak entrance portal behind the preserved cobbled courtyard" loading="lazy" decoding="async">
             </button>
-            <figcaption><span class="image-label">Concept</span><span>Quiet courtyard entrance</span></figcaption>
+            <figcaption><span class="image-label">Concept</span><span>Oak entrance portal · cobbles retained</span></figcaption>
           </figure>
         </div>
       </article>
@@ -701,10 +669,10 @@
         <p>A compact lounge and library sits above the private rear rooms. The front living hall remains completely double-height.</p>
       </header>
       <figure class="loft-stage">
-        <button class="media-card zoom" type="button" data-full="renders/web/black-barn-icf-interior-loft-1536.jpg" data-caption="Rear open mezzanine within the plastered ICF shell, above the bedroom and service zone" aria-label="Expand open-loft concept">
-          <img src="renders/web/black-barn-icf-interior-loft-900.jpg" srcset="renders/web/black-barn-icf-interior-loft-900.jpg 900w, renders/web/black-barn-icf-interior-loft-1536.jpg 1536w" sizes="(min-width: 700px) 90vw, 100vw" width="1536" height="1024" alt="Brick-free living room with a rear open loft, mineral-plastered ICF walls and a central oak stair" loading="lazy" decoding="async">
+        <button class="media-card zoom" type="button" data-full="renders/web/belgian-brick-interior-aligned-1536.jpg" data-caption="Rear open mezzanine with its triangular gable window and lane-facing living and stair windows aligned to the exterior" aria-label="Expand open-loft concept">
+          <img src="renders/web/belgian-brick-interior-aligned-900.jpg" srcset="renders/web/belgian-brick-interior-aligned-900.jpg 900w, renders/web/belgian-brick-interior-aligned-1536.jpg 1536w" sizes="(min-width: 700px) 90vw, 100vw" width="1536" height="1024" alt="Mineral-plastered ICF living room with a rear open loft, triangular gable window, large living window and tall stair window" loading="lazy" decoding="async">
         </button>
-        <figcaption><span class="image-label">Concept</span><span>Rear mezzanine · front living hall stays open to ridge</span></figcaption>
+        <figcaption><span class="image-label">Concept</span><span>Rear gable · living window · stair window aligned</span></figcaption>
       </figure>
     </section>
 
@@ -712,64 +680,36 @@
       <header class="chapter-heading">
         <span class="chapter-index">04 · Selected direction</span>
         <h2 id="brick-lantern-title">Belgian Brick Lantern.</h2>
-        <p>One continuous brick exterior over the thick ICF shell, a locally familiar black tiled roof, and deep black frames around every clear opening.</p>
+        <p>One continuous brick exterior over the thick ICF shell, a locally familiar black tiled roof, deep black frames, restrained building lighting and a welcoming oak entrance portal.</p>
       </header>
 
       <div class="developed-grid" aria-label="Selected Belgian Brick Lantern ICF concept views">
         <figure class="developed-wide">
-          <button class="media-card zoom" type="button" data-full="renders/web/belgian-brick-front-1448.jpg" data-caption="Selected all-brick glass gable within the retained hedge, neighbouring building and natural terrain" aria-label="Expand Belgian Brick Lantern front concept">
-            <img src="renders/web/belgian-brick-front-900.jpg" srcset="renders/web/belgian-brick-front-900.jpg 900w, renders/web/belgian-brick-front-1448.jpg 1448w" sizes="(min-width: 700px) 90vw, 100vw" width="1448" height="1086" alt="Belgian brick ICF barn with a black-framed unobstructed glass living-room gable and black tiled roof" loading="lazy" decoding="async">
+          <button class="media-card zoom" type="button" data-full="renders/web/belgian-brick-front-lighting-1448.jpg" data-caption="Selected all-brick glass gable with warm shielded lighting within the retained landscape" aria-label="Expand Belgian Brick Lantern front concept">
+            <img src="renders/web/belgian-brick-front-lighting-900.jpg" srcset="renders/web/belgian-brick-front-lighting-900.jpg 900w, renders/web/belgian-brick-front-lighting-1448.jpg 1448w" sizes="(min-width: 700px) 90vw, 100vw" width="1448" height="1086" alt="Belgian brick ICF barn with an unobstructed glass living-room gable, black tiled roof and warm integrated lights" loading="lazy" decoding="async">
           </button>
-          <figcaption><span class="image-label">Front</span><span>Belgian brick · full clear glass</span></figcaption>
+          <figcaption><span class="image-label">Front</span><span>Full clear glass · warm pier lights</span></figcaption>
         </figure>
 
         <figure>
-          <button class="media-card zoom" type="button" data-full="renders/web/belgian-brick-side-1086.jpg" data-caption="Corrected lane elevation: rear bedroom pair, stair marker, living window and front glass gable" aria-label="Expand Belgian Brick Lantern side concept">
-            <img src="renders/web/belgian-brick-side-720.jpg" srcset="renders/web/belgian-brick-side-720.jpg 720w, renders/web/belgian-brick-side-1086.jpg 1086w" sizes="(min-width: 700px) 45vw, 100vw" width="1086" height="1448" alt="All-brick shared-lane elevation with two bedroom windows, one tall stair window, a larger living window and the glazed front gable" loading="lazy" decoding="async">
+          <button class="media-card zoom" type="button" data-full="renders/web/belgian-brick-side-lighting-1086.jpg" data-caption="Lane elevation with rear bedroom pair, stair window, living window and shielded eaves lighting" aria-label="Expand Belgian Brick Lantern side concept">
+            <img src="renders/web/belgian-brick-side-lighting-720.jpg" srcset="renders/web/belgian-brick-side-lighting-720.jpg 720w, renders/web/belgian-brick-side-lighting-1086.jpg 1086w" sizes="(min-width: 700px) 45vw, 100vw" width="1086" height="1448" alt="All-brick shared-lane elevation with bedroom, stair and living windows plus low-profile architectural lighting" loading="lazy" decoding="async">
           </button>
-          <figcaption><span class="image-label">Side</span><span>Bedroom pair · stair · living · glass gable</span></figcaption>
+          <figcaption><span class="image-label">Side</span><span>Aligned openings · shielded eaves lights</span></figcaption>
         </figure>
 
         <figure>
-          <button class="media-card zoom" type="button" data-full="renders/web/belgian-brick-back-loft-window-1086.jpg" data-caption="All-brick rear arrival with a broad triangular loft window above the black-lined bedroom windows" aria-label="Expand Belgian Brick Lantern back concept">
-            <img src="renders/web/belgian-brick-back-loft-window-720.jpg" srcset="renders/web/belgian-brick-back-loft-window-720.jpg 720w, renders/web/belgian-brick-back-loft-window-1086.jpg 1086w" sizes="(min-width: 700px) 45vw, 100vw" width="1086" height="1448" alt="Belgian brick rear with a wide triangular black-framed loft window, bedroom windows below, black tiled roof and retained cobbled courtyard" loading="lazy" decoding="async">
+          <button class="media-card zoom" type="button" data-full="renders/web/belgian-brick-back-oak-entrance-1086.jpg" data-caption="All-brick courtyard arrival with a triangular loft window and illuminated smoked-oak entrance portal" aria-label="Expand Belgian Brick Lantern back concept">
+            <img src="renders/web/belgian-brick-back-oak-entrance-720.jpg" srcset="renders/web/belgian-brick-back-oak-entrance-720.jpg 720w, renders/web/belgian-brick-back-oak-entrance-1086.jpg 1086w" sizes="(min-width: 700px) 45vw, 100vw" width="1086" height="1448" alt="Belgian brick rear with a triangular loft window, black tiled roof and illuminated smoked-oak entrance behind the retained cobbled courtyard" loading="lazy" decoding="async">
           </button>
-          <figcaption><span class="image-label">Back</span><span>Triangular loft glass · cobbles retained</span></figcaption>
+          <figcaption><span class="image-label">Back</span><span>Oak entrance · triangular loft glass</span></figcaption>
         </figure>
 
         <figure class="developed-wide">
-          <button class="media-card zoom" type="button" data-full="renders/web/black-barn-icf-interior-loft-1536.jpg" data-caption="Warm plastered ICF interior with a compact rear open loft above the private room zone" aria-label="Expand selected room and loft concept">
-            <img src="renders/web/black-barn-icf-interior-loft-900.jpg" srcset="renders/web/black-barn-icf-interior-loft-900.jpg 900w, renders/web/black-barn-icf-interior-loft-1536.jpg 1536w" sizes="(min-width: 700px) 90vw, 100vw" width="1536" height="1024" alt="Warm mineral-plastered ICF interior with a compact rear open loft and black window accents" loading="lazy" decoding="async">
+          <button class="media-card zoom" type="button" data-full="renders/web/belgian-brick-interior-aligned-1536.jpg" data-caption="Warm ICF interior with the rear loft gable, living-room and stair windows aligned to the exterior elevations" aria-label="Expand selected room and loft concept">
+            <img src="renders/web/belgian-brick-interior-aligned-900.jpg" srcset="renders/web/belgian-brick-interior-aligned-900.jpg 900w, renders/web/belgian-brick-interior-aligned-1536.jpg 1536w" sizes="(min-width: 700px) 90vw, 100vw" width="1536" height="1024" alt="Warm mineral-plastered ICF interior with a triangular rear loft gable window, large living window and tall stair window" loading="lazy" decoding="async">
           </button>
-          <figcaption><span class="image-label">Interior</span><span>Plastered ICF · open loft behind</span></figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="chapter" id="directions" aria-labelledby="directions-title">
-      <header class="chapter-heading">
-        <span class="chapter-index">05 · Material directions</span>
-        <h2 id="directions-title">One form, several characters.</h2>
-        <p>Belgian Brick Lantern is the selected direction. These three earlier studies remain only as a compact record of the material exploration.</p>
-      </header>
-      <div class="direction-rail" aria-label="Alternative material concepts">
-        <figure>
-          <button class="media-card zoom" type="button" data-full="renders/web/direction-quiet-flemish.jpg" data-caption="Quiet Flemish Lantern material study" aria-label="Expand Quiet Flemish Lantern material study">
-            <img src="renders/web/direction-quiet-flemish.jpg" width="720" height="480" alt="Warm brick Flemish barn material study with restrained contemporary detailing" loading="lazy" decoding="async">
-          </button>
-          <figcaption><span class="image-label">Study A</span><span>Quiet Flemish Lantern</span></figcaption>
-        </figure>
-        <figure>
-          <button class="media-card zoom" type="button" data-full="renders/web/direction-chalk-barn.jpg" data-caption="Chalk Barn material study" aria-label="Expand Chalk Barn material study">
-            <img src="renders/web/direction-chalk-barn.jpg" width="720" height="480" alt="Pale mineral-finished barn material study with terracotta roof" loading="lazy" decoding="async">
-          </button>
-          <figcaption><span class="image-label">Study B</span><span>Chalk Barn</span></figcaption>
-        </figure>
-        <figure>
-          <button class="media-card zoom" type="button" data-full="renders/web/direction-brick-veil.jpg" data-caption="Brick Veil material study" aria-label="Expand Brick Veil material study">
-            <img src="renders/web/direction-brick-veil.jpg" width="720" height="480" alt="Textural long-format brick barn material study" loading="lazy" decoding="async">
-          </button>
-          <figcaption><span class="image-label">Study C</span><span>Brick Veil</span></figcaption>
+          <figcaption><span class="image-label">Interior</span><span>Exterior and interior openings aligned</span></figcaption>
         </figure>
       </div>
     </section>
