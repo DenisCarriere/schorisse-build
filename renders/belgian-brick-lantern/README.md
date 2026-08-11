@@ -9,6 +9,7 @@ shell but uses one consistent exterior wall finish:
 - no fibre cement, timber siding or material transition;
 - all windows and the glass gable: deep matte-black aluminium liners and frames;
 - roof: black gently curved hollow ceramic Flemish tiles, not standing-seam metal;
+- rear loft: one broad triangular black-framed gable window above the bedrooms;
 - courtyard entrance: smoked oak within a deep black frame and brick returns;
 - glass: clear and unobstructed;
 - existing tractor lane, gate, hedges, neighbour, cobbles and trees: retained.
@@ -100,10 +101,25 @@ and rear.
 >
 > Change only the target barn materials and detailing. No mixed wall finish, black cladding, glass rear gable, projecting canopy, porch, terrace, new paving, gravel, deck, annex, balcony, cars, people, outdoor furniture, signage, text, logos or watermark.
 
+### Rear triangular loft-window revision
+
+> Use case: precise-object-edit. Asset type: photoreal architectural concept — REAR courtyard view with loft gable window. Image 1 is the EDIT TARGET and controls the exact renovated building, portrait camera, crop, perspective, all-brick material, roof, openings, entrance and lighting. Image 2 is the FRONT glass-gable design reference only, showing the approved deep matte-black perimeter frame and slim mullion language. Image 3 is authoritative SITE TRUTH for the cobbled courtyard, curbs, clipped hedges, hydrangeas, mature trees, dappled shadows and every non-target structure.
+>
+> Make one architectural change only: open the currently solid UPPER TRIANGULAR FIELD of the visible rear gable with one generous wide triangular loft window. This is a loft window above the ground-floor bedroom zone, not a second full-height glass wall. Center it symmetrically in the rear gable. Place its horizontal base approximately at 2.9–3.1 m, just above the loft floor/eaves zone; make the glazed base approximately 4.5–5.0 m wide and taper it cleanly to an apex below the 5.2 m ridge. Leave a substantial continuous Belgian-brick perimeter around the glass at both sloping sides, base and ridge so the gable still reads as brick and the thick ICF shell remains structurally plausible.
+>
+> Use a deep pronounced matte-black aluminium perimeter liner matching Image 2, with one slim central vertical mullion and at most one restrained horizontal transom at the base. The glass is clear and unobstructed, with realistic reflections and a subtle warm view into the compact rear loft reading/lounge. No balcony, Juliet rail, external guard, projecting frame, shutter, screen, fins or brick veil. The window must light the loft and visually relieve the hard gable wall while remaining clearly smaller and quieter than the full front living-room glass gable.
+>
+> LOCK EVERYTHING ELSE FROM IMAGE 1. Preserve the two existing ground-floor black-framed bedroom windows in the rear gable exactly where they are. Preserve the long-wall windows, deeply recessed smoked-oak side entrance, continuous Belgian/Flemish brick on every exterior wall, black hollow ceramic Flemish roof tiles, black ridge/gutters/downpipes, two flush rear-loft rooflights, exact 17.0 x 7.5 m footprint, 3.2 m eaves, 5.2 m ridge and approximately 28-degree roof. Do not alter the roof shape, raise the ridge or add a dormer.
+>
+> Preserve every cobble, curb, hedge, hydrangea, mature tree, canopy opening, access route, shadow and non-target building from Images 1 and 3. Premium documentary Belgian architectural photography with accurate brick, mortar, black aluminium, ceramic tile and glass texture; natural warm late-afternoon light, not glossy CGI.
+>
+> No mixed wall finish, fibre cement, standing-seam roof, full-height rear glazing, glass at bedroom level, annex, canopy, porch, terrace, new paving, cars, people, outdoor furniture, signage, text, logos or watermark.
+
 ## Output files
 
 | View | Source output |
 |---|---|
 | Front glass gable | `belgian-brick-front-site.png` |
 | Shared tractor-lane side | `belgian-brick-side-tractor-lane.png` |
-| Cobbled rear courtyard | `belgian-brick-back-courtyard.png` |
+| Selected rear courtyard with loft glass | `belgian-brick-back-loft-window.png` |
+| Superseded closed rear study | `belgian-brick-back-courtyard.png` |

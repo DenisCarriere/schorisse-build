@@ -85,6 +85,11 @@ An energy model should test:
 - sliding-door threshold performance;
 - condensation and ventilation strategy.
 
+The rear triangular loft window should be included in the same model. Its smaller
+area and courtyard orientation may behave differently from the front gable, but
+orientation, privacy, glare, opening ventilation and safety glazing still require
+project-specific design.
+
 ## Summer comfort and dark cladding
 
 The facing brick is an exterior weathering and appearance layer, not the primary
