@@ -15,6 +15,10 @@ them.
 - Residential version includes a high/mid-range fit-out, services and glazing.
 - Professional fees are excluded from the construction subtotal.
 - The optional loft, stair and rooflights are **not included** in the base range.
+- The current ICF shell, fibre-cement rainscreen, hybrid brick option and black
+  standing-seam roof were **not separately priced** in the carried-forward board
+  estimate; replace the shell and roof allowances with supplier/contractor quotes
+  for each exterior option.
 - Site access, neighbour protection, temporary works and unknown ground conditions
   may materially change the estimate.
 
@@ -26,8 +30,8 @@ Residential version, excluding VAT and professional fees:
 |---|---:|
 | Demolition, sorting and disposal | €15,000–25,000 |
 | Foundations and insulated floor slab | €20,000–26,000 |
-| Shell: walls and laminated portal frame | €60,000–78,000 |
-| Roof structure, insulation and terracotta tiles | €34,000–44,000 |
+| Shell: walls and laminated portal frame — pre-ICF allowance | €60,000–78,000 |
+| Roof structure and finish — pre-Black-Barn allowance | €34,000–44,000 |
 | Approximately 33 m² glass gable with triple glazing and sliding doors | €32,000–45,000 |
 | Other windows and doors | €12,000–16,000 |
 | Heat pump, floor heating, ventilation D, electrics and sanitary | €48,000–62,000 |

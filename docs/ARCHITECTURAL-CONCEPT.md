@@ -20,8 +20,9 @@ The design intent is deliberately simple:
 - make the valley-facing gable the principal source of light and view;
 - place bedrooms and services in the private rear portion;
 - retain the working access, neighbouring buildings and established landscape;
-- use contemporary long-format masonry rather than reproducing the existing
-  brickwork one-for-one.
+- use a thick insulated-concrete-form wall shell with either a complete
+  fibre-cement rainscreen or a hybrid finish that distinguishes living and
+  bedroom zones.
 
 ## Fixed envelope
 
@@ -95,6 +96,7 @@ space rather than a requirement for bedrooms, bathroom or normal access.
 - horizontal transom at approximately 3.0 m;
 - triangular clerestory following the pitched roof;
 - slim dark-bronze or dark-anodised frames;
+- deep ICF perimeter reveal without screens, fins or columns across the glass;
 - one or two central lift-slide door leaves with a flush threshold.
 
 ### Shared-lane elevation
@@ -105,20 +107,33 @@ The openings communicate the interior sequence:
 2. a tall narrow stair marker at the transition;
 3. a larger living-room opening toward the valley end.
 
-There is no entrance on the tractor-lane facade.
+There is no entrance on the tractor-lane facade. All windows remain clear and
+unobstructed; the thick wall build-up is expressed through deep reveals.
 
 ### Courtyard elevation
 
 - recessed smoked-oak entrance within the rear/service zone;
-- residential windows aligned with the rooms rather than formal symmetry;
+- clear residential windows aligned with the rooms rather than formal symmetry;
 - optional small flush rooflights above the rear loft;
 - retained cobbles and planted foreground.
 
-### Material direction
+### Material directions
 
-The lead concept uses warm umber and red-brown long-format fired-clay masonry,
-occasional charcoal tones, dark recessed mortar, precise deep reveals, thin dark
-terracotta tiles, dark-bronze frames and smoked-oak entrance joinery.
+Both developed options use the same complete ICF external wall shell, deep
+black-lined openings, near-black standing-seam roof, smoked-oak courtyard
+entrance and completely unobstructed glazing.
+
+**Option A — Full Black Barn Lantern** uses ventilated matte-black vertical
+fibre-cement cladding on every elevation. It reads as one abstract contemporary
+rural volume.
+
+**Option B — Flemish Brick + Black Lantern** uses matte-black vertical fibre
+cement around the double-height living volume and contemporary warm Flemish
+brick veneer around the rear bedroom/service volume. A full-height black metal
+flashing marks the material break. Prominent black aluminium or pressed-metal
+liners wrap the deep window and door reveals, making black a consistent accent
+against the brick. The masonry is a non-load-bearing exterior finish over the
+ICF shell, not a reconstruction of the existing brickwork.
 
 ## Optional partial open loft
 
@@ -150,9 +165,12 @@ wall build-ups, structure, services or construction details.
 2. Confirm planning status and allowable rebuild volume with the municipality.
 3. Obtain a structural assessment of the existing barn and retained junctions.
 4. Verify internal room heights after the floor, roof and insulation build-ups.
-5. Coordinate the portal frame, glazing support, loft and stair.
+5. Coordinate the ICF wall core, roof support, glazing perimeter, loft and stair.
 6. Develop accessibility, fire safety, drainage, ventilation and energy strategy.
 7. Replace all concept dimensions with coordinated architect/engineer drawings.
 
-The canonical image-reference and generation notes remain in
+The current material-direction prompts are recorded in
+[`../renders/black-barn-icf/README.md`](../renders/black-barn-icf/README.md) and
+[`../renders/hybrid-barn-icf/README.md`](../renders/hybrid-barn-icf/README.md).
+Earlier site-reference notes remain in
 [`../renders/site-concepts/README.md`](../renders/site-concepts/README.md).
