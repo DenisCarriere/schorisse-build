@@ -85,6 +85,8 @@ The partial loft requires a separate allowance for:
 - structural floor and acoustic build-up;
 - stair, guarding and joinery;
 - rooflights and blinds;
+- the wide triangular rear-gable window, reinforced opening and black perimeter
+  framing;
 - fire-safety measures;
 - lighting, electrical and ventilation changes;
 - additional design and engineering.

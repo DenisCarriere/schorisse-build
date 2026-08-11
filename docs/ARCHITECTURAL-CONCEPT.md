@@ -113,6 +113,8 @@ unobstructed; the thick wall build-up is expressed through deep reveals.
 
 - recessed smoked-oak entrance within the rear/service zone;
 - clear residential windows aligned with the rooms rather than formal symmetry;
+- one broad triangular black-framed window in the upper rear gable, lighting the
+  open loft while remaining smaller and quieter than the front glass wall;
 - optional small flush rooflights above the rear loft;
 - retained cobbles and planted foreground.
 
@@ -139,6 +141,8 @@ The loft is a compact rear mezzanine, not a full second storey.
 - concept loft floor: approximately +2.40–2.45 m;
 - stair rises near the ridge at the transition;
 - low-eaves edges become storage, shelving and seating;
+- the rear triangular gable window brings daylight and an outlook directly into
+  the loft without extending glazing down into the bedrooms;
 - preliminary comfortable standing area: approximately 10–18 m² after allowing
   for structure and insulation.
 

@@ -107,6 +107,16 @@ The loft must be coordinated with portal spacing and should not introduce new
 external walls, dormers or a higher ridge. Engineer design is required for floor
 depth, vibration, acoustic separation, guarding, stair support and load transfer.
 
+### Rear loft gable window
+
+The selected concept opens the upper rear gable with a wide triangular window,
+approximately 4.5–5.0 m across at its base and contained above the ground-floor
+bedroom zone. It is not a second full-height glazed gable. The structural and
+glazing designers must coordinate a reinforced ICF perimeter, lintel/base support,
+roof load path, frame deflection, waterproofing, drainage, thermal continuity and
+replacement access. The brick perimeter must remain independently supported and
+properly tied around the opening.
+
 ## Openings and thresholds
 
 - Keep all doors and projections out of the shared tractor lane.
