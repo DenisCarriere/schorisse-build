@@ -38,7 +38,7 @@ the matching slot.
 - `barn.stl` — building shell for **SketchUp Free** (import with units set to meters)
 - `barn.glb` — coloured glTF scene for Blender / three.js / AR
 
-Regenerate from source dimensions with `gen_model.py` (see git history).
+Regenerate from source dimensions with [`models/gen_model.py`](models/gen_model.py).
 
 ## Site photos
 
