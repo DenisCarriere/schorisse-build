@@ -20,9 +20,8 @@ The design intent is deliberately simple:
 - make the valley-facing gable the principal source of light and view;
 - place bedrooms and services in the private rear portion;
 - retain the working access, neighbouring buildings and established landscape;
-- use a thick insulated-concrete-form wall shell with either a complete
-  fibre-cement rainscreen or a hybrid finish that distinguishes living and
-  bedroom zones.
+- use a thick insulated-concrete-form wall shell with one continuous Belgian
+  brick exterior, black-framed openings and a black ceramic-tile roof.
 
 ## Fixed envelope
 
@@ -117,23 +116,19 @@ unobstructed; the thick wall build-up is expressed through deep reveals.
 - optional small flush rooflights above the rear loft;
 - retained cobbles and planted foreground.
 
-### Material directions
+### Selected material direction
 
-Both developed options use the same complete ICF external wall shell, deep
-black-lined openings, near-black standing-seam roof, smoked-oak courtyard
-entrance and completely unobstructed glazing.
+**Belgian Brick Lantern** uses the complete ICF external wall shell with one
+continuous contemporary warm Belgian/Flemish brick veneer on every exterior
+wall. There is no fibre-cement or timber wall cladding and no material break
+between the living and private zones.
 
-**Option A — Full Black Barn Lantern** uses ventilated matte-black vertical
-fibre-cement cladding on every elevation. It reads as one abstract contemporary
-rural volume.
-
-**Option B — Flemish Brick + Black Lantern** uses matte-black vertical fibre
-cement around the double-height living volume and contemporary warm Flemish
-brick veneer around the rear bedroom/service volume. A full-height black metal
-flashing marks the material break. Prominent black aluminium or pressed-metal
-liners wrap the deep window and door reveals, making black a consistent accent
-against the brick. The masonry is a non-load-bearing exterior finish over the
-ICF shell, not a reconstruction of the existing brickwork.
+Prominent matte-black aluminium or pressed-metal liners wrap the deep window and
+door reveals. The full glass gable uses the same black perimeter and slim black
+mullions. A black roof of small gently curved hollow ceramic Flemish tiles,
+black rainwater details and a smoked-oak courtyard entrance complete the exterior.
+The masonry is a non-load-bearing exterior finish over the ICF shell, not a
+reconstruction of the existing brickwork.
 
 ## Optional partial open loft
 
@@ -169,8 +164,9 @@ wall build-ups, structure, services or construction details.
 6. Develop accessibility, fire safety, drainage, ventilation and energy strategy.
 7. Replace all concept dimensions with coordinated architect/engineer drawings.
 
-The current material-direction prompts are recorded in
-[`../renders/black-barn-icf/README.md`](../renders/black-barn-icf/README.md) and
-[`../renders/hybrid-barn-icf/README.md`](../renders/hybrid-barn-icf/README.md).
+The selected material-direction prompts are recorded in
+[`../renders/belgian-brick-lantern/README.md`](../renders/belgian-brick-lantern/README.md).
+The previous full-black and mixed-material sets remain in the repository as
+superseded studies.
 Earlier site-reference notes remain in
 [`../renders/site-concepts/README.md`](../renders/site-concepts/README.md).

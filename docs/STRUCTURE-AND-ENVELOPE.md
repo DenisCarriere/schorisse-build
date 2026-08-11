@@ -49,23 +49,23 @@ Concept palette:
 
 - proprietary ICF forms, reinforced concrete core and system-specific bucks,
   lintels and connection zones;
-- either a complete ventilated matte-black vertical fibre-cement rainscreen, or
-  a hybrid rainscreen in which the living zone is fibre cement and the rear
-  bedroom/service zone is a coordinated non-load-bearing Flemish brick veneer;
+- one continuous coordinated non-load-bearing Belgian/Flemish brick veneer on
+  every exterior wall, supported independently from the ICF facing;
 - deep black-lined window and door reveals that express the wall thickness while
   leaving every glazed opening clear;
 - warm mineral-plaster interior finish, with a service strategy that protects the
   continuous wall shell;
-- highly insulated pitched roof with a near-black standing-seam finish;
+- highly insulated pitched roof with small black gently curved hollow ceramic
+  Flemish tiles and compatible ridge, verge and ventilation details;
 - continuous airtight layer and carefully modelled thermal bridges;
 - dark-bronze external frames and smoked-oak entrance joinery.
 
 The visual concept assumes approximately **35–45 cm overall external wall
 build-up**, including the selected ICF form, concrete core, interior finish,
-rainscreen cavity and selected cladding. The brick option may require a different
-foundation ledge, substructure, cavity and overall depth from the fibre-cement
-zone. Actual core thickness, reinforcement, insulation, fire performance,
-fixing zones and total depth are manufacturer- and engineer-dependent design
+drained cavity and brick veneer. The masonry requires an engineered foundation
+ledge or support, wall ties or support system, cavity closures, movement joints
+and drainage. Actual core thickness, reinforcement, insulation, fire performance,
+support zones and total depth are manufacturer- and engineer-dependent design
 variables, not fixed specifications.
 
 ## Glass gable
@@ -128,13 +128,11 @@ Services should preserve the calm roof volume. Coordinate ventilation routes,
 lighting, smoke detection, acoustic separation, kitchen extraction and any
 sprinkler requirement before fixing exposed frames and roof finishes.
 
-The ventilated fibre-cement facade requires coordinated cavity barriers, fire
-classification, subframe fixings, base drainage, insect closures and replacement
-details. The hybrid option additionally requires a designed masonry support,
-cavity drainage, wall ties or support system and movement joints. Coordinate the
-full-height metal flashing at the material change without interrupting drainage,
-airtightness or insulation continuity. Confirm that all fixings transfer loads
-into the designed structure and do not rely on the ICF facing alone.
+The brick facade requires designed masonry support, cavity drainage, wall ties
+or another approved support system, movement joints, cavity barriers and
+closures. Deep black opening liners must preserve drainage, airtightness and
+insulation continuity. Confirm that all support and fixings transfer loads into
+the designed structure and do not rely on the ICF facing alone.
 
 ## Engineer verification checklist
 

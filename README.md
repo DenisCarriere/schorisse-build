@@ -1,8 +1,8 @@
 # Schorisse Build — The Glass-Gable Barn
 
 A site-grounded visual concept for rebuilding the main barn in rural Flanders:
-**17.0 × 7.5 m**, a valley-facing glass gable, a thick ICF wall shell, two
-developed exterior expressions, ground-floor bedrooms and an optional partial
+**17.0 × 7.5 m**, a valley-facing glass gable, a thick ICF wall shell with one
+continuous Belgian brick exterior, ground-floor bedrooms and an optional partial
 open loft.
 
 ## Visual presentation
@@ -11,9 +11,8 @@ open loft.
 
 The mobile-first gallery focuses on the photoreal concepts and the real property
 context: glass gable, shared tractor lane, cobbled courtyard, valley-facing
-living hall, rear open loft, a complete full-black Black Barn Lantern ICF
-direction, a hybrid Flemish-brick/black-lantern option and a small set of earlier
-material studies.
+living hall, rear open loft, the selected Belgian Brick Lantern direction and a
+small record of earlier material studies.
 
 The GitHub Pages workflow publishes only `index.html` and the optimized images
 under `renders/web/`. Original references, source renders, models and project
@@ -26,6 +25,7 @@ notes remain in the repository but are not part of the public Pages artifact.
 - [Feasibility and performance](docs/FEASIBILITY-AND-PERFORMANCE.md)
 - [Cost assumptions](docs/COSTS.md)
 - [Image constraints and prompt record](renders/site-concepts/README.md)
+- [Selected Belgian Brick Lantern concept and exact prompts](renders/belgian-brick-lantern/README.md)
 - [Black Barn Lantern ICF concept and exact prompts](renders/black-barn-icf/README.md)
 - [Hybrid Flemish Brick + Black Lantern concept and exact prompts](renders/hybrid-barn-icf/README.md)
 - [Brick Veil concept set and exact prompts](renders/brick-veil/README.md)
@@ -34,8 +34,9 @@ notes remain in the repository but are not part of the public Pages artifact.
 ## Source assets
 
 - `renders/site-concepts/` — final site-grounded concept PNGs and earlier variants.
-- `renders/black-barn-icf/` — current front, side, back and interior-loft concept PNGs.
-- `renders/hybrid-barn-icf/` — hybrid brick/black front, side and back concept PNGs.
+- `renders/belgian-brick-lantern/` — selected all-brick front, side and back concept PNGs.
+- `renders/black-barn-icf/` — superseded full-black concept PNGs plus the current interior-loft study.
+- `renders/hybrid-barn-icf/` — superseded mixed-material concept PNGs.
 - `renders/brick-veil/` — developed front, side, back and interior-loft concept PNGs.
 - `renders/concepts/` — broader material explorations.
 - `renders/web/` — responsive JPEG derivatives used by the gallery.

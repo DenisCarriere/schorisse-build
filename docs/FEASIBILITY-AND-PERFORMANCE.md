@@ -6,11 +6,9 @@ Status: **pre-design assumptions requiring professional verification**
 
 The concept assumes that rebuilding within the existing 17.0 × 7.5 m footprint
 and a comparable pitched volume is the most plausible planning route. The design
-retains the rural silhouette while changing the openings and internal use. Two
-exterior expressions are now under study: a complete matte-black fibre-cement
-facade, and a hybrid with black fibre cement at the living hall and Flemish brick
-veneer at the bedroom/service end. The darker areas may require more explicit
-landscape and planning review than the masonry areas.
+retains the rural silhouette while changing the openings and internal use. The
+selected exterior expression uses one continuous Belgian/Flemish brick veneer,
+deep black-framed openings and a black ceramic-tile roof over the ICF shell.
 
 This assumption is not a planning opinion. Confirm zoning, lawful existing use,
 rebuild rights, residential use, floor-area treatment, parking, landscape impact,
@@ -65,8 +63,8 @@ Possible performance measures include:
 - certified high-performance windows;
 - low-VOC and EPD-backed materials;
 - FSC or equivalent timber sourcing;
-- responsibly sourced, documented fibre-cement cladding and low-impact concrete
-  mix options where technically suitable;
+- responsibly sourced, EPD-backed facing brick and low-impact concrete mix
+  options where technically suitable;
 - construction-waste sorting;
 - retained permeable landscape and rainwater management.
 
@@ -89,18 +87,18 @@ An energy model should test:
 
 ## Summer comfort and dark cladding
 
-Fibre cement is an exterior weathering and appearance layer, not the primary
+The facing brick is an exterior weathering and appearance layer, not the primary
 insulation. The ICF form, concrete core, roof insulation, airtightness and glazing
-specification control the building's thermal performance. The black living-volume
-finish should be detailed as a ventilated rainscreen so solar-heated cladding is
-separated from the insulated shell by a drained and ventilated cavity.
+specification control the building's thermal performance. The brick cavity,
+supports and junctions must be detailed without compromising drainage or
+insulation continuity.
 
 The clear glazed gable is likely to be more important to summer comfort than the
-choice between brick and fibre cement. Once orientation is surveyed, dynamic
-modelling should test glass solar-gain value, internal loads, night ventilation,
-window-opening area and overheating hours. If modelling requires solar control,
-prioritize glazing specification and discreet external measures that preserve the
-unobstructed architectural view.
+wall's brick finish. Once orientation is surveyed, dynamic modelling should test
+glass solar-gain value, internal loads, night ventilation, window-opening area and
+overheating hours. If modelling requires solar control, prioritize glazing
+specification and discreet external measures that preserve the unobstructed
+architectural view.
 
 ## Loft feasibility
 
@@ -117,8 +115,8 @@ strategy. Do not treat the rendered loft as a measured room.
 
 - Confirm whether the primary use is own home, rental or flexible studio.
 - Decide whether the optional loft remains in the brief.
-- Compare the full-black and hybrid ICF directions with the municipality,
-  architect, engineer, energy modeller and facade suppliers.
+- Test the selected all-brick ICF direction with the municipality, architect,
+  engineer, energy modeller, masonry supplier and roofer.
 - Confirm one or two sliding door leaves at the glass gable.
 - Set measurable energy and airtightness targets.
 - Decide whether third-party certification adds value.
