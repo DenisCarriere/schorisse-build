@@ -15,10 +15,10 @@ them.
 - Residential version includes a high/mid-range fit-out, services and glazing.
 - Professional fees are excluded from the construction subtotal.
 - The optional loft, stair and rooflights are **not included** in the base range.
-- The current ICF shell, fibre-cement rainscreen, hybrid brick option and black
-  standing-seam roof were **not separately priced** in the carried-forward board
-  estimate; replace the shell and roof allowances with supplier/contractor quotes
-  for each exterior option.
+- The current ICF shell, continuous Belgian brick veneer and black ceramic-tile
+  roof were **not separately priced** in the carried-forward board estimate;
+  replace the shell and roof allowances with coordinated supplier/contractor
+  quotes.
 - Site access, neighbour protection, temporary works and unknown ground conditions
   may materially change the estimate.
 
