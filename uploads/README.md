@@ -1,12 +1,15 @@
 # Site photos
 
-The concept board (`index.html`) looks for the three original site photos here:
+The four real site references are stored in `uploads/site-reference/`:
 
-- `pasted-1786384067448-0.png` — main barn, courtyard gable
-- `pasted-1786384073399-0.png` — courtyard approach (yew cubes, honey locusts)
-- `pasted-1786384082267-0.png` — rear lawn and gable towards the open landscape
+- `photo-1-shared-laneway.jpg` — left side of the barn; shared tractor access to the pasture. Preserve the hedge-to-wall clearance, gate and working lane.
+- `photo-2-glass-gable-site.jpg` — future valley-facing glass gable. Preserve the retained brick building and narrow paved passage at right, and the mature hedge at left.
+- `photo-3-valley-outlook.jpg` — the actual view from beside the future glass gable. Use its field pattern, tree line and boundary hedge for interior outlooks.
+- `photo-4-cobbled-courtyard.jpg` — rear/private end and side-entrance context. Preserve the cobbled drive, curbs, clipped hedges, hydrangeas, mature trees and retained structures.
 
-They could not be exported from the claude.ai/design project (the design MCP
-truncates file reads at 256 KiB and each photo is larger). Either save the
-originals here with these exact names, or simply drag any image onto the
-matching slot on the page — dropped images persist in the browser.
+The dry grass may be shown as healthy green. Permanent hardscape, planting,
+access routes and neighboring/retained buildings must not move in design
+visualizations.
+
+The three legacy filenames referenced by the image slots in section 01 are not
+present. The current site-grounded studies are shown in section 10 instead.
