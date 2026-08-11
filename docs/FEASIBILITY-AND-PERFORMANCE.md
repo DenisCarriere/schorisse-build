@@ -126,18 +126,19 @@ architectural view.
 ## Loft feasibility
 
 The fixed 3.2 m eaves and 5.2 m ridge create a shallow approximately 28.1° roof.
-The optional loft therefore has a narrow central standing band rather than full
+The mezzanine therefore has a narrow central standing band rather than full
 second-floor headroom. Preliminary visual studies suggest approximately 10–18 m²
 of comfortable standing area, with low storage/seating around it.
 
 Feasibility depends on the real internal roof profile, required ceiling height
-over bedrooms, structural floor depth, stair headroom, guarding, escape and fire
-strategy. Do not treat the rendered loft as a measured room.
+over the master and service zone, structural floor depth, stair headroom,
+guarding, escape and fire strategy. Do not treat the rendered loft as a measured
+room.
 
 ## Decisions for the next phase
 
 - Confirm whether the primary use is own home, rental or flexible studio.
-- Decide whether the optional loft remains in the brief.
+- Confirm the desired open-mezzanine uses and furniture loads.
 - Test the selected all-brick ICF direction with the municipality, architect,
   engineer, energy modeller, masonry supplier and roofer.
 - Confirm one or two sliding door leaves at the glass gable.

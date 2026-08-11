@@ -11,14 +11,14 @@ drawing or specification.
 ## Project brief
 
 Demolish and rebuild the main barn within its existing footprint and pitched
-silhouette. The proposal combines a two-bedroom ground floor with a large
-valley-facing living hall and an optional partial open loft.
+silhouette. The current plan direction combines one generous ground-floor master
+bedroom with a large valley-facing living hall and a partial open mezzanine.
 
 The design intent is deliberately simple:
 
 - keep the familiar rural barn volume;
 - make the valley-facing gable the principal source of light and view;
-- place bedrooms and services in the private rear portion;
+- place the master bedroom and services in the private rear portion;
 - retain the working access, neighbouring buildings and established landscape;
 - use a thick insulated-concrete-form wall shell with one continuous Belgian
   brick exterior, black-framed openings and a black ceramic-tile roof.
@@ -68,23 +68,26 @@ windows on the exterior.
 
 ```mermaid
 flowchart LR
-    A[Rear / courtyard end<br/>Bedroom 1 + Bedroom 2] --> B[Middle transition<br/>Bath + technical + entry + stair]
+    A[Rear / courtyard end<br/>Master bedroom + wardrobes] --> B[Middle transition<br/>Bath + powder + technical + entry + stair]
     B --> C[Front / valley end<br/>Double-height living + dining + kitchen]
     C --> D[Full glass gable<br/>Terrace + valley outlook]
-    E[Optional open loft<br/>above rear private core] -. overlooks .-> C
+    E[Open mezzanine<br/>above rear private core] -. overlooks .-> C
 ```
 
 ### Ground floor
 
 | Zone | Concept use |
 |---|---|
-| Rear private zone | Two bedrooms, approximately 16 m² each in the early plan |
-| Middle service zone | Bathroom, technical space, storage, courtyard entrance and stair |
+| Rear private zone | One master bedroom, approximately 25–28 m² including full-height wardrobe space |
+| Middle service zone | Bathroom with Italian walk-in shower, separate toilet-and-sink powder room, technical/storage space, courtyard entrance and stair |
 | Front living zone | Approximately 60 m² open living, dining and kitchen space |
 | Valley end | Full-height glazed gable with one or two lift-slide door leaves |
 
-Core daily living remains on the ground floor. The optional loft is extra living
-space rather than a requirement for bedrooms, bathroom or normal access.
+Core daily living remains on the ground floor. The mezzanine is extra living
+space rather than a requirement for the bedroom, bathroom or normal access.
+
+The current single-master plan supersedes the early two-bedroom diagram. See
+[`CONCEPTUAL-FLOOR-PLANS.md`](CONCEPTUAL-FLOOR-PLANS.md) for the plan assumptions.
 
 ## Exterior expression
 
@@ -148,20 +151,20 @@ The interior concept follows the same opening order as the exterior elevations.
 Looking from the front glass gable toward the rear loft, the larger lane-facing
 living window sits above the kitchen worktop, the tall stair window lights the
 stair, and the broad triangular rear gable window forms the outlook behind the
-loft lounge. The two rear bedroom windows remain inside the enclosed bedroom
-zone beneath the loft and therefore do not open into the living hall.
+loft lounge. The two rear bedroom windows both serve the single enclosed master
+suite beneath the loft and therefore do not open into the living hall.
 
-## Optional partial open loft
+## Partial open mezzanine
 
 The loft is a compact rear mezzanine, not a full second storey.
 
-- concept length: approximately 7–8.5 m over the bedrooms/service zone;
+- concept length: approximately 7–8.5 m over the master/service zone;
 - front 8.5–10 m remains double-height;
 - concept loft floor: approximately +2.40–2.45 m;
 - stair rises near the ridge at the transition;
 - low-eaves edges become storage, shelving and seating;
 - the rear triangular gable window brings daylight and an outlook directly into
-  the loft without extending glazing down into the bedrooms;
+  the loft without extending glazing down into the master bedroom;
 - preliminary comfortable standing area: approximately 10–18 m² after allowing
   for structure and insulation.
 
