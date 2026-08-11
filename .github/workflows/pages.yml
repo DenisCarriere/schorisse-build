@@ -28,6 +28,7 @@ jobs:
           mkdir -p _site/renders
           cp index.html _site/index.html
           cp -R renders/web _site/renders/web
+          cp -R models _site/models
           touch _site/.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:
