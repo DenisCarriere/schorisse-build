@@ -207,6 +207,10 @@ superseded by the Revision 02 switchback-stair concepts below.
 
 ### Revision 02 switchback stair — overall living hall
 
+This stair-focused study is retained as a prompt record but is superseded by
+the plan-aligned entrance studies below. Its long rear corridor and repeated
+door row did not reflect the compact Revision 02 entry/service core.
+
 > Use case: precise-object-edit. Asset type: photoreal architectural concept for the Belgian Brick Lantern interior — living hall looking rearward toward the master/service core and mezzanine.
 >
 > Image 1 is the edit target and controls the wide camera, front-to-rear viewpoint, 17.0 × 7.5 m barn proportions, approximately 28-degree roof, 3.2 m eaves, 5.2 m ridge, oak portal frames, pale mineral-plastered thick ICF walls, polished floor, kitchen, dining, living furniture, stove, rear triangular loft window, side windows, lighting and restrained Belgian character. Image 2 is the authoritative Revision 02 ground-floor plan. Image 3 is the authoritative Revision 02 mezzanine plan.
@@ -229,6 +233,32 @@ superseded by the Revision 02 switchback-stair concepts below.
 >
 > Wide 3:2, eye-level 28 mm editorial architectural photograph. Warm off-white mineral plaster, deep ICF reveals, oak structure and stair, matte-black steel, polished mineral floor, Belgian daylight and subtle warm lighting. Exactly one U-shaped stair and two connected parallel flights. No straight stair, extra stair, floating stair, blocked landing, full second floor, loft over the front living room, raised roof, dormer, exposed interior brick, people, text, logo or watermark.
 
+### Revision 03 entrance alignment — overall living hall
+
+> Use case: precise-object-edit. Asset type: corrected photoreal architectural website concept for the Belgian Brick Lantern interior.
+>
+> Image 1 is the edit target and controls the wide front-to-rear camera, Belgian Brick Lantern interior identity, furniture, pale mineral-plastered thick ICF walls, smoked oak, black metal, polished mineral floor, kitchen, dining, living area, roof volume, rear-only open mezzanine and triangular rear gable window. Images 2 and 3 are the authoritative Revision 02 ground-floor and mezzanine plans and override Image 1 wherever the entrance, service core, stair or windows conflict.
+>
+> The camera stands in the front double-height living hall at the valley glass gable and looks toward the rear/private gable. The left side of the photograph is the continuous shared-tractor-lane exterior wall; the right side is the continuous courtyard exterior wall. Place the compact U-shaped stair against the left lane wall at the living/service transition. Show its lower flight from the living/core boundary to the full half-landing at the tall lane window, the 180-degree turn and upper return to the guarded ridge landing.
+>
+> The horizontal kitchen picture window and tall stair window are openings through the same continuous exterior wall plane, with deep 35–45 cm plastered ICF reveals. The tall slot directly touches the half-landing and looks outside to the hedge and lane; it is never an internal window.
+>
+> Put one smoked-oak exterior entrance in the right courtyard-side wall. Its leaf swings inward into a short approximately 1.2 m gallery beside coat storage and a shoe bench. From the living room show no more than two discreet internal openings: one flush or pocket service opening for the powder/laundry area and one solid master-bedroom door farther rearward. The ensuite remains private and invisible. Remove the invented axial corridor, far-end exterior opening and repeated door row.
+>
+> Preserve the 17.0 × 7.5 m external envelope, approximately 3.2 m eaves, 5.2 m ridge, approximately 28.1-degree roof, selected material palette, rear triangular loft glazing, double-height front living hall and rear-only mezzanine. Premium photoreal editorial Belgian interior photography, 24–28 mm lens, real material grain, restrained daylight and subtle 2700K lighting. No entrance below a stair flight, centered freestanding stair, internalized window, long hallway, extra doors, full second floor, exposed interior brick, people, text, logo or watermark.
+
+### Revision 03 entrance alignment — closer relationship view
+
+> Use case: photorealistic-natural with authoritative architectural references. Asset type: complementary photoreal website concept explaining the Belgian Brick Lantern entrance and U-stair relationship.
+>
+> Use the selected Revision 03 overall interior as the authoritative identity and spatial reference, with the Revision 02 ground-floor and mezzanine plans controlling geometry. Create a closer ground-floor eye-level photograph from the front living area looking diagonally toward the service-core transition. Give the stair and entrance equal visual importance and retain enough of the kitchen and living floor to establish orientation.
+>
+> On the left, keep the horizontal kitchen picture window and tall half-landing window in the same continuous shared-lane exterior ICF wall. The tall window directly touches the stair landing and clearly looks outdoors. Show one compact U-stair against this wall, with its lower flight, 180-degree turn, parallel upper return, guards and rear mezzanine connection readable.
+>
+> On the right, show exactly one smoked-oak exterior entrance in the courtyard-side wall. Its leaf swings inward into the short entry gallery beside integrated coat storage and a shoe bench. Show no more than two internal openings: the powder/laundry service opening and the master door. There is no axial hallway, far-end exterior opening or visible ensuite door.
+>
+> Wide 3:2, eye-level 26–28 mm premium Belgian interior photograph. Preserve the fixed 17.0 × 7.5 m envelope, shallow roof geometry, thick wall reveals, rear-only mezzanine, mineral plaster, oak, matte-black guards and polished mineral floor. No repeated door row, internal window, freestanding stair, entrance beneath a flight, additional opening, person, text, logo or watermark.
+
 ## Output files
 
 | View | Source output |
@@ -236,8 +266,10 @@ superseded by the Revision 02 switchback-stair concepts below.
 | Selected front with integrated lighting | `belgian-brick-front-lighting.png` |
 | Selected shared lane with integrated lighting | `belgian-brick-side-lighting.png` |
 | Selected rear with loft glass and oak entrance | `belgian-brick-back-oak-entrance.png` |
-| Selected Revision 02 living hall and U-stair | `belgian-brick-interior-u-stair.png` |
-| Selected Revision 02 U-stair detail | `belgian-brick-interior-stair-detail.png` |
+| Selected Revision 03 plan-aligned living hall and entrance | `belgian-brick-interior-entry-aligned.png` |
+| Selected Revision 03 entrance and lane-wall stair detail | `belgian-brick-interior-entry-stair-detail.png` |
+| Superseded Revision 02 living hall with invented corridor | `belgian-brick-interior-u-stair.png` |
+| Superseded Revision 02 stair detail with repeated door row | `belgian-brick-interior-stair-detail.png` |
 | Superseded aligned straight-stair interior | `belgian-brick-interior-aligned-windows.png` |
 | Superseded unlit front | `belgian-brick-front-site.png` |
 | Superseded unlit shared lane | `belgian-brick-side-tractor-lane.png` |
