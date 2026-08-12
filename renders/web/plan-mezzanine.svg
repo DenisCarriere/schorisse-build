@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1400" height="850" viewBox="0 0 1400 850" role="img" aria-labelledby="title desc">
   <title id="title">Revised conceptual open-mezzanine plan for the Belgian Brick Lantern</title>
-  <desc id="desc">A fully open rear mezzanine with no plumbing, a correctly stacked dog-leg stair arriving at the ridge, a protected landing, continuous guards, honest headroom bands, low-eaves storage and an unobstructed rear triangular window.</desc>
+  <desc id="desc">A fully open rear mezzanine with no plumbing, a correctly stacked U-shaped stair arriving at the ridge, a protected landing, continuous guards, honest headroom bands, low-eaves storage and an unobstructed rear triangular window. A camera key at the valley glass gable looks toward the rear, placing the courtyard on the viewer's left and the shared tractor lane on the viewer's right in the interior concepts.</desc>
   <defs>
     <pattern id="timber" width="20" height="20" patternUnits="userSpaceOnUse">
       <path d="M0 5H20M0 14H20" fill="none" stroke="#c1b29f" stroke-width="1" opacity=".6"/>
@@ -18,7 +18,7 @@
   </defs>
 
   <rect class="bg" width="1400" height="850"/>
-  <text class="kicker" x="76" y="58">REVISED SPATIAL STUDY · REV 02</text>
+  <text class="kicker" x="76" y="58">REVISED SPATIAL STUDY · REV 03</text>
   <text class="title" x="76" y="98">Upper mezzanine — one open room, honest headroom</text>
   <text class="sub" x="76" y="126">Stair and standing uses align with the ridge · low eaves become fitted storage and seated space</text>
   <rect class="pill" x="1052" y="72" width="250" height="38" rx="19"/>
@@ -34,6 +34,13 @@
   <text class="micro" x="142" y="176">REAR GABLE / TRIANGULAR WINDOW</text>
   <text class="micro" x="1218" y="176" text-anchor="end">VALLEY / FULL GLASS GABLE</text>
   <text class="micro" x="680" y="176" text-anchor="middle">SHARED TRACTOR LANE</text>
+
+  <!-- interior-render camera key: camera at glass gable looking rearward -->
+  <path class="arrow" d="M1188 432H1110"/>
+  <circle cx="1202" cy="432" r="9" fill="#b4522e"/>
+  <text class="micro" x="1177" y="410" text-anchor="end">INTERIOR CAMERA · LOOKS TO REAR</text>
+  <text class="micro" x="1210" y="458" text-anchor="end">RENDER LEFT = COURTYARD</text>
+  <text class="micro" x="1210" y="474" text-anchor="end">RENDER RIGHT = TRACTOR LANE</text>
 
   <!-- exact thick shell, open deck and front void -->
   <rect class="shell" x="120" y="185" width="1120" height="494"/>
@@ -60,7 +67,7 @@
   <path class="arrow" d="M236 707L138 548"/>
   <text class="micro" x="244" y="708">TRIANGULAR REAR WINDOW KEPT CLEAR · LOW-SILL GUARD TO BE DESIGNED</text>
 
-  <!-- dog-leg stair opening exactly stacks with ground floor -->
+  <!-- U-shaped stair opening exactly stacks with ground floor -->
   <rect x="586" y="240" width="124" height="198" fill="#f4f0e7" stroke="#514c44" stroke-width="4"/>
   <rect x="586" y="240" width="124" height="66" fill="#c8bdad" stroke="#514c44" stroke-width="3"/>
   <path class="fixture" d="M648 314V428M666 314V428M684 314V428M702 314V428M594 314V428M612 314V428M630 314V428"/>

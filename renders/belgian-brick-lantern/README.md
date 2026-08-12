@@ -15,7 +15,7 @@ shell but uses one consistent exterior wall finish:
   deep matte-black portal; brick remains continuous outside the entrance recess;
 - exterior lighting: shielded warm pier and eaves lights with no projection into
   the shared tractor lane;
-- interior openings: rear loft gable, lane-facing living window and stair window
+- interior openings: rear loft gable, lane-facing kitchen window and stair window
   aligned with the exterior elevations;
 - glass: clear and unobstructed;
 - existing tractor lane, gate, hedges, neighbour, cobbles and trees: retained.
@@ -34,7 +34,7 @@ the far/rear end toward the valley-facing glass gable at the near/front end:
 
 1. two separate horizontal master-bedroom windows;
 2. one tall narrow stair window at the transition;
-3. one larger horizontal living-room side window;
+3. one larger horizontal kitchen picture window;
 4. the full-height glass front gable, partly hidden by the retained boundary screen.
 
 There is no entrance on the tractor-lane elevation and no evenly spaced decorative
@@ -71,8 +71,8 @@ and rear.
 >
 > CORRECT THE WINDOW STRUCTURE TO MATCH THE INTERIOR PLAN. The camera looks along the full 17 m side; FAR / LEFT at the pasture gate is the rear private zone and NEAR / RIGHT behind the retained black neighbour screen is the front valley living zone. Show exactly this program-driven sequence, not an evenly spaced decorative row:
 > 1. FAR REAR BEDROOM ZONE: exactly TWO separate, generous residential horizontal bedroom windows at normal ground-floor height, each approximately 1.5–1.8 m wide by 1.1–1.3 m high, with clear glazing. They must be clearly readable as two bedroom windows, not tiny slots.
-> 2. MIDDLE TRANSITION: exactly ONE tall narrow vertical stair window, approximately 0.65–0.8 m wide by 2.1–2.4 m high, placed between the bedroom and living windows.
-> 3. NEAR FRONT LIVING ZONE: exactly ONE larger black-framed living-room side window, approximately 2.4–2.8 m wide by 1.6–1.8 m high, naturally partly hidden by the retained neighbour screen.
+> 2. MIDDLE TRANSITION: exactly ONE tall narrow vertical stair window, approximately 0.65–0.8 m wide by 2.1–2.4 m high, placed between the bedroom and kitchen windows.
+> 3. NEAR FRONT LIVING ZONE: exactly ONE larger black-framed kitchen picture window, approximately 2.4–2.8 m wide by 1.6–1.8 m high, naturally partly hidden by the retained neighbour screen.
 > No other windows, no entrance, and no door on this tractor-lane elevation. Do not reverse the order. Do not turn all openings into the same shape.
 >
 > Every opening has a pronounced deep matte-black aluminium perimeter liner, black head/sill flashing and slim black frame, expressing the 35–45 cm ICF wall depth. Set the glazing toward the inner face so each reveal casts a substantial realistic shadow. Glass stays clear and completely unobstructed; no shutters, brick screens, fins or louvers.
@@ -89,7 +89,7 @@ and rear.
 >
 > Make exactly one architectural correction: the NEAR / RIGHT END GABLE in Image 1 is the front valley living-room gable and must use the same full-height black-framed glass composition shown in Image 2, not the current brick gable with a single rectangular upper window. Replace the visible near/right end-gable field with clear floor-to-ridge glazing: deep matte-black perimeter frame, horizontal transom around 3.0 m, triangular clerestory following the roof, and slim black vertical mullions. The retained black neighbour boundary screen naturally hides much of the lower glass from this oblique side viewpoint, but the visible upper triangular glass and side edge must make the full glazed gable unmistakable. Keep brick only as the consistent deep perimeter return around that glass. No brick panel spanning the gable face and no rectangular window within it.
 >
-> LOCK EVERYTHING ELSE FROM IMAGE 1. Preserve the portrait camera, exact wall line, footprint, lane, gate, hedges, boundary screen, trees, green twin tractor tracks, all-brick long wall, black curved Belgian ceramic roof tiles, gutters, downpipes, rooflights, lighting and shadows. Preserve exactly the four program-driven openings on the LONG SIDE WALL in their current positions and shapes: two separate horizontal bedroom windows at far/left, one tall narrow stair window in the middle, and one larger horizontal living-room side window near/right. Do not add, delete, resize, reorder or restyle those four long-wall openings. No entrance on the lane.
+> LOCK EVERYTHING ELSE FROM IMAGE 1. Preserve the portrait camera, exact wall line, footprint, lane, gate, hedges, boundary screen, trees, green twin tractor tracks, all-brick long wall, black curved Belgian ceramic roof tiles, gutters, downpipes, rooflights, lighting and shadows. Preserve exactly the four program-driven openings on the LONG SIDE WALL in their current positions and shapes: two separate horizontal bedroom windows at far/left, one tall narrow stair window in the middle, and one larger horizontal kitchen picture window near/right. Do not add, delete, resize, reorder or restyle those four long-wall openings. No entrance on the lane.
 >
 > All glazing retains deep matte-black aluminium liners and remains clear and unobstructed. No mixed wall materials, black cladding, screens across windows, fins, shutters, extra openings, annex, canopy, dormer, people, vehicles, signage, text, logos or watermark. Premium photoreal Belgian architectural photography.
 
@@ -141,17 +141,21 @@ and rear.
 > Asset type: photoreal architectural concept — selected Belgian Brick Lantern SHARED TRACTOR-LANE elevation with integrated exterior lighting.
 > Input images: Image 1 is the edit target and controls the exact portrait camera, crop, perspective, lane, gate, hedge, neighbour screen, roof, continuous Belgian brick, front glass gable and every existing opening.
 >
-> Primary request: add a restrained, tractor-safe exterior lighting scheme along the target barn's long brick wall. Install three very low-profile matte-black shielded downlights directly beneath the eaves, aligned respectively with the rear bedroom-window zone, the tall stair window, and the larger living-room window. They should project only a few centimetres and cast soft narrow warm washes down the brick, enough to define the path and openings after dark without lighting the neighbour or pasture. Keep the lane completely unobstructed: no ground fixtures, bollards, posts or projecting arms.
+> Primary request: add a restrained, tractor-safe exterior lighting scheme along the target barn's long brick wall. Install three very low-profile matte-black shielded downlights directly beneath the eaves, aligned respectively with the rear bedroom-window zone, the tall stair window, and the larger kitchen picture window. They should project only a few centimetres and cast soft narrow warm washes down the brick, enough to define the path and openings after dark without lighting the neighbour or pasture. Keep the lane completely unobstructed: no ground fixtures, bollards, posts or projecting arms.
 >
-> Lighting/mood: preserve the existing blue-sky late-afternoon scene, green lane and readable landscape. Switch the new fixtures on with a subtle 2700K glow; deepen the light only slightly toward early evening so both the building and lighting effect remain clear and photorealistic. Add a quiet warm occupied glow behind the front glass gable and larger living window, with realistic reflections.
+> Lighting/mood: preserve the existing blue-sky late-afternoon scene, green lane and readable landscape. Switch the new fixtures on with a subtle 2700K glow; deepen the light only slightly toward early evening so both the building and lighting effect remain clear and photorealistic. Add a quiet warm occupied glow behind the front glass gable and larger kitchen window, with realistic reflections.
 >
-> CRITICAL WINDOW LOCK: from the rear gate toward the glass front, preserve exactly two small black-framed bedroom windows, then one tall narrow black-framed stair window, then one larger horizontal black-framed living-room window, then the full glass front gable. Do not move, resize, delete, duplicate or replace any opening. Do not turn the tall stair window into a door.
+> CRITICAL WINDOW LOCK: from the rear gate toward the glass front, preserve exactly two small black-framed bedroom windows, then one tall narrow black-framed stair window, then one larger horizontal black-framed kitchen picture window, then the full glass front gable. Do not move, resize, delete, duplicate or replace any opening. Do not turn the tall stair window into a door.
 >
 > LOCK EVERYTHING ELSE: exact 17.0 x 7.5 m envelope, 3.2 m eaves, 5.2 m ridge, approximately 28-degree black hollow ceramic Flemish roof; continuous Belgian/Flemish brick on all walls; same gutter/downpipe; same tractor wheel tracks, grass, hedge, gate, fence/screen, trees, camera and composition.
 >
 > Avoid: entrance doors on this lane, wall lanterns with historic ornament, glaring spotlights, exposed cables, bollards, posts, path pavers, gravel, vehicles, people, new landscaping, mixed wall finishes, fibre cement, text, logo or watermark.
 
 ### Timber-lined courtyard entrance revision
+
+This entrance-material study is retained as a prompt record but is superseded
+by Revision 04 for the rear-gable opening schedule: the ground floor of the
+rear/private gable is solid behind the master bed.
 
 > Use case: precise-object-edit
 > Asset type: photoreal architectural concept — selected Belgian Brick Lantern REAR courtyard with a welcoming identifiable side entrance.
@@ -161,7 +165,7 @@ and rear.
 >
 > Entrance hierarchy: the oak-lined opening should read clearly from across the courtyard as the primary entrance, warmer and more generous than the adjacent black-framed windows, yet restrained and contemporary. Keep the hedge opening and path exactly where they are. No canopy is needed.
 >
-> LOCK EVERYTHING ELSE: preserve the broad upper triangular black-framed loft window, the two ground-floor rear-gable bedroom windows, every long-wall window, continuous Belgian/Flemish brick everywhere outside the entrance recess, black hollow ceramic Flemish roof tiles, two flush rooflights, gutters/downpipes, exact 17.0 x 7.5 m footprint, 3.2 m eaves, 5.2 m ridge and approximately 28-degree roof. Preserve all cobbles, curbs, hedge geometry, hydrangeas, mature trees, access routes, shadows and camera composition.
+> LOCK EVERYTHING ELSE: preserve the broad upper triangular black-framed loft window, the existing ground-floor opening arrangement in this superseded image, every long-wall window, continuous Belgian/Flemish brick everywhere outside the entrance recess, black hollow ceramic Flemish roof tiles, two flush rooflights, gutters/downpipes, exact 17.0 x 7.5 m footprint, 3.2 m eaves, 5.2 m ridge and approximately 28-degree roof. Preserve all cobbles, curbs, hedge geometry, hydrangeas, mature trees, access routes, shadows and camera composition.
 >
 > Lighting/mood: retain natural late-afternoon documentary photography. Let the entrance light be visibly warm but subtle; add no other lighting changes.
 >
@@ -184,6 +188,10 @@ and rear.
 This earlier straight-stair study is retained as a prompt record but is
 superseded by the Revision 02 switchback-stair concepts below.
 
+Its left/right camera translation is also superseded by Revision 04: from the
+front glass gable looking rearward, the courtyard is on the viewer's left and
+the shared tractor lane is on the viewer's right.
+
 > Use case: precise-object-edit
 > Asset type: photoreal architectural concept — selected Belgian Brick Lantern OPEN LIVING HALL AND REAR LOFT, with interior openings aligned to the approved exterior elevations.
 > Input images: Image 1 is the EDIT TARGET and strictly controls the wide landscape camera, front-to-rear viewpoint, room proportions, open living/kitchen layout, rear mezzanine, stair, materials, furniture, timber portal frames and lighting. Image 2 is the authoritative SHARED-LANE ELEVATION reference for the left exterior wall opening order and proportions. Image 3 is the authoritative REAR GABLE reference for the broad upper triangular loft window. Do not copy their outdoor cameras into Image 1.
@@ -192,8 +200,8 @@ superseded by the Revision 02 switchback-stair concepts below.
 >
 > REAR LOFT GABLE WINDOW: replace the solid triangular upper rear wall behind the loft furniture with the same broad, black-framed triangular gable window shown in Image 3. Its base sits just above the loft floor/guard line, it tapers below the ridge, and a substantial plastered ICF reveal remains around both sloping sides and ridge. Use one slim central vertical mullion and a restrained base transom. Through it show softly focused courtyard tree canopy and blue sky with realistic reflections. The loft reading table and chairs remain visible in front of the glass.
 >
-> LEFT SHARED-LANE WALL ALIGNMENT: Image 2 orders the openings from the rear toward the front as bedroom pair, tall stair window, larger living-room window, then front glass gable. In Image 1 the camera stands near the front glass gable and looks toward the rear, so:
-> - insert the larger black-framed horizontal living-room picture window into the left plastered wall in the foreground, directly above/behind the kitchen worktop and sink; give it a deep ICF reveal and a view of the retained lane hedge;
+> LEFT SHARED-LANE WALL ALIGNMENT: Image 2 orders the openings from the rear toward the front as bedroom pair, tall stair window, larger kitchen picture window, then front glass gable. In Image 1 the camera stands near the front glass gable and looks toward the rear, so:
+> - insert the larger black-framed horizontal kitchen picture window into the left plastered wall in the foreground, directly above/behind the kitchen worktop and sink; give it a deep ICF reveal and a view of the retained lane hedge;
 > - insert one tall narrow black-framed stair window beside the stair landing on that same left wall, partially visible behind the stair and extending vertically to light the stair;
 > - do NOT put the two rear bedroom windows into the open hall because they belong inside the enclosed rooms beneath the loft, behind their doors.
 >
@@ -235,6 +243,10 @@ door row did not reflect the compact Revision 02 entry/service core.
 
 ### Revision 03 entrance alignment — overall living hall
 
+This prompt record is superseded by Revision 04 below. It incorrectly mirrored
+the glass-gable camera, putting the shared lane on the photograph's left and
+the courtyard on its right.
+
 > Use case: precise-object-edit. Asset type: corrected photoreal architectural website concept for the Belgian Brick Lantern interior.
 >
 > Image 1 is the edit target and controls the wide front-to-rear camera, Belgian Brick Lantern interior identity, furniture, pale mineral-plastered thick ICF walls, smoked oak, black metal, polished mineral floor, kitchen, dining, living area, roof volume, rear-only open mezzanine and triangular rear gable window. Images 2 and 3 are the authoritative Revision 02 ground-floor and mezzanine plans and override Image 1 wherever the entrance, service core, stair or windows conflict.
@@ -249,6 +261,9 @@ door row did not reflect the compact Revision 02 entry/service core.
 
 ### Revision 03 entrance alignment — closer relationship view
 
+This prompt record is superseded by Revision 04 below for the same mirrored
+orientation error.
+
 > Use case: photorealistic-natural with authoritative architectural references. Asset type: complementary photoreal website concept explaining the Belgian Brick Lantern entrance and U-stair relationship.
 >
 > Use the selected Revision 03 overall interior as the authoritative identity and spatial reference, with the Revision 02 ground-floor and mezzanine plans controlling geometry. Create a closer ground-floor eye-level photograph from the front living area looking diagonally toward the service-core transition. Give the stair and entrance equal visual importance and retain enough of the kitchen and living floor to establish orientation.
@@ -259,15 +274,42 @@ door row did not reflect the compact Revision 02 entry/service core.
 >
 > Wide 3:2, eye-level 26–28 mm premium Belgian interior photograph. Preserve the fixed 17.0 × 7.5 m envelope, shallow roof geometry, thick wall reveals, rear-only mezzanine, mineral plaster, oak, matte-black guards and polished mineral floor. No repeated door row, internal window, freestanding stair, entrance beneath a flight, additional opening, person, text, logo or watermark.
 
+### Revision 04 plan/render reconciliation
+
+The Revision 03 renders were mirrored relative to the floor plans. Revision 04
+uses the floor-plan camera key as the authoritative translation:
+
+- camera at the valley/full-glass gable, looking toward the rear/private gable;
+- viewer left is the courtyard wall, with the living side window and one oak
+  exterior entrance;
+- viewer right is the shared tractor-lane wall, with the kitchen picture
+  window, tall stair window and U-stair;
+- the two stair flights run laterally across the building width and turn at the
+  right-hand lane-wall half-landing;
+- the service core is screened, with no false axial exterior doorway;
+- the mezzanine begins at the 9.1 m transverse division and remains over the
+  rear/core zone only;
+- the rear ground-floor gable remains solid behind the master bed, while the
+  broad triangular window serves only the open loft;
+- the reverse valley-facing view puts kitchen/dining left and living/clear
+  courtyard route right.
+
+The selected detail is a deterministic crop of the selected overall interior,
+not a separately generated room. It therefore cannot introduce a second door,
+move a window or reverse the stair.
+
 ## Output files
 
 | View | Source output |
 |---|---|
-| Selected front with integrated lighting | `belgian-brick-front-lighting.png` |
-| Selected shared lane with integrated lighting | `belgian-brick-side-lighting.png` |
-| Selected rear with loft glass and oak entrance | `belgian-brick-back-oak-entrance.png` |
-| Selected Revision 03 plan-aligned living hall and entrance | `belgian-brick-interior-entry-aligned.png` |
-| Selected Revision 03 entrance and lane-wall stair detail | `belgian-brick-interior-entry-stair-detail.png` |
+| Selected Revision 04 front with plan-visible interior | `belgian-brick-front-lighting.png` |
+| Selected Revision 04 shared lane with four plan openings and no door | `belgian-brick-side-lighting.png` |
+| Selected Revision 04 courtyard/rear with solid master gable | `belgian-brick-back-oak-entrance.png` |
+| Selected Revision 04 valley-facing living hall | `belgian-brick-interior-valley-plan-reconciled.png` |
+| Selected Revision 04 rearward plan-reconciled living hall | `belgian-brick-interior-plan-reconciled.png` |
+| Selected Revision 04 deterministic core detail crop | `belgian-brick-interior-plan-reconciled-detail.png` |
+| Superseded mirrored Revision 03 living hall | `belgian-brick-interior-entry-aligned.png` |
+| Superseded separately generated Revision 03 detail | `belgian-brick-interior-entry-stair-detail.png` |
 | Superseded Revision 02 living hall with invented corridor | `belgian-brick-interior-u-stair.png` |
 | Superseded Revision 02 stair detail with repeated door row | `belgian-brick-interior-stair-detail.png` |
 | Superseded aligned straight-stair interior | `belgian-brick-interior-aligned-windows.png` |
