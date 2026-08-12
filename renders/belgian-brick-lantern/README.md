@@ -9,7 +9,8 @@ shell but uses one consistent exterior wall finish:
 - no fibre cement, timber wall cladding or material transition;
 - all windows and the glass gable: deep matte-black aluminium liners and frames;
 - roof: black gently curved hollow ceramic Flemish tiles, not standing-seam metal;
-- rear loft: one broad triangular black-framed gable window above the bedrooms;
+- rear loft: one broad triangular black-framed gable window above the master and
+  service core;
 - courtyard entrance: smoked oak door and vertical timber-lined recess within a
   deep matte-black portal; brick remains continuous outside the entrance recess;
 - exterior lighting: shielded warm pier and eaves lights with no projection into
@@ -31,7 +32,7 @@ remain for the architect and roofer:
 The side elevation is deliberately driven by the plan. From the pasture gate at
 the far/rear end toward the valley-facing glass gable at the near/front end:
 
-1. two separate horizontal bedroom windows;
+1. two separate horizontal master-bedroom windows;
 2. one tall narrow stair window at the transition;
 3. one larger horizontal living-room side window;
 4. the full-height glass front gable, partly hidden by the retained boundary screen.
@@ -180,6 +181,9 @@ and rear.
 
 ### Interior opening-alignment revision
 
+This earlier straight-stair study is retained as a prompt record but is
+superseded by the Revision 02 switchback-stair concepts below.
+
 > Use case: precise-object-edit
 > Asset type: photoreal architectural concept — selected Belgian Brick Lantern OPEN LIVING HALL AND REAR LOFT, with interior openings aligned to the approved exterior elevations.
 > Input images: Image 1 is the EDIT TARGET and strictly controls the wide landscape camera, front-to-rear viewpoint, room proportions, open living/kitchen layout, rear mezzanine, stair, materials, furniture, timber portal frames and lighting. Image 2 is the authoritative SHARED-LANE ELEVATION reference for the left exterior wall opening order and proportions. Image 3 is the authoritative REAR GABLE reference for the broad upper triangular loft window. Do not copy their outdoor cameras into Image 1.
@@ -201,6 +205,30 @@ and rear.
 >
 > Avoid: blank rear gable, missing side windows, random extra windows, bedroom windows opening into the living room, moving the stair, changing the loft depth, full-height rear glazing down to the bedrooms, balcony, dormer, altered roof, exposed brick inside, black exterior cladding inside, mixed wall finishes, people, text, logo or watermark.
 
+### Revision 02 switchback stair — overall living hall
+
+> Use case: precise-object-edit. Asset type: photoreal architectural concept for the Belgian Brick Lantern interior — living hall looking rearward toward the master/service core and mezzanine.
+>
+> Image 1 is the edit target and controls the wide camera, front-to-rear viewpoint, 17.0 × 7.5 m barn proportions, approximately 28-degree roof, 3.2 m eaves, 5.2 m ridge, oak portal frames, pale mineral-plastered thick ICF walls, polished floor, kitchen, dining, living furniture, stove, rear triangular loft window, side windows, lighting and restrained Belgian character. Image 2 is the authoritative Revision 02 ground-floor plan. Image 3 is the authoritative Revision 02 mezzanine plan.
+>
+> Replace the single straight stair with one compact U-shaped switchback stair. It must visibly contain two parallel flights and a full half-landing at the tall shared-lane window. The lower flight begins at ground level at the living/service transition, rises toward the lane-side half-landing, turns 180 degrees, and the upper flight returns toward the room centre/ridge to a roughly 1.1 m upper landing. Use realistic smoked-oak treads and risers, slim matte-black steel handrails, continuous guards around the opening and a safe connection to the open mezzanine. Do not show one straight floor-to-loft run.
+>
+> Keep the mezzanine only over the rear master/service zone. The front living hall remains open to the ridge. Show low sloping eaves, low fitted storage, restrained seated furniture, a narrow central standing band and an unobstructed broad triangular rear gable window. Below it, imply a short entry gallery, flush smoked-oak service doors, coat storage and laundry/plant joinery. Keep the ground-floor route clear.
+>
+> Preserve the large picture window above the kitchen worktop and the tall stair window at the half-landing, both with deep 35–45 cm plastered ICF reveals. Premium photoreal Belgian interior photography, 24–28 mm lens, warm natural daylight, subtle 2700K lamps and real plaster, oak, steel, glass and fabric texture. No exposed interior brick, full second floor, loft above the front living room, raised ridge/eaves, dormer, floating stair, hotel balcony, people, text, logo or watermark.
+
+### Revision 02 switchback stair — three-quarter detail
+
+> Use case: precise-object-edit. Asset type: photoreal architectural interior concept — detailed three-quarter view of the Revision 02 switchback stair and mezzanine transition.
+>
+> Image 1 is the authoritative completed Belgian Brick Lantern interior identity. Images 2 and 3 are the authoritative Revision 02 ground-floor and mezzanine plans.
+>
+> Create a complementary ground-floor eye-level photograph from the front open living zone, looking diagonally toward the stair, shared-lane wall and rear mezzanine. The compact U-shaped stair is the main subject and must be unambiguously buildable: one lower smoked-oak flight rises from the living/service transition toward a full rectangular half-landing directly against the tall black-framed lane window; it turns exactly 180 degrees; one upper flight runs back parallel toward the ridge and arrives at a roughly 1.1 m upper landing connected to the rear mezzanine. Both flights must be readable, separated by a slim central stringer or guard, with realistic risers/goings, continuous black handrails and proper guard returns.
+>
+> Show the mezzanine only behind the stair over the master/service core. The foreground living hall stays open to the roof. Keep the broad rear triangular window clear, the eaves visibly low, and use low storage/library joinery with restrained seated furniture. Below, retain a calm entry gallery with flush smoked-oak doors and integrated storage rather than a second open room. Preserve the kitchen picture window and clear circulation.
+>
+> Wide 3:2, eye-level 28 mm editorial architectural photograph. Warm off-white mineral plaster, deep ICF reveals, oak structure and stair, matte-black steel, polished mineral floor, Belgian daylight and subtle warm lighting. Exactly one U-shaped stair and two connected parallel flights. No straight stair, extra stair, floating stair, blocked landing, full second floor, loft over the front living room, raised roof, dormer, exposed interior brick, people, text, logo or watermark.
+
 ## Output files
 
 | View | Source output |
@@ -208,7 +236,9 @@ and rear.
 | Selected front with integrated lighting | `belgian-brick-front-lighting.png` |
 | Selected shared lane with integrated lighting | `belgian-brick-side-lighting.png` |
 | Selected rear with loft glass and oak entrance | `belgian-brick-back-oak-entrance.png` |
-| Selected aligned living hall and loft | `belgian-brick-interior-aligned-windows.png` |
+| Selected Revision 02 living hall and U-stair | `belgian-brick-interior-u-stair.png` |
+| Selected Revision 02 U-stair detail | `belgian-brick-interior-stair-detail.png` |
+| Superseded aligned straight-stair interior | `belgian-brick-interior-aligned-windows.png` |
 | Superseded unlit front | `belgian-brick-front-site.png` |
 | Superseded unlit shared lane | `belgian-brick-side-tractor-lane.png` |
 | Superseded rear before entrance revision | `belgian-brick-back-loft-window.png` |
