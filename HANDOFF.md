@@ -47,6 +47,15 @@ This is coherent concept geometry, not a code or permit certification. A
 measured survey and architect must verify the roof section, stair headroom,
 guards, fire strategy, structure and all wall build-ups.
 
+## Sanitary brief encoded
+
+- one WC in the home, located in the separate powder room with a hand basin;
+- no WC in the master ensuite;
+- master ensuite contains the threshold-free Italian shower and vanity.
+
+Any future plan or render showing a second toilet conflicts with
+`models/design.json` and must be corrected.
+
 ## Rendering gate
 
 For every future photoreal concept:

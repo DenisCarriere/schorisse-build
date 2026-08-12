@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1400" height="850" viewBox="0 0 1400 850" role="img" aria-label="Ground floor — site orientation fixed">
 <rect width="1400" height="850" fill="#f4f0e7"/>
-<text x="70" y="58" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#b4522e">MODEL-GENERATED · REV 05</text>
+<text x="70" y="58" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#b4522e">MODEL-GENERATED · REV 06</text>
 <text x="70" y="98" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#1d1b18">Ground floor — site orientation fixed</text>
 <text x="70" y="126" font-family="Arial,sans-serif" font-size="14" fill="#686158">Blue valley glass at left · green courtyard entrance below · yellow master/mezzanine at right</text>
 
@@ -71,8 +71,6 @@
 <rect x="932.9000000000001" y="471.29999999999995" width="37.69999999999992" height="52.20000000000002" rx="3" fill="#625b51" stroke="#514c44" stroke-width="2"><title>master_wardrobe_courtyard</title></rect>
 <rect x="811.0999999999999" y="221.9" width="107.30000000000008" height="69.6" rx="3" fill="#d0c0aa" stroke="#514c44" stroke-width="2"><title>italian_shower</title></rect>
 <text x="864.8" y="259.7" text-anchor="middle" font-family="Arial" font-size="6.8" font-weight="700" fill="#f4f0e7">ITALIAN SHOWER</text>
-<rect x="814.0" y="311.8" width="29.0" height="34.800000000000004" rx="3" fill="#d0c0aa" stroke="#514c44" stroke-width="2"><title>ensuite_wc</title></rect>
-<text x="828.5" y="332.2" text-anchor="middle" font-family="Arial" font-size="6.8" font-weight="700" fill="#f4f0e7">WC</text>
 <rect x="811.0999999999999" y="394.15999999999997" width="81.20000000000002" height="34.800000000000004" rx="3" fill="#625b51" stroke="#514c44" stroke-width="2"><title>ensuite_vanity</title></rect>
 <text x="851.7" y="414.6" text-anchor="middle" font-family="Arial" font-size="6.8" font-weight="700" fill="#f4f0e7">VANITY</text>
 <rect x="834.3" y="446.36" width="29.0" height="37.70000000000002" rx="3" fill="#d0c0aa" stroke="#514c44" stroke-width="2"><title>powder_wc</title></rect>

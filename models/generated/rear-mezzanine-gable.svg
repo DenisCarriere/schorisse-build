@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1400" height="850" viewBox="0 0 1400 850" role="img" aria-label="Rear Mezzanine Gable">
 <rect width="1400" height="850" fill="#f4f0e7"/>
-<text x="70" y="58" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#b4522e">MODEL-GENERATED · REV 05</text>
+<text x="70" y="58" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#b4522e">MODEL-GENERATED · REV 06</text>
 <text x="70" y="98" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#1d1b18">Rear Mezzanine Gable</text>
 <text x="70" y="126" font-family="Arial,sans-serif" font-size="14" fill="#686158">yellow master/mezzanine gable and true loft opening authority</text>
 
@@ -1171,10 +1171,8 @@
 <polygon points="828.1,413.2 681.0,413.3 828.9,413.3" fill="rgb(209, 201, 181)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ensuite_front_end</title></polygon>
 <polygon points="645.0,506.8 629.8,508.3 630.8,506.8" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>powder_basin</title></polygon>
 <polygon points="828.2,507.6 828.9,413.3 681.0,413.3" fill="rgb(209, 201, 181)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ensuite_front_end</title></polygon>
-<polygon points="763.8,507.4 740.6,507.4 740.7,489.7" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ensuite_wc</title></polygon>
 <polygon points="645.0,506.8 644.9,474.6 644.1,475.7" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>powder_basin</title></polygon>
 <polygon points="630.8,506.8 629.7,475.7 630.6,474.6" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>powder_basin</title></polygon>
-<polygon points="763.8,507.4 740.7,489.7 763.9,489.7" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ensuite_wc</title></polygon>
 <polygon points="644.9,474.6 630.6,474.6 629.7,475.7" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>powder_basin</title></polygon>
 <polygon points="625.1,412.7 617.1,413.6 621.8,413.6" fill="rgb(209, 201, 181)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>service_gallery_wall_9.87</title></polygon>
 <polygon points="623.6,427.5 618.5,429.0 620.5,429.0" fill="rgb(87, 51, 28)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>powder_door</title></polygon>
@@ -1183,11 +1181,7 @@
 <polygon points="630.8,506.8 629.8,508.3 629.7,475.7" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>powder_basin</title></polygon>
 <polygon points="644.9,474.6 629.7,475.7 644.1,475.7" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>powder_basin</title></polygon>
 <polygon points="644.2,508.3 629.7,475.7 629.8,508.3" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>powder_basin</title></polygon>
-<polygon points="763.8,507.4 741.7,510.6 740.6,507.4" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ensuite_wc</title></polygon>
 <polygon points="644.2,508.3 644.1,475.7 629.7,475.7" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>powder_basin</title></polygon>
-<polygon points="763.8,507.4 763.9,489.7 765.6,492.4" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ensuite_wc</title></polygon>
-<polygon points="740.6,507.4 741.8,492.4 740.7,489.7" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ensuite_wc</title></polygon>
-<polygon points="763.9,489.7 740.7,489.7 741.8,492.4" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ensuite_wc</title></polygon>
 <polygon points="568.7,509.4 554.1,509.7 554.6,509.4" fill="rgb(9, 10, 11)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>courtyard_entry_frame_left</title></polygon>
 <polygon points="620.9,508.6 618.5,429.0 618.9,508.6" fill="rgb(87, 51, 28)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>powder_door</title></polygon>
 <polygon points="622.2,509.3 617.1,413.6 617.6,509.3" fill="rgb(209, 201, 181)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>service_gallery_wall_9.87</title></polygon>
@@ -1223,12 +1217,8 @@
 <polygon points="568.3,509.7 567.5,421.8 567.4,421.8" fill="rgb(87, 51, 28)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>courtyard_entry_oak_reveal_left</title></polygon>
 <polygon points="554.1,509.7 553.2,421.8 553.3,421.8" fill="rgb(87, 51, 28)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>courtyard_entry_oak_reveal_left</title></polygon>
 <polygon points="569.1,419.6 552.2,384.1 568.8,384.1" fill="rgb(133, 64, 38)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>courtyard_wall_courtyard_entry_head</title></polygon>
-<polygon points="763.8,507.4 765.6,510.6 741.7,510.6" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ensuite_wc</title></polygon>
-<polygon points="763.8,507.4 765.6,492.4 765.6,510.6" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ensuite_wc</title></polygon>
-<polygon points="740.6,507.4 741.7,510.6 741.8,492.4" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ensuite_wc</title></polygon>
 <polygon points="567.9,419.6 553.3,419.6 567.5,419.6" fill="rgb(9, 10, 11)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>courtyard_entry_frame_left</title></polygon>
 <polygon points="568.1,509.9 567.4,421.8 553.2,421.8" fill="rgb(87, 51, 28)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>courtyard_entry_oak_reveal_left</title></polygon>
-<polygon points="763.9,489.7 741.8,492.4 765.6,492.4" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ensuite_wc</title></polygon>
 <polygon points="567.5,422.6 553.3,422.6 553.3,421.8" fill="rgb(87, 51, 28)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>courtyard_entry_oak_reveal_head</title></polygon>
 <polygon points="567.5,422.6 553.3,421.8 567.5,421.8" fill="rgb(87, 51, 28)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>courtyard_entry_oak_reveal_head</title></polygon>
 <polygon points="673.6,509.6 648.0,509.6 647.9,491.5" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>powder_wc</title></polygon>
@@ -1242,8 +1232,6 @@
 <polygon points="708.9,507.1 708.9,474.0 709.6,480.7" fill="rgb(66, 56, 46)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ensuite_vanity</title></polygon>
 <polygon points="685.7,507.1 684.5,480.7 685.7,474.0" fill="rgb(66, 56, 46)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ensuite_vanity</title></polygon>
 <polygon points="708.9,474.0 685.7,474.0 684.5,480.7" fill="rgb(66, 56, 46)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ensuite_vanity</title></polygon>
-<polygon points="765.6,510.6 741.8,492.4 741.7,510.6" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ensuite_wc</title></polygon>
-<polygon points="765.6,510.6 765.6,492.4 741.8,492.4" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ensuite_wc</title></polygon>
 <polygon points="673.6,509.6 646.5,512.9 648.0,509.6" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>powder_wc</title></polygon>
 <polygon points="673.6,509.6 673.6,491.5 672.8,494.3" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>powder_wc</title></polygon>
 <polygon points="648.0,509.6 646.4,494.3 647.9,491.5" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>powder_wc</title></polygon>

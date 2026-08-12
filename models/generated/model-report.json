@@ -1,5 +1,5 @@
 {
-  "model_revision": "05-site-orientation",
+  "model_revision": "06-single-toilet",
   "source": "models/design.json",
   "status": "pass",
   "photoreal_gate": "blocked_pending_geometry_approval",
@@ -115,6 +115,11 @@
       "detail": "all fixtures inside clear envelope"
     },
     {
+      "name": "single-toilet sanitary brief",
+      "status": "pass",
+      "detail": "modeled WC fixtures: powder_wc; ensuite WC: no"
+    },
+    {
       "name": "kitchen working aisle",
       "status": "pass",
       "detail": "1.03 m clear between wall run and island"
@@ -185,6 +190,6 @@
       "detail": "hinged, pocket and sliding door elements are present in the 3D model"
     }
   ],
-  "semantic_elements": 166,
-  "triangles": 2000
+  "semantic_elements": 165,
+  "triangles": 1988
 }

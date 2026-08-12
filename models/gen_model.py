@@ -682,6 +682,17 @@ def validate(spec, scene):
     check("fixture bounds inside shell", interior_limits_ok,
           "all fixtures inside clear envelope" if interior_limits_ok else f"outside: {', '.join(offending)}")
     fixtures = {item["id"]: item for item in spec["furniture_and_fixtures"]}
+    sanitary_brief = spec["sanitary_brief"]
+    modeled_wc_ids = sorted(item["id"] for item in spec["furniture_and_fixtures"]
+                            if item["id"].endswith("_wc"))
+    required_wc_ids = sorted(sanitary_brief["toilet_fixture_ids"])
+    single_toilet_ok = (sanitary_brief["total_toilets"] == 1 and
+                        not sanitary_brief["ensuite_has_toilet"] and
+                        modeled_wc_ids == required_wc_ids == ["powder_wc"])
+    check("single-toilet sanitary brief", single_toilet_ok,
+          f"modeled WC fixtures: {', '.join(modeled_wc_ids)}; ensuite WC: "
+          f"{'yes' if sanitary_brief['ensuite_has_toilet'] else 'no'}")
+
     def gap(a, b, axis):
         index = 0 if axis == "x" else 1
         key = "x" if axis == "x" else "z"
@@ -741,10 +752,11 @@ def validate(spec, scene):
     }
 
 
-def svg_header(title, subtitle):
+def svg_header(title, subtitle, spec):
+    revision = spec["model_revision"].split("-", 1)[0]
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="850" viewBox="0 0 1400 850" role="img" aria-label="{html.escape(title)}">
 <rect width="1400" height="850" fill="#f4f0e7"/>
-<text x="70" y="58" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#b4522e">MODEL-GENERATED · REV 05</text>
+<text x="70" y="58" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#b4522e">MODEL-GENERATED · REV {html.escape(revision)}</text>
 <text x="70" y="98" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#1d1b18">{html.escape(title)}</text>
 <text x="70" y="126" font-family="Arial,sans-serif" font-size="14" fill="#686158">{html.escape(subtitle)}</text>
 '''
@@ -756,7 +768,7 @@ def export_ground_plan(spec, path):
     sx, sy = 58, 58
     ox, oy = 205, 190
     mx, mz = lambda x: ox + x * sx, lambda z: oy + z * sy
-    out = [svg_header("Ground floor — site orientation fixed", "Blue valley glass at left · green courtyard entrance below · yellow master/mezzanine at right")]
+    out = [svg_header("Ground floor — site orientation fixed", "Blue valley glass at left · green courtyard entrance below · yellow master/mezzanine at right", spec)]
     # Site labels and dimensions.
     out.append(f'<text x="{mx(L/2):.1f}" y="170" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#9a472a">SHARED TRACTOR LANE · UPPER RED WALL</text>')
     out.append(f'<text x="{mx(L/2):.1f}" y="650" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#9a472a">COBBLED COURTYARD · LOWER RED WALL · GREEN ENTRY</text>')
@@ -850,7 +862,6 @@ def export_ground_plan(spec, path):
     # selected small-room fixtures receive visible labels below.
     fixture_labels = {
         "italian_shower": "ITALIAN SHOWER",
-        "ensuite_wc": "WC",
         "ensuite_vanity": "VANITY",
         "powder_wc": "WC",
         "powder_basin": "BASIN",
@@ -888,7 +899,7 @@ def export_mezzanine_plan(spec, path):
     sx, sy, ox, oy = 58, 58, 205, 190
     mx, mz = lambda x: ox + x * sx, lambda z: oy + z * sy
     m, s = spec["mezzanine"], spec["stair"]
-    out = [svg_header("Upper mezzanine — stair and void coordinated", "One open room over the yellow rear zone · no plumbing · blue valley living remains double-height")]
+    out = [svg_header("Upper mezzanine — stair and void coordinated", "One open room over the yellow rear zone · no plumbing · blue valley living remains double-height", spec)]
     out.append(f'<rect x="{mx(0)}" y="{mz(0)}" width="{L*sx}" height="{W*sy}" fill="#211f1b"/>')
     out.append(f'<rect x="{mx(m["x"][0])}" y="{mz(m["z"][0])}" width="{(m["x"][1]-m["x"][0])*sx}" height="{(m["z"][1]-m["z"][0])*sy}" fill="#eee6d8"/>')
     out.append(f'<rect x="{mx(.42)}" y="{mz(.42)}" width="{(m["x"][0]-.42)*sx}" height="{(W-.84)*sy}" fill="#e2e7de" stroke="#9b968d" stroke-width="3" stroke-dasharray="12 10"/>')
@@ -958,7 +969,7 @@ def export_camera_svg(scene, spec, camera, path):
             polygons.append((depth, f'<polygon points="{coords}" fill="rgb{rgb}" fill-opacity="{opacity:.2f}" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>{html.escape(element["name"])}</title></polygon>'))
     polygons.sort(reverse=True)
     title = camera["id"].replace("_", " ").title()
-    out = [svg_header(title, camera["purpose"])]
+    out = [svg_header(title, camera["purpose"], spec)]
     out.extend(poly for _, poly in polygons)
     out.append(f'<rect x="70" y="735" width="1260" height="66" rx="8" fill="#211f1b" fill-opacity=".92"/><text x="92" y="760" font-family="Arial" font-size="12" font-weight="700" fill="#fff">FIXED CAMERA: {html.escape(camera["id"])}</text><text x="92" y="784" font-family="Arial" font-size="13" fill="#fff">Generated from models/design.json · use this exact geometry and angle as the photoreal structural reference</text>')
     out.append('</svg>')
@@ -1016,6 +1027,15 @@ This is coherent concept geometry, not a code or permit certification. A
 measured survey and architect must verify the roof section, stair headroom,
 guards, fire strategy, structure and all wall build-ups.
 
+## Sanitary brief encoded
+
+- one WC in the home, located in the separate powder room with a hand basin;
+- no WC in the master ensuite;
+- master ensuite contains the threshold-free Italian shower and vanity.
+
+Any future plan or render showing a second toilet conflicts with
+`models/design.json` and must be corrected.
+
 ## Rendering gate
 
 For every future photoreal concept:
@@ -1051,8 +1071,9 @@ images are presentation outputs, never a place to invent or correct structure.
 
 | Request | Classification | Required action |
 |---|---|---|
-| Brick tone, furniture fabric, daylight, fixtures, planting colour | Non-structural | Reuse the approved model and matching fixed camera |
+| Brick tone, furniture fabric, daylight, fixture finish, planting colour | Non-structural | Reuse the approved model and matching fixed camera |
 | New camera angle with unchanged building | Non-structural | Generate a new model camera view first; do not change geometry |
+| Add, remove or relocate a fixed sanitary or kitchen fixture | Coordinated layout change | Edit `models/design.json`, regenerate and review the plan/model before rendering |
 | Move/add/remove a wall, door, window, stair, floor, roof, mezzanine or room | Structural | Edit `models/design.json`, regenerate and approve before ImageGen |
 | Unclear impact | Structural by default | Resolve it in the model first |
 

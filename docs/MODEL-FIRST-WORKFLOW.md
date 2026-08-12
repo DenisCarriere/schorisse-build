@@ -7,8 +7,9 @@ images are presentation outputs, never a place to invent or correct structure.
 
 | Request | Classification | Required action |
 |---|---|---|
-| Brick tone, furniture fabric, daylight, fixtures, planting colour | Non-structural | Reuse the approved model and matching fixed camera |
+| Brick tone, furniture fabric, daylight, fixture finish, planting colour | Non-structural | Reuse the approved model and matching fixed camera |
 | New camera angle with unchanged building | Non-structural | Generate a new model camera view first; do not change geometry |
+| Add, remove or relocate a fixed sanitary or kitchen fixture | Coordinated layout change | Edit `models/design.json`, regenerate and review the plan/model before rendering |
 | Move/add/remove a wall, door, window, stair, floor, roof, mezzanine or room | Structural | Edit `models/design.json`, regenerate and approve before ImageGen |
 | Unclear impact | Structural by default | Resolve it in the model first |
 

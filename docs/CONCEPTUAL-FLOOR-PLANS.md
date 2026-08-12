@@ -1,7 +1,7 @@
 # Conceptual Floor Plans
 
 - Status: **parametric geometry review — not permit-ready**
-- Revision: **05 — owner bird's-eye orientation**
+- Revision: **06 — one powder-room toilet**
 - External envelope: **17.0 × 7.5 m**
 - Levels: ground floor and partial open mezzanine
 - Sleeping brief: **one ground-floor master bedroom**
@@ -43,7 +43,7 @@ the entrance on the left are superseded and must not guide future renders.
 
 ## Dimensional basis
 
-| Item | Revision 05 assumption |
+| Item | Revision 06 assumption |
 |---|---:|
 | External envelope | 17.0 × 7.5 m |
 | Placeholder external wall build-up | 420 mm |
@@ -84,12 +84,12 @@ contains:
 
 - an approximately 1.20 × 1.85 m threshold-free Italian shower;
 - a vanity;
-- a WC;
 - linen/storage;
 - a pocket entrance from the master side.
 
-The separate powder room contains only one WC and one compact hand-washing
-basin. A pocket door slides into the extended entry-screen wall, so no leaf
+There is deliberately no toilet in the ensuite. The separate powder room
+contains the home's only WC and one compact hand-washing basin. A pocket door
+slides into the extended entry-screen wall, so no leaf
 sweeps across either fixture or the gallery. The laundry/plant cupboard uses
 sliding panels to avoid another swing conflict. Final fixture offsets, plumbing,
 ventilation, waterproofing and acoustic performance require professional design.

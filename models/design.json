@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "model_revision": "05-site-orientation",
+  "model_revision": "06-single-toilet",
   "status": "geometry-review",
   "units": "metres",
   "approval": {
@@ -12,6 +12,12 @@
     "y": "vertical; 0.0 = ground-floor datum",
     "z": "0.0 = upper red wall/shared tractor lane; 7.5 = lower red wall/courtyard and green entrance",
     "valley_camera": "camera outside x=0 looking toward +x: tractor lane is viewer-left and courtyard/entrance is viewer-right"
+  },
+  "sanitary_brief": {
+    "total_toilets": 1,
+    "toilet_fixture_ids": ["powder_wc"],
+    "ensuite_has_toilet": false,
+    "note": "The powder room contains the home's only WC. The master ensuite contains the Italian shower and vanity, with no toilet."
   },
   "envelope": {
     "length": 17.0,
@@ -276,7 +282,6 @@
     {"id": "master_wardrobe_lane", "kind": "cabinet", "x": [12.55, 13.2], "z": [0.55, 2.25], "height": 2.15},
     {"id": "master_wardrobe_courtyard", "kind": "cabinet", "x": [12.55, 13.2], "z": [4.85, 5.75], "height": 2.15},
     {"id": "italian_shower", "kind": "shower", "x": [10.45, 12.3], "z": [0.55, 1.75], "height": 0.05},
-    {"id": "ensuite_wc", "kind": "sanitary", "x": [10.5, 11.0], "z": [2.1, 2.7], "height": 0.48},
     {"id": "ensuite_vanity", "kind": "cabinet", "x": [10.45, 11.85], "z": [3.52, 4.12], "height": 0.88},
     {"id": "powder_wc", "kind": "sanitary", "x": [10.85, 11.35], "z": [4.42, 5.07], "height": 0.48},
     {"id": "powder_basin", "kind": "sanitary", "x": [10.4, 10.65], "z": [5.18, 5.55], "height": 0.86},
