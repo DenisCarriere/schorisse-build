@@ -1,0 +1,19 @@
+name: Validate parametric model
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  model:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile generator
+        run: python3 -m py_compile models/gen_model.py
+      - name: Validate model and generated assets
+        run: python3 models/gen_model.py --check
