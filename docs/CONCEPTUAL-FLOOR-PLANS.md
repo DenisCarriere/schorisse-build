@@ -1,7 +1,7 @@
 # Conceptual Floor Plans
 
 - Status: **spatial feasibility study — not permit-ready**
-- Revision: **02 — comfort and circulation layout**
+- Revision: **03 — plan/render reconciliation**
 - External envelope: **17.0 × 7.5 m**
 - Levels shown: ground floor and partial upper mezzanine
 - Sleeping brief: **one ground-floor master bedroom**
@@ -10,6 +10,13 @@ These plans replace the first zoning diagrams. The revision treats the external
 dimensions as the outside of the thick wall shell, stacks the stair on both
 levels and reserves credible space for doors, wardrobes, sanitary fixtures,
 kitchen aisles, circulation and building services.
+
+Revision 03 also fixes the visual orientation used by every selected concept
+render. When the camera stands at the valley glass gable and looks toward the
+rear/private gable, the courtyard wall and oak entrance are on the **viewer's
+left**, while the shared tractor-lane wall, kitchen and stair are on the
+**viewer's right**. This camera key is drawn directly on both plans so the
+rendered views cannot be read as a mirrored plan.
 
 They are still concept drawings. A measured survey, architect, structural
 engineer and building-services designer must replace every assumed dimension
@@ -22,7 +29,7 @@ before planning or construction.
 
 ## Dimensional basis
 
-| Item | Revision 02 assumption |
+| Item | Revision 03 assumption |
 |---|---:|
 | External envelope | 17.0 × 7.5 m |
 | Placeholder external wall build-up | 420 mm |
@@ -51,6 +58,26 @@ The daily route is deliberately simple:
 
 The stair foot opens from the living/core boundary. It does not sit in the
 entrance door swing or interrupt the private bedroom route.
+
+## Plan-to-render alignment
+
+The two drawings are the authoritative spatial reference for the selected
+photoreal concepts. From the glass-gable camera looking rearward:
+
+- **render left / courtyard:** living side window, clear garden route, recessed
+  oak side entrance, coat and shoe niche;
+- **render right / shared lane:** kitchen counter and picture window, tall
+  fridge/oven/pantry bank, raised stair window and U-stair;
+- **straight ahead:** a screened service core rather than an axial exterior
+  doorway, then the rear-only mezzanine and its triangular gable window;
+- **above:** one transverse mezzanine edge at the 9.1 m division; the front
+  7.9 m living zone stays fully double-height;
+- **stair:** two parallel flights run across the 7.5 m width, turning at the
+  right-hand lane-wall half-landing. They do not run along the 17 m length.
+
+The reverse valley-facing living view therefore swaps the image sides: kitchen
+and dining appear left, while living seating and the clear courtyard-side route
+appear right.
 
 ## Rear master suite
 
@@ -198,6 +225,7 @@ The revised plan keeps the elevation logic legible:
 - the courtyard entrance remains inside the service core;
 - one courtyard-side opening lights the dining/living zone;
 - the broad rear triangular window serves only the open mezzanine;
+- the rear ground-floor gable stays solid behind the master bed;
 - the full front glass gable serves the double-height living hall.
 
 No door or projecting element is added to the shared tractor lane.

@@ -107,7 +107,7 @@ The openings communicate the interior sequence:
 
 1. modest bedroom windows at the rear;
 2. a tall narrow stair marker at the transition;
-3. a larger living-room opening toward the valley end.
+3. a larger kitchen picture window toward the valley end.
 
 There is no entrance on the tractor-lane facade. All windows remain clear and
 unobstructed; the thick wall build-up is expressed through deep reveals.
@@ -149,9 +149,9 @@ fixtures that preserve tractor clearance and limit spill toward the neighbour.
 
 The interior concept follows the same opening order as the exterior elevations.
 Looking from the front glass gable toward the rear loft, the larger lane-facing
-living window sits above the kitchen worktop, the tall stair window lights the
-stair, and the broad triangular rear gable window forms the outlook behind the
-loft lounge. Two modest lane-side windows and one courtyard-side window serve
+kitchen picture window sits above the kitchen worktop, the tall stair window
+lights the stair, and the broad triangular rear gable window forms the outlook
+behind the loft lounge. Two modest lane-side windows and one courtyard-side window serve
 the single enclosed master suite beneath the loft. The ground-floor rear gable
 stays solid behind the bed.
 

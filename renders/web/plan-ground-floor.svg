@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1400" height="850" viewBox="0 0 1400 850" role="img" aria-labelledby="title desc">
   <title id="title">Revised conceptual ground-floor plan for the Belgian Brick Lantern</title>
-  <desc id="desc">A scaled seventeen by seven point five metre barn plan with a thick ICF and brick shell, one rear master suite, Italian walk-in shower, separate powder room, courtyard entrance, laundry and plant storage, a ridge-arriving dog-leg stair, and an open kitchen, dining and living hall facing the glass gable.</desc>
+  <desc id="desc">A scaled seventeen by seven point five metre barn plan with a thick ICF and brick shell, one rear master suite, Italian walk-in shower, separate powder room, courtyard entrance, laundry and plant storage, a ridge-arriving U-shaped stair, and an open kitchen, dining and living hall facing the glass gable. A camera key at the valley glass gable looks toward the rear, placing the courtyard on the viewer's left and the shared tractor lane on the viewer's right in the interior concepts.</desc>
   <defs>
     <pattern id="tiles" width="16" height="16" patternUnits="userSpaceOnUse">
       <path d="M16 0H0V16" fill="none" stroke="#b8b3a9" stroke-width="1"/>
@@ -15,7 +15,7 @@
   </defs>
 
   <rect class="bg" width="1400" height="850"/>
-  <text class="kicker" x="76" y="58">REVISED SPATIAL STUDY · REV 02</text>
+  <text class="kicker" x="76" y="58">REVISED SPATIAL STUDY · REV 03</text>
   <text class="title" x="76" y="98">Ground floor — privacy, storage and clear circulation</text>
   <text class="sub" x="76" y="126">Scaled from the 17.0 × 7.5 m external envelope · assumed 420 mm ICF / insulation / brick build-up</text>
   <rect class="pill" x="1056" y="72" width="246" height="38" rx="19"/>
@@ -31,6 +31,13 @@
   <text class="micro" x="142" y="176">REAR / PRIVATE GABLE</text>
   <text class="micro" x="1218" y="176" text-anchor="end">VALLEY / FULL GLASS GABLE</text>
   <text class="micro" x="680" y="176" text-anchor="middle">SHARED TRACTOR LANE</text>
+
+  <!-- interior-render camera key: camera at glass gable looking rearward -->
+  <path class="arrow" d="M1188 432H1110"/>
+  <circle cx="1202" cy="432" r="9" fill="#b4522e"/>
+  <text class="micro" x="1177" y="410" text-anchor="end">INTERIOR CAMERA · LOOKS TO REAR</text>
+  <text class="micro" x="1210" y="458" text-anchor="end">RENDER LEFT = COURTYARD</text>
+  <text class="micro" x="1210" y="474" text-anchor="end">RENDER RIGHT = TRACTOR LANE</text>
 
   <!-- exact external shell and assumed clear interior -->
   <rect class="shell" x="120" y="185" width="1120" height="494"/>
@@ -85,7 +92,7 @@
   <text class="small" x="508" y="286" text-anchor="middle">1.20 × 1.80 m</text>
   <text class="micro" x="509" y="442" text-anchor="middle">ENSUITE · ≈7.2 m²</text>
 
-  <!-- stacked U stair: two flights, half landing at tall lane window, ridge-side arrival -->
+  <!-- stacked U stair: two cross-width flights, half landing at tall lane window, ridge-side arrival -->
   <rect x="586" y="240" width="124" height="198" fill="#d7cfc2" stroke="#514c44" stroke-width="3"/>
   <rect x="586" y="240" width="124" height="66" fill="#c8bdad" stroke="#514c44" stroke-width="3"/>
   <path class="fixture" d="M648 314V428M666 314V428M684 314V428M702 314V428M594 314V428M612 314V428M630 314V428"/>
@@ -94,6 +101,7 @@
   <text class="micro" x="648" y="262" text-anchor="middle">HALF-LANDING</text>
   <text class="micro" x="648" y="278" text-anchor="middle">AT TALL WINDOW</text>
   <text class="micro" x="648" y="397" text-anchor="middle">U-STAIR · UP</text>
+  <text class="micro" x="648" y="420" text-anchor="middle">FLIGHTS RUN ACROSS WIDTH</text>
 
   <!-- entry gallery, powder, utility and storage -->
   <rect x="440" y="524" width="90" height="127" fill="url(#tiles)"/>
