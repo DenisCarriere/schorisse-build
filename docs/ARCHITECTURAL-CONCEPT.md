@@ -68,18 +68,18 @@ windows on the exterior.
 
 ```mermaid
 flowchart LR
-    A[Rear / courtyard end<br/>Master bedroom + wardrobes] --> B[Middle transition<br/>Ensuite + powder + laundry/plant + entry + U-stair]
-    B --> C[Front / valley end<br/>Double-height living + dining + kitchen]
-    C --> D[Full glass gable<br/>Terrace + valley outlook]
-    E[Open mezzanine<br/>above rear private core] -. overlooks .-> C
+    A[Blue / valley end<br/>Full glass gable] --> B[Double-height living<br/>Living + dining + kitchen]
+    B --> C[Middle transition<br/>Entry + stair + services]
+    C --> D[Yellow / private end<br/>Master bedroom]
+    E[Open mezzanine<br/>above service + private zones] -. overlooks .-> B
 ```
 
 ### Ground floor
 
 | Zone | Concept use |
 |---|---|
-| Rear private zone | 4.8 m external zone with one approximately 4.3 × 6.6 m clear master bedroom and 3.7 m of full-height wardrobes |
-| Middle service zone | 4.3 m external zone with private ensuite, separate toilet-and-sink powder room, laundry/plant, courtyard entrance and ridge-arriving U-stair |
+| Rear private zone | x=12.50–17.00 m external zone with one ground-floor master bedroom and full-height wardrobes |
+| Middle service zone | x=7.90–12.50 m external zone with private ensuite, separate toilet-and-sink powder room, laundry/plant, courtyard entrance and dog-leg stair |
 | Front living zone | 7.9 m external zone; approximately 49 m² clear open living, dining and kitchen space before cabinetry |
 | Valley end | Full-height glazed gable with one or two lift-slide door leaves |
 
@@ -88,6 +88,15 @@ space rather than a requirement for the bedroom, bathroom or normal access.
 
 The current single-master plan supersedes the early two-bedroom diagram. See
 [`CONCEPTUAL-FLOOR-PLANS.md`](CONCEPTUAL-FLOOR-PLANS.md) for the plan assumptions.
+
+### Site and camera orientation
+
+The owner's marked bird's-eye view is now authoritative. With x=0 at the
+valley-facing glass gable and x=17 at the rear/private gable, the shared tractor
+lane is z=0 and the cobbled courtyard is z=7.5. The entrance is in the courtyard
+wall near the rear service/private transition. From the valley glass looking
+inward, kitchen and stair appear left; courtyard and entrance appear right.
+Earlier photoreal interiors that reverse this relationship are superseded.
 
 ## Exterior expression
 
@@ -175,14 +184,30 @@ The loft is a compact rear mezzanine, not a full second storey.
 Inner roof geometry, clear heights, stair headroom, structure, guarding, fire
 strategy and permitting require measured design by the architect and engineer.
 
-## 3D massing resources
+## Parametric 3D source of truth
 
-- [`../models/barn.glb`](../models/barn.glb) — coloured glTF massing model.
-- [`../models/barn.stl`](../models/barn.stl) — shell for SketchUp or another 3D tool; import in metres.
-- [`../models/gen_model.py`](../models/gen_model.py) — source generator based on the concept dimensions.
+- [`../models/design.json`](../models/design.json) — authoritative geometry,
+  room, opening, stair, fixture and camera specification.
+- [`../models/barn.glb`](../models/barn.glb) — coloured semantic glTF model with
+  one named node per modeled element.
+- [`../models/barn.obj`](../models/barn.obj) and
+  [`../models/barn.mtl`](../models/barn.mtl) — editable/importable mesh package.
+- [`../models/barn.stl`](../models/barn.stl) — geometry-only coordination mesh;
+  import in metres.
+- [`../models/gen_model.py`](../models/gen_model.py) — deterministic generator
+  and validator.
+- [`../models/generated/model-report.json`](../models/generated/model-report.json)
+  — machine-readable validation evidence.
 
-The current model is an exterior reference shell. It does not resolve the loft,
-wall build-ups, structure, services or construction details.
+The current model now resolves the concept envelope, wall thickness, exterior
+openings, room partitions, fixtures, dog-leg stair, stair void, mezzanine and
+guards. It is still pre-design geometry: it does not prove survey accuracy,
+structure, code compliance, services or construction details.
+
+All future image work follows
+[`MODEL-FIRST-WORKFLOW.md`](MODEL-FIRST-WORKFLOW.md). Structural changes update
+the model first. Non-structural changes reuse an approved fixed-camera model
+view. Photoreal images never override the model.
 
 ## Required design-development checks
 

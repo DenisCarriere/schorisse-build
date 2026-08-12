@@ -9,19 +9,21 @@ open mezzanine.
 
 **[Open the live concept gallery](https://deniscarriere.github.io/schorisse-build/)**
 
-The mobile-first gallery focuses on the photoreal concepts and the real property
-context: glass gable, shared tractor lane, cobbled courtyard, valley-facing
-living hall, coordinated ground-floor and mezzanine plans, the selected Belgian
-Brick Lantern direction and the aligned rear open mezzanine.
+The mobile-first gallery now foregrounds coordinated model views and plans, with
+the earlier photoreal studies retained only for material, atmosphere and real
+property context: glass gable, shared tractor lane, cobbled courtyard,
+valley-facing living hall and the rear open mezzanine.
 
-The GitHub Pages workflow publishes only `index.html` and the optimized images
-under `renders/web/`. Original references, source renders, models and project
-notes remain in the repository but are not part of the public Pages artifact.
+The GitHub Pages workflow publishes `index.html`, the optimized images and plans
+under `renders/web/`, and the generated model package under `models/`. Original
+site references, source photoreal renders and project notes remain repository
+assets rather than gallery content.
 
 ## Project documents
 
 - [Architectural concept](docs/ARCHITECTURAL-CONCEPT.md)
 - [Conceptual floor plans](docs/CONCEPTUAL-FLOOR-PLANS.md)
+- [Model-first rendering workflow](docs/MODEL-FIRST-WORKFLOW.md)
 - [Structure and envelope](docs/STRUCTURE-AND-ENVELOPE.md)
 - [Feasibility and performance](docs/FEASIBILITY-AND-PERFORMANCE.md)
 - [Cost assumptions](docs/COSTS.md)
@@ -41,8 +43,25 @@ notes remain in the repository but are not part of the public Pages artifact.
 - `renders/brick-veil/` — developed front, side, back and interior-loft concept PNGs.
 - `renders/concepts/` — broader material explorations.
 - `renders/web/` — responsive JPEG derivatives and editable SVG floor plans used by the gallery.
-- `uploads/site-reference/` — four original property photographs.
-- `models/` — GLB/STL massing shell and generator.
+- `uploads/site-reference/` — four original property photographs plus the
+  owner-marked bird's-eye orientation record.
+- `models/` — authoritative design JSON, semantic GLB, editable OBJ/MTL, STL,
+  generated review views, validation report and dependency-free generator.
+
+## Geometry workflow
+
+The building is modeled before it is rendered. `models/design.json` defines the
+site axes, fixed 17.0 × 7.5 m outer envelope, thick walls, rooms, openings,
+doors, fixtures, stair, mezzanine and fixed cameras. Run:
+
+```sh
+python3 models/gen_model.py
+python3 models/gen_model.py --check
+```
+
+The generated plans and 3D files are downstream artifacts. Structural image
+changes require a model update first; non-structural image changes reuse the
+approved model and proposed camera as geometry context.
 
 All drawings, renders, dimensions and estimates remain pre-design material. A
 measured survey and professional planning, architectural, structural, energy and

@@ -1,117 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="850" viewBox="0 0 1400 850" role="img" aria-labelledby="title desc">
-  <title id="title">Revised conceptual open-mezzanine plan for the Belgian Brick Lantern</title>
-  <desc id="desc">A fully open rear mezzanine with no plumbing, a correctly stacked U-shaped stair arriving at the ridge, a protected landing, continuous guards, honest headroom bands, low-eaves storage and an unobstructed rear triangular window. A camera key at the valley glass gable looks toward the rear, placing the courtyard on the viewer's left and the shared tractor lane on the viewer's right in the interior concepts.</desc>
-  <defs>
-    <pattern id="timber" width="20" height="20" patternUnits="userSpaceOnUse">
-      <path d="M0 5H20M0 14H20" fill="none" stroke="#c1b29f" stroke-width="1" opacity=".6"/>
-    </pattern>
-    <pattern id="lowhatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-      <path d="M0 0V12" fill="none" stroke="#bbb4a8" stroke-width="4"/>
-    </pattern>
-    <pattern id="transitionhatch" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-      <path d="M0 0V14" fill="none" stroke="#d4cbbb" stroke-width="2"/>
-    </pattern>
-    <style>
-      .bg{fill:#f4f0e7}.shell{fill:#211f1b}.deck{fill:#eee6d8}.grain{fill:url(#timber)}.void{fill:#e2e7de;stroke:#9b968d;stroke-width:3;stroke-dasharray:12 10}.low{fill:url(#lowhatch);opacity:.72}.transition{fill:url(#transitionhatch);opacity:.72}.standing{fill:#e5dccd;opacity:.82}.guard{fill:none;stroke:#211f1b;stroke-width:8}.rail{stroke:#211f1b;stroke-width:2}.window{stroke:#386773;stroke-width:16}.glass{stroke:#386773;stroke-width:19}.fixture{fill:none;stroke:#514c44;stroke-width:3}.furniture{fill:#d0c0aa;stroke:#514c44;stroke-width:3}.cabinet{fill:#625b51;stroke:#34312c;stroke-width:3}.dim{fill:none;stroke:#777168;stroke-width:1.5}.tick{stroke:#777168;stroke-width:1.5}.label{font:700 17px Arial,sans-serif;letter-spacing:1px;fill:#211f1b}.sub{font:14px Arial,sans-serif;fill:#686158}.small{font:12px Arial,sans-serif;fill:#686158}.micro{font:700 10px Arial,sans-serif;letter-spacing:.9px;fill:#9a472a}.dimension{font:13px Arial,sans-serif;fill:#686158}.title{font:700 32px Arial,sans-serif;fill:#1d1b18}.kicker{font:700 12px Arial,sans-serif;letter-spacing:2px;fill:#b4522e}.note{font:12px Arial,sans-serif;fill:#4f4a43}.pill{fill:#211f1b}.pilltext{font:700 11px Arial,sans-serif;letter-spacing:1px;fill:#fff}.arrow{fill:none;stroke:#b4522e;stroke-width:2.5;marker-end:url(#arrow)}
-    </style>
-    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#b4522e"/></marker>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="850" viewBox="0 0 1400 850" role="img" aria-label="Upper mezzanine — stair and void coordinated">
+<rect width="1400" height="850" fill="#f4f0e7"/>
+<text x="70" y="58" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#b4522e">MODEL-GENERATED · REV 05</text>
+<text x="70" y="98" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#1d1b18">Upper mezzanine — stair and void coordinated</text>
+<text x="70" y="126" font-family="Arial,sans-serif" font-size="14" fill="#686158">One open room over the yellow rear zone · no plumbing · blue valley living remains double-height</text>
 
-  <rect class="bg" width="1400" height="850"/>
-  <text class="kicker" x="76" y="58">REVISED SPATIAL STUDY · REV 03</text>
-  <text class="title" x="76" y="98">Upper mezzanine — one open room, honest headroom</text>
-  <text class="sub" x="76" y="126">Stair and standing uses align with the ridge · low eaves become fitted storage and seated space</text>
-  <rect class="pill" x="1052" y="72" width="250" height="38" rx="19"/>
-  <text class="pilltext" x="1177" y="96" text-anchor="middle">NO PLUMBING · NO BEDROOM WALLS</text>
-
-  <!-- overall dimensions and orientation -->
-  <path class="dim" d="M120 174V148M1240 174V148M120 157H1240"/>
-  <path class="tick" d="M120 150V164M1240 150V164"/>
-  <text class="dimension" x="680" y="151" text-anchor="middle">17.0 m EXTERNAL ENVELOPE</text>
-  <path class="dim" d="M88 185H58M88 679H58M66 185V679"/>
-  <path class="tick" d="M59 185H73M59 679H73"/>
-  <text class="dimension" x="44" y="432" text-anchor="middle" transform="rotate(-90 44 432)">7.5 m EXTERNAL</text>
-  <text class="micro" x="142" y="176">REAR GABLE / TRIANGULAR WINDOW</text>
-  <text class="micro" x="1218" y="176" text-anchor="end">VALLEY / FULL GLASS GABLE</text>
-  <text class="micro" x="680" y="176" text-anchor="middle">SHARED TRACTOR LANE</text>
-
-  <!-- interior-render camera key: camera at glass gable looking rearward -->
-  <path class="arrow" d="M1188 432H1110"/>
-  <circle cx="1202" cy="432" r="9" fill="#b4522e"/>
-  <text class="micro" x="1177" y="410" text-anchor="end">INTERIOR CAMERA · LOOKS TO REAR</text>
-  <text class="micro" x="1210" y="458" text-anchor="end">RENDER LEFT = COURTYARD</text>
-  <text class="micro" x="1210" y="474" text-anchor="end">RENDER RIGHT = TRACTOR LANE</text>
-
-  <!-- exact thick shell, open deck and front void -->
-  <rect class="shell" x="120" y="185" width="1120" height="494"/>
-  <rect class="deck" x="148" y="213" width="568" height="438"/>
-  <rect class="grain" x="148" y="213" width="568" height="438"/>
-  <rect class="void" x="724" y="213" width="488" height="438"/>
-
-  <!-- roof headroom zones derived from the fixed shallow roof -->
-  <rect class="low" x="148" y="213" width="568" height="101"/>
-  <rect class="transition" x="148" y="314" width="568" height="67"/>
-  <rect class="standing" x="148" y="381" width="568" height="102"/>
-  <rect class="transition" x="148" y="483" width="568" height="67"/>
-  <rect class="low" x="148" y="550" width="568" height="101"/>
-  <path class="dim" d="M730 314H748M730 381H748M730 483H748M730 550H748"/>
-  <text class="micro" x="760" y="270">LOW EAVES · &lt;≈1.5 m</text>
-  <text class="micro" x="760" y="351">TRANSITION · ≈1.5–2.0 m</text>
-  <text class="micro" x="760" y="437">RIDGE BAND · ≈2.0 m OR MORE</text>
-  <text class="micro" x="760" y="522">TRANSITION · ≈1.5–2.0 m</text>
-  <text class="micro" x="760" y="603">LOW EAVES · &lt;≈1.5 m</text>
-
-  <!-- rear loft glass and front glazing -->
-  <path class="window" d="M120 319V545"/>
-  <path class="glass" d="M1240 213V651"/>
-  <path class="arrow" d="M236 707L138 548"/>
-  <text class="micro" x="244" y="708">TRIANGULAR REAR WINDOW KEPT CLEAR · LOW-SILL GUARD TO BE DESIGNED</text>
-
-  <!-- U-shaped stair opening exactly stacks with ground floor -->
-  <rect x="586" y="240" width="124" height="198" fill="#f4f0e7" stroke="#514c44" stroke-width="4"/>
-  <rect x="586" y="240" width="124" height="66" fill="#c8bdad" stroke="#514c44" stroke-width="3"/>
-  <path class="fixture" d="M648 314V428M666 314V428M684 314V428M702 314V428M594 314V428M612 314V428M630 314V428"/>
-  <path class="fixture" d="M648 306V438"/>
-  <path class="arrow" d="M638 317V420"/>
-  <rect x="586" y="438" width="124" height="72" fill="#e5dccd" stroke="#514c44" stroke-width="3"/>
-  <text class="micro" x="648" y="470" text-anchor="middle">1.1 m TOP LANDING</text>
-  <text class="small" x="648" y="490" text-anchor="middle">arrival at ridge</text>
-
-  <!-- full guard to void and stair returns -->
-  <path class="guard" d="M720 213V651"/>
-  <path class="rail" d="M704 226H736M704 258H736M704 290H736M704 322H736M704 354H736M704 386H736M704 418H736M704 450H736M704 482H736M704 514H736M704 546H736M704 578H736M704 610H736M704 638H736"/>
-  <path class="guard" d="M582 236H714V438M582 236V438"/>
-
-  <!-- low-eaves fitted uses -->
-  <rect class="cabinet" x="225" y="232" width="305" height="42" rx="3"/>
-  <text class="small" x="377" y="258" text-anchor="middle" style="fill:#f4f0e7">700–900 mm DEEP LOW STORAGE / LIBRARY</text>
-  <rect class="cabinet" x="210" y="586" width="330" height="42" rx="3"/>
-  <text class="small" x="375" y="612" text-anchor="middle" style="fill:#f4f0e7">LOW BENCH · DRAWERS · MEDIA STORAGE</text>
-
-  <!-- open lounge and work zone; the ridge circulation stays unfurnished -->
-  <rect class="furniture" x="222" y="494" width="154" height="48" rx="20"/>
-  <rect class="furniture" x="238" y="551" width="70" height="30" rx="14"/>
-  <rect class="furniture" x="330" y="551" width="58" height="30" rx="14"/>
-  <rect class="cabinet" x="289" y="540" width="76" height="32" rx="14"/>
-  <text class="micro" x="304" y="487" text-anchor="middle">LOW LOUNGE / READING</text>
-
-  <rect class="furniture" x="375" y="320" width="130" height="54" rx="8"/>
-  <circle class="furniture" cx="398" cy="305" r="13"/><circle class="furniture" cx="440" cy="305" r="13"/><circle class="furniture" cx="482" cy="305" r="13"/>
-  <circle class="furniture" cx="398" cy="389" r="13"/><circle class="furniture" cx="440" cy="389" r="13"/><circle class="furniture" cx="482" cy="389" r="13"/>
-  <text class="micro" x="440" y="408" text-anchor="middle">SEATED WORK / PROJECT TABLE</text>
-  <path class="arrow" d="M560 454H405H185"/>
-  <text class="micro" x="350" y="444" text-anchor="middle">UNFURNISHED RIDGE CIRCULATION</text>
-
-  <!-- open void and visual connection -->
-  <text class="label" x="968" y="340" text-anchor="middle">OPEN TO BELOW</text>
-  <text class="sub" x="968" y="368" text-anchor="middle">double-height kitchen · dining · living</text>
-  <text class="small" x="968" y="394" text-anchor="middle">continuous guard · one shared smoke volume</text>
-  <path class="arrow" d="M1070 486H1186"/>
-  <text class="micro" x="1072" y="510">VIEW THROUGH FRONT GLASS GABLE</text>
-
-  <!-- length segmentation and caution -->
-  <path class="dim" d="M120 770V747M720 770V747M1240 770V747M120 758H1240"/>
-  <text class="dimension" x="420" y="790" text-anchor="middle">9.1 m MEZZANINE · ≈51 m² NET AFTER STAIR</text>
-  <text class="dimension" x="980" y="790" text-anchor="middle">7.9 m DOUBLE-HEIGHT LIVING VOID</text>
-  <text class="note" x="76" y="827">Headroom bands are indicative and deliberately conservative. Architect must verify the surveyed roof profile, floor and roof build-ups, stair, landing, guards, low glazing, usable area and fire strategy.</text>
-</svg>
+<rect x="205" y="190" width="986.0" height="435.0" fill="#211f1b"/>
+<rect x="663.2" y="214.36" width="503.4399999999999" height="386.28000000000003" fill="#eee6d8"/>
+<rect x="229.36" y="214.36" width="433.84000000000003" height="386.28000000000003" fill="#e2e7de" stroke="#9b968d" stroke-width="3" stroke-dasharray="12 10"/>
+<rect x="674.8" y="214.36" width="124.70000000000002" height="237.22" fill="#f4f0e7" stroke="#514c44" stroke-width="4"/>
+<rect x="674.8" y="278.15999999999997" width="58.0" height="78.30000000000001" fill="#d7cfc2" fill-opacity=".35" stroke="#777168" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="741.5" y="278.15999999999997" width="58.0" height="109.62" fill="#d7cfc2" stroke="#514c44" stroke-width="3"/>
+<line x1="741.5" x2="799.5" y1="278.15999999999997" y2="278.15999999999997" stroke="#514c44" stroke-width="1.5"/>
+<line x1="741.5" x2="799.5" y1="293.82" y2="293.82" stroke="#514c44" stroke-width="1.5"/>
+<line x1="741.5" x2="799.5" y1="309.48" y2="309.48" stroke="#514c44" stroke-width="1.5"/>
+<line x1="741.5" x2="799.5" y1="325.14" y2="325.14" stroke="#514c44" stroke-width="1.5"/>
+<line x1="741.5" x2="799.5" y1="340.8" y2="340.8" stroke="#514c44" stroke-width="1.5"/>
+<line x1="741.5" x2="799.5" y1="356.46000000000004" y2="356.46000000000004" stroke="#514c44" stroke-width="1.5"/>
+<line x1="741.5" x2="799.5" y1="372.12" y2="372.12" stroke="#514c44" stroke-width="1.5"/>
+<line x1="741.5" x2="799.5" y1="387.78" y2="387.78" stroke="#514c44" stroke-width="1.5"/>
+<rect x="674.8" y="214.36" width="124.70000000000002" height="63.800000000000004" fill="#c8bdad" fill-opacity=".65" stroke="#777168" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="741.5" y="387.78" width="58.0" height="63.79999999999998" fill="#d7cfc2" stroke="#514c44" stroke-width="3"/>
+<line x1="663.2" x2="663.2" y1="214.36" y2="600.64" stroke="#211f1b" stroke-width="8"/>
+<text x="431.2" y="404.6" text-anchor="middle" font-family="Arial" font-size="18" font-weight="700" fill="#4f4a43">OPEN TO BELOW</text>
+<text x="1028.6" y="404.6" text-anchor="middle" font-family="Arial" font-size="18" font-weight="700" fill="#4f4a43">ONE OPEN MEZZANINE ROOM</text>
+<text x="1028.6" y="424.9" text-anchor="middle" font-family="Arial" font-size="13" fill="#686158">library · lounge · project space · no plumbing</text>
+<text x="811.5" y="454.6" font-family="Arial" font-size="9" font-weight="700" fill="#9a472a">PROTECTED TOP LANDING</text>
+<text x="698.0" y="170" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#9a472a">SHARED TRACTOR LANE · TALL STAIR WINDOW AT HALF-LANDING</text>
+<text x="698.0" y="650" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#9a472a">COURTYARD · GREEN ENTRY BELOW</text>
+<text x="70" y="760" font-family="Arial" font-size="13" fill="#4f4a43">Mezzanine x=7.90..16.58 m · floor +2.45 m · exact stair opening stacks with ground floor</text>
+<text x="70" y="790" font-family="Arial" font-size="13" fill="#4f4a43">Dog-leg stair: 6 lower + 8 upper risers · 175 mm rise · 270 mm going · 2R+G=620 mm</text>
+<text x="70" y="825" font-family="Arial" font-size="12" fill="#686158">Headroom bands require a measured roof section; model checks only the assumed lane landing condition.</text></svg>

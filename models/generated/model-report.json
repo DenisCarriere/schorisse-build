@@ -1,0 +1,190 @@
+{
+  "model_revision": "05-site-orientation",
+  "source": "models/design.json",
+  "status": "pass",
+  "photoreal_gate": "blocked_pending_geometry_approval",
+  "checks": [
+    {
+      "name": "external envelope",
+      "status": "pass",
+      "detail": "17.00 x 7.50 m"
+    },
+    {
+      "name": "thick external walls",
+      "status": "pass",
+      "detail": "0.42 m build-up"
+    },
+    {
+      "name": "modeled shell bounds",
+      "status": "pass",
+      "detail": "x=0.00..17.00; y=0.00..5.20; z=0.00..7.50 m"
+    },
+    {
+      "name": "birdseye green entry host",
+      "status": "pass",
+      "detail": "courtyard_entry host = courtyard_zW"
+    },
+    {
+      "name": "blue glass gable host",
+      "status": "pass",
+      "detail": "front_glass_gable host = valley_gable_x0"
+    },
+    {
+      "name": "yellow rear loft host",
+      "status": "pass",
+      "detail": "rear_loft_window host = rear_gable_xL"
+    },
+    {
+      "name": "tractor_lane_z0 opening bounds",
+      "status": "pass",
+      "detail": "4 non-overlapping openings inside wall"
+    },
+    {
+      "name": "courtyard_zW opening bounds",
+      "status": "pass",
+      "detail": "3 non-overlapping openings inside wall"
+    },
+    {
+      "name": "interior door hosts",
+      "status": "pass",
+      "detail": "every interior door is assigned to a named partition"
+    },
+    {
+      "name": "partition door bounds",
+      "status": "pass",
+      "detail": "master_partition:2; ensuite_front:0; ensuite_side:0; powder_laundry_divider:0; service_gallery_wall:2"
+    },
+    {
+      "name": "pocket door cavities",
+      "status": "pass",
+      "detail": "ensuite_pocket 2.08/0.86 m; powder_door 0.82/0.76 m"
+    },
+    {
+      "name": "stair opening stacks",
+      "status": "pass",
+      "detail": "ground stair and mezzanine void use identical x/z extents"
+    },
+    {
+      "name": "stair reaches mezzanine",
+      "status": "pass",
+      "detail": "14 x 0.175 = 2.450 m"
+    },
+    {
+      "name": "stair comfort rule",
+      "status": "pass",
+      "detail": "2R+G = 0.620 m"
+    },
+    {
+      "name": "stair clear width",
+      "status": "pass",
+      "detail": "1.00 m"
+    },
+    {
+      "name": "landing depth",
+      "status": "pass",
+      "detail": "1.10 m landing vs 1.00 m flight"
+    },
+    {
+      "name": "stair runs match tread count",
+      "status": "pass",
+      "detail": "lower 1.350 m; upper 1.890 m at 0.270 m going"
+    },
+    {
+      "name": "half-landing headroom",
+      "status": "pass",
+      "detail": "2.194 m at the lowest landing edge under assumed roof build-up"
+    },
+    {
+      "name": "stair footprint inside shell",
+      "status": "pass",
+      "detail": "x=8.10..10.25; z=0.42..4.51 m"
+    },
+    {
+      "name": "top landing exits to mezzanine",
+      "status": "pass",
+      "detail": "1.10 m clear exit beyond shortened opening guard"
+    },
+    {
+      "name": "mezzanine stays over rear",
+      "status": "pass",
+      "detail": "x=7.90..16.58; front 7.90 m remains double-height"
+    },
+    {
+      "name": "fixture bounds inside shell",
+      "status": "pass",
+      "detail": "all fixtures inside clear envelope"
+    },
+    {
+      "name": "kitchen working aisle",
+      "status": "pass",
+      "detail": "1.03 m clear between wall run and island"
+    },
+    {
+      "name": "dining to kitchen transition",
+      "status": "pass",
+      "detail": "1.05 m clear between dining table and island"
+    },
+    {
+      "name": "valley threshold clear",
+      "status": "pass",
+      "detail": "1.23 m clear before first furniture"
+    },
+    {
+      "name": "courtyard-side circulation",
+      "status": "pass",
+      "detail": "1.33 m clear route along courtyard side"
+    },
+    {
+      "name": "master door swing clear",
+      "status": "pass",
+      "detail": "0.86 m leaf zone clear of bed and wardrobes"
+    },
+    {
+      "name": "semantic element front_glass_gable",
+      "status": "pass",
+      "detail": "present as named 3D element"
+    },
+    {
+      "name": "semantic element courtyard_entry",
+      "status": "pass",
+      "detail": "present as named 3D element"
+    },
+    {
+      "name": "semantic element rear_loft_window",
+      "status": "pass",
+      "detail": "present as named 3D element"
+    },
+    {
+      "name": "semantic element stair_half_landing",
+      "status": "pass",
+      "detail": "present as named 3D element"
+    },
+    {
+      "name": "semantic element stair_top_landing",
+      "status": "pass",
+      "detail": "present as named 3D element"
+    },
+    {
+      "name": "semantic element mezzanine_front_guard",
+      "status": "pass",
+      "detail": "present as named posts and top rail"
+    },
+    {
+      "name": "semantic stair handrails",
+      "status": "pass",
+      "detail": "both flights have explicit inner and outer rails"
+    },
+    {
+      "name": "semantic sloped gable frames",
+      "status": "pass",
+      "detail": "front and rear triangular glazing perimeters are modeled"
+    },
+    {
+      "name": "semantic internal doors",
+      "status": "pass",
+      "detail": "hinged, pocket and sliding door elements are present in the 3D model"
+    }
+  ],
+  "semantic_elements": 166,
+  "triangles": 2000
+}

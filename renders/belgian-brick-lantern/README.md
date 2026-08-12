@@ -1,6 +1,27 @@
 # Belgian Brick Lantern — selected exterior direction
 
-Status: **photoreal concept study, not a construction proposal**
+Status: **material and atmosphere record; geometry superseded by Revision 05**
+
+## Revision 05 model-first gate
+
+The owner's marked bird's-eye view supersedes all earlier attempts to infer the
+plan orientation from ground photographs. `models/design.json` is now the only
+geometry authority:
+
+- blue valley glass gable at x=0;
+- yellow master-bedroom/mezzanine gable at x=17;
+- shared tractor lane at z=0;
+- cobbled courtyard and green entrance at z=7.5;
+- from the blue glass looking inward, lane/kitchen/stair are image-left and the
+  courtyard/entrance are image-right.
+
+Every existing PNG in this folder predates the approved parametric model. It may
+still guide Belgian brick, black frames, oak, lighting and atmosphere, but it
+must not guide walls, openings, rooms, stair, mezzanine, camera translation or
+perspective. No new photoreal image should be generated while
+`geometry_approved_for_photoreal` is false in `models/design.json`.
+
+See [`../../docs/MODEL-FIRST-WORKFLOW.md`](../../docs/MODEL-FIRST-WORKFLOW.md).
 
 This is the selected development of Option B. It keeps the complete ICF wall
 shell but uses one consistent exterior wall finish:
@@ -188,9 +209,9 @@ rear/private gable is solid behind the master bed.
 This earlier straight-stair study is retained as a prompt record but is
 superseded by the Revision 02 switchback-stair concepts below.
 
-Its left/right camera translation is also superseded by Revision 04: from the
-front glass gable looking rearward, the courtyard is on the viewer's left and
-the shared tractor lane is on the viewer's right.
+Its left/right camera translation is also superseded by Revision 05: from the
+front glass gable looking rearward, the shared tractor lane is on the viewer's
+left and the courtyard is on the viewer's right.
 
 > Use case: precise-object-edit
 > Asset type: photoreal architectural concept — selected Belgian Brick Lantern OPEN LIVING HALL AND REAR LOFT, with interior openings aligned to the approved exterior elevations.
@@ -274,10 +295,11 @@ orientation error.
 >
 > Wide 3:2, eye-level 26–28 mm premium Belgian interior photograph. Preserve the fixed 17.0 × 7.5 m envelope, shallow roof geometry, thick wall reveals, rear-only mezzanine, mineral plaster, oak, matte-black guards and polished mineral floor. No repeated door row, internal window, freestanding stair, entrance beneath a flight, additional opening, person, text, logo or watermark.
 
-### Revision 04 plan/render reconciliation
+### Revision 04 plan/render reconciliation — superseded
 
-The Revision 03 renders were mirrored relative to the floor plans. Revision 04
-uses the floor-plan camera key as the authoritative translation:
+This was the prior attempted reconciliation. The owner's bird's-eye markup and
+Revision 05 model prove that Revision 04 itself was mirrored; the bullets below
+are retained only as a historical prompt record and are **not instructions**:
 
 - camera at the valley/full-glass gable, looking toward the rear/private gable;
 - viewer left is the courtyard wall, with the living side window and one oak
