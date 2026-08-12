@@ -79,7 +79,7 @@ flowchart LR
 | Zone | Concept use |
 |---|---|
 | Rear private zone | x=12.50–17.00 m external zone with one ground-floor master bedroom and full-height wardrobes |
-| Middle service zone | x=7.90–12.50 m external zone with private ensuite, separate toilet-and-sink powder room, laundry/plant, courtyard entrance and dog-leg stair |
+| Middle service zone | x=7.90–12.50 m external zone with private shower-and-vanity ensuite (no WC), the home's only toilet and sink in a separate powder room, laundry/plant, courtyard entrance and dog-leg stair |
 | Front living zone | 7.9 m external zone; approximately 49 m² clear open living, dining and kitchen space before cabinetry |
 | Valley end | Full-height glazed gable with one or two lift-slide door leaves |
 

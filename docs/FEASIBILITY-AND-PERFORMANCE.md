@@ -45,7 +45,7 @@ The previous board assumed a Flemish near-zero-energy/E30-style baseline with:
 - airtight construction;
 - high-performance triple glazing;
 - approximately 6 kWp photovoltaic array;
-- approximately 10,000 L rainwater recovery for toilets and garden.
+- approximately 10,000 L rainwater recovery for the WC and garden.
 
 All targets and equipment must be recalculated for the developed geometry and
 the rules in force at application/construction.

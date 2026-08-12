@@ -15,6 +15,7 @@
   <meta property="og:image:alt" content="The Glass-Gable Barn visual concept overlooking the Schorisse valley">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="data:,">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.3.1/model-viewer.min.js"></script>
   <title>The Glass-Gable Barn — Visual Concept</title>
   <style>
     :root {
@@ -350,6 +351,68 @@
     .loft-stage .media-card { background: #322c25; }
     .loft-stage figcaption { padding: 12px var(--gutter) 20px; color: rgba(255,255,255,.65); }
 
+    .model-explorer {
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.16);
+      background: #211f1b;
+      color: white;
+    }
+
+    .model-explorer model-viewer {
+      display: block;
+      width: 100%;
+      height: clamp(430px, 68vw, 760px);
+      background: #d8d2c7;
+      touch-action: pan-y;
+      --poster-color: #d8d2c7;
+      --progress-bar-color: var(--clay);
+    }
+
+    .model-poster {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .model-explorer-footer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px 20px;
+      padding: 14px 16px;
+      border-top: 1px solid rgba(255,255,255,.14);
+    }
+
+    .model-explorer-footer p {
+      margin: 0;
+      color: rgba(255,255,255,.7);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .model-explorer-footer a {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      padding: 0 14px;
+      border: 1px solid rgba(255,255,255,.28);
+      border-radius: 999px;
+      color: white;
+      font-size: 13px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .model-explorer-footer a:hover { border-color: white; }
+
+    .model-fallback-note {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
     .developed-grid {
       display: grid;
       gap: clamp(28px, 5vw, 64px) clamp(14px, 2vw, 24px);
@@ -570,6 +633,10 @@
       .hero-copy { padding-bottom: 28px; }
       h1 { font-size: clamp(3.1rem, 16vw, 5rem); }
       .hero-intro { max-width: 34ch; }
+      .model-explorer { margin-inline: -16px; }
+      .model-explorer model-viewer { height: min(72svh, 620px); }
+      .model-explorer-footer { align-items: stretch; }
+      .model-explorer-footer a { justify-content: center; width: 100%; }
       .lightbox-stage { grid-template-columns: 1fr; }
       .lightbox-stage > .icon-button { position: fixed; z-index: 2; bottom: max(20px, env(safe-area-inset-bottom)); }
       #lightbox-prev { left: 18px; }
@@ -619,7 +686,7 @@
       <header class="chapter-heading">
         <span class="chapter-index">01 · Exterior</span>
         <h2 id="exterior-title">A contemporary barn, grounded in its place.</h2>
-        <p>The architecture changes. The working lane, neighbouring building, hedges, trees and cobbled courtyard do not. These earlier photoreals remain atmosphere references only; Rev 05 model views below control geometry.</p>
+        <p>The architecture changes. The working lane, neighbouring building, hedges, trees and cobbled courtyard do not. These earlier photoreals remain atmosphere references only; Rev 06 model views below control geometry.</p>
       </header>
 
       <article class="comparison-story" data-compare data-view="concept">
@@ -639,10 +706,10 @@
             <figcaption><span class="image-label">Existing</span><span>Retained context</span></figcaption>
           </figure>
           <figure data-panel="concept">
-            <button class="media-card zoom" type="button" data-full="renders/web/belgian-brick-front-lighting-1448.jpg" data-caption="Earlier material and lighting study; Rev 05 model controls all geometry" aria-label="Expand glass-gable atmosphere study">
+            <button class="media-card zoom" type="button" data-full="renders/web/belgian-brick-front-lighting-1448.jpg" data-caption="Earlier material and lighting study; Rev 06 model controls all geometry" aria-label="Expand glass-gable atmosphere study">
               <img src="renders/web/belgian-brick-front-lighting-900.jpg" srcset="renders/web/belgian-brick-front-lighting-900.jpg 900w, renders/web/belgian-brick-front-lighting-1448.jpg 1448w" sizes="(min-width: 700px) 48vw, 100vw" width="1448" height="1086" alt="Earlier material atmosphere study of a Belgian brick barn with deep black framing and warm integrated exterior lights" loading="lazy" decoding="async">
             </button>
-            <figcaption><span class="image-label">Atmosphere only</span><span>Geometry superseded by Rev 05 model</span></figcaption>
+            <figcaption><span class="image-label">Atmosphere only</span><span>Geometry superseded by Rev 06 model</span></figcaption>
           </figure>
         </div>
       </article>
@@ -664,10 +731,10 @@
             <figcaption><span class="image-label">Existing</span><span>Working access retained</span></figcaption>
           </figure>
           <figure data-panel="concept">
-            <button class="media-card zoom" type="button" data-full="renders/web/belgian-brick-side-lighting-1086.jpg" data-caption="Earlier lane material and lighting study; Rev 05 model controls opening positions and order" aria-label="Expand shared-lane atmosphere study">
+            <button class="media-card zoom" type="button" data-full="renders/web/belgian-brick-side-lighting-1086.jpg" data-caption="Earlier lane material and lighting study; Rev 06 model controls opening positions and order" aria-label="Expand shared-lane atmosphere study">
               <img src="renders/web/belgian-brick-side-lighting-720.jpg" srcset="renders/web/belgian-brick-side-lighting-720.jpg 720w, renders/web/belgian-brick-side-lighting-1086.jpg 1086w" sizes="(min-width: 700px) 48vw, 100vw" width="1086" height="1448" alt="Earlier material atmosphere study of an all-brick ICF barn and shielded lighting along the preserved tractor lane" loading="lazy" decoding="async">
             </button>
-            <figcaption><span class="image-label">Atmosphere only</span><span>Opening geometry superseded by Rev 05 model</span></figcaption>
+            <figcaption><span class="image-label">Atmosphere only</span><span>Opening geometry superseded by Rev 06 model</span></figcaption>
           </figure>
         </div>
       </article>
@@ -692,7 +759,7 @@
             <button class="media-card zoom" type="button" data-full="renders/web/belgian-brick-back-oak-entrance-1086.jpg" data-caption="Superseded atmosphere study: entrance location and camera must be rebuilt from the parametric model" aria-label="Expand superseded courtyard atmosphere study">
               <img src="renders/web/belgian-brick-back-oak-entrance-720.jpg" srcset="renders/web/belgian-brick-back-oak-entrance-720.jpg 720w, renders/web/belgian-brick-back-oak-entrance-1086.jpg 1086w" sizes="(min-width: 700px) 48vw, 100vw" width="1086" height="1448" alt="Belgian brick ICF barn with a triangular loft window and a warm illuminated smoked-oak entrance portal behind the preserved cobbled courtyard" loading="lazy" decoding="async">
             </button>
-            <figcaption><span class="image-label">Atmosphere only</span><span>Geometry superseded by Rev 05 model</span></figcaption>
+            <figcaption><span class="image-label">Atmosphere only</span><span>Geometry superseded by Rev 06 model</span></figcaption>
           </figure>
         </div>
       </article>
@@ -723,9 +790,30 @@
     <section class="chapter" id="loft" aria-labelledby="loft-title">
       <header class="chapter-heading">
         <span class="chapter-index">03 · Geometry authority</span>
-        <h2 id="loft-title">Approve the model before the photograph.</h2>
-        <p>The owner’s bird’s-eye orientation now drives one parametric model. Blue is the valley glass; yellow is the master and mezzanine; the green courtyard entry is on the viewer’s right from this camera.</p>
+        <h2 id="loft-title">Walk around the actual model.</h2>
+        <p>The owner’s bird's-eye orientation now drives one parametric GLB. Drag to orbit, pinch or scroll to zoom, and inspect the same envelope, openings, rooms, stair and mezzanine used to generate every plan below.</p>
       </header>
+      <div class="model-explorer">
+        <model-viewer
+          id="building-model"
+          src="models/barn.glb"
+          poster="models/generated/birdseye-orientation.svg"
+          alt="Interactive three-dimensional model of the 17 by 7.5 metre Glass-Gable Barn, including the full-height valley gable, courtyard entrance, rooms, dog-leg stair and open rear mezzanine"
+          camera-controls
+          touch-action="pan-y"
+          camera-orbit="-34deg 64deg auto"
+          shadow-intensity="1"
+          tone-mapping="neutral"
+          auto-rotate
+          rotation-per-second="7deg">
+          <img class="model-poster" slot="poster" src="models/generated/birdseye-orientation.svg" alt="Model-generated bird's-eye fallback view of the barn">
+        </model-viewer>
+        <div class="model-explorer-footer">
+          <p><span class="image-label">Interactive GLB · Rev 06</span><br>Drag to orbit · pinch or scroll to zoom · double-tap to recentre</p>
+          <a href="models/barn.glb" download>Download GLB · 3D model</a>
+        </div>
+      </div>
+      <p class="model-fallback-note">If interactive 3D is unavailable, the generated bird's-eye poster remains visible and the GLB can be downloaded directly.</p>
       <figure class="loft-stage">
         <button class="media-card zoom" type="button" data-full="models/generated/interior-from-valley.svg" data-caption="Model-generated camera at the blue valley glass looking inward: lane-side kitchen and dog-leg stair left, courtyard entry right, open mezzanine over the yellow private end" aria-label="Expand model-generated interior geometry reference">
           <img src="models/generated/interior-from-valley.svg" width="1400" height="850" alt="Parametric cutaway from the valley glass showing the lane-side kitchen and dog-leg stair on the left and courtyard entrance on the right" loading="lazy" decoding="async">
@@ -738,10 +826,10 @@
       <header class="chapter-heading">
         <span class="chapter-index">04 · Model elevations</span>
         <h2 id="brick-lantern-title">One building, checked from every side.</h2>
-        <p>These fixed cameras all use the same Rev 05 geometry: a thick ICF shell, valley glass, lane openings, courtyard entrance, private rear rooms, dog-leg stair and open mezzanine. Materials and atmosphere come after this model is approved.</p>
+        <p>These fixed cameras all use the same Rev 06 geometry: a thick ICF shell, valley glass, lane openings, courtyard entrance, private rear rooms, dog-leg stair and open mezzanine. Materials and atmosphere come after this model is approved.</p>
       </header>
 
-      <div class="developed-grid" aria-label="Fixed views from the authoritative Rev 05 model">
+      <div class="developed-grid" aria-label="Fixed views from the authoritative Rev 06 model">
         <figure class="developed-wide">
           <button class="media-card zoom" type="button" data-full="models/generated/valley-exterior.svg" data-caption="Model-generated blue valley gable with the full-height living-room glass and the 17.0 × 7.5 m envelope" aria-label="Expand model valley elevation">
             <img src="models/generated/valley-exterior.svg" width="1400" height="850" alt="Model view of the full-height blue valley glass gable within the fixed barn envelope" loading="lazy" decoding="async">
@@ -790,7 +878,7 @@
       <ul class="plan-brief" aria-label="Floor plan essentials">
         <li>1 ground-floor master bedroom</li>
         <li>Italian walk-in shower</li>
-        <li>Separate toilet + sink</li>
+        <li>One WC only · powder room</li>
         <li>Open kitchen + living hall</li>
         <li>Open mezzanine · no plumbing</li>
       </ul>

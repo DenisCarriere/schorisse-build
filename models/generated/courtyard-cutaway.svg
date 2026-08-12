@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1400" height="850" viewBox="0 0 1400 850" role="img" aria-label="Courtyard Cutaway">
 <rect width="1400" height="850" fill="#f4f0e7"/>
-<text x="70" y="58" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#b4522e">MODEL-GENERATED · REV 05</text>
+<text x="70" y="58" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#b4522e">MODEL-GENERATED · REV 06</text>
 <text x="70" y="98" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#1d1b18">Courtyard Cutaway</text>
 <text x="70" y="126" font-family="Arial,sans-serif" font-size="14" fill="#686158">check green entrance, service rooms, stair and yellow rear mezzanine relationship</text>
 
@@ -383,7 +383,6 @@
 <polygon points="630.3,418.1 626.6,357.2 628.3,356.9" fill="rgb(9, 10, 11)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_window_frame_left</title></polygon>
 <polygon points="611.5,392.3 677.4,380.9 677.4,379.6" fill="rgb(18, 19, 20)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_half_landing_guard_top_rail</title></polygon>
 <polygon points="654.9,382.9 655.3,383.4 656.4,383.2" fill="rgb(18, 19, 20)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_half_landing_guard_post_03</title></polygon>
-<polygon points="704.1,458.2 719.0,442.6 718.8,455.1" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ensuite_wc</title></polygon>
 <polygon points="858.1,334.2 860.2,333.9 982.1,407.9" fill="rgb(9, 10, 11)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>rear_loft_base_frame</title></polygon>
 <polygon points="858.4,334.1 981.2,408.1 859.4,334.0" fill="rgb(89, 173, 199)" fill-opacity="0.36" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>rear_loft_window</title></polygon>
 <polygon points="860.2,333.9 860.4,331.9 982.6,405.6" fill="rgb(9, 10, 11)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>rear_loft_base_frame</title></polygon>
@@ -401,7 +400,6 @@
 <polygon points="634.9,415.4 634.4,386.9 633.3,387.1" fill="rgb(18, 19, 20)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_half_landing_guard_post_02</title></polygon>
 <polygon points="631.9,417.8 628.3,356.9 631.6,361.4" fill="rgb(9, 10, 11)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_window_frame_left</title></polygon>
 <polygon points="822.0,446.3 855.5,459.7 823.6,431.3" fill="rgb(168, 148, 120)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>master_bed</title></polygon>
-<polygon points="704.1,458.2 718.8,455.1 726.5,464.7" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ensuite_wc</title></polygon>
 <polygon points="630.3,418.1 629.9,361.6 626.6,357.2" fill="rgb(9, 10, 11)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_window_frame_left</title></polygon>
 <polygon points="765.4,452.9 768.8,452.1 773.0,382.8" fill="rgb(209, 201, 181)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>master_partition_0.42</title></polygon>
 <polygon points="676.2,367.7 676.7,337.8 677.2,367.5" fill="rgb(18, 19, 20)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_opening_guard_rear_post_01</title></polygon>
@@ -411,7 +409,6 @@
 <polygon points="677.2,367.5 677.1,338.2 677.6,368.0" fill="rgb(18, 19, 20)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_opening_guard_rear_post_01</title></polygon>
 <polygon points="765.0,447.8 787.3,384.9 768.4,388.4" fill="rgb(66, 56, 46)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>master_wardrobe_lane</title></polygon>
 <polygon points="613.8,418.8 612.0,390.8 614.1,419.3" fill="rgb(18, 19, 20)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_half_landing_guard_post_01</title></polygon>
-<polygon points="704.1,458.2 704.2,445.7 719.0,442.6" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ensuite_wc</title></polygon>
 <polygon points="595.7,451.0 598.1,435.6 600.4,460.5" fill="rgb(66, 56, 46)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>kitchen_wall_run</title></polygon>
 <polygon points="676.2,367.7 676.6,368.2 676.0,338.4" fill="rgb(18, 19, 20)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_opening_guard_rear_post_01</title></polygon>
 <polygon points="612.7,419.0 613.0,419.5 610.8,391.0" fill="rgb(18, 19, 20)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_half_landing_guard_post_01</title></polygon>
@@ -422,7 +419,6 @@
 <polygon points="688.9,422.4 690.7,422.8 689.4,423.1" fill="rgb(18, 19, 20)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_guard_post_2</title></polygon>
 <polygon points="354.0,502.6 353.3,500.3 841.4,402.2" fill="rgb(176, 163, 140)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ground_floor_slab</title></polygon>
 <polygon points="626.7,358.8 648.2,353.8 648.3,355.4" fill="rgb(9, 10, 11)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_window_frame_head</title></polygon>
-<polygon points="718.8,455.1 719.0,442.6 726.8,452.1" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ensuite_wc</title></polygon>
 <polygon points="354.0,502.6 841.1,404.2 970.0,506.4" fill="rgb(176, 163, 140)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ground_floor_slab</title></polygon>
 <polygon points="634.7,422.4 650.6,359.6 631.2,362.6" fill="rgb(89, 173, 199)" fill-opacity="0.36" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_window</title></polygon>
 <polygon points="611.1,391.7 611.1,390.3 676.9,379.1" fill="rgb(18, 19, 20)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_half_landing_guard_top_rail</title></polygon>
@@ -440,7 +436,6 @@
 <polygon points="757.2,383.3 771.3,394.6 758.7,383.1" fill="rgb(87, 51, 28)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ensuite_pocket</title></polygon>
 <polygon points="841.1,404.2 970.6,504.1 970.0,506.4" fill="rgb(176, 163, 140)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ground_floor_slab</title></polygon>
 <polygon points="626.7,358.8 626.6,357.2 648.2,353.8" fill="rgb(9, 10, 11)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_window_frame_head</title></polygon>
-<polygon points="718.8,455.1 726.8,452.1 726.5,464.7" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ensuite_wc</title></polygon>
 <polygon points="626.7,358.8 648.3,355.4 651.9,359.8" fill="rgb(9, 10, 11)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_window_frame_head</title></polygon>
 <polygon points="676.2,367.7 675.6,338.0 676.7,337.8" fill="rgb(18, 19, 20)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_opening_guard_rear_post_01</title></polygon>
 <polygon points="452.3,479.8 593.4,426.5 595.7,451.0" fill="rgb(66, 56, 46)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>kitchen_wall_run</title></polygon>
@@ -458,11 +453,9 @@
 <polygon points="612.7,419.0 610.8,391.0 610.5,390.5" fill="rgb(18, 19, 20)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_half_landing_guard_post_01</title></polygon>
 <polygon points="626.6,357.2 651.8,358.2 648.2,353.8" fill="rgb(9, 10, 11)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_window_frame_head</title></polygon>
 <polygon points="688.9,422.4 690.0,393.5 690.2,422.2" fill="rgb(18, 19, 20)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_guard_post_2</title></polygon>
-<polygon points="704.1,458.2 726.5,464.7 711.5,468.1" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ensuite_wc</title></polygon>
 <polygon points="648.3,355.4 651.8,358.2 651.9,359.8" fill="rgb(9, 10, 11)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_window_frame_head</title></polygon>
 <polygon points="676.6,368.2 677.1,338.2 676.0,338.4" fill="rgb(18, 19, 20)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_opening_guard_rear_post_01</title></polygon>
 <polygon points="613.0,419.5 612.0,390.8 610.8,391.0" fill="rgb(18, 19, 20)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_half_landing_guard_post_01</title></polygon>
-<polygon points="704.2,445.7 726.8,452.1 719.0,442.6" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ensuite_wc</title></polygon>
 <polygon points="647.9,353.5 647.6,344.5 651.8,349.5" fill="rgb(133, 64, 38)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>tractor_lane_wall_stair_window_head</title></polygon>
 <polygon points="690.2,422.2 690.5,394.1 690.7,422.8" fill="rgb(18, 19, 20)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_guard_post_2</title></polygon>
 <polygon points="613.4,419.1 623.0,435.7 689.8,422.6" fill="rgb(110, 69, 38)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_half_landing</title></polygon>
@@ -472,7 +465,6 @@
 <polygon points="623.4,440.2 689.8,427.1 689.8,422.6" fill="rgb(110, 69, 38)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_half_landing</title></polygon>
 <polygon points="659.3,428.6 689.8,422.6 692.9,426.6" fill="rgb(110, 69, 38)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_upper_tread_01</title></polygon>
 <polygon points="689.4,423.1 690.7,422.8 690.5,394.1" fill="rgb(18, 19, 20)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_guard_post_2</title></polygon>
-<polygon points="704.1,458.2 711.7,455.3 704.2,445.7" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ensuite_wc</title></polygon>
 <polygon points="528.6,457.8 526.9,439.6 530.7,464.6" fill="rgb(133, 64, 38)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>tractor_lane_wall_kitchen_window_sill</title></polygon>
 <polygon points="626.3,356.8 625.8,347.8 647.6,344.5" fill="rgb(133, 64, 38)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>tractor_lane_wall_stair_window_head</title></polygon>
 <polygon points="853.8,323.6 934.5,303.7 937.3,288.6" fill="rgb(133, 64, 38)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>rear_gable_left_cheek</title></polygon>
@@ -486,7 +478,6 @@
 <polygon points="659.2,423.6 692.9,421.7 689.8,417.7" fill="rgb(110, 69, 38)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_upper_tread_01</title></polygon>
 <polygon points="659.3,428.6 659.2,423.6 689.8,417.7" fill="rgb(110, 69, 38)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_upper_tread_01</title></polygon>
 <polygon points="823.6,431.3 855.5,459.7 913.8,445.9" fill="rgb(168, 148, 120)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>master_bed</title></polygon>
-<polygon points="704.1,458.2 711.5,468.1 711.7,455.3" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ensuite_wc</title></polygon>
 <polygon points="626.6,357.2 631.6,361.4 628.3,356.9" fill="rgb(9, 10, 11)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_window_frame_left</title></polygon>
 <polygon points="675.7,339.6 677.0,338.0 677.0,339.4" fill="rgb(18, 19, 20)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_opening_guard_rear_top_rail</title></polygon>
 <polygon points="625.8,347.8 651.8,349.5 647.6,344.5" fill="rgb(133, 64, 38)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>tractor_lane_wall_stair_window_head</title></polygon>
@@ -508,7 +499,6 @@
 <polygon points="630.0,363.3 651.9,359.8 651.8,358.2" fill="rgb(9, 10, 11)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_window_frame_head</title></polygon>
 <polygon points="626.3,356.8 652.1,358.5 630.2,362.0" fill="rgb(133, 64, 38)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>tractor_lane_wall_stair_window_head</title></polygon>
 <polygon points="655.1,439.3 654.9,434.4 657.7,438.6" fill="rgb(110, 69, 38)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_lower_tread_05</title></polygon>
-<polygon points="711.5,468.1 726.5,464.7 726.8,452.1" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ensuite_wc</title></polygon>
 <polygon points="688.9,422.4 689.1,394.4 688.6,393.8" fill="rgb(18, 19, 20)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_guard_post_2</title></polygon>
 <polygon points="623.7,445.6 654.9,434.4 655.1,439.3" fill="rgb(110, 69, 38)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_lower_tread_05</title></polygon>
 <polygon points="843.5,325.2 925.3,290.3 922.6,305.5" fill="rgb(133, 64, 38)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>rear_gable_left_cheek</title></polygon>
@@ -521,7 +511,6 @@
 <polygon points="659.3,428.6 692.9,426.6 662.2,432.7" fill="rgb(110, 69, 38)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_upper_tread_01</title></polygon>
 <polygon points="655.1,439.3 657.7,438.6 657.9,443.5" fill="rgb(110, 69, 38)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_lower_tread_05</title></polygon>
 <polygon points="626.7,358.8 630.0,363.3 629.9,361.6" fill="rgb(9, 10, 11)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_window_frame_head</title></polygon>
-<polygon points="704.2,445.7 711.7,455.3 726.8,452.1" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ensuite_wc</title></polygon>
 <polygon points="682.7,434.1 681.7,367.1 731.4,422.4" fill="rgb(209, 201, 181)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ensuite_front_end</title></polygon>
 <polygon points="623.7,445.6 655.1,439.3 657.9,443.5" fill="rgb(110, 69, 38)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_lower_tread_05</title></polygon>
 <polygon points="925.3,290.3 855.0,313.3 937.3,288.6" fill="rgb(133, 64, 38)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>rear_gable_left_cheek</title></polygon>
@@ -543,7 +532,6 @@
 <polygon points="659.3,428.6 662.0,427.7 659.2,423.6" fill="rgb(110, 69, 38)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_upper_tread_01</title></polygon>
 <polygon points="858.1,334.2 922.6,305.5 934.5,303.7" fill="rgb(133, 64, 38)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>rear_gable_left_cheek</title></polygon>
 <polygon points="658.0,448.4 657.9,443.5 660.7,447.9" fill="rgb(110, 69, 38)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_lower_tread_04</title></polygon>
-<polygon points="711.5,468.1 726.8,452.1 711.7,455.3" fill="rgb(224, 227, 219)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>ensuite_wc</title></polygon>
 <polygon points="623.4,440.7 657.7,438.6 654.9,434.4" fill="rgb(110, 69, 38)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_lower_tread_05</title></polygon>
 <polygon points="626.5,454.9 657.9,443.5 658.0,448.4" fill="rgb(110, 69, 38)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_lower_tread_04</title></polygon>
 <polygon points="623.7,445.6 623.4,440.7 654.9,434.4" fill="rgb(110, 69, 38)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>stair_lower_tread_05</title></polygon>
