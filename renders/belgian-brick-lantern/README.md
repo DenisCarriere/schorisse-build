@@ -76,6 +76,25 @@ and rear.
 
 ## Exact prompts
 
+### Rev 09 full-width courtyard at 6:30–7:00 PM
+
+Generated with Codex's built-in ImageGen edit mode as a lighting-only revision
+of `rev09-courtyard-full-width-study.png`. The darker blue-hour version remains
+available as an alternate; this brighter early-evening image is the website
+presentation selection.
+
+> Use case: lighting-weather
+> Asset type: revised website photoreal — full-width courtyard side entrance.
+> Image 1 is the EDIT TARGET and is the absolute authority for all geometry, camera, composition, materials, landscaping and objects.
+>
+> Primary request: change ONLY the time of day and exposure from deep blue hour to a bright Belgian summer early evening at approximately 6:30–7:00 PM. It must still clearly read as daytime: pale blue sky, sunlit green foliage, fully readable warm Belgian brick, roof tiles, hedges, hydrangeas, cobbles, neighbouring structures and right-side gate. Use soft warm low-angle sunlight with realistic late-day shadows and a natural documentary exposure. The scene should be much lighter than Image 1, with no dark crushed foreground or navy night sky.
+>
+> Keep all exterior lighting switched on and visibly effective despite the daylight: restrained warm 2700K brick-grazing pools along the wall, a discreet warm entrance-soffit light, a small hedge/path accent, and subtle warm interior light behind both windows. The fixtures and glow must remain credible and delicate—visible because evening is approaching, never overpowering the daylight or turning the scene into night.
+>
+> LOCK EVERYTHING ELSE EXACTLY: same straight-on full-width 4:3 camera and crop; complete 17.0 m courtyard elevation; exact roof silhouette and black Belgian tiles; continuous modern Belgian brick with two restrained soldier-course bands; exactly one living-room window on the left, exactly one single smoked-oak entrance door in its deep matte-black portal immediately left of the retained centre-right tree, and exactly one master-bedroom window on the right; exact window/door size and position; black surrounds; every cobble; central approach; clipped hedge blocks and gaps; hydrangeas; both mature tree trunks and entire canopy; neighbouring buildings and gate. Do not move, resize, add, remove, mirror or reinterpret any architectural or landscape element.
+>
+> Avoid: dusk or night darkness, navy/cobalt night sky, dramatic sunset orange, artificial HDR, overexposure, changed brick pattern, extra or missing doors/windows/lights, double door, door hidden behind tree, triangular loft window, canopy, porch, new paving, people, vehicles, signs, text, logo or watermark. Premium believable Belgian architectural photography, not glossy CGI.
+
 ### Rev 09 full-width courtyard entrance study
 
 The owner's new full-width photograph was used as the site-and-camera truth,

@@ -65,9 +65,14 @@ black metal surround.
 
 ## Rev 09 full-width courtyard camera study
 
+- `../belgian-brick-lantern/rev09-courtyard-full-width-early-evening.png` — the
+  selected website presentation at approximately 6:30–7:00 PM. The courtyard,
+  brick and tree canopy remain clearly daylit while restrained 2700 K wall,
+  entrance, hedge and interior lighting demonstrates the evening atmosphere.
 - `../belgian-brick-lantern/rev09-courtyard-full-width-study.png` — the owner's
-  new straight-on courtyard photograph translated through the model-first
-  workflow. The complete 17 m long wall is visible with exactly one
+  darker blue-hour alternate. The owner's new straight-on courtyard photograph
+  was translated through the model-first workflow. The complete 17 m long wall
+  is visible with exactly one
   living-room window left of the entrance, one smoked-oak entrance in a deep
   black portal right of centre, and one master-bedroom window to its right.
   The original cobbles, clipped hedge blocks, hydrangeas, mature tree trunks,
