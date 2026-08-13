@@ -1,8 +1,8 @@
 {
-  "model_revision": "08-rear-window-review",
+  "model_revision": "08-photoreal-approved",
   "source": "models/design.json",
   "status": "pass",
-  "photoreal_gate": "blocked_pending_geometry_approval",
+  "photoreal_gate": "open",
   "checks": [
     {
       "name": "external envelope",

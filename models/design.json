@@ -1,12 +1,13 @@
 {
   "schema_version": 1,
-  "model_revision": "08-rear-window-review",
-  "status": "geometry-review",
+  "model_revision": "08-photoreal-approved",
+  "status": "geometry-approved",
   "units": "metres",
   "approval": {
-    "geometry_approved_for_photoreal": false,
+    "geometry_approved_for_photoreal": true,
+    "approved_on": "2026-08-13",
     "supersedes_approved_revision": "07-photoreal-approved",
-    "note": "Rev 08 adds two ground-floor master-bedroom windows to the rear gable and replaces the valley-gable brick edge returns with a continuous black surround. Approval is pending review of the regenerated neutral geometry."
+    "note": "The owner approved Rev 08 neutral geometry: two ground-floor master-bedroom windows on the rear gable, the retained loft gable window, and a continuous black surround at the valley glass."
   },
   "axes": {
     "x": "0.0 = valley-facing full-glass gable; 17.0 = rear bedroom/mezzanine gable",
@@ -342,10 +343,10 @@
     },
     {
       "id": "rear_courtyard_oblique",
-      "purpose": "Photo 4 coordination authority for the side entrance, retained courtyard, paired rear bedroom windows, and loft gable window",
-      "eye": [26.0, 3.8, 18.5],
-      "target": [14.3, 2.0, 6.4],
-      "focal": 690,
+      "purpose": "Photo 4 coordination authority showing the full 17 m courtyard wall, side entrance, retained courtyard, paired rear bedroom windows, and loft gable window",
+      "eye": [20.25, 3.6, 25.0],
+      "target": [9.1, 1.85, 7.1],
+      "focal": 650,
       "omit_categories": []
     },
     {

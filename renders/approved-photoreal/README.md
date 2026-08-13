@@ -1,4 +1,4 @@
-# Approved Rev 07 photoreal concepts
+# Approved photoreal concepts
 
 These images were generated with Codex's built-in ImageGen workflow on
 2026-08-13 after the owner approved the coordinated geometry.
@@ -33,6 +33,26 @@ receive geometry approval before new images are made.
 - `rev07-interior-stair-mezzanine.png`
 
 The corresponding optimized website JPEGs are under `../web/`.
+
+## Rev 08 night exteriors
+
+The owner approved the Rev 08 neutral model on 2026-08-13. This revision keeps
+the same envelope and coordinated interior while adding two ground-floor rear
+bedroom windows and replacing the valley-glass brick cheeks with a continuous
+black metal surround.
+
+- `rev08-valley-glass-night.png` — blue-hour valley-side view. The valley is
+  behind the camera; the far master-bedroom/service end is closed, with no
+  invented rear landscape or through-view.
+- `rev08-rear-courtyard-night.png` — Photo 4-oriented cobbled courtyard view
+  using a more side-on lens so the complete 17.0 m wall reads accurately
+  against the 7.5 m rear gable. It retains exactly two rear bedroom windows,
+  the triangular loft window, and the entrance on the long courtyard wall. Its
+  smoked-oak portal is a local accent within the otherwise continuous Belgian
+  brick exterior.
+
+Both views use black metal surrounds on every window, warm 2700 K interior and
+exterior lighting, black Belgian roof tiles, and the retained site landscaping.
 
 ## Final prompt set
 
