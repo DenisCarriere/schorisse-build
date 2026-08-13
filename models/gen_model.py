@@ -780,6 +780,17 @@ def validate(spec, scene):
     )
     check("full-width courtyard camera", courtyard_camera_ok,
           "centred straight-on camera preserves the complete 17 m courtyard elevation")
+    lane_camera = cameras.get("tractor_lane_photo1_oblique")
+    lane_camera_ok = bool(
+        lane_camera and
+        lane_camera["eye"][0] < 0 and
+        lane_camera["target"][0] > lane_camera["eye"][0] and
+        not lane_camera.get("mirror_horizontal", False) and
+        "valley/pasture end" in lane_camera["purpose"] and
+        "valley glass nearest" in lane_camera["purpose"]
+    )
+    check("Photo 1 lane camera orientation", lane_camera_ok,
+          "camera starts at the valley/pasture end: glass gable nearest, then kitchen, stair and bedroom pair toward the rear gate")
     for host in ("tractor_lane_z0", "courtyard_zW"):
         ops = sorted((o for o in spec["exterior_openings"] if o["host"] == host), key=lambda o: o["x"][0])
         clear = all(ops[i]["x"][1] <= ops[i + 1]["x"][0] for i in range(len(ops) - 1))
@@ -1222,6 +1233,18 @@ Its complete 17 m wall, clipped hedge geometry, central cobbled approach,
 hydrangeas, mature tree trunks and canopy must be retained in that camera. Use
 [`models/generated/courtyard-full-width.svg`](models/generated/courtyard-full-width.svg)
 for the proposed window and entrance positions.
+
+Photo 1 is the site-and-camera authority for the shared tractor lane:
+
+[`uploads/site-reference/photo-1-shared-laneway.jpg`](uploads/site-reference/photo-1-shared-laneway.jpg)
+
+The camera stands at the **valley/pasture end** and looks back along the lane
+toward the rear gate. The full-height valley glass is therefore nearest and
+must be visible. Along the lane, the opening order recedes as kitchen picture
+window, tall stair window, then the two master-bedroom windows. The private
+mezzanine gable is at the far opposite end. Use
+[`models/generated/tractor-lane-photo1-oblique.svg`](models/generated/tractor-lane-photo1-oblique.svg)
+as the proposed geometry authority; never mirror this camera.
 
 ## Source of truth
 

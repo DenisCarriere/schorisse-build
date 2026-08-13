@@ -25,6 +25,18 @@ hydrangeas, mature tree trunks and canopy must be retained in that camera. Use
 [`models/generated/courtyard-full-width.svg`](models/generated/courtyard-full-width.svg)
 for the proposed window and entrance positions.
 
+Photo 1 is the site-and-camera authority for the shared tractor lane:
+
+[`uploads/site-reference/photo-1-shared-laneway.jpg`](uploads/site-reference/photo-1-shared-laneway.jpg)
+
+The camera stands at the **valley/pasture end** and looks back along the lane
+toward the rear gate. The full-height valley glass is therefore nearest and
+must be visible. Along the lane, the opening order recedes as kitchen picture
+window, tall stair window, then the two master-bedroom windows. The private
+mezzanine gable is at the far opposite end. Use
+[`models/generated/tractor-lane-photo1-oblique.svg`](models/generated/tractor-lane-photo1-oblique.svg)
+as the proposed geometry authority; never mirror this camera.
+
 ## Source of truth
 
 1. [`models/design.json`](models/design.json) — dimensions, axes, rooms,

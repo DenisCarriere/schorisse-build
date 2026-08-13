@@ -368,11 +368,10 @@
     },
     {
       "id": "tractor_lane_photo1_oblique",
-      "purpose": "Photo 1 authority from the private/rear end looking down the shared tractor lane toward the pasture gate; bedroom pair nearest, then stair window, then kitchen window, with valley glass at the far end",
-      "eye": [24.0, 3.3, -11.5],
+      "purpose": "Photo 1 authority from the valley/pasture end looking back along the shared tractor lane toward the rear gate; valley glass nearest, then kitchen window, stair window and bedroom pair, with the private mezzanine gable at the far opposite end",
+      "eye": [-7.0, 3.3, -11.5],
       "target": [8.4, 1.75, 0.0],
       "focal": 690,
-      "mirror_horizontal": true,
       "omit_categories": []
     },
     {

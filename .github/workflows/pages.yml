@@ -31,6 +31,10 @@ jobs:
           cp index.html _site/index.html
           cp -R renders/web _site/renders/web
           cp -R renders/approved-photoreal _site/renders/approved-photoreal
+          cp -R renders/belgian-brick-lantern _site/renders/belgian-brick-lantern
+          cp -R renders/solar-control _site/renders/solar-control
+          mkdir -p _site/uploads
+          cp -R uploads/site-reference _site/uploads/site-reference
           cp -R models _site/models
           touch _site/.nojekyll
       - uses: actions/upload-pages-artifact@v3

@@ -50,6 +50,11 @@
       "detail": "centred straight-on camera preserves the complete 17 m courtyard elevation"
     },
     {
+      "name": "Photo 1 lane camera orientation",
+      "status": "pass",
+      "detail": "camera starts at the valley/pasture end: glass gable nearest, then kitchen, stair and bedroom pair toward the rear gate"
+    },
+    {
       "name": "tractor_lane_z0 opening bounds",
       "status": "pass",
       "detail": "4 non-overlapping openings inside wall"

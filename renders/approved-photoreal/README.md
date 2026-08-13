@@ -56,12 +56,10 @@ black metal surround.
   smoked-oak portal is a local accent within the otherwise continuous Belgian
   brick exterior.
 - `rev08-tractor-lane-photo1.png` — corrected Photo 1-oriented shared-lane view
-  from the private/rear end toward the pasture gate. The 17.0 m wall recedes
-  past the two bedroom windows, tall stair window and wide kitchen window; no
-  lane door or near glass gable is invented. The full-height glass facade
-  remains at the far valley end, where it faces away from this camera. The
-  hedge, grass tractor tracks, gate, neighbour-side privacy screen and mature
-  trees remain in place.
+  is superseded because its camera orientation was inverted. Photo 1 actually
+  stands at the valley/pasture end: the full-height glass gable is nearest and
+  visible, followed by the wide kitchen window, tall stair window and bedroom
+  pair toward the rear gate.
 
 ## Rev 09 full-width courtyard camera study
 
@@ -78,6 +76,15 @@ black metal surround.
   The original cobbles, clipped hedge blocks, hydrangeas, mature tree trunks,
   canopy and right-side gate are retained. This is a non-structural camera and
   material study: Rev 09 solar/patio geometry remains separately under review.
+
+## Rev 09 corrected shared lane
+
+- `../belgian-brick-lantern/rev09-shared-lane-corrected.png` — selected Photo 1
+  lane presentation. The visible near/right gable is the connected full-height
+  valley glass. From near to far, exactly four long-wall openings recede as the
+  wide kitchen picture window, tall stair window and two bedroom windows toward
+  the rear gate. The original grass lane, hedge, screen, trees and working
+  tractor clearance are retained. All older lane photoreals are superseded.
 
 All Rev 08 views use black metal surrounds on every window, warm 2700 K interior
 and exterior lighting, black Belgian roof tiles, and the retained site
@@ -97,11 +104,10 @@ matched property photograph governed all fixed site context.
   thick ICF reveals, discreet warm exterior lights and a green lawn; retain the
   unobstructed valley view and all hedges, neighbouring buildings and terrain.
 - **Tractor lane:** retain the full shared grass lane and tractor clearance.
-  Photo 1 is viewed from the private/rear end toward the pasture gate, so the
-  near gable is the closed bedroom/mezzanine gable and the full valley glass is
-  at the far opposite end, facing away from the camera. From camera to gate,
-  the long-wall sequence is the bedroom pair, tall stair window and wide
-  kitchen window in thick black reveals, with no entrance on this elevation.
+  Photo 1 is viewed from the valley/pasture end toward the rear gate, so the
+  full valley glass is the visible near gable. From camera to gate, the
+  long-wall sequence is the wide kitchen window, tall stair window and bedroom
+  pair in thick black reveals, with no entrance on this elevation.
 - **Cobbled courtyard:** preserve the original cobbles, clipped hedges, mature
   trees and neighbouring structure; clearly identify the approved side entry
   with a recessed smoked-oak door and canopy, and show the rear triangular loft
