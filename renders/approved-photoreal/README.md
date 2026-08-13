@@ -36,13 +36,29 @@ The corresponding optimized website JPEGs are under `../web/`.
 
 ## Rev 09 corrected interior entrance
 
-- `rev09-interior-entry-corrected.png` — selected replacement for the earlier
+- `rev09-interior-entry-coplanar.png` — selected website image. The closed
+  smoked-oak exterior leaf and slim black frame sit flush in the broad
+  viewer-right longitudinal courtyard wall and share that wall's receding
+  perspective. The previous correction remains below as a superseded record:
+  its open doorway still read as a perpendicular return rather than a door
+  mounted directly in the right wall.
+- `rev09-interior-entry-corrected.png` — superseded intermediate replacement for the earlier
   stair/mezzanine interior. From the valley-glass camera, the exterior courtyard
   entrance is the narrow foreshortened opening in the receding viewer-right
   longitudinal wall at model x=10.7–11.7 m on `courtyard_zW`. The broad
   front-facing oak door under the mezzanine is an internal master/service door,
   not the exterior entrance. The earlier `rev07-interior-stair-mezzanine.png`
   is superseded because it presented the exterior door in the wrong wall plane.
+
+### Exact coplanar-door correction prompt
+
+Generated with Codex's built-in ImageGen precise-object-edit mode. Image 1 was
+`rev09-interior-entry-corrected.png` and the model metadata in
+`../../models/design.json` was the spatial authority.
+
+> Use case: precise-object-edit. Asset type: plan-coordinated photoreal interior concept for an architectural website. Correct only the exterior courtyard entrance at image-right. Replace the current narrow open doorway with one closed smoked-oak exterior door and a slim matte-black frame mounted directly flush and coplanar in the long viewer-right longitudinal wall. The long wall recedes from the near foreground at the far right edge toward the entry/service area near image centre-right. The closed door leaf must occupy exactly that same wall plane, be seen obliquely/foreshortened, and share the wall's vanishing direction. Both vertical jambs sit in the long wall surface; the door head and threshold follow the long wall perspective. Use a dark lever handle and a very shallow flush reveal.
+>
+> The exterior door must not face the camera, occupy the short front-facing/transverse service wall, or sit on a perpendicular return, vestibule, niche, recess, angled portal or projecting box. There is no open view outdoors through this closed door. Keep the existing front-facing closed oak internal door under the mezzanine unchanged. Keep the dog-leg timber stair on the left, mezzanine and guardrails, kitchen, all windows, rooflights, furniture, materials, camera position, lighting, proportions and every other architectural element unchanged. Do not add or remove any other door or window.
 
 ### Exact correction prompt
 

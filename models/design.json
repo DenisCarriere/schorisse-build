@@ -196,7 +196,9 @@
       "x": [10.7, 11.7],
       "y": [0.0, 2.3],
       "swing": "inward; hinge at rear-side jamb; leaf parks beside the service wall",
-      "material": "smoked_oak"
+      "material": "smoked_oak",
+      "closed_leaf_plane": "z=7.5; flush and coplanar with the longitudinal courtyard wall",
+      "rendering_rule": "show the closed oak leaf and black frame in the same receding perspective as the viewer-right courtyard wall; never on a perpendicular return, recess or transverse wall"
     },
     {
       "id": "master_courtyard_window",
@@ -424,7 +426,7 @@
     },
     {
       "id": "interior_from_valley_entry",
-      "purpose": "entry-plane authority from the valley living hall: dog-leg stair on viewer left and the courtyard entrance set into the receding viewer-right side wall at x=10.7..11.7 m, never the transverse service wall",
+      "purpose": "entry-plane authority from the valley living hall: dog-leg stair on viewer left; closed courtyard entrance leaf and frame are flush and coplanar with the receding viewer-right longitudinal wall at z=7.5 m and x=10.7..11.7 m, sharing its vanishing direction; never a perpendicular return, recess or transverse service wall",
       "eye": [-5.0, 2.25, 1.35],
       "target": [11.2, 1.85, 5.25],
       "focal": 650,

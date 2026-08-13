@@ -2,7 +2,7 @@
 <rect width="1400" height="850" fill="#f4f0e7"/>
 <text x="70" y="58" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#b4522e">MODEL-GENERATED · REV 09</text>
 <text x="70" y="98" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#1d1b18">Interior From Valley Entry</text>
-<text x="70" y="126" font-family="Arial,sans-serif" font-size="14" fill="#686158">entry-plane authority from the valley living hall: dog-leg stair on viewer left and the courtyard entrance set into the receding viewer-right side wall at x=10.7..11.7 m, never the transverse service wall</text>
+<text x="70" y="126" font-family="Arial,sans-serif" font-size="14" fill="#686158">entry-plane authority from the valley living hall: dog-leg stair on viewer left; closed courtyard entrance leaf and frame are flush and coplanar with the receding viewer-right longitudinal wall at z=7.5 m and x=10.7..11.7 m, sharing its vanishing direction; never a perpendicular return, recess or transverse service wall</text>
 
 <polygon points="712.0,473.6 723.7,382.3 723.6,473.3" fill="rgb(133, 64, 38)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>courtyard_wall_pier_end</title></polygon>
 <polygon points="700.1,473.9 723.7,393.1 723.6,473.3" fill="rgb(133, 64, 38)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>rear_gable_ground_pier_end</title></polygon>
