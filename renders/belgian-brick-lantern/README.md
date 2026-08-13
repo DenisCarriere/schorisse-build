@@ -1,6 +1,11 @@
 # Belgian Brick Lantern — selected exterior direction
 
-Status: **material and atmosphere record; geometry superseded by approved Revision 07**
+Status: **selected material record; Rev 09 solar geometry remains under review**
+
+The current selected non-structural brick refinement is
+`rev09-lane-brick-pattern-study.png`. It keeps the coordinated model geometry
+unchanged and translates the retained-building reference into two quiet flush
+soldier-course bands with slim blue-stone window heads/sills.
 
 ## Approved model-first geometry
 
@@ -15,11 +20,12 @@ geometry authority:
 - from the valley glass looking inward, lane/kitchen/stair are image-left and the
   courtyard/entrance are image-right.
 
-Every existing PNG in this folder predates the approved parametric model. It may
-still guide Belgian brick, black frames, oak, lighting and atmosphere, but it
-must not guide walls, openings, rooms, stair, mezzanine, camera translation or
-perspective. The owner approved the coordinated geometry on 2026-08-13 and
-`geometry_approved_for_photoreal` is now true in `models/design.json`.
+Every earlier PNG in this folder predates the approved parametric model and may
+guide only Belgian brick, black frames, oak, lighting and atmosphere. The new
+`rev09-lane-brick-pattern-study.png` reuses the approved Rev 08 lane geometry
+without altering walls or openings. Rev 09 adds pending solar-control and patio
+geometry, so `geometry_approved_for_photoreal` remains false until that model is
+reviewed.
 
 See [`../../docs/MODEL-FIRST-WORKFLOW.md`](../../docs/MODEL-FIRST-WORKFLOW.md).
 
@@ -69,6 +75,20 @@ the approved new front image became the material-identity reference for the side
 and rear.
 
 ## Exact prompts
+
+### Rev 09 restrained brick-pattern refinement
+
+> Use case: precise-object-edit. Asset type: architectural material refinement. Image 1 is the EDIT TARGET and controls all geometry, camera, lighting, site, landscape and openings. Image 2 is MATERIAL REFERENCE ONLY.
+>
+> Make one targeted masonry refinement to Image 1. On the NEW BARN ONLY, make exactly two subtle continuous horizontal accent bands clearly readable along the entire 17 m long brick wall. Each band is a single course of the same warm red-brown brick laid vertically as a flush soldier course, matching the material language in Image 2. Put the lower band at the common conventional-window sill datum and the upper band at the common conventional-window head datum. The courses must be real vertical bricks, flush with the field brick, never gray stone and never projecting ledges. Where the bands meet openings, resolve them neatly into the jambs.
+>
+> Keep restrained thin Belgian blue-stone sills and flat lintels only at conventional rectangular windows, but make them slimmer and calmer than in Image 1. No large gray arches, no wedge lintels, no pyramid blocks, no decorative corner blocks, no stone bands. The triangular loft window retains only its continuous black frame and a neat brick edge; no blue stone around the triangle.
+>
+> LOCK EVERYTHING ELSE EXACTLY from Image 1: same portrait composition, 17.0 m building length, roof and gable, triangular loft window, exact four lane-wall windows and rear-gable windows, no doors on the lane wall, black frames, black tiled roof, hedge, gate, screen, grass tracks, trees, lights, dusk brightness and warm interior glow. Do not add or remove openings or objects. No mixed cladding, render, columns, signs, people, vehicles, text, logos or watermark. Highly realistic Belgian architectural photography.
+
+Generated with Codex's built-in ImageGen edit mode. Image 1 was the preceding
+model-locked lane study and Image 2 was
+[`../../uploads/site-reference/existing-brick-pattern-reference.jpg`](../../uploads/site-reference/existing-brick-pattern-reference.jpg).
 
 ### Front glass gable
 

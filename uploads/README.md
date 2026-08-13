@@ -14,6 +14,9 @@ The real site references are stored in `uploads/site-reference/`:
   to resolve the valley gable, rear master/mezzanine end, both long walls and
   courtyard entrance. Its temporary colour annotations are superseded by the
   approved neutral model.
+- `existing-brick-pattern-reference.jpg` — retained-building material reference
+  for warm Belgian brick, flush vertical-brick soldier courses and restrained
+  blue-stone heads/sills. It guides material rhythm only, never new geometry.
 
 The dry grass may be shown as healthy green. Permanent hardscape, planting,
 access routes and neighboring/retained buildings must not move in design

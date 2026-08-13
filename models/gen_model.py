@@ -1173,8 +1173,9 @@ def write_handoff(spec, report):
         previous = spec["approval"].get("supersedes_approved_revision", "the previous approved revision")
         approval_note = (
             f"Revision {spec['model_revision']} is awaiting owner approval; {previous} remains the "
-            "last approved photoreal authority. Do not generate revised photoreal concepts until "
-            "the regenerated model views and plans are approved."
+            "last approved photoreal geometry authority. Do not treat Rev 09 structural additions "
+            "as final photoreal authority until its regenerated views are approved. Non-structural "
+            "material studies may reuse the last approved fixed-camera geometry."
         )
     content = f"""# Model-first design handoff
 
@@ -1241,6 +1242,16 @@ operable fins confined above the 3.0 m transom, clear ground-floor glazing and a
 compact permeable patio with exactly two chairs and one coffee table. Rev 08
 remains the last approved baseline; the photoreal gate remains closed until the
 Rev 09 fixed-camera geometry is reviewed and approved.
+
+## Selected non-structural masonry direction
+
+The continuous warm Belgian brick veneer now uses a restrained version of the
+retained property's masonry rhythm: two flush soldier courses in the same brick
+at the conventional-window sill and head datums on both long elevations, plus
+slim Belgian blue-stone heads and sills at rectangular windows only. All deep
+jambs and glass surrounds remain matte black. The valley glass and triangular
+loft glass receive no stone or brick bands across their glazing. This is a
+material-only refinement and does not change `models/design.json` geometry.
 
 ## Rendering gate
 

@@ -51,6 +51,11 @@ Concept palette:
   lintels and connection zones;
 - one continuous coordinated non-load-bearing Belgian/Flemish brick veneer on
   every exterior wall, supported independently from the ICF facing;
+- two flush soldier-course bands in the same facing brick at coordinated sill
+  and head datums on the long walls, with movement joints and masonry support
+  resolved as part of the engineered veneer design;
+- optional slim Belgian blue-stone heads and sills at conventional rectangular
+  windows only, thermally and structurally isolated from the ICF opening bucks;
 - deep black-lined window and door reveals that express the wall thickness while
   leaving every glazed opening clear;
 - warm mineral-plaster interior finish, with a service strategy that protects the
