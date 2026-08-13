@@ -1,8 +1,8 @@
 {
-  "model_revision": "06-single-toilet",
+  "model_revision": "07-photoreal-approved",
   "source": "models/design.json",
   "status": "pass",
-  "photoreal_gate": "blocked_pending_geometry_approval",
+  "photoreal_gate": "open",
   "checks": [
     {
       "name": "external envelope",
@@ -20,17 +20,17 @@
       "detail": "x=0.00..17.00; y=0.00..5.20; z=0.00..7.50 m"
     },
     {
-      "name": "birdseye green entry host",
+      "name": "courtyard entry host",
       "status": "pass",
       "detail": "courtyard_entry host = courtyard_zW"
     },
     {
-      "name": "blue glass gable host",
+      "name": "valley glass gable host",
       "status": "pass",
       "detail": "front_glass_gable host = valley_gable_x0"
     },
     {
-      "name": "yellow rear loft host",
+      "name": "rear loft window host",
       "status": "pass",
       "detail": "rear_loft_window host = rear_gable_xL"
     },

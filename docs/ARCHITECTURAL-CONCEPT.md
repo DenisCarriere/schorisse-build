@@ -68,9 +68,9 @@ windows on the exterior.
 
 ```mermaid
 flowchart LR
-    A[Blue / valley end<br/>Full glass gable] --> B[Double-height living<br/>Living + dining + kitchen]
+    A[Valley end<br/>Full glass gable] --> B[Double-height living<br/>Living + dining + kitchen]
     B --> C[Middle transition<br/>Entry + stair + services]
-    C --> D[Yellow / private end<br/>Master bedroom]
+    C --> D[Rear / private end<br/>Master bedroom]
     E[Open mezzanine<br/>above service + private zones] -. overlooks .-> B
 ```
 
