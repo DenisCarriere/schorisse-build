@@ -42,6 +42,11 @@ the entrance on the left are superseded and must not guide future renders.
 - [Courtyard cutaway](../models/generated/courtyard-cutaway.svg)
 - [Validation report](../models/generated/model-report.json)
 
+The exterior entry is a closed smoked-oak leaf with a black frame mounted flush
+in the longitudinal courtyard wall at z=7.5 m. In a valley-to-rear interior
+view, the leaf and frame must share the receding right wall's perspective; a
+doorway on a perpendicular return or the transverse service wall is incorrect.
+
 ## Dimensional basis
 
 | Item | Revision 07 assumption |

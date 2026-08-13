@@ -57,7 +57,7 @@
     {
       "name": "interior courtyard-entry plane",
       "status": "pass",
-      "detail": "door remains in the receding z=7.5 m courtyard side wall at x=10.7..11.7 m; dedicated valley camera retains that wall"
+      "detail": "closed leaf and black frame remain flush in the receding z=7.5 m courtyard wall at x=10.7..11.7 m and share its vanishing direction"
     },
     {
       "name": "tractor_lane_z0 opening bounds",
