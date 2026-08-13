@@ -4,8 +4,8 @@
 <text x="70" y="98" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#1d1b18">Rear Mezzanine Gable</text>
 <text x="70" y="126" font-family="Arial,sans-serif" font-size="14" fill="#686158">rear master/mezzanine gable authority: paired ground-floor bedroom windows, true loft opening, and no valley context</text>
 
-<polygon points="742.1,459.1 657.9,459.1 657.9,458.6" fill="rgb(110, 102, 89)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_permeable_patio</title></polygon>
-<polygon points="742.1,459.1 657.9,458.6 742.1,458.6" fill="rgb(110, 102, 89)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_permeable_patio</title></polygon>
+<polygon points="742.1,459.1 657.9,459.1 657.9,458.6" fill="rgb(61, 110, 43)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_grass_grid_patio</title></polygon>
+<polygon points="742.1,459.1 657.9,458.6 742.1,458.6" fill="rgb(61, 110, 43)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_grass_grid_patio</title></polygon>
 <polygon points="706.8,451.7 693.2,451.7 693.2,450.3" fill="rgb(87, 51, 28)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_coffee_table_top</title></polygon>
 <polygon points="706.8,451.7 693.2,450.3 706.8,450.3" fill="rgb(87, 51, 28)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_coffee_table_top</title></polygon>
 <polygon points="705.2,460.5 704.4,460.5 704.4,451.8" fill="rgb(9, 10, 11)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_coffee_table_leg</title></polygon>
@@ -32,10 +32,10 @@
 <polygon points="694.8,460.5 693.9,451.9 694.0,460.5" fill="rgb(9, 10, 11)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_coffee_table_leg</title></polygon>
 <polygon points="705.2,460.5 705.3,451.9 704.5,451.9" fill="rgb(9, 10, 11)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_coffee_table_leg</title></polygon>
 <polygon points="694.8,460.5 694.7,451.9 693.9,451.9" fill="rgb(9, 10, 11)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_coffee_table_leg</title></polygon>
-<polygon points="742.1,459.1 653.5,466.1 657.9,459.1" fill="rgb(110, 102, 89)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_permeable_patio</title></polygon>
-<polygon points="742.1,459.1 742.1,458.6 746.5,465.7" fill="rgb(110, 102, 89)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_permeable_patio</title></polygon>
-<polygon points="657.9,459.1 653.5,465.7 657.9,458.6" fill="rgb(110, 102, 89)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_permeable_patio</title></polygon>
-<polygon points="742.1,458.6 657.9,458.6 653.5,465.7" fill="rgb(110, 102, 89)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_permeable_patio</title></polygon>
+<polygon points="742.1,459.1 653.5,466.1 657.9,459.1" fill="rgb(61, 110, 43)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_grass_grid_patio</title></polygon>
+<polygon points="742.1,459.1 742.1,458.6 746.5,465.7" fill="rgb(61, 110, 43)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_grass_grid_patio</title></polygon>
+<polygon points="657.9,459.1 653.5,465.7 657.9,458.6" fill="rgb(61, 110, 43)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_grass_grid_patio</title></polygon>
+<polygon points="742.1,458.6 657.9,458.6 653.5,465.7" fill="rgb(61, 110, 43)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_grass_grid_patio</title></polygon>
 <polygon points="734.4,453.0 716.0,453.0 716.0,450.9" fill="rgb(9, 10, 11)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_chair_1_seat</title></polygon>
 <polygon points="684.0,453.0 665.6,453.0 665.6,450.9" fill="rgb(9, 10, 11)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_chair_2_seat</title></polygon>
 <polygon points="734.4,453.0 716.0,450.9 734.4,450.9" fill="rgb(9, 10, 11)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_chair_1_seat</title></polygon>
@@ -122,10 +122,10 @@
 <polygon points="683.6,452.8 664.9,440.7 664.9,452.8" fill="rgb(9, 10, 11)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_chair_2_back</title></polygon>
 <polygon points="735.1,452.8 735.1,440.7 716.4,440.7" fill="rgb(9, 10, 11)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_chair_1_back</title></polygon>
 <polygon points="683.6,452.8 683.6,440.7 664.9,440.7" fill="rgb(9, 10, 11)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_chair_2_back</title></polygon>
-<polygon points="742.1,459.1 746.5,466.1 653.5,466.1" fill="rgb(110, 102, 89)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_permeable_patio</title></polygon>
-<polygon points="742.1,459.1 746.5,465.7 746.5,466.1" fill="rgb(110, 102, 89)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_permeable_patio</title></polygon>
-<polygon points="657.9,459.1 653.5,466.1 653.5,465.7" fill="rgb(110, 102, 89)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_permeable_patio</title></polygon>
-<polygon points="742.1,458.6 653.5,465.7 746.5,465.7" fill="rgb(110, 102, 89)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_permeable_patio</title></polygon>
+<polygon points="742.1,459.1 746.5,466.1 653.5,466.1" fill="rgb(61, 110, 43)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_grass_grid_patio</title></polygon>
+<polygon points="742.1,459.1 746.5,465.7 746.5,466.1" fill="rgb(61, 110, 43)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_grass_grid_patio</title></polygon>
+<polygon points="657.9,459.1 653.5,466.1 653.5,465.7" fill="rgb(61, 110, 43)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_grass_grid_patio</title></polygon>
+<polygon points="742.1,458.6 653.5,465.7 746.5,465.7" fill="rgb(61, 110, 43)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_grass_grid_patio</title></polygon>
 <polygon points="599.9,388.7 599.9,393.0 700.0,339.4" fill="rgb(14, 15, 17)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>selected_upper_gable_veil_roof_courtyard_extension</title></polygon>
 <polygon points="800.1,393.0 800.1,388.7 700.0,335.0" fill="rgb(14, 15, 17)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>selected_upper_gable_veil_roof_lane_extension</title></polygon>
 <polygon points="800.1,393.0 700.0,335.0 700.0,339.4" fill="rgb(14, 15, 17)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>selected_upper_gable_veil_roof_lane_extension</title></polygon>
@@ -144,8 +144,8 @@
 <polygon points="599.9,388.7 700.0,332.9 596.2,388.5" fill="rgb(14, 15, 17)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>selected_upper_gable_veil_roof_courtyard_extension</title></polygon>
 <polygon points="700.0,339.4 596.3,393.0 700.0,337.4" fill="rgb(14, 15, 17)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>selected_upper_gable_veil_roof_courtyard_extension</title></polygon>
 <polygon points="700.0,335.0 803.8,388.5 700.0,332.9" fill="rgb(14, 15, 17)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>selected_upper_gable_veil_roof_lane_extension</title></polygon>
-<polygon points="746.5,466.1 653.5,465.7 653.5,466.1" fill="rgb(110, 102, 89)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_permeable_patio</title></polygon>
-<polygon points="746.5,466.1 746.5,465.7 653.5,465.7" fill="rgb(110, 102, 89)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_permeable_patio</title></polygon>
+<polygon points="746.5,466.1 653.5,465.7 653.5,466.1" fill="rgb(61, 110, 43)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_grass_grid_patio</title></polygon>
+<polygon points="746.5,466.1 746.5,465.7 653.5,465.7" fill="rgb(61, 110, 43)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>valley_grass_grid_patio</title></polygon>
 <polygon points="700.0,339.4 700.0,332.9 700.0,337.4" fill="rgb(14, 15, 17)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>selected_upper_gable_veil_roof_lane_extension</title></polygon>
 <polygon points="700.0,335.0 700.0,337.4 700.0,332.9" fill="rgb(14, 15, 17)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>selected_upper_gable_veil_roof_courtyard_extension</title></polygon>
 <polygon points="779.3,390.5 777.5,390.5 777.6,383.3" fill="rgb(9, 10, 11)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>selected_upper_gable_veil_fin_01</title></polygon>

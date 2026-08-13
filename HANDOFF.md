@@ -60,7 +60,9 @@ Any future plan or render showing a second toilet conflicts with
 Option C from [`models/solar-control-options.json`](models/solar-control-options.json)
 is integrated in the Rev 09 review model: a 1.25 m valley roof visor, nine
 operable fins confined above the 3.0 m transom, clear ground-floor glazing and a
-compact permeable patio with exactly two chairs and one coffee table. Rev 08
+compact grass-filled cellular-grid patio with exactly two chairs and one coffee
+table. The grid sits on an unbound open-graded base with no impermeable slab;
+the final product and infiltration build-up require municipal acceptance. Rev 08
 remains the last approved baseline; the photoreal gate remains closed until the
 Rev 09 fixed-camera geometry is reviewed and approved.
 

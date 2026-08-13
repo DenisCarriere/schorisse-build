@@ -7,7 +7,7 @@
     "geometry_approved_for_photoreal": false,
     "approved_on": null,
     "supersedes_approved_revision": "08-photoreal-approved",
-    "note": "The owner selected Solar Option C for development. Rev 09 adds a 1.25 m valley roof visor, nine operable fins confined above the 3.0 m transom, and a compact permeable valley patio with two chairs and a coffee table. Rev 08 remains the last approved photoreal authority until this geometry is reviewed."
+    "note": "The owner selected Solar Option C for development. Rev 09 adds a 1.25 m valley roof visor, nine operable fins confined above the 3.0 m transom, and a compact grass-grid valley patio with two chairs and a coffee table. Rev 08 remains the last approved photoreal authority until this geometry is reviewed."
   },
   "axes": {
     "x": "0.0 = valley-facing full-glass gable; 17.0 = rear bedroom/mezzanine gable",
@@ -325,11 +325,16 @@
     "courtyard": {"side": "z > 7.5", "surface": "retained cobbles"},
     "valley": {"side": "x < 0"},
     "valley_patio": {
-      "surface": "water-permeable open-jointed pavers or compacted local gravel",
+      "surface": "grass-filled cellular reinforcement grid over an open-graded permeable base",
+      "visual_character": "predominantly living grass; structural grid recessed and only subtly visible between blades",
+      "drainage": "unbound build-up with no impermeable concrete slab; final system subject to municipal acceptance and infiltration design",
+      "area_approx_m2": 11.78,
+      "slope_target": "maximum 2 percent, subject to measured levels and any additional runoff-control requirements",
+      "runoff": "retain and infiltrate rainfall on the property; no discharge to the neighbour, street or sewer",
       "x": [-3.4, -0.3],
       "z": [1.85, 5.65],
       "furniture": "two compact outdoor lounge chairs facing the valley with one small coffee table",
-      "constraints": "no solid slab; keep hedge edges and the courtyard-side passage clear"
+      "constraints": "no stone patio and no solid slab; keep hedge edges and the courtyard-side passage clear"
     },
     "rear_private_gable": {
       "side": "x > 17.0",
@@ -347,7 +352,7 @@
     },
     {
       "id": "valley_solar_selected",
-      "purpose": "Rev 09 geometry review: selected upper-gable fins, 1.25 m roof visor, clear ground-floor glass and compact permeable patio",
+      "purpose": "Rev 09 geometry review: selected upper-gable fins, 1.25 m roof visor, clear ground-floor glass and compact grass-grid patio",
       "eye": [-13.0, 2.2, 12.5],
       "target": [4.0, 2.5, 3.75],
       "focal": 610,

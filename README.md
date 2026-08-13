@@ -43,7 +43,7 @@ assets rather than gallery content.
 - `renders/black-barn-icf/` — superseded full-black concept PNGs plus the current interior-loft study.
 - `renders/hybrid-barn-icf/` — superseded mixed-material concept PNGs.
 - `renders/brick-veil/` — developed front, side, back and interior-loft concept PNGs.
-- `renders/solar-control/` — Options A–C studies and the selected Option C patio concept.
+- `renders/solar-control/` — Options A–C studies and the selected Option C grass-grid patio concept.
 - `renders/concepts/` — broader material explorations.
 - `renders/web/` — responsive JPEG derivatives and editable SVG floor plans used by the gallery.
 - `uploads/site-reference/` — four original property photographs plus the

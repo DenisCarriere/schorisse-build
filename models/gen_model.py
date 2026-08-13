@@ -119,6 +119,7 @@ MATERIALS = {
     "sanitary": {"color": (0.88, 0.89, 0.86, 1.0), "rough": 0.45},
     "mezzanine": {"color": (0.48, 0.34, 0.22, 1.0), "rough": 0.75},
     "site": {"color": (0.28, 0.42, 0.20, 1.0), "rough": 1.0},
+    "grass_grid": {"color": (0.24, 0.43, 0.17, 1.0), "rough": 1.0},
     "cobble": {"color": (0.43, 0.40, 0.35, 1.0), "rough": 1.0},
 }
 
@@ -470,8 +471,9 @@ def add_valley_patio(scene, spec):
         return
     x0, x1 = patio["x"]
     z0, z1 = patio["z"]
-    scene.box("valley_permeable_patio", "cobble", x0, x1, -.025, -.005,
-              z0, z1, "site", permeability="water-permeable", surface=patio["surface"])
+    scene.box("valley_grass_grid_patio", "grass_grid", x0, x1, -.025, -.005,
+              z0, z1, "site", permeability="fully infiltrating concept",
+              surface=patio["surface"], drainage=patio["drainage"])
     # Two compact lounge chairs face the valley (negative x); their backs stay
     # closest to the glass. A low table sits between them without blocking the
     # central door or the courtyard-side passage.
@@ -747,13 +749,18 @@ def validate(spec, scene):
     if patio:
         x0, x1 = patio["x"]
         z0, z1 = patio["z"]
+        modelled_area = (x1 - x0) * (z1 - z0)
         patio_ok = (x1 < 0 and x0 < x1 and 0 <= z0 < z1 <= env["width"] and
-                    any(element["name"] == "valley_permeable_patio" for element in scene.elements) and
+                    abs(modelled_area - patio["area_approx_m2"]) < .01 and
+                    any(element["name"] == "valley_grass_grid_patio" for element in scene.elements) and
+                    "grass-filled cellular" in patio["surface"] and
+                    "no impermeable concrete slab" in patio["drainage"] and
                     len([element for element in scene.elements
                          if element["name"].endswith("_seat") and element["name"].startswith("valley_chair_")]) == 2 and
                     any(element["name"] == "valley_coffee_table_top" for element in scene.elements))
-        check("permeable valley patio", patio_ok,
-              f"x={x0:.2f}..{x1:.2f}; z={z0:.2f}..{z1:.2f} m; two chairs and one coffee table")
+        check("grass-grid valley patio", patio_ok,
+              f"x={x0:.2f}..{x1:.2f}; z={z0:.2f}..{z1:.2f} m; {modelled_area:.2f} m² grass-filled grid; "
+              "two chairs and one coffee table")
     hosts = {opening["id"]: opening["host"] for opening in spec["exterior_openings"]}
     check("courtyard entry host", hosts.get("courtyard_entry") == "courtyard_zW",
           f"courtyard_entry host = {hosts.get('courtyard_entry')}")
@@ -1239,7 +1246,9 @@ Any future plan or render showing a second toilet conflicts with
 Option C from [`models/solar-control-options.json`](models/solar-control-options.json)
 is integrated in the Rev 09 review model: a 1.25 m valley roof visor, nine
 operable fins confined above the 3.0 m transom, clear ground-floor glazing and a
-compact permeable patio with exactly two chairs and one coffee table. Rev 08
+compact grass-filled cellular-grid patio with exactly two chairs and one coffee
+table. The grid sits on an unbound open-graded base with no impermeable slab;
+the final product and infiltration build-up require municipal acceptance. Rev 08
 remains the last approved baseline; the photoreal gate remains closed until the
 Rev 09 fixed-camera geometry is reviewed and approved.
 

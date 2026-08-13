@@ -3,7 +3,7 @@
 Status: **Option C selected — Rev 09 geometry review pending**
 
 The owner selected Option C for design development. It is now integrated in the
-Rev 09 review model with a compact permeable patio, but it is not yet approved
+Rev 09 review model with a compact grass-grid patio, but it is not yet approved
 geometry. Rev 08 remains the last approved photoreal authority.
 
 The model inputs are in [`models/solar-control-options.json`](../models/solar-control-options.json).
@@ -87,9 +87,23 @@ clear.
 - reserve a concealed, fully retractable exterior screen at the ground-floor
   transom only if PHPP/designPH shows that low sun still causes overheating;
 - thermally isolate every motor, bracket, box and fixing from the ICF envelope;
-- add a compact water-permeable patio using open-jointed local stone/clay
-  pavers or compacted local gravel, with two small chairs and one coffee table;
+- add a compact grass-filled cellular reinforcement grid over an unbound,
+  open-graded permeable base, with two small chairs and one coffee table;
+- let living grass visually dominate, with the structural grid recessed and
+  only subtly visible; use no stone patio and no impermeable concrete slab;
 - keep the hedge and the neighbour-side paved passage completely clear.
+
+The grass-grid direction is intended to make permeability legible in the design,
+not to claim automatic permit compliance. The architect must submit the chosen
+system's void ratio, sub-base, infiltration build-up and drainage detail for
+municipal acceptance against the surveyed soil and local requirements.
+Official Flemish guidance also notes that local rules can be stricter and that
+rainwater from paving must remain and infiltrate on the property. The 2023
+Hemelwaterverordening treats the full water-permeable build-up, slope and
+protection against runoff to neighbouring land as design considerations:
+
+- [Flanders: permits for residential paving and terraces](https://www.vlaanderen.be/omgevingsvergunning/stedenbouwkundige-handelingen/verhardingen)
+- [2023 Flemish Hemelwaterverordening and explanatory report](https://codex.vlaanderen.be/PrintDocument.ashx?id=1038166)
 
 The retractable ground-floor screen is not shown as a permanent facade layer.
 If required, it should use an open-weave, view-through exterior fabric and

@@ -132,6 +132,10 @@ properly tied around the opening.
 - Coordinate proprietary window and door bucks, reinforcement, fixings, flashings
   and cavity closers through the ICF/rainscreen build-up.
 - Coordinate the recessed courtyard entrance with retained cobbles and drainage.
+- Detail the valley patio as grass-filled cellular reinforcement over an
+  open-graded permeable base, without a concrete slab. Confirm subgrade bearing,
+  infiltration, edge restraint and chair-leg stability with the landscape and
+  drainage designers, then obtain municipal acceptance for the complete build-up.
 - Treat the smoked-oak boards as protected entrance-recess lining and joinery,
   not as a general rainscreen. Coordinate the deep black portal, door frame,
   fixings, threshold, concealed soffit light, airtightness and fire performance

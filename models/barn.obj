@@ -9825,8 +9825,8 @@ v -0.055000 3.353333 6.985000
 v -0.055000 3.060000 6.985000
 f 6934 6935 6936
 
-o valley_permeable_patio
-usemtl cobble
+o valley_grass_grid_patio
+usemtl grass_grid
 v -3.400000 -0.025000 1.850000
 v -3.400000 -0.005000 1.850000
 v -0.300000 -0.005000 1.850000
