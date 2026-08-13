@@ -44,6 +44,11 @@ black metal surround.
 - `rev08-valley-glass-night.png` — blue-hour valley-side view. The valley is
   behind the camera; the far master-bedroom/service end is closed, with no
   invented rear landscape or through-view.
+- `rev08-valley-glass-ground-lights.png` — the selected brighter early-blue-hour
+  valley-side presentation. Two recessed facade-corner uplights graze the
+  continuous black surround, while a restrained line of flush path markers
+  improves the approach. The lawn, hedge and neighbouring brick building remain
+  readable without flattening the warm interior contrast.
 - `rev08-rear-courtyard-night.png` — Photo 4-oriented cobbled courtyard view
   using a more side-on lens so the complete 17.0 m wall reads accurately
   against the 7.5 m rear gable. It retains exactly two rear bedroom windows,
@@ -51,8 +56,9 @@ black metal surround.
   smoked-oak portal is a local accent within the otherwise continuous Belgian
   brick exterior.
 
-Both views use black metal surrounds on every window, warm 2700 K interior and
-exterior lighting, black Belgian roof tiles, and the retained site landscaping.
+All Rev 08 views use black metal surrounds on every window, warm 2700 K interior
+and exterior lighting, black Belgian roof tiles, and the retained site
+landscaping.
 
 ## Final prompt set
 
