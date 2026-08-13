@@ -192,8 +192,10 @@ def add_valley_gable(scene, spec, opening):
     profile = [(inset, opening["base"]), (W - inset, opening["base"]),
                (W - inset, H - 0.08), (W / 2, R - opening["head_inset"]), (inset, H - 0.08)]
     scene.prism_x("front_glass_gable", "glass", profile, 0.03, 0.07, "front_glazing")
-    scene.box("front_left_brick_return", "brick", 0, T, 0, H, 0, inset, "wall")
-    scene.box("front_right_brick_return", "brick", 0, T, 0, H, W - inset, W, "wall")
+    # Continuous deep-black surround to the glass: no brick cheeks remain on
+    # the left or right edges of the valley-facing opening.
+    scene.box("front_left_black_surround", "frame", 0, T, 0, H, 0, inset, "wall")
+    scene.box("front_right_black_surround", "frame", 0, T, 0, H, W - inset, W, "wall")
     scene.box("front_base_frame", "frame", 0.02, 0.10, opening["base"], opening["base"] + .075,
               inset, W - inset, "opening_frame")
     scene.box("front_left_jamb", "frame", 0.02, 0.10, opening["base"], H - .08,
@@ -210,27 +212,58 @@ def add_valley_gable(scene, spec, opening):
     scene.box("front_slider_mullion_right", "frame", 0.02, 0.10, 0, 3.0, W / 2 + 1.78, W / 2 + 1.86, "opening_frame")
 
 
-def add_rear_gable(scene, spec, opening):
+def add_rear_gable(scene, spec, loft_opening, ground_openings):
     env = spec["envelope"]
     L, W, H, R, T = env["length"], env["width"], env["eaves_height"], env["ridge_height"], env["external_wall_build_up"]
-    z0, z1 = opening["base_z"]
-    apex_y, apex_z = opening["apex_y"], opening["apex_z"]
-    # Build around a true triangular void: solid ground floor plus two gable cheeks.
-    scene.box("rear_gable_ground_solid", "brick", L - T, L, 0, opening["base_y"], 0, W, "wall")
-    left_profile = [(0, opening["base_y"]), (z0, opening["base_y"]),
+    z0, z1 = loft_opening["base_z"]
+    apex_y, apex_z = loft_opening["apex_y"], loft_opening["apex_z"]
+    # Build the ground-floor rear wall around a balanced pair of true window
+    # voids. The closed master bedroom remains behind this wall; these openings
+    # look only to the private rear context, never through to the valley.
+    cursor = 0.0
+    depth0, depth1 = L - T + .03, L - .03
+    for index, opening in enumerate(sorted(ground_openings, key=lambda item: item["z"][0])):
+        oz0, oz1 = opening["z"]
+        oy0, oy1 = opening["y"]
+        if oz0 > cursor:
+            scene.box(f"rear_gable_ground_pier_{index}", "brick", L - T, L,
+                      0, loft_opening["base_y"], cursor, oz0, "wall")
+        scene.box(f"rear_gable_{opening['id']}_sill", "brick", L - T, L,
+                  0, oy0, oz0, oz1, "wall")
+        scene.box(f"rear_gable_{opening['id']}_head", "brick", L - T, L,
+                  oy1, loft_opening["base_y"], oz0, oz1, "wall")
+        scene.box(opening["id"], "glass", depth0, depth1,
+                  oy0 + .02, oy1 - .04, oz0 + .04, oz1 - .04,
+                  "rear_glazing", opening=opening["id"])
+        frame_t = .06
+        scene.box(f"{opening['id']}_frame_left", "frame", depth0, depth1,
+                  oy0, oy1, oz0, oz0 + frame_t, "opening_frame")
+        scene.box(f"{opening['id']}_frame_right", "frame", depth0, depth1,
+                  oy0, oy1, oz1 - frame_t, oz1, "opening_frame")
+        scene.box(f"{opening['id']}_frame_sill", "frame", depth0, depth1,
+                  oy0, oy0 + frame_t, oz0, oz1, "opening_frame")
+        scene.box(f"{opening['id']}_frame_head", "frame", depth0, depth1,
+                  oy1 - frame_t, oy1, oz0, oz1, "opening_frame")
+        cursor = oz1
+    if cursor < W:
+        scene.box("rear_gable_ground_pier_end", "brick", L - T, L,
+                  0, loft_opening["base_y"], cursor, W, "wall")
+
+    # Build around the true triangular loft void with two solid gable cheeks.
+    left_profile = [(0, loft_opening["base_y"]), (z0, loft_opening["base_y"]),
                     (apex_z, apex_y), (W / 2, R), (0, H)]
-    right_profile = [(apex_z, apex_y), (z1, opening["base_y"]),
-                     (W, opening["base_y"]), (W, H), (W / 2, R)]
+    right_profile = [(apex_z, apex_y), (z1, loft_opening["base_y"]),
+                     (W, loft_opening["base_y"]), (W, H), (W / 2, R)]
     scene.prism_x("rear_gable_left_cheek", "brick", left_profile, L - T, L, "wall")
     scene.prism_x("rear_gable_right_cheek", "brick", right_profile, L - T, L, "wall")
-    glass_profile = [(z0, opening["base_y"]), (z1, opening["base_y"]), (apex_z, apex_y)]
+    glass_profile = [(z0, loft_opening["base_y"]), (z1, loft_opening["base_y"]), (apex_z, apex_y)]
     scene.prism_x("rear_loft_window", "glass", glass_profile, L - T + .01, L - T + .05, "rear_glazing")
-    scene.box("rear_loft_base_frame", "frame", L - T, L - T + .08, opening["base_y"], opening["base_y"] + .07, z0, z1, "opening_frame")
+    scene.box("rear_loft_base_frame", "frame", L - T, L - T + .08, loft_opening["base_y"], loft_opening["base_y"] + .07, z0, z1, "opening_frame")
     add_sloped_bar_x(scene, "rear_loft_left_slope_frame", "frame", L - T, L - T + .08,
-                     (z0, opening["base_y"]), (apex_z, apex_y), .07)
+                     (z0, loft_opening["base_y"]), (apex_z, apex_y), .07)
     add_sloped_bar_x(scene, "rear_loft_right_slope_frame", "frame", L - T, L - T + .08,
-                     (z1, opening["base_y"]), (apex_z, apex_y), .07)
-    scene.box("rear_loft_center_mullion", "frame", L - T, L - T + .08, opening["base_y"], apex_y, apex_z - .035, apex_z + .035, "opening_frame")
+                     (z1, loft_opening["base_y"]), (apex_z, apex_y), .07)
+    scene.box("rear_loft_center_mullion", "frame", L - T, L - T + .08, loft_opening["base_y"], apex_y, apex_z - .035, apex_z + .035, "opening_frame")
 
 
 def add_partition_x(scene, name, x, z0, z1, openings, spec, height=None):
@@ -437,7 +470,10 @@ def build_scene(spec):
     add_segmented_wall(scene, "tractor_lane_wall", "tractor_lane_z0", by_host["tractor_lane_z0"], spec)
     add_segmented_wall(scene, "courtyard_wall", "courtyard_zW", by_host["courtyard_zW"], spec)
     add_valley_gable(scene, spec, by_host["valley_gable_x0"][0])
-    add_rear_gable(scene, spec, by_host["rear_gable_xL"][0])
+    rear_openings = by_host["rear_gable_xL"]
+    rear_loft = next(opening for opening in rear_openings if opening["type"] == "triangular_window")
+    rear_ground = [opening for opening in rear_openings if opening["type"] == "window"]
+    add_rear_gable(scene, spec, rear_loft, rear_ground)
 
     doors = {door["id"]: door for door in spec["interior_doors"]}
     for partition in spec["interior_partitions"]:
@@ -608,6 +644,25 @@ def validate(spec, scene):
         clear = all(ops[i]["x"][1] <= ops[i + 1]["x"][0] for i in range(len(ops) - 1))
         inside = all(0 <= o["x"][0] < o["x"][1] <= env["length"] and 0 <= o["y"][0] < o["y"][1] <= env["eaves_height"] for o in ops)
         check(f"{host} opening bounds", clear and inside, f"{len(ops)} non-overlapping openings inside wall")
+    rear_ground = sorted((opening for opening in spec["exterior_openings"]
+                          if opening["host"] == "rear_gable_xL" and opening["type"] == "window"),
+                         key=lambda opening: opening["z"][0])
+    rear_loft = next(opening for opening in spec["exterior_openings"]
+                     if opening["id"] == "rear_loft_window")
+    rear_clear = all(rear_ground[index]["z"][1] <= rear_ground[index + 1]["z"][0]
+                     for index in range(len(rear_ground) - 1))
+    rear_inside = all(0 <= opening["z"][0] < opening["z"][1] <= env["width"] and
+                      0 <= opening["y"][0] < opening["y"][1] <= rear_loft["base_y"]
+                      for opening in rear_ground)
+    check("rear master window pair", len(rear_ground) == 2 and rear_clear and rear_inside,
+          f"{len(rear_ground)} non-overlapping ground-floor windows below the loft opening")
+    master_bed = next(item for item in spec["furniture_and_fixtures"] if item["id"] == "master_bed")
+    windows_flank_bed = (len(rear_ground) == 2 and
+                         rear_ground[0]["z"][1] <= master_bed["z"][0] and
+                         rear_ground[1]["z"][0] >= master_bed["z"][1])
+    check("rear windows flank master bed", windows_flank_bed,
+          f"window clear bands end/start at z={rear_ground[0]['z'][1]:.2f}/{rear_ground[1]['z'][0]:.2f} m; "
+          f"bed spans z={master_bed['z'][0]:.2f}..{master_bed['z'][1]:.2f} m")
     door_by_id = {door["id"]: door for door in spec["interior_doors"]}
     partition_ids = {partition["id"] for partition in spec["interior_partitions"]}
     door_hosts_ok = all(door["host"] in partition_ids for door in spec["interior_doors"])
@@ -722,7 +777,9 @@ def validate(spec, scene):
     check("master door swing clear", master_swing_clear,
           f"{master_door['clear_width']:.2f} m leaf zone clear of bed and wardrobes")
     scene_names = {e["name"] for e in scene.elements}
-    for required in ("front_glass_gable", "courtyard_entry", "rear_loft_window", "stair_half_landing", "stair_top_landing"):
+    for required in ("front_glass_gable", "front_left_black_surround", "front_right_black_surround",
+                     "courtyard_entry", "rear_loft_window", "rear_master_window_lane",
+                     "rear_master_window_courtyard", "stair_half_landing", "stair_top_landing"):
         check(f"semantic element {required}", required in scene_names, "present as named 3D element")
     check("semantic element mezzanine_front_guard",
           any(name.startswith("mezzanine_front_guard_") for name in scene_names),
@@ -768,7 +825,7 @@ def export_ground_plan(spec, path):
     sx, sy = 58, 58
     ox, oy = 205, 190
     mx, mz = lambda x: ox + x * sx, lambda z: oy + z * sy
-    out = [svg_header("Ground floor — approved layout", "Valley glass at left · cobbled courtyard and entrance below · master/mezzanine at right", spec)]
+    out = [svg_header("Ground floor — coordinated layout", "Valley glass at left · cobbled courtyard and entrance below · master/mezzanine at right", spec)]
     # Site labels and dimensions.
     out.append(f'<text x="{mx(L/2):.1f}" y="170" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#9a472a">SHARED TRACTOR LANE</text>')
     out.append(f'<text x="{mx(L/2):.1f}" y="650" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#9a472a">COBBLED COURTYARD · SIDE ENTRANCE</text>')
@@ -805,6 +862,8 @@ def export_ground_plan(spec, path):
                 out.append(f'<path d="M{hx:.1f} {hy:.1f}v-{leaf:.1f}A{leaf:.1f} {leaf:.1f} 0 0 1 {hx-leaf:.1f} {hy:.1f}" fill="none" stroke="#a64d2d" stroke-width="3"/>')
         elif host == "valley_gable_x0":
             out.append(f'<line x1="{mx(0)}" x2="{mx(0)}" y1="{mz(T)}" y2="{mz(W-T)}" stroke="#315f9f" stroke-width="18"/>')
+        elif host == "rear_gable_xL" and opening["type"] == "window":
+            out.append(f'<line x1="{mx(L)}" x2="{mx(L)}" y1="{mz(opening["z"][0])}" y2="{mz(opening["z"][1])}" stroke="{color}" stroke-width="15"/>')
     # Interior wall lines with actual openings.
     wall = '#514c44'; wall_w = 5
     def line(x1, z1, x2, z2, stroke=wall, width=wall_w, dash=''):
@@ -978,9 +1037,24 @@ def export_camera_svg(scene, spec, camera, path):
 def write_handoff(spec, report):
     s = spec["stair"]
     gate = "open" if spec["approval"]["geometry_approved_for_photoreal"] else "blocked"
+    status = "geometry approved" if spec["approval"]["geometry_approved_for_photoreal"] else "geometry review pending"
+    approval_value = "true" if spec["approval"]["geometry_approved_for_photoreal"] else "false"
+    if spec["approval"]["geometry_approved_for_photoreal"]:
+        approval_note = (
+            f"The owner approved this geometry on {spec['approval']['approved_on']}. Future "
+            "structural changes must close the gate again until their regenerated model views "
+            "and plans are approved."
+        )
+    else:
+        previous = spec["approval"].get("supersedes_approved_revision", "the previous approved revision")
+        approval_note = (
+            f"Revision {spec['model_revision']} is awaiting owner approval; {previous} remains the "
+            "last approved photoreal authority. Do not generate revised photoreal concepts until "
+            "the regenerated model views and plans are approved."
+        )
     content = f"""# Model-first design handoff
 
-Status: **geometry approved; photoreal generation gate is {gate}**
+Status: **{status}; photoreal generation gate is {gate}**
 
 The owner's bird's-eye markup is the orientation authority:
 
@@ -1052,12 +1126,10 @@ For every future photoreal concept:
 The explicit gate is currently:
 
 ```json
-"geometry_approved_for_photoreal": true
+"geometry_approved_for_photoreal": {approval_value}
 ```
 
-The owner approved this geometry on {spec['approval']['approved_on']}. Future
-structural changes must close the gate again until their regenerated model views
-and plans are approved.
+{approval_note}
 """
     (ROOT / "HANDOFF.md").write_text(content, encoding="utf-8")
 

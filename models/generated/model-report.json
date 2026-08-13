@@ -1,8 +1,8 @@
 {
-  "model_revision": "07-photoreal-approved",
+  "model_revision": "08-rear-window-review",
   "source": "models/design.json",
   "status": "pass",
-  "photoreal_gate": "open",
+  "photoreal_gate": "blocked_pending_geometry_approval",
   "checks": [
     {
       "name": "external envelope",
@@ -43,6 +43,16 @@
       "name": "courtyard_zW opening bounds",
       "status": "pass",
       "detail": "3 non-overlapping openings inside wall"
+    },
+    {
+      "name": "rear master window pair",
+      "status": "pass",
+      "detail": "2 non-overlapping ground-floor windows below the loft opening"
+    },
+    {
+      "name": "rear windows flank master bed",
+      "status": "pass",
+      "detail": "window clear bands end/start at z=2.25/5.25 m; bed spans z=2.85..4.65 m"
     },
     {
       "name": "interior door hosts",
@@ -150,12 +160,32 @@
       "detail": "present as named 3D element"
     },
     {
+      "name": "semantic element front_left_black_surround",
+      "status": "pass",
+      "detail": "present as named 3D element"
+    },
+    {
+      "name": "semantic element front_right_black_surround",
+      "status": "pass",
+      "detail": "present as named 3D element"
+    },
+    {
       "name": "semantic element courtyard_entry",
       "status": "pass",
       "detail": "present as named 3D element"
     },
     {
       "name": "semantic element rear_loft_window",
+      "status": "pass",
+      "detail": "present as named 3D element"
+    },
+    {
+      "name": "semantic element rear_master_window_lane",
+      "status": "pass",
+      "detail": "present as named 3D element"
+    },
+    {
+      "name": "semantic element rear_master_window_courtyard",
       "status": "pass",
       "detail": "present as named 3D element"
     },
@@ -190,6 +220,6 @@
       "detail": "hinged, pocket and sliding door elements are present in the 3D model"
     }
   ],
-  "semantic_elements": 165,
-  "triangles": 1988
+  "semantic_elements": 181,
+  "triangles": 2180
 }

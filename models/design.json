@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "model_revision": "07-photoreal-approved",
-  "status": "geometry-approved",
+  "model_revision": "08-rear-window-review",
+  "status": "geometry-review",
   "units": "metres",
   "approval": {
-    "geometry_approved_for_photoreal": true,
-    "approved_on": "2026-08-13",
-    "note": "The owner approved the coordinated geometry; Rev 07 removes temporary orientation colour codes without changing dimensions or structure."
+    "geometry_approved_for_photoreal": false,
+    "supersedes_approved_revision": "07-photoreal-approved",
+    "note": "Rev 08 adds two ground-floor master-bedroom windows to the rear gable and replaces the valley-gable brick edge returns with a continuous black surround. Approval is pending review of the regenerated neutral geometry."
   },
   "axes": {
     "x": "0.0 = valley-facing full-glass gable; 17.0 = rear bedroom/mezzanine gable",
@@ -199,6 +199,22 @@
       "base_z": [0.9, 6.6],
       "apex_y": 4.75,
       "apex_z": 3.75
+    },
+    {
+      "id": "rear_master_window_lane",
+      "type": "window",
+      "host": "rear_gable_xL",
+      "role": "ground-floor master-bedroom rear window; no valley outlook",
+      "y": [0.85, 2.2],
+      "z": [0.85, 2.25]
+    },
+    {
+      "id": "rear_master_window_courtyard",
+      "type": "window",
+      "host": "rear_gable_xL",
+      "role": "ground-floor master-bedroom rear window; no valley outlook",
+      "y": [0.85, 2.2],
+      "z": [5.25, 6.65]
     }
   ],
   "interior_doors": [
@@ -294,7 +310,10 @@
     "tractor_lane": {"side": "z < 0", "must_remain_clear": true},
     "courtyard": {"side": "z > 7.5", "surface": "retained cobbles"},
     "valley": {"side": "x < 0"},
-    "road_and_private_gable": {"side": "x > 17.0"}
+    "rear_private_gable": {
+      "side": "x > 17.0",
+      "condition": "private road/courtyard side behind the closed master bedroom; there is no valley outlook behind the building"
+    }
   },
   "reference_cameras": [
     {
@@ -322,8 +341,16 @@
       "omit_categories": []
     },
     {
+      "id": "rear_courtyard_oblique",
+      "purpose": "Photo 4 coordination authority for the side entrance, retained courtyard, paired rear bedroom windows, and loft gable window",
+      "eye": [26.0, 3.8, 18.5],
+      "target": [14.3, 2.0, 6.4],
+      "focal": 690,
+      "omit_categories": []
+    },
+    {
       "id": "rear_mezzanine_gable",
-      "purpose": "rear master/mezzanine gable and true loft opening authority",
+      "purpose": "rear master/mezzanine gable authority: paired ground-floor bedroom windows, true loft opening, and no valley context",
       "eye": [29.0, 3.0, 3.75],
       "target": [17.0, 2.45, 3.75],
       "focal": 720,

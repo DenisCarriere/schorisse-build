@@ -1,6 +1,6 @@
 # Model-first design handoff
 
-Status: **geometry approved; photoreal generation gate is open**
+Status: **geometry review pending; photoreal generation gate is blocked**
 
 The owner's bird's-eye markup is the orientation authority:
 
@@ -72,9 +72,7 @@ For every future photoreal concept:
 The explicit gate is currently:
 
 ```json
-"geometry_approved_for_photoreal": true
+"geometry_approved_for_photoreal": false
 ```
 
-The owner approved this geometry on 2026-08-13. Future
-structural changes must close the gate again until their regenerated model views
-and plans are approved.
+Revision 08-rear-window-review is awaiting owner approval; 07-photoreal-approved remains the last approved photoreal authority. Do not generate revised photoreal concepts until the regenerated model views and plans are approved.
