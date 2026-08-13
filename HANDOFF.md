@@ -15,6 +15,16 @@ From a camera at the valley glass gable looking inward, the lane, kitchen and
 stair appear on the **left**; the courtyard and entrance appear on the
 **right**.
 
+The full-width courtyard photograph is the site-and-camera authority for the
+side entrance elevation:
+
+[`uploads/site-reference/photo-5-courtyard-full-width.jpg`](uploads/site-reference/photo-5-courtyard-full-width.jpg)
+
+Its complete 17 m wall, clipped hedge geometry, central cobbled approach,
+hydrangeas, mature tree trunks and canopy must be retained in that camera. Use
+[`models/generated/courtyard-full-width.svg`](models/generated/courtyard-full-width.svg)
+for the proposed window and entrance positions.
+
 ## Source of truth
 
 1. [`models/design.json`](models/design.json) — dimensions, axes, rooms,

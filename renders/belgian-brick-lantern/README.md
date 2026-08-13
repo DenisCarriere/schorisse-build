@@ -76,6 +76,25 @@ and rear.
 
 ## Exact prompts
 
+### Rev 09 full-width courtyard entrance study
+
+The owner's new full-width photograph was used as the site-and-camera truth,
+`models/generated/courtyard-full-width.svg` was the opening-position authority,
+the selected lane study supplied the brick language, and the earlier courtyard
+concept supplied only its black/oak entrance detail and blue-hour atmosphere.
+Generated with Codex's built-in ImageGen edit mode in two passes; the second
+pass made the single entrance completely readable beside the retained tree.
+
+> Use case: precise-object-edit
+> Asset type: final full-width courtyard side-entrance concept.
+> Image 1 is the EDIT TARGET. Image 2 is authoritative SITE TRUTH. Image 3 is the MODEL AUTHORITY.
+>
+> Make one targeted correction to Image 1: make the proposed side entrance exactly ONE single smoked-oak entrance door inside a deep matte-black rectangular portal and narrow timber-lined recess. The whole door leaf must be fully readable immediately LEFT of the large retained centre-right tree trunk, aligned with the existing central cobbled approach through the hedge opening. The retained tree may overlap only a tiny edge of the portal; it must not split or hide the door leaf. Use one vertical matte-black pull and one discreet warm soffit light. The entrance remains right of the building midpoint, consistent with Image 3.
+>
+> LOCK EVERYTHING ELSE from Image 1 exactly: same straight-on full-width 4:3 camera; entire 17.0 m long courtyard wall visible; same 7.5 m building width, 3.2 m eaves, 5.2 m ridge and black Belgian tile roof; same continuous modern Belgian brick with two restrained flush soldier-course bands; same deep black surrounds; exactly one living-room window left of the entrance and one master-bedroom window right of it; same blue-hour brightness, warm brick grazing lights and interior glow. Preserve every site element from Images 1 and 2: full cobbled forecourt, clipped hedge blocks and their gaps, hydrangeas, both mature tree trunks and complete overhead canopy, neighbouring structures and right-side gate. Do not crop or move the building.
+>
+> Avoid: double doors, a second door, door behind the tree, extra windows, missing windows, rear gable or triangular loft window in this long-wall elevation, canopy, porch, new paving, removed hedges, removed trees, grass-grid patio, people, vehicles, signage, text, logo or watermark. Premium believable Belgian architectural photography, not glossy CGI.
+
 ### Rev 09 restrained brick-pattern refinement
 
 > Use case: precise-object-edit. Asset type: architectural material refinement. Image 1 is the EDIT TARGET and controls all geometry, camera, lighting, site, landscape and openings. Image 2 is MATERIAL REFERENCE ONLY.

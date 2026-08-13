@@ -384,6 +384,14 @@
       "omit_categories": []
     },
     {
+      "id": "courtyard_full_width",
+      "purpose": "owner-supplied full-width courtyard camera: preserve the complete 17 m side-entrance elevation, central hedge opening, cobbled forecourt and mature tree canopy",
+      "eye": [8.5, 2.8, 20.5],
+      "target": [8.5, 1.75, 7.5],
+      "focal": 800,
+      "omit_categories": []
+    },
+    {
       "id": "rear_courtyard_oblique",
       "purpose": "Photo 4 coordination authority showing the full 17 m courtyard wall, side entrance, retained courtyard, paired rear bedroom windows, and loft gable window",
       "eye": [20.25, 3.6, 25.0],

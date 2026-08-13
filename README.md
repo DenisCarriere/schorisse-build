@@ -46,7 +46,7 @@ assets rather than gallery content.
 - `renders/solar-control/` — Options A–C studies and the selected Option C grass-grid patio concept.
 - `renders/concepts/` — broader material explorations.
 - `renders/web/` — responsive JPEG derivatives and editable SVG floor plans used by the gallery.
-- `uploads/site-reference/` — four original property photographs plus the
+- `uploads/site-reference/` — five original property photographs plus the
   owner-marked bird's-eye orientation record and retained-building brick-pattern
   reference.
 - `models/` — authoritative design JSON, semantic GLB, editable OBJ/MTL, STL,

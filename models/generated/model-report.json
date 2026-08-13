@@ -45,6 +45,11 @@
       "detail": "rear_loft_window host = rear_gable_xL"
     },
     {
+      "name": "full-width courtyard camera",
+      "status": "pass",
+      "detail": "centred straight-on camera preserves the complete 17 m courtyard elevation"
+    },
+    {
       "name": "tractor_lane_z0 opening bounds",
       "status": "pass",
       "detail": "4 non-overlapping openings inside wall"

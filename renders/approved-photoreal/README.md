@@ -63,6 +63,17 @@ black metal surround.
   hedge, grass tractor tracks, gate, neighbour-side privacy screen and mature
   trees remain in place.
 
+## Rev 09 full-width courtyard camera study
+
+- `../belgian-brick-lantern/rev09-courtyard-full-width-study.png` — the owner's
+  new straight-on courtyard photograph translated through the model-first
+  workflow. The complete 17 m long wall is visible with exactly one
+  living-room window left of the entrance, one smoked-oak entrance in a deep
+  black portal right of centre, and one master-bedroom window to its right.
+  The original cobbles, clipped hedge blocks, hydrangeas, mature tree trunks,
+  canopy and right-side gate are retained. This is a non-structural camera and
+  material study: Rev 09 solar/patio geometry remains separately under review.
+
 All Rev 08 views use black metal surrounds on every window, warm 2700 K interior
 and exterior lighting, black Belgian roof tiles, and the retained site
 landscaping.

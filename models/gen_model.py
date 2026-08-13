@@ -768,6 +768,18 @@ def validate(spec, scene):
           f"front_glass_gable host = {hosts.get('front_glass_gable')}")
     check("rear loft window host", hosts.get("rear_loft_window") == "rear_gable_xL",
           f"rear_loft_window host = {hosts.get('rear_loft_window')}")
+    cameras = {camera["id"]: camera for camera in spec["reference_cameras"]}
+    courtyard_camera = cameras.get("courtyard_full_width")
+    courtyard_camera_ok = bool(
+        courtyard_camera and
+        abs(courtyard_camera["eye"][0] - env["length"] / 2) < .001 and
+        abs(courtyard_camera["target"][0] - env["length"] / 2) < .001 and
+        courtyard_camera["eye"][2] > env["width"] and
+        courtyard_camera["target"][2] == env["width"] and
+        courtyard_camera["focal"] >= 750
+    )
+    check("full-width courtyard camera", courtyard_camera_ok,
+          "centred straight-on camera preserves the complete 17 m courtyard elevation")
     for host in ("tractor_lane_z0", "courtyard_zW"):
         ops = sorted((o for o in spec["exterior_openings"] if o["host"] == host), key=lambda o: o["x"][0])
         clear = all(ops[i]["x"][1] <= ops[i + 1]["x"][0] for i in range(len(ops) - 1))
@@ -1200,6 +1212,16 @@ The owner's bird's-eye markup is the orientation authority:
 From a camera at the valley glass gable looking inward, the lane, kitchen and
 stair appear on the **left**; the courtyard and entrance appear on the
 **right**.
+
+The full-width courtyard photograph is the site-and-camera authority for the
+side entrance elevation:
+
+[`uploads/site-reference/photo-5-courtyard-full-width.jpg`](uploads/site-reference/photo-5-courtyard-full-width.jpg)
+
+Its complete 17 m wall, clipped hedge geometry, central cobbled approach,
+hydrangeas, mature tree trunks and canopy must be retained in that camera. Use
+[`models/generated/courtyard-full-width.svg`](models/generated/courtyard-full-width.svg)
+for the proposed window and entrance positions.
 
 ## Source of truth
 
