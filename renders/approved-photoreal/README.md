@@ -47,8 +47,9 @@ matched property photograph governed all fixed site context.
   gable, continuous warm Belgian brick side walls, black ceramic roof tiles,
   thick ICF reveals, discreet warm exterior lights and a green lawn; retain the
   unobstructed valley view and all hedges, neighbouring buildings and terrain.
-- **Tractor lane:** retain the full shared grass lane and tractor clearance;
-  render the approved side-wall opening sequence, from valley to courtyard, as
+- **Tractor lane:** retain the full shared grass lane and tractor clearance.
+  Photo 1 is viewed from the pasture/valley end, so the near gable is the full
+  panoramic glass façade and the long-wall sequence recedes toward the gate as
   the wide kitchen window, tall stair window and two bedroom windows in thick
   black reveals, with no entrance on this elevation.
 - **Cobbled courtyard:** preserve the original cobbles, clipped hedges, mature
