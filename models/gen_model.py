@@ -791,6 +791,20 @@ def validate(spec, scene):
     )
     check("Photo 1 lane camera orientation", lane_camera_ok,
           "camera starts at the valley/pasture end: glass gable nearest, then kitchen, stair and bedroom pair toward the rear gate")
+    entry = next(opening for opening in spec["exterior_openings"]
+                 if opening["id"] == "courtyard_entry")
+    entry_camera = cameras.get("interior_from_valley_entry")
+    entry_camera_ok = bool(
+        entry["host"] == "courtyard_zW" and
+        entry["x"] == [10.7, 11.7] and
+        entry_camera and
+        entry_camera["eye"][2] < entry_camera["target"][2] < env["width"] and
+        "courtyard_wall_structure" not in entry_camera["omit_categories"] and
+        "viewer-right side wall" in entry_camera["purpose"] and
+        "never the transverse service wall" in entry_camera["purpose"]
+    )
+    check("interior courtyard-entry plane", entry_camera_ok,
+          "door remains in the receding z=7.5 m courtyard side wall at x=10.7..11.7 m; dedicated valley camera retains that wall")
     for host in ("tractor_lane_z0", "courtyard_zW"):
         ops = sorted((o for o in spec["exterior_openings"] if o["host"] == host), key=lambda o: o["x"][0])
         clear = all(ops[i]["x"][1] <= ops[i + 1]["x"][0] for i in range(len(ops) - 1))
@@ -1245,6 +1259,16 @@ window, tall stair window, then the two master-bedroom windows. The private
 mezzanine gable is at the far opposite end. Use
 [`models/generated/tractor-lane-photo1-oblique.svg`](models/generated/tractor-lane-photo1-oblique.svg)
 as the proposed geometry authority; never mirror this camera.
+
+For the rearward interior from the valley living hall, the entrance is not in
+the transverse service/master wall. It is hosted on the **courtyard side wall
+at z=7.5 m**, spanning x=10.7–11.7 m, and opens into the entry gallery. In the
+selected interior composition it must appear on the receding viewer-right wall,
+strongly foreshortened. Use
+[`models/generated/interior-from-valley-entry.svg`](models/generated/interior-from-valley-entry.svg)
+as the entrance-plane authority. A front-facing exterior door in the transverse
+wall is structurally incorrect; front-facing oak doors under the mezzanine are
+internal only.
 
 ## Source of truth
 

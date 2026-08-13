@@ -37,6 +37,16 @@ mezzanine gable is at the far opposite end. Use
 [`models/generated/tractor-lane-photo1-oblique.svg`](models/generated/tractor-lane-photo1-oblique.svg)
 as the proposed geometry authority; never mirror this camera.
 
+For the rearward interior from the valley living hall, the entrance is not in
+the transverse service/master wall. It is hosted on the **courtyard side wall
+at z=7.5 m**, spanning x=10.7–11.7 m, and opens into the entry gallery. In the
+selected interior composition it must appear on the receding viewer-right wall,
+strongly foreshortened. Use
+[`models/generated/interior-from-valley-entry.svg`](models/generated/interior-from-valley-entry.svg)
+as the entrance-plane authority. A front-facing exterior door in the transverse
+wall is structurally incorrect; front-facing oak doors under the mezzanine are
+internal only.
+
 ## Source of truth
 
 1. [`models/design.json`](models/design.json) — dimensions, axes, rooms,

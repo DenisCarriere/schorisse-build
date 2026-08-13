@@ -34,6 +34,29 @@ receive geometry approval before new images are made.
 
 The corresponding optimized website JPEGs are under `../web/`.
 
+## Rev 09 corrected interior entrance
+
+- `rev09-interior-entry-corrected.png` — selected replacement for the earlier
+  stair/mezzanine interior. From the valley-glass camera, the exterior courtyard
+  entrance is the narrow foreshortened opening in the receding viewer-right
+  longitudinal wall at model x=10.7–11.7 m on `courtyard_zW`. The broad
+  front-facing oak door under the mezzanine is an internal master/service door,
+  not the exterior entrance. The earlier `rev07-interior-stair-mezzanine.png`
+  is superseded because it presented the exterior door in the wrong wall plane.
+
+### Exact correction prompt
+
+Generated with Codex's built-in ImageGen precise-object-edit mode. Image 1 was
+the previous photoreal edit target, Image 2 was the generated ground-floor plan,
+and Image 3 was the dedicated `interior-from-valley-entry.svg` door-plane model
+authority.
+
+> Use case: precise-object-edit. Asset type: corrected website photoreal — interior dog-leg stair, mezzanine and courtyard entry. Image 1 is the edit target. Image 2 is the absolute ground-floor plan authority: valley glass at left, camera looking toward the bedroom/mezzanine end, shared lane at the upper plan edge and cobbled courtyard at the lower plan edge. `courtyard_entry` is on the lower long courtyard side wall at x=10.7–11.7 m, opening into the entry gallery; it is not in the transverse service/master wall facing the camera. Image 3 is the corrected model camera/door-plane authority.
+>
+> Remove the open exterior door incorrectly drawn front-on in a wall perpendicular to the camera and close that false exterior opening with pale mineral plaster. Preserve legitimate internal service/master doors. Create exactly one exterior courtyard entrance in the receding image-right long side wall under the mezzanine at the entry-gallery/service transition. The doorway must be strongly foreshortened and aligned with the right longitudinal wall, with one smoked-oak inward-swinging door in a deep matte-black reveal. Show only a narrow sideways slice of retained cobbles and hedge through it. Keep the entry mat, flush threshold and coat storage immediately inside.
+>
+> Lock the valley-glass camera, kitchen and dog-leg stair on viewer left, courtyard side on viewer right, service/master partitions, open rear mezzanine, rear triangular loft glass, furniture, materials and lighting. Reject a front-facing exterior door, a lane-side door, two exterior doors, changed stair/mezzanine, removed internal doors, added windows, people, text or watermark.
+
 ## Rev 08 night exteriors
 
 The owner approved the Rev 08 neutral model on 2026-08-13. This revision keeps
