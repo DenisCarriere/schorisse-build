@@ -1,6 +1,6 @@
 # Model-first design handoff
 
-Status: **geometry approved; photoreal generation gate is open**
+Status: **geometry review pending; photoreal generation gate is blocked**
 
 The owner's bird's-eye markup is the orientation authority:
 
@@ -55,6 +55,15 @@ guards, fire strategy, structure and all wall build-ups.
 Any future plan or render showing a second toilet conflicts with
 `models/design.json` and must be corrected.
 
+## Selected solar-control development
+
+Option C from [`models/solar-control-options.json`](models/solar-control-options.json)
+is integrated in the Rev 09 review model: a 1.25 m valley roof visor, nine
+operable fins confined above the 3.0 m transom, clear ground-floor glazing and a
+compact permeable patio with exactly two chairs and one coffee table. Rev 08
+remains the last approved baseline; the photoreal gate remains closed until the
+Rev 09 fixed-camera geometry is reviewed and approved.
+
 ## Rendering gate
 
 For every future photoreal concept:
@@ -72,7 +81,7 @@ For every future photoreal concept:
 The explicit gate is currently:
 
 ```json
-"geometry_approved_for_photoreal": true
+"geometry_approved_for_photoreal": false
 ```
 
-The owner approved this geometry on 2026-08-13. Future structural changes must close the gate again until their regenerated model views and plans are approved.
+Revision 09-solar-c-patio-review is awaiting owner approval; 08-photoreal-approved remains the last approved photoreal authority. Do not generate revised photoreal concepts until the regenerated model views and plans are approved.

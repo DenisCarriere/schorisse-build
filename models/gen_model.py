@@ -9,6 +9,7 @@ views, and a validation report. Units are metres.
 from __future__ import annotations
 
 import argparse
+import copy
 import html
 import json
 import math
@@ -407,6 +408,96 @@ def add_roof(scene, spec):
     scene.prism_x("roof_courtyard_slope", "roof", courtyard, -goh, L + goh, "roof")
 
 
+def add_valley_solar_control(scene, spec, option):
+    """Add one reversible solar-control study outside the approved x=0 gable.
+
+    Every study stays at or above the 3.0 m glass transom so the complete
+    ground-floor vision zone remains glazed and unobstructed.
+    """
+    env = spec["envelope"]
+    W, H, R = env["width"], env["eaves_height"], env["ridge_height"]
+    side_overhang = env["eaves_overhang"]
+    base_gable_overhang = env["gable_overhang"]
+    roof_t = env["roof_build_up"]
+    projection = option["valley_roof_projection"]
+    slope = (R - H) / (W / 2)
+    z0 = -side_overhang
+    low_y = H + slope * z0
+    lane_profile = [(z0, low_y), (W / 2, R), (W / 2, R + roof_t), (z0, low_y + roof_t)]
+    courtyard_profile = [(W - z, y) for z, y in lane_profile]
+    courtyard_profile.reverse()
+    scene.prism_x(f"{option['id']}_roof_lane_extension", "roof", lane_profile,
+                  -projection, -base_gable_overhang, "solar_roof_extension",
+                  option=option["id"])
+    scene.prism_x(f"{option['id']}_roof_courtyard_extension", "roof", courtyard_profile,
+                  -projection, -base_gable_overhang, "solar_roof_extension",
+                  option=option["id"])
+
+    if option["strategy"] == "horizontal_brise_soleil":
+        y = option["canopy_height"]
+        outer_x = -option["canopy_projection"]
+        inner_x = -.08
+        blade_count = option["canopy_blades"]
+        step = (inner_x - outer_x) / (blade_count - 1)
+        for index in range(blade_count):
+            center_x = outer_x + index * step
+            scene.box(f"{option['id']}_blade_{index + 1:02d}", "frame",
+                      center_x - .055, center_x + .055, y - .045, y + .045,
+                      .28, W - .28, "solar_control", option=option["id"])
+        for z, suffix in ((.28, "lane"), (W - .28, "courtyard")):
+            scene.box(f"{option['id']}_{suffix}_edge_beam", "frame",
+                      outer_x - .04, inner_x + .04, y - .06, y + .06,
+                      z - .045, z + .045, "solar_control", option=option["id"])
+
+    elif option["strategy"] == "upper_gable_fins":
+        count = option["fin_count"]
+        start_z, end_z = .55, W - .55
+        for index in range(count):
+            z = start_z + index * (end_z - start_z) / (count - 1)
+            roof_y = H + (R - H) * (1 - abs(z - W / 2) / (W / 2))
+            bottom_y, top_y = 3.06, roof_y - .14
+            if top_y <= bottom_y:
+                continue
+            scene.box(f"{option['id']}_fin_{index + 1:02d}", "frame",
+                      -option["fin_projection"], -.055, bottom_y, top_y,
+                      z - .035, z + .035, "solar_control", option=option["id"],
+                      operation="conceptual operable vertical fin")
+
+
+def add_valley_patio(scene, spec):
+    patio = spec.get("site_context", {}).get("valley_patio")
+    if not patio:
+        return
+    x0, x1 = patio["x"]
+    z0, z1 = patio["z"]
+    scene.box("valley_permeable_patio", "cobble", x0, x1, -.025, -.005,
+              z0, z1, "site", permeability="water-permeable", surface=patio["surface"])
+    # Two compact lounge chairs face the valley (negative x); their backs stay
+    # closest to the glass. A low table sits between them without blocking the
+    # central door or the courtyard-side passage.
+    chair_z = ((2.25, 3.05), (4.45, 5.25))
+    for index, (cz0, cz1) in enumerate(chair_z, 1):
+        scene.box(f"valley_chair_{index}_seat", "frame", -2.35, -1.75,
+                  .34, .43, cz0, cz1, "site", furniture="compact outdoor chair")
+        scene.box(f"valley_chair_{index}_back", "frame", -1.82, -1.72,
+                  .40, .92, cz0, cz1, "site", furniture="compact outdoor chair")
+    scene.box("valley_coffee_table_top", "oak", -2.55, -1.85, .38, .44,
+              3.45, 4.05, "site", furniture="small outdoor coffee table")
+    for x in (-2.48, -1.92):
+        for z in (3.52, 3.98):
+            scene.box("valley_coffee_table_leg", "frame", x, x + .035,
+                      0, .38, z, z + .035, "site", furniture="table leg")
+
+
+def build_solar_option_scene(spec, option):
+    baseline_spec = copy.deepcopy(spec)
+    baseline_spec.pop("valley_solar_control", None)
+    baseline_spec.get("site_context", {}).pop("valley_patio", None)
+    scene = build_scene(baseline_spec)
+    add_valley_solar_control(scene, spec, option)
+    return scene
+
+
 def add_furniture(scene, spec):
     for item in spec["furniture_and_fixtures"]:
         x0, x1 = item["x"]
@@ -491,6 +582,9 @@ def build_scene(spec):
     add_furniture(scene, spec)
     add_internal_doors(scene, spec)
     add_roof(scene, spec)
+    if spec.get("valley_solar_control"):
+        add_valley_solar_control(scene, spec, spec["valley_solar_control"])
+    add_valley_patio(scene, spec)
     return scene
 
 
@@ -632,6 +726,34 @@ def validate(spec, scene):
           f"x={shell_bounds[0][0]:.2f}..{shell_bounds[0][1]:.2f}; "
           f"y={shell_bounds[1][0]:.2f}..{shell_bounds[1][1]:.2f}; "
           f"z={shell_bounds[2][0]:.2f}..{shell_bounds[2][1]:.2f} m")
+    solar = spec.get("valley_solar_control")
+    if solar:
+        solar_elements = [element for element in scene.elements
+                          if element["category"] == "solar_control"]
+        roof_extensions = [element for element in scene.elements
+                           if element["category"] == "solar_roof_extension"]
+        min_solar_y = min(point[1] for element in solar_elements
+                          for triangle in element["triangles"] for point in triangle)
+        fin_count = len([element for element in solar_elements
+                         if element["name"].startswith(f"{solar['id']}_fin_")])
+        solar_ok = (solar["strategy"] == "upper_gable_fins" and
+                    fin_count == solar["fin_count"] and
+                    min_solar_y + .001 >= solar["minimum_clear_shading_height"] and
+                    len(roof_extensions) == 2)
+        check("selected valley solar control", solar_ok,
+              f"{fin_count} operable upper fins; fixed shading clear below "
+              f"{min_solar_y:.2f} m; {solar['valley_roof_projection']:.2f} m roof visor")
+    patio = spec.get("site_context", {}).get("valley_patio")
+    if patio:
+        x0, x1 = patio["x"]
+        z0, z1 = patio["z"]
+        patio_ok = (x1 < 0 and x0 < x1 and 0 <= z0 < z1 <= env["width"] and
+                    any(element["name"] == "valley_permeable_patio" for element in scene.elements) and
+                    len([element for element in scene.elements
+                         if element["name"].endswith("_seat") and element["name"].startswith("valley_chair_")]) == 2 and
+                    any(element["name"] == "valley_coffee_table_top" for element in scene.elements))
+        check("permeable valley patio", patio_ok,
+              f"x={x0:.2f}..{x1:.2f}; z={z0:.2f}..{z1:.2f} m; two chairs and one coffee table")
     hosts = {opening["id"]: opening["host"] for opening in spec["exterior_openings"]}
     check("courtyard entry host", hosts.get("courtyard_entry") == "courtyard_zW",
           f"courtyard_entry host = {hosts.get('courtyard_entry')}")
@@ -1111,6 +1233,15 @@ guards, fire strategy, structure and all wall build-ups.
 Any future plan or render showing a second toilet conflicts with
 `models/design.json` and must be corrected.
 
+## Selected solar-control development
+
+Option C from [`models/solar-control-options.json`](models/solar-control-options.json)
+is integrated in the Rev 09 review model: a 1.25 m valley roof visor, nine
+operable fins confined above the 3.0 m transom, clear ground-floor glazing and a
+compact permeable patio with exactly two chairs and one coffee table. Rev 08
+remains the last approved baseline; the photoreal gate remains closed until the
+Rev 09 fixed-camera geometry is reviewed and approved.
+
 ## Rendering gate
 
 For every future photoreal concept:
@@ -1207,10 +1338,15 @@ def main():
                 print(f"FAIL: {item['name']}: {item['detail']}")
         raise SystemExit(1)
 
+    solar_study = load_spec(MODEL_DIR / "solar-control-options.json")
+    solar_camera = solar_study["camera"]
+    solar_targets = [GEN_DIR / f"solar-{option['id'].replace('_', '-')}.svg"
+                     for option in solar_study["options"]]
     targets = [
         MODEL_DIR / "barn.glb", MODEL_DIR / "barn.obj", MODEL_DIR / "barn.mtl", MODEL_DIR / "barn.stl",
         WEB_DIR / "plan-ground-floor.svg", WEB_DIR / "plan-mezzanine.svg",
         *[GEN_DIR / f"{camera['id'].replace('_', '-')}.svg" for camera in spec["reference_cameras"]],
+        *solar_targets,
         GEN_DIR / "model-report.json", ROOT / "HANDOFF.md", ROOT / "docs" / "MODEL-FIRST-WORKFLOW.md",
     ]
     before = {path: path.read_bytes() if path.exists() else None for path in targets}
@@ -1221,6 +1357,21 @@ def main():
     export_mezzanine_plan(spec, WEB_DIR / "plan-mezzanine.svg")
     for camera in spec["reference_cameras"]:
         export_camera_svg(scene, spec, camera, GEN_DIR / f"{camera['id'].replace('_', '-')}.svg")
+    minimum_clear_height = solar_study["shared_constraints"]["minimum_clear_shading_height"]
+    for option, target_path in zip(solar_study["options"], solar_targets):
+        option_scene = build_solar_option_scene(spec, option)
+        option_elements = [element for element in option_scene.elements
+                           if element["category"] == "solar_control"]
+        if option_elements:
+            min_option_y = min(point[1] for element in option_elements
+                               for triangle in element["triangles"] for point in triangle)
+            if min_option_y + .001 < minimum_clear_height:
+                raise SystemExit(f"FAIL: {option['id']} shades below the {minimum_clear_height:.2f} m clear ground-glass zone")
+        camera = dict(solar_camera)
+        camera["id"] = f"solar_{option['id']}"
+        camera["purpose"] = (f"UNAPPROVED STRUCTURAL STUDY · {option['name']} · "
+                             f"ground-floor glass clear below {minimum_clear_height:.2f} m")
+        export_camera_svg(option_scene, spec, camera, target_path)
     (GEN_DIR / "model-report.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     write_handoff(spec, report)
     write_workflow_doc(spec)

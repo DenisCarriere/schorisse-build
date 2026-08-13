@@ -1,8 +1,8 @@
 {
-  "model_revision": "08-photoreal-approved",
+  "model_revision": "09-solar-c-patio-review",
   "source": "models/design.json",
   "status": "pass",
-  "photoreal_gate": "open",
+  "photoreal_gate": "blocked_pending_geometry_approval",
   "checks": [
     {
       "name": "external envelope",
@@ -18,6 +18,16 @@
       "name": "modeled shell bounds",
       "status": "pass",
       "detail": "x=0.00..17.00; y=0.00..5.20; z=0.00..7.50 m"
+    },
+    {
+      "name": "selected valley solar control",
+      "status": "pass",
+      "detail": "9 operable upper fins; fixed shading clear below 3.06 m; 1.25 m roof visor"
+    },
+    {
+      "name": "permeable valley patio",
+      "status": "pass",
+      "detail": "x=-3.40..-0.30; z=1.85..5.65 m; two chairs and one coffee table"
     },
     {
       "name": "courtyard entry host",
@@ -220,6 +230,6 @@
       "detail": "hinged, pocket and sliding door elements are present in the 3D model"
     }
   ],
-  "semantic_elements": 181,
-  "triangles": 2180
+  "semantic_elements": 202,
+  "triangles": 2432
 }

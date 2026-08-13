@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "model_revision": "08-photoreal-approved",
-  "status": "geometry-approved",
+  "model_revision": "09-solar-c-patio-review",
+  "status": "geometry-review-pending",
   "units": "metres",
   "approval": {
-    "geometry_approved_for_photoreal": true,
-    "approved_on": "2026-08-13",
-    "supersedes_approved_revision": "07-photoreal-approved",
-    "note": "The owner approved Rev 08 neutral geometry: two ground-floor master-bedroom windows on the rear gable, the retained loft gable window, and a continuous black surround at the valley glass."
+    "geometry_approved_for_photoreal": false,
+    "approved_on": null,
+    "supersedes_approved_revision": "08-photoreal-approved",
+    "note": "The owner selected Solar Option C for development. Rev 09 adds a 1.25 m valley roof visor, nine operable fins confined above the 3.0 m transom, and a compact permeable valley patio with two chairs and a coffee table. Rev 08 remains the last approved photoreal authority until this geometry is reviewed."
   },
   "axes": {
     "x": "0.0 = valley-facing full-glass gable; 17.0 = rear bedroom/mezzanine gable",
@@ -30,6 +30,19 @@
     "roof_build_up": 0.18,
     "eaves_overhang": 0.45,
     "gable_overhang": 0.18
+  },
+  "valley_solar_control": {
+    "id": "selected_upper_gable_veil",
+    "name": "Selected Option C - upper-gable veil",
+    "status": "selected-pending-geometry-approval",
+    "strategy": "upper_gable_fins",
+    "valley_roof_projection": 1.25,
+    "fin_projection": 0.42,
+    "fin_count": 9,
+    "minimum_clear_shading_height": 3.0,
+    "operation": "motorised fins with temperature, irradiance and wind-safe control; manual override required",
+    "ground_floor_glass": "continuous and permanently unobstructed by fixed elements below the 3.0 m transom",
+    "reserve_low_sun_strategy": "concealed retractable exterior screen aligned with glazing mullions, subject to PHPP/designPH and thermal-bridge review"
   },
   "levels": {
     "ground_floor": 0.0,
@@ -311,6 +324,13 @@
     "tractor_lane": {"side": "z < 0", "must_remain_clear": true},
     "courtyard": {"side": "z > 7.5", "surface": "retained cobbles"},
     "valley": {"side": "x < 0"},
+    "valley_patio": {
+      "surface": "water-permeable open-jointed pavers or compacted local gravel",
+      "x": [-3.4, -0.3],
+      "z": [1.85, 5.65],
+      "furniture": "two compact outdoor lounge chairs facing the valley with one small coffee table",
+      "constraints": "no solid slab; keep hedge edges and the courtyard-side passage clear"
+    },
     "rear_private_gable": {
       "side": "x > 17.0",
       "condition": "private road/courtyard side behind the closed master bedroom; there is no valley outlook behind the building"
@@ -323,6 +343,14 @@
       "eye": [-14.0, 3.0, 3.75],
       "target": [0.0, 2.35, 3.75],
       "focal": 720,
+      "omit_categories": []
+    },
+    {
+      "id": "valley_solar_selected",
+      "purpose": "Rev 09 geometry review: selected upper-gable fins, 1.25 m roof visor, clear ground-floor glass and compact permeable patio",
+      "eye": [-13.0, 2.2, 12.5],
+      "target": [4.0, 2.5, 3.75],
+      "focal": 610,
       "omit_categories": []
     },
     {
