@@ -1,25 +1,25 @@
 # Belgian Brick Lantern — selected exterior direction
 
-Status: **material and atmosphere record; geometry superseded by Revision 05**
+Status: **material and atmosphere record; geometry superseded by approved Revision 07**
 
-## Revision 05 model-first gate
+## Approved model-first geometry
 
 The owner's marked bird's-eye view supersedes all earlier attempts to infer the
 plan orientation from ground photographs. `models/design.json` is now the only
 geometry authority:
 
-- blue valley glass gable at x=0;
-- yellow master-bedroom/mezzanine gable at x=17;
+- valley glass gable at x=0;
+- rear master-bedroom/mezzanine gable at x=17;
 - shared tractor lane at z=0;
-- cobbled courtyard and green entrance at z=7.5;
-- from the blue glass looking inward, lane/kitchen/stair are image-left and the
+- cobbled courtyard and entrance at z=7.5;
+- from the valley glass looking inward, lane/kitchen/stair are image-left and the
   courtyard/entrance are image-right.
 
 Every existing PNG in this folder predates the approved parametric model. It may
 still guide Belgian brick, black frames, oak, lighting and atmosphere, but it
 must not guide walls, openings, rooms, stair, mezzanine, camera translation or
-perspective. No new photoreal image should be generated while
-`geometry_approved_for_photoreal` is false in `models/design.json`.
+perspective. The owner approved the coordinated geometry on 2026-08-13 and
+`geometry_approved_for_photoreal` is now true in `models/design.json`.
 
 See [`../../docs/MODEL-FIRST-WORKFLOW.md`](../../docs/MODEL-FIRST-WORKFLOW.md).
 

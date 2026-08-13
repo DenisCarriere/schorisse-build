@@ -597,11 +597,11 @@ def validate(spec, scene):
           f"y={shell_bounds[1][0]:.2f}..{shell_bounds[1][1]:.2f}; "
           f"z={shell_bounds[2][0]:.2f}..{shell_bounds[2][1]:.2f} m")
     hosts = {opening["id"]: opening["host"] for opening in spec["exterior_openings"]}
-    check("birdseye green entry host", hosts.get("courtyard_entry") == "courtyard_zW",
+    check("courtyard entry host", hosts.get("courtyard_entry") == "courtyard_zW",
           f"courtyard_entry host = {hosts.get('courtyard_entry')}")
-    check("blue glass gable host", hosts.get("front_glass_gable") == "valley_gable_x0",
+    check("valley glass gable host", hosts.get("front_glass_gable") == "valley_gable_x0",
           f"front_glass_gable host = {hosts.get('front_glass_gable')}")
-    check("yellow rear loft host", hosts.get("rear_loft_window") == "rear_gable_xL",
+    check("rear loft window host", hosts.get("rear_loft_window") == "rear_gable_xL",
           f"rear_loft_window host = {hosts.get('rear_loft_window')}")
     for host in ("tractor_lane_z0", "courtyard_zW"):
         ops = sorted((o for o in spec["exterior_openings"] if o["host"] == host), key=lambda o: o["x"][0])
@@ -768,12 +768,12 @@ def export_ground_plan(spec, path):
     sx, sy = 58, 58
     ox, oy = 205, 190
     mx, mz = lambda x: ox + x * sx, lambda z: oy + z * sy
-    out = [svg_header("Ground floor — site orientation fixed", "Blue valley glass at left · green courtyard entrance below · yellow master/mezzanine at right", spec)]
+    out = [svg_header("Ground floor — approved layout", "Valley glass at left · cobbled courtyard and entrance below · master/mezzanine at right", spec)]
     # Site labels and dimensions.
-    out.append(f'<text x="{mx(L/2):.1f}" y="170" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#9a472a">SHARED TRACTOR LANE · UPPER RED WALL</text>')
-    out.append(f'<text x="{mx(L/2):.1f}" y="650" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#9a472a">COBBLED COURTYARD · LOWER RED WALL · GREEN ENTRY</text>')
-    out.append(f'<text x="{mx(0)-15:.1f}" y="160" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#315f9f">BLUE · VALLEY GLASS</text>')
-    out.append(f'<text x="{mx(L)+5:.1f}" y="160" text-anchor="end" font-family="Arial" font-size="11" font-weight="700" fill="#a7861b">YELLOW · BEDROOM / MEZZANINE</text>')
+    out.append(f'<text x="{mx(L/2):.1f}" y="170" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#9a472a">SHARED TRACTOR LANE</text>')
+    out.append(f'<text x="{mx(L/2):.1f}" y="650" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#9a472a">COBBLED COURTYARD · SIDE ENTRANCE</text>')
+    out.append(f'<text x="{mx(0)-15:.1f}" y="160" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#4f4a43">VALLEY GLASS</text>')
+    out.append(f'<text x="{mx(L)+5:.1f}" y="160" text-anchor="end" font-family="Arial" font-size="11" font-weight="700" fill="#4f4a43">BEDROOM / MEZZANINE GABLE</text>')
     # Shell and floors.
     out.append(f'<rect x="{mx(0)}" y="{mz(0)}" width="{L*sx}" height="{W*sy}" fill="#211f1b"/>')
     colors = {"open_living": "#e2e7de", "service_core": "#dedbd2", "master_bedroom": "#e8ded1"}
@@ -798,8 +798,7 @@ def export_ground_plan(spec, path):
         if host == "tractor_lane_z0":
             out.append(f'<line x1="{mx(opening["x"][0])}" x2="{mx(opening["x"][1])}" y1="{mz(0)}" y2="{mz(0)}" stroke="{color}" stroke-width="15"/>')
         elif host == "courtyard_zW":
-            col = "#31a24c" if opening["type"] == "door" else color
-            out.append(f'<line x1="{mx(opening["x"][0])}" x2="{mx(opening["x"][1])}" y1="{mz(W)}" y2="{mz(W)}" stroke="{col}" stroke-width="15"/>')
+            out.append(f'<line x1="{mx(opening["x"][0])}" x2="{mx(opening["x"][1])}" y1="{mz(W)}" y2="{mz(W)}" stroke="{color}" stroke-width="15"/>')
             if opening["type"] == "door":
                 hx, hy = mx(opening["x"][1]), mz(W - T)
                 leaf = (opening["x"][1] - opening["x"][0]) * sx
@@ -885,10 +884,10 @@ def export_ground_plan(spec, path):
         cy = mz(z0) + 12 if room["id"] != "entry_gallery" else mz(z1) - 22
         out.append(f'<text x="{cx:.1f}" y="{cy:.1f}" text-anchor="middle" font-family="Arial" font-size="7.2" font-weight="700" fill="#4f4a43">{html.escape(label)}</text>')
     entry = next(o for o in spec["exterior_openings"] if o["id"] == "courtyard_entry")
-    out.append(f'<text x="{mx(sum(entry["x"])/2):.1f}" y="{mz(W)+18:.1f}" text-anchor="middle" font-family="Arial" font-size="10" font-weight="700" fill="#24913d">GREEN ENTRY</text>')
+    out.append(f'<text x="{mx(sum(entry["x"])/2):.1f}" y="{mz(W)+18:.1f}" text-anchor="middle" font-family="Arial" font-size="10" font-weight="700" fill="#4f4a43">SIDE ENTRANCE</text>')
     out.append(f'<text x="70" y="730" font-family="Arial" font-size="13" fill="#4f4a43">17.0 × 7.5 m external · 420 mm placeholder ICF/insulation/cavity/brick build-up</text>')
     out.append(f'<text x="70" y="754" font-family="Arial" font-size="13" fill="#4f4a43">All rooms, openings, furniture and stair geometry are generated from models/design.json.</text>')
-    out.append(f'<rect x="740" y="700" width="590" height="82" rx="8" fill="#211f1b"/><text x="762" y="729" font-family="Arial" font-size="11" font-weight="700" fill="#fff">CAMERA AT BLUE GLASS LOOKING INWARD</text><text x="762" y="757" font-family="Arial" font-size="13" fill="#fff">Viewer left: lane + kitchen + stair</text><text x="1052" y="757" font-family="Arial" font-size="13" fill="#fff">Viewer right: courtyard + green entry</text>')
+    out.append(f'<rect x="740" y="700" width="590" height="82" rx="8" fill="#211f1b"/><text x="762" y="729" font-family="Arial" font-size="11" font-weight="700" fill="#fff">CAMERA AT VALLEY GLASS LOOKING INWARD</text><text x="762" y="757" font-family="Arial" font-size="13" fill="#fff">Viewer left: lane + kitchen + stair</text><text x="1052" y="757" font-family="Arial" font-size="13" fill="#fff">Viewer right: courtyard + entrance</text>')
     out.append('<text x="70" y="825" font-family="Arial" font-size="12" fill="#686158">Geometry-review model only. Measured survey, architect, engineer, fire and code review remain required.</text></svg>')
     path.write_text("\n".join(out), encoding="utf-8")
 
@@ -899,7 +898,7 @@ def export_mezzanine_plan(spec, path):
     sx, sy, ox, oy = 58, 58, 205, 190
     mx, mz = lambda x: ox + x * sx, lambda z: oy + z * sy
     m, s = spec["mezzanine"], spec["stair"]
-    out = [svg_header("Upper mezzanine — stair and void coordinated", "One open room over the yellow rear zone · no plumbing · blue valley living remains double-height", spec)]
+    out = [svg_header("Upper mezzanine — stair and void coordinated", "One open room over the rear zone · no plumbing · valley living remains double-height", spec)]
     out.append(f'<rect x="{mx(0)}" y="{mz(0)}" width="{L*sx}" height="{W*sy}" fill="#211f1b"/>')
     out.append(f'<rect x="{mx(m["x"][0])}" y="{mz(m["z"][0])}" width="{(m["x"][1]-m["x"][0])*sx}" height="{(m["z"][1]-m["z"][0])*sy}" fill="#eee6d8"/>')
     out.append(f'<rect x="{mx(.42)}" y="{mz(.42)}" width="{(m["x"][0]-.42)*sx}" height="{(W-.84)*sy}" fill="#e2e7de" stroke="#9b968d" stroke-width="3" stroke-dasharray="12 10"/>')
@@ -923,7 +922,7 @@ def export_mezzanine_plan(spec, path):
     out.append(f'<text x="{mx(14.2)}" y="{mz(4.05)}" text-anchor="middle" font-family="Arial" font-size="13" fill="#686158">library · lounge · project space · no plumbing</text>')
     out.append(f'<text x="{mx(sx1)+12:.1f}" y="{mz(top1)+3:.1f}" font-family="Arial" font-size="9" font-weight="700" fill="#9a472a">PROTECTED TOP LANDING</text>')
     out.append(f'<text x="{mx(L/2)}" y="170" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#9a472a">SHARED TRACTOR LANE · TALL STAIR WINDOW AT HALF-LANDING</text>')
-    out.append(f'<text x="{mx(L/2)}" y="650" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#9a472a">COURTYARD · GREEN ENTRY BELOW</text>')
+    out.append(f'<text x="{mx(L/2)}" y="650" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#9a472a">COURTYARD · SIDE ENTRANCE BELOW</text>')
     out.append(f'<text x="70" y="760" font-family="Arial" font-size="13" fill="#4f4a43">Mezzanine x={m["x"][0]:.2f}..{m["x"][1]:.2f} m · floor +{spec["levels"]["mezzanine_finished_floor"]:.2f} m · exact stair opening stacks with ground floor</text>')
     out.append(f'<text x="70" y="790" font-family="Arial" font-size="13" fill="#4f4a43">Dog-leg stair: {s["lower_risers"]} lower + {s["upper_risers"]} upper risers · {s["riser"]*1000:.0f} mm rise · {s["going"]*1000:.0f} mm going · 2R+G={(2*s["riser"]+s["going"])*1000:.0f} mm</text>')
     out.append('<text x="70" y="825" font-family="Arial" font-size="12" fill="#686158">Headroom bands require a measured roof section; model checks only the assumed lane landing condition.</text></svg>')
@@ -978,22 +977,22 @@ def export_camera_svg(scene, spec, camera, path):
 
 def write_handoff(spec, report):
     s = spec["stair"]
+    gate = "open" if spec["approval"]["geometry_approved_for_photoreal"] else "blocked"
     content = f"""# Model-first design handoff
 
-Status: **geometry review; photoreal generation is blocked**
+Status: **geometry approved; photoreal generation gate is {gate}**
 
 The owner's bird's-eye markup is the orientation authority:
 
 [`uploads/site-reference/birdseye-orientation-markup.png`](uploads/site-reference/birdseye-orientation-markup.png)
 
-- **blue / x=0:** valley-facing full glass gable and double-height living room;
-- **yellow / x=17:** ground-floor master bedroom with open mezzanine above;
-- **upper red / z=0:** shared tractor-lane wall;
-- **lower red / z=7.5:** cobbled courtyard wall;
-- **green:** courtyard entrance near the rear/service transition.
+- **x=0:** valley-facing full glass gable and double-height living room;
+- **x=17:** ground-floor master bedroom with open mezzanine above;
+- **z=0:** shared tractor-lane wall;
+- **z=7.5:** cobbled courtyard wall with the entrance near the rear/service transition.
 
-From a camera at the blue glass gable looking inward, the lane, kitchen and
-stair appear on the **left**; the courtyard and green entrance appear on the
+From a camera at the valley glass gable looking inward, the lane, kitchen and
+stair appear on the **left**; the courtyard and entrance appear on the
 **right**.
 
 ## Source of truth
@@ -1053,10 +1052,12 @@ For every future photoreal concept:
 The explicit gate is currently:
 
 ```json
-"geometry_approved_for_photoreal": false
+"geometry_approved_for_photoreal": true
 ```
 
-Set it to `true` only after the model views and plans are accepted.
+The owner approved this geometry on {spec['approval']['approved_on']}. Future
+structural changes must close the gate again until their regenerated model views
+and plans are approved.
 """
     (ROOT / "HANDOFF.md").write_text(content, encoding="utf-8")
 
@@ -1085,7 +1086,8 @@ images are presentation outputs, never a place to invent or correct structure.
 4. Review `models/generated/birdseye-orientation.svg`,
    both generated interior directions (`interior-from-valley.svg` and
    `interior-toward-valley.svg`), both generated plans, and the GLB/OBJ model.
-5. Obtain geometry approval and set `geometry_approved_for_photoreal` to true.
+5. Confirm that `geometry_approved_for_photoreal` is true. Any structural edit
+   must set it back to false until the regenerated geometry is approved.
 6. For the selected camera, supply the generated model view plus relevant site
    photograph(s) to ImageGen. State explicitly that geometry is locked.
 7. Compare the result to the model: reject any changed opening, stair, floor,

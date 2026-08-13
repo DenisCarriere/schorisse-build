@@ -21,7 +21,8 @@ images are presentation outputs, never a place to invent or correct structure.
 4. Review `models/generated/birdseye-orientation.svg`,
    both generated interior directions (`interior-from-valley.svg` and
    `interior-toward-valley.svg`), both generated plans, and the GLB/OBJ model.
-5. Obtain geometry approval and set `geometry_approved_for_photoreal` to true.
+5. Confirm that `geometry_approved_for_photoreal` is true. Any structural edit
+   must set it back to false until the regenerated geometry is approved.
 6. For the selected camera, supply the generated model view plus relevant site
    photograph(s) to ImageGen. State explicitly that geometry is locked.
 7. Compare the result to the model: reject any changed opening, stair, floor,

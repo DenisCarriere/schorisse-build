@@ -1,16 +1,17 @@
 {
   "schema_version": 1,
-  "model_revision": "06-single-toilet",
-  "status": "geometry-review",
+  "model_revision": "07-photoreal-approved",
+  "status": "geometry-approved",
   "units": "metres",
   "approval": {
-    "geometry_approved_for_photoreal": false,
-    "note": "Photoreal renders remain blocked until the generated model views and plans are approved."
+    "geometry_approved_for_photoreal": true,
+    "approved_on": "2026-08-13",
+    "note": "The owner approved the coordinated geometry; Rev 07 removes temporary orientation colour codes without changing dimensions or structure."
   },
   "axes": {
-    "x": "0.0 = blue valley/full-glass gable; 17.0 = yellow rear bedroom/mezzanine gable",
+    "x": "0.0 = valley-facing full-glass gable; 17.0 = rear bedroom/mezzanine gable",
     "y": "vertical; 0.0 = ground-floor datum",
-    "z": "0.0 = upper red wall/shared tractor lane; 7.5 = lower red wall/courtyard and green entrance",
+    "z": "0.0 = shared tractor-lane wall; 7.5 = cobbled courtyard wall and entrance",
     "valley_camera": "camera outside x=0 looking toward +x: tractor lane is viewer-left and courtyard/entrance is viewer-right"
   },
   "sanitary_brief": {
@@ -134,7 +135,7 @@
       "id": "front_glass_gable",
       "type": "glazed_gable",
       "host": "valley_gable_x0",
-      "role": "blue living-room outlook",
+      "role": "valley-facing living-room outlook",
       "base": 0.02,
       "side_inset": 0.28,
       "head_inset": 0.18
@@ -180,7 +181,7 @@
       "host": "courtyard_zW",
       "x": [10.7, 11.7],
       "y": [0.0, 2.3],
-      "swing": "inward; hinge at yellow/rear-side jamb; leaf parks beside the service wall",
+      "swing": "inward; hinge at rear-side jamb; leaf parks beside the service wall",
       "material": "smoked_oak"
     },
     {
@@ -298,7 +299,7 @@
   "reference_cameras": [
     {
       "id": "valley_exterior",
-      "purpose": "front/blue glass-gable geometry authority",
+      "purpose": "valley glass-gable geometry authority",
       "eye": [-14.0, 3.0, 3.75],
       "target": [0.0, 2.35, 3.75],
       "focal": 720,
@@ -306,7 +307,7 @@
     },
     {
       "id": "tractor_lane_exterior",
-      "purpose": "upper red wall opening-order and tractor-clearance authority",
+      "purpose": "tractor-lane wall opening-order and clearance authority",
       "eye": [8.5, 3.4, -16.0],
       "target": [8.5, 1.75, 0.0],
       "focal": 720,
@@ -314,7 +315,7 @@
     },
     {
       "id": "courtyard_exterior",
-      "purpose": "lower red wall and green entrance authority",
+      "purpose": "cobbled-courtyard wall and entrance authority",
       "eye": [8.5, 3.4, 23.5],
       "target": [8.5, 1.75, 7.5],
       "focal": 720,
@@ -322,7 +323,7 @@
     },
     {
       "id": "rear_mezzanine_gable",
-      "purpose": "yellow master/mezzanine gable and true loft opening authority",
+      "purpose": "rear master/mezzanine gable and true loft opening authority",
       "eye": [29.0, 3.0, 3.75],
       "target": [17.0, 2.45, 3.75],
       "focal": 720,
@@ -330,7 +331,7 @@
     },
     {
       "id": "birdseye_orientation",
-      "purpose": "approve site axes, envelope and colored program ends before any photoreal work",
+      "purpose": "approved site axes, envelope and program relationship",
       "eye": [-9.0, 16.0, 17.0],
       "target": [8.5, 1.3, 3.75],
       "focal": 650,
@@ -338,7 +339,7 @@
     },
     {
       "id": "interior_from_valley",
-      "purpose": "geometry authority for a rearward interior render from the blue glass gable",
+      "purpose": "geometry authority for a rearward interior render from the valley glass gable",
       "eye": [-8.0, 2.6, 3.75],
       "target": [12.0, 2.35, 3.75],
       "focal": 700,
@@ -346,7 +347,7 @@
     },
     {
       "id": "interior_toward_valley",
-      "purpose": "reverse geometry authority looking from the service core toward the blue valley glass",
+      "purpose": "reverse geometry authority looking from the service core toward the valley glass",
       "eye": [7.45, 1.65, 3.75],
       "target": [0.0, 1.65, 3.75],
       "focal": 540,
@@ -354,7 +355,7 @@
     },
     {
       "id": "courtyard_cutaway",
-      "purpose": "check green entrance, service rooms, stair and yellow rear mezzanine relationship",
+      "purpose": "check courtyard entrance, service rooms, stair and rear mezzanine relationship",
       "eye": [4.0, 11.0, 18.0],
       "target": [10.0, 1.8, 3.0],
       "focal": 650,

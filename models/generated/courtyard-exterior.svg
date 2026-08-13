@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1400" height="850" viewBox="0 0 1400 850" role="img" aria-label="Courtyard Exterior">
 <rect width="1400" height="850" fill="#f4f0e7"/>
-<text x="70" y="58" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#b4522e">MODEL-GENERATED · REV 06</text>
+<text x="70" y="58" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#b4522e">MODEL-GENERATED · REV 07</text>
 <text x="70" y="98" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#1d1b18">Courtyard Exterior</text>
-<text x="70" y="126" font-family="Arial,sans-serif" font-size="14" fill="#686158">lower red wall and green entrance authority</text>
+<text x="70" y="126" font-family="Arial,sans-serif" font-size="14" fill="#686158">cobbled-courtyard wall and entrance authority</text>
 
 <polygon points="417.0,444.0 983.1,442.9 983.0,444.0" fill="rgb(71, 107, 51)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>tractor_lane_context</title></polygon>
 <polygon points="417.0,444.0 416.9,442.9 983.1,442.9" fill="rgb(71, 107, 51)" fill-opacity="1.00" stroke="#282722" stroke-opacity=".22" stroke-width=".55"><title>tractor_lane_context</title></polygon>

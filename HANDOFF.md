@@ -1,19 +1,18 @@
 # Model-first design handoff
 
-Status: **geometry review; photoreal generation is blocked**
+Status: **geometry approved; photoreal generation gate is open**
 
 The owner's bird's-eye markup is the orientation authority:
 
 [`uploads/site-reference/birdseye-orientation-markup.png`](uploads/site-reference/birdseye-orientation-markup.png)
 
-- **blue / x=0:** valley-facing full glass gable and double-height living room;
-- **yellow / x=17:** ground-floor master bedroom with open mezzanine above;
-- **upper red / z=0:** shared tractor-lane wall;
-- **lower red / z=7.5:** cobbled courtyard wall;
-- **green:** courtyard entrance near the rear/service transition.
+- **x=0:** valley-facing full glass gable and double-height living room;
+- **x=17:** ground-floor master bedroom with open mezzanine above;
+- **z=0:** shared tractor-lane wall;
+- **z=7.5:** cobbled courtyard wall with the entrance near the rear/service transition.
 
-From a camera at the blue glass gable looking inward, the lane, kitchen and
-stair appear on the **left**; the courtyard and green entrance appear on the
+From a camera at the valley glass gable looking inward, the lane, kitchen and
+stair appear on the **left**; the courtyard and entrance appear on the
 **right**.
 
 ## Source of truth
@@ -73,7 +72,9 @@ For every future photoreal concept:
 The explicit gate is currently:
 
 ```json
-"geometry_approved_for_photoreal": false
+"geometry_approved_for_photoreal": true
 ```
 
-Set it to `true` only after the model views and plans are accepted.
+The owner approved this geometry on 2026-08-13. Future
+structural changes must close the gate again until their regenerated model views
+and plans are approved.

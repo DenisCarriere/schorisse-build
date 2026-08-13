@@ -1,7 +1,7 @@
 # Conceptual Floor Plans
 
-- Status: **parametric geometry review — not permit-ready**
-- Revision: **06 — one powder-room toilet**
+- Status: **owner-approved concept geometry — not permit-ready**
+- Revision: **07 — photoreal-ready, orientation colours removed**
 - External envelope: **17.0 × 7.5 m**
 - Levels: ground floor and partial open mezzanine
 - Sleeping brief: **one ground-floor master bedroom**
@@ -18,17 +18,17 @@ before planning or construction.
 
 ## Site orientation fixed by the owner
 
-The marked bird's-eye image resolves the axes:
+The marked bird's-eye image resolved the axes during design review. The
+temporary colour codes are no longer used in the model or drawings:
 
-- **blue / x=0:** valley-facing full glass gable and double-height living room;
-- **yellow / x=17:** master bedroom with the open mezzanine above;
-- **upper red / z=0:** shared tractor-lane wall;
-- **lower red / z=7.5:** cobbled courtyard wall;
-- **green:** the entrance in the courtyard wall near the yellow/private end.
+- **x=0:** valley-facing full glass gable and double-height living room;
+- **x=17:** master bedroom with the open mezzanine above;
+- **z=0:** shared tractor-lane wall;
+- **z=7.5:** cobbled courtyard wall and entrance near the rear/private end.
 
-When a camera stands at the blue glass gable and looks inward, the tractor-lane
+When a camera stands at the valley glass gable and looks inward, the tractor-lane
 wall, kitchen and stair are on the **viewer's left**. The courtyard wall and
-green entrance are on the **viewer's right**. Earlier selected interiors with
+entrance are on the **viewer's right**. Earlier selected interiors with
 the entrance on the left are superseded and must not guide future renders.
 
 ## Generated review assets
@@ -43,7 +43,7 @@ the entrance on the left are superseded and must not guide future renders.
 
 ## Dimensional basis
 
-| Item | Revision 06 assumption |
+| Item | Revision 07 assumption |
 |---|---:|
 | External envelope | 17.0 × 7.5 m |
 | Placeholder external wall build-up | 420 mm |
@@ -60,12 +60,12 @@ brick and internal finish. The actual system will move every internal face.
 
 ## Ground-floor sequence
 
-1. Enter from the retained cobbled courtyard through the green smoked-oak door.
-2. The 1.0 m leaf swings inward toward the yellow/private end and parks beside
+1. Enter from the retained cobbled courtyard through the smoked-oak door.
+2. The 1.0 m leaf swings inward toward the rear/private end and parks beside
    the service wall, clear of the stair and main route.
 3. The gallery gives direct access rearward to the master bedroom, inward to the
    separate powder room and laundry cupboard, and forward to the living hall.
-4. A clear courtyard-side route continues to an operable panel in the blue
+4. A clear courtyard-side route continues to an operable panel in the
    valley glass gable.
 
 The kitchen stays on the tractor-lane wall. The stair is beside that same wall,
@@ -75,7 +75,7 @@ is added to the tractor lane.
 
 ## Master suite and services
 
-The yellow/private end contains one ground-floor master bedroom. Two modest
+The rear/private end contains one ground-floor master bedroom. Two modest
 lane-side windows and one courtyard-side window provide daylight and potential
 cross-ventilation; the rear ground-floor gable stays solid behind the bed.
 
@@ -119,7 +119,7 @@ resolved in a coordinated architectural section.
 
 ## Open kitchen, dining and living
 
-The blue/valley end remains fully double-height.
+The valley end remains fully double-height.
 
 - low kitchen run and sink beneath the large lane-facing picture window;
 - approximately 2.75 × 1.0 m island with at least a 1.0 m working aisle;
@@ -136,13 +136,13 @@ renders cannot invent room zones or place furniture through the stair and walls.
 
 ## Upper mezzanine
 
-The yellow rear/service zone supports one open room. There is no upstairs
+The rear/service zone supports one open room. There is no upstairs
 bathroom, toilet, sink, kitchenette, wet bar, bedroom wall or corridor.
 
 - x=7.90–16.58 m, leaving the front 7.90 m open to the ridge;
 - one continuous guard along the double-height living void;
 - guarded stair opening and proper top landing;
-- broad triangular window in the yellow/rear gable;
+- broad triangular window in the rear gable;
 - future low-eaves storage, library, lounge and project-table uses;
 - no plumbing.
 
@@ -152,8 +152,8 @@ a surveyed roof section before usable floor area can be claimed.
 ## Validation and professional checks
 
 `python3 models/gen_model.py --check` currently validates the envelope, wall
-thickness and modeled shell bounds, site-side placement of the
-blue/green/yellow elements, opening overlaps, stair/mezzanine stacking,
+thickness and modeled shell bounds, site-side placement of the valley gable,
+courtyard entrance and rear loft opening, opening overlaps, stair/mezzanine stacking,
 rise/going, flight and landing widths, worst-edge half-landing headroom,
 top-landing egress, fixture bounds, explicit handrails and required semantic
 model elements. It also checks the scaled kitchen aisle, dining transition,

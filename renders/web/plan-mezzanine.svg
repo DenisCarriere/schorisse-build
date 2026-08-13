@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1400" height="850" viewBox="0 0 1400 850" role="img" aria-label="Upper mezzanine — stair and void coordinated">
 <rect width="1400" height="850" fill="#f4f0e7"/>
-<text x="70" y="58" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#b4522e">MODEL-GENERATED · REV 06</text>
+<text x="70" y="58" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#b4522e">MODEL-GENERATED · REV 07</text>
 <text x="70" y="98" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#1d1b18">Upper mezzanine — stair and void coordinated</text>
-<text x="70" y="126" font-family="Arial,sans-serif" font-size="14" fill="#686158">One open room over the yellow rear zone · no plumbing · blue valley living remains double-height</text>
+<text x="70" y="126" font-family="Arial,sans-serif" font-size="14" fill="#686158">One open room over the rear zone · no plumbing · valley living remains double-height</text>
 
 <rect x="205" y="190" width="986.0" height="435.0" fill="#211f1b"/>
 <rect x="663.2" y="214.36" width="503.4399999999999" height="386.28000000000003" fill="#eee6d8"/>
@@ -26,7 +26,7 @@
 <text x="1028.6" y="424.9" text-anchor="middle" font-family="Arial" font-size="13" fill="#686158">library · lounge · project space · no plumbing</text>
 <text x="811.5" y="454.6" font-family="Arial" font-size="9" font-weight="700" fill="#9a472a">PROTECTED TOP LANDING</text>
 <text x="698.0" y="170" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#9a472a">SHARED TRACTOR LANE · TALL STAIR WINDOW AT HALF-LANDING</text>
-<text x="698.0" y="650" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#9a472a">COURTYARD · GREEN ENTRY BELOW</text>
+<text x="698.0" y="650" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#9a472a">COURTYARD · SIDE ENTRANCE BELOW</text>
 <text x="70" y="760" font-family="Arial" font-size="13" fill="#4f4a43">Mezzanine x=7.90..16.58 m · floor +2.45 m · exact stair opening stacks with ground floor</text>
 <text x="70" y="790" font-family="Arial" font-size="13" fill="#4f4a43">Dog-leg stair: 6 lower + 8 upper risers · 175 mm rise · 270 mm going · 2R+G=620 mm</text>
 <text x="70" y="825" font-family="Arial" font-size="12" fill="#686158">Headroom bands require a measured roof section; model checks only the assumed lane landing condition.</text></svg>
