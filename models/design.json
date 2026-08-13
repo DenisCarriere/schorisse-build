@@ -1,12 +1,13 @@
 {
   "schema_version": 1,
-  "model_revision": "07-photoreal-approved",
-  "status": "geometry-approved",
+  "model_revision": "09-solar-c-patio-review",
+  "status": "geometry-review-pending",
   "units": "metres",
   "approval": {
-    "geometry_approved_for_photoreal": true,
-    "approved_on": "2026-08-13",
-    "note": "The owner approved the coordinated geometry; Rev 07 removes temporary orientation colour codes without changing dimensions or structure."
+    "geometry_approved_for_photoreal": false,
+    "approved_on": null,
+    "supersedes_approved_revision": "08-photoreal-approved",
+    "note": "The owner selected Solar Option C for development. Rev 09 adds a 1.25 m valley roof visor, nine operable fins confined above the 3.0 m transom, and a compact grass-grid valley patio with two chairs and a coffee table. Rev 08 remains the last approved photoreal authority until this geometry is reviewed."
   },
   "axes": {
     "x": "0.0 = valley-facing full-glass gable; 17.0 = rear bedroom/mezzanine gable",
@@ -29,6 +30,19 @@
     "roof_build_up": 0.18,
     "eaves_overhang": 0.45,
     "gable_overhang": 0.18
+  },
+  "valley_solar_control": {
+    "id": "selected_upper_gable_veil",
+    "name": "Selected Option C - upper-gable veil",
+    "status": "selected-pending-geometry-approval",
+    "strategy": "upper_gable_fins",
+    "valley_roof_projection": 1.25,
+    "fin_projection": 0.42,
+    "fin_count": 9,
+    "minimum_clear_shading_height": 3.0,
+    "operation": "motorised fins with temperature, irradiance and wind-safe control; manual override required",
+    "ground_floor_glass": "continuous and permanently unobstructed by fixed elements below the 3.0 m transom",
+    "reserve_low_sun_strategy": "concealed retractable exterior screen aligned with glazing mullions, subject to PHPP/designPH and thermal-bridge review"
   },
   "levels": {
     "ground_floor": 0.0,
@@ -199,6 +213,22 @@
       "base_z": [0.9, 6.6],
       "apex_y": 4.75,
       "apex_z": 3.75
+    },
+    {
+      "id": "rear_master_window_lane",
+      "type": "window",
+      "host": "rear_gable_xL",
+      "role": "ground-floor master-bedroom rear window; no valley outlook",
+      "y": [0.85, 2.2],
+      "z": [0.85, 2.25]
+    },
+    {
+      "id": "rear_master_window_courtyard",
+      "type": "window",
+      "host": "rear_gable_xL",
+      "role": "ground-floor master-bedroom rear window; no valley outlook",
+      "y": [0.85, 2.2],
+      "z": [5.25, 6.65]
     }
   ],
   "interior_doors": [
@@ -294,7 +324,22 @@
     "tractor_lane": {"side": "z < 0", "must_remain_clear": true},
     "courtyard": {"side": "z > 7.5", "surface": "retained cobbles"},
     "valley": {"side": "x < 0"},
-    "road_and_private_gable": {"side": "x > 17.0"}
+    "valley_patio": {
+      "surface": "grass-filled cellular reinforcement grid over an open-graded permeable base",
+      "visual_character": "predominantly living grass; structural grid recessed and only subtly visible between blades",
+      "drainage": "unbound build-up with no impermeable concrete slab; final system subject to municipal acceptance and infiltration design",
+      "area_approx_m2": 11.78,
+      "slope_target": "maximum 2 percent, subject to measured levels and any additional runoff-control requirements",
+      "runoff": "retain and infiltrate rainfall on the property; no discharge to the neighbour, street or sewer",
+      "x": [-3.4, -0.3],
+      "z": [1.85, 5.65],
+      "furniture": "two compact outdoor lounge chairs facing the valley with one small coffee table",
+      "constraints": "no stone patio and no solid slab; keep hedge edges and the courtyard-side passage clear"
+    },
+    "rear_private_gable": {
+      "side": "x > 17.0",
+      "condition": "private road/courtyard side behind the closed master bedroom; there is no valley outlook behind the building"
+    }
   },
   "reference_cameras": [
     {
@@ -306,11 +351,27 @@
       "omit_categories": []
     },
     {
+      "id": "valley_solar_selected",
+      "purpose": "Rev 09 geometry review: selected upper-gable fins, 1.25 m roof visor, clear ground-floor glass and compact grass-grid patio",
+      "eye": [-13.0, 2.2, 12.5],
+      "target": [4.0, 2.5, 3.75],
+      "focal": 610,
+      "omit_categories": []
+    },
+    {
       "id": "tractor_lane_exterior",
       "purpose": "tractor-lane wall opening-order and clearance authority",
       "eye": [8.5, 3.4, -16.0],
       "target": [8.5, 1.75, 0.0],
       "focal": 720,
+      "omit_categories": []
+    },
+    {
+      "id": "tractor_lane_photo1_oblique",
+      "purpose": "Photo 1 authority from the valley/pasture end looking back along the shared tractor lane toward the rear gate; valley glass nearest, then kitchen window, stair window and bedroom pair, with the private mezzanine gable at the far opposite end",
+      "eye": [-7.0, 3.3, -11.5],
+      "target": [8.4, 1.75, 0.0],
+      "focal": 690,
       "omit_categories": []
     },
     {
@@ -322,8 +383,24 @@
       "omit_categories": []
     },
     {
+      "id": "courtyard_full_width",
+      "purpose": "owner-supplied full-width courtyard camera: preserve the complete 17 m side-entrance elevation, central hedge opening, cobbled forecourt and mature tree canopy",
+      "eye": [8.5, 2.8, 20.5],
+      "target": [8.5, 1.75, 7.5],
+      "focal": 800,
+      "omit_categories": []
+    },
+    {
+      "id": "rear_courtyard_oblique",
+      "purpose": "Photo 4 coordination authority showing the full 17 m courtyard wall, side entrance, retained courtyard, paired rear bedroom windows, and loft gable window",
+      "eye": [20.25, 3.6, 25.0],
+      "target": [9.1, 1.85, 7.1],
+      "focal": 650,
+      "omit_categories": []
+    },
+    {
       "id": "rear_mezzanine_gable",
-      "purpose": "rear master/mezzanine gable and true loft opening authority",
+      "purpose": "rear master/mezzanine gable authority: paired ground-floor bedroom windows, true loft opening, and no valley context",
       "eye": [29.0, 3.0, 3.75],
       "target": [17.0, 2.45, 3.75],
       "focal": 720,

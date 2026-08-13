@@ -1,6 +1,13 @@
 # Belgian Brick Lantern — selected exterior direction
 
-Status: **material and atmosphere record; geometry superseded by approved Revision 07**
+Status: **selected material record; Rev 09 solar geometry remains under review**
+
+The current selected shared-lane presentation is
+`rev09-shared-lane-corrected.png`. It uses the corrected Photo 1 model camera:
+the full-height valley glass is nearest and visible, followed by the kitchen,
+stair and bedroom-pair openings toward the rear gate. The earlier
+`rev09-lane-brick-pattern-study.png` is superseded because its camera was
+inverted; it must not be used on the website.
 
 ## Approved model-first geometry
 
@@ -15,11 +22,12 @@ geometry authority:
 - from the valley glass looking inward, lane/kitchen/stair are image-left and the
   courtyard/entrance are image-right.
 
-Every existing PNG in this folder predates the approved parametric model. It may
-still guide Belgian brick, black frames, oak, lighting and atmosphere, but it
-must not guide walls, openings, rooms, stair, mezzanine, camera translation or
-perspective. The owner approved the coordinated geometry on 2026-08-13 and
-`geometry_approved_for_photoreal` is now true in `models/design.json`.
+Every earlier PNG in this folder may guide only Belgian brick, black frames,
+oak, lighting and atmosphere. `rev09-shared-lane-corrected.png` is the only
+current Photo 1 lane presentation and uses the regenerated fixed-camera model
+view without altering walls or openings. Rev 09 adds pending solar-control and
+patio geometry, so `geometry_approved_for_photoreal` remains false until that
+model is reviewed.
 
 See [`../../docs/MODEL-FIRST-WORKFLOW.md`](../../docs/MODEL-FIRST-WORKFLOW.md).
 
@@ -50,13 +58,18 @@ remain for the architect and roofer:
 
 ## Window structure — shared tractor lane
 
-The side elevation is deliberately driven by the plan. From the pasture gate at
-the far/rear end toward the valley-facing glass gable at the near/front end:
+The side elevation is deliberately driven by the plan. Photo 1 is taken from
+the valley/pasture end, with the valley-facing glass gable nearest. Looking
+toward the rear gate, the long-wall openings recede as:
 
-1. two separate horizontal master-bedroom windows;
+1. one larger horizontal kitchen picture window;
 2. one tall narrow stair window at the transition;
-3. one larger horizontal kitchen picture window;
-4. the full-height glass front gable, partly hidden by the retained boundary screen.
+3. two separate horizontal master-bedroom windows;
+4. the private mezzanine gable at the far opposite end.
+
+The full-height glass front gable is visible at the near end, partly screened by
+the retained neighbour boundary. Any lane rendering that reverses this order is
+superseded and must not be published.
 
 There is no entrance on the tractor-lane elevation and no evenly spaced decorative
 window row.
@@ -69,6 +82,74 @@ the approved new front image became the material-identity reference for the side
 and rear.
 
 ## Exact prompts
+
+### Rev 09 corrected Photo 1 shared lane
+
+Generated with Codex's built-in ImageGen sketch-to-render mode. Image 1 was the
+original Photo 1 site/camera authority, Image 2 was the corrected model-generated
+Photo 1 camera, and Image 3 supplied only the selected brick and early-evening
+lighting language. The rejected inverted draft was not saved to the project.
+
+> Use case: sketch-to-render
+> Asset type: final website photoreal — corrected shared tractor-lane concept.
+>
+> Image 1 is the EDIT TARGET and absolute SITE/CAMERA authority. Preserve its exact portrait 3:4 camera, lens, foreground depth, building wall line on the right, full grass lane width, pasture/rear gate at far left, tall clipped hedge on the left, black neighbour screen on the right, mature trees, terrain and all tractor clearance. Image 2 is the corrected absolute BUILDING GEOMETRY AND ORIENTATION authority. It explicitly supersedes every earlier lane rendering. Translate its near glass gable, 17 m envelope and long-wall opening sequence into Image 1 without mirroring. Image 3 is MATERIAL/LIGHTING authority only: continuous warm modern Belgian brick, restrained flush soldier-course bands, deep matte-black surrounds, black Belgian ceramic tiles, and bright 6:30–7:00 PM summer daylight with subtle warm lights.
+>
+> NON-NEGOTIABLE CAMERA ORIENTATION: Image 1 is photographed from the VALLEY/PASTURE END looking back along the lane toward the REAR GATE. Therefore the NEAR/RIGHT GABLE beside the camera is the large valley-facing living-room glass gable and MUST be visibly present. Rebuild the near/right gable as clear floor-to-ridge glazing with a deep continuous matte-black perimeter surround, slim black mullions, a horizontal transom around 3.0 m, rectangular full-height ground glass and a triangular glazed clerestory following the roof slopes. The retained black neighbour screen may naturally obscure part of the lower glass, exactly as in the real site, but enough lower glass and the entire triangular upper glass must remain visibly connected so it unmistakably reads as one full-height glass gable. Do not put brick across the gable field. The private triangular mezzanine gable is at the far opposite end near the rear gate and is not the near gable.
+>
+> NON-NEGOTIABLE LONG-WALL OPENING ORDER from NEAREST/RIGHT at the valley glass toward FARTHEST/LEFT at the rear gate: exactly one large horizontal kitchen picture window, exactly one tall narrow stair window, then exactly two separate horizontal master-bedroom windows. Exactly four openings on the visible long lane wall. No fifth window and no lane door. Preserve the real grass lane, gate, left hedge, right screen, mature trees and tractor clearance. Bright Belgian summer early evening around 6:30–7:00 PM with restrained 2700 K eaves and interior lighting. Reject any mirrored camera, absent near glass gable, wrong opening order, shortened building, hipped roof, lane entrance, extra opening, paving, patio, person, vehicle, text or watermark.
+
+### Rev 09 full-width courtyard at 6:30–7:00 PM
+
+Generated with Codex's built-in ImageGen edit mode as a lighting-only revision
+of `rev09-courtyard-full-width-study.png`. The darker blue-hour version remains
+available as an alternate; this brighter early-evening image is the website
+presentation selection.
+
+> Use case: lighting-weather
+> Asset type: revised website photoreal — full-width courtyard side entrance.
+> Image 1 is the EDIT TARGET and is the absolute authority for all geometry, camera, composition, materials, landscaping and objects.
+>
+> Primary request: change ONLY the time of day and exposure from deep blue hour to a bright Belgian summer early evening at approximately 6:30–7:00 PM. It must still clearly read as daytime: pale blue sky, sunlit green foliage, fully readable warm Belgian brick, roof tiles, hedges, hydrangeas, cobbles, neighbouring structures and right-side gate. Use soft warm low-angle sunlight with realistic late-day shadows and a natural documentary exposure. The scene should be much lighter than Image 1, with no dark crushed foreground or navy night sky.
+>
+> Keep all exterior lighting switched on and visibly effective despite the daylight: restrained warm 2700K brick-grazing pools along the wall, a discreet warm entrance-soffit light, a small hedge/path accent, and subtle warm interior light behind both windows. The fixtures and glow must remain credible and delicate—visible because evening is approaching, never overpowering the daylight or turning the scene into night.
+>
+> LOCK EVERYTHING ELSE EXACTLY: same straight-on full-width 4:3 camera and crop; complete 17.0 m courtyard elevation; exact roof silhouette and black Belgian tiles; continuous modern Belgian brick with two restrained soldier-course bands; exactly one living-room window on the left, exactly one single smoked-oak entrance door in its deep matte-black portal immediately left of the retained centre-right tree, and exactly one master-bedroom window on the right; exact window/door size and position; black surrounds; every cobble; central approach; clipped hedge blocks and gaps; hydrangeas; both mature tree trunks and entire canopy; neighbouring buildings and gate. Do not move, resize, add, remove, mirror or reinterpret any architectural or landscape element.
+>
+> Avoid: dusk or night darkness, navy/cobalt night sky, dramatic sunset orange, artificial HDR, overexposure, changed brick pattern, extra or missing doors/windows/lights, double door, door hidden behind tree, triangular loft window, canopy, porch, new paving, people, vehicles, signs, text, logo or watermark. Premium believable Belgian architectural photography, not glossy CGI.
+
+### Rev 09 full-width courtyard entrance study
+
+The owner's new full-width photograph was used as the site-and-camera truth,
+`models/generated/courtyard-full-width.svg` was the opening-position authority,
+the selected lane study supplied the brick language, and the earlier courtyard
+concept supplied only its black/oak entrance detail and blue-hour atmosphere.
+Generated with Codex's built-in ImageGen edit mode in two passes; the second
+pass made the single entrance completely readable beside the retained tree.
+
+> Use case: precise-object-edit
+> Asset type: final full-width courtyard side-entrance concept.
+> Image 1 is the EDIT TARGET. Image 2 is authoritative SITE TRUTH. Image 3 is the MODEL AUTHORITY.
+>
+> Make one targeted correction to Image 1: make the proposed side entrance exactly ONE single smoked-oak entrance door inside a deep matte-black rectangular portal and narrow timber-lined recess. The whole door leaf must be fully readable immediately LEFT of the large retained centre-right tree trunk, aligned with the existing central cobbled approach through the hedge opening. The retained tree may overlap only a tiny edge of the portal; it must not split or hide the door leaf. Use one vertical matte-black pull and one discreet warm soffit light. The entrance remains right of the building midpoint, consistent with Image 3.
+>
+> LOCK EVERYTHING ELSE from Image 1 exactly: same straight-on full-width 4:3 camera; entire 17.0 m long courtyard wall visible; same 7.5 m building width, 3.2 m eaves, 5.2 m ridge and black Belgian tile roof; same continuous modern Belgian brick with two restrained flush soldier-course bands; same deep black surrounds; exactly one living-room window left of the entrance and one master-bedroom window right of it; same blue-hour brightness, warm brick grazing lights and interior glow. Preserve every site element from Images 1 and 2: full cobbled forecourt, clipped hedge blocks and their gaps, hydrangeas, both mature tree trunks and complete overhead canopy, neighbouring structures and right-side gate. Do not crop or move the building.
+>
+> Avoid: double doors, a second door, door behind the tree, extra windows, missing windows, rear gable or triangular loft window in this long-wall elevation, canopy, porch, new paving, removed hedges, removed trees, grass-grid patio, people, vehicles, signage, text, logo or watermark. Premium believable Belgian architectural photography, not glossy CGI.
+
+### Rev 09 restrained brick-pattern refinement
+
+> Use case: precise-object-edit. Asset type: architectural material refinement. Image 1 is the EDIT TARGET and controls all geometry, camera, lighting, site, landscape and openings. Image 2 is MATERIAL REFERENCE ONLY.
+>
+> Make one targeted masonry refinement to Image 1. On the NEW BARN ONLY, make exactly two subtle continuous horizontal accent bands clearly readable along the entire 17 m long brick wall. Each band is a single course of the same warm red-brown brick laid vertically as a flush soldier course, matching the material language in Image 2. Put the lower band at the common conventional-window sill datum and the upper band at the common conventional-window head datum. The courses must be real vertical bricks, flush with the field brick, never gray stone and never projecting ledges. Where the bands meet openings, resolve them neatly into the jambs.
+>
+> Keep restrained thin Belgian blue-stone sills and flat lintels only at conventional rectangular windows, but make them slimmer and calmer than in Image 1. No large gray arches, no wedge lintels, no pyramid blocks, no decorative corner blocks, no stone bands. The triangular loft window retains only its continuous black frame and a neat brick edge; no blue stone around the triangle.
+>
+> LOCK EVERYTHING ELSE EXACTLY from Image 1: same portrait composition, 17.0 m building length, roof and gable, triangular loft window, exact four lane-wall windows and rear-gable windows, no doors on the lane wall, black frames, black tiled roof, hedge, gate, screen, grass tracks, trees, lights, dusk brightness and warm interior glow. Do not add or remove openings or objects. No mixed cladding, render, columns, signs, people, vehicles, text, logos or watermark. Highly realistic Belgian architectural photography.
+
+Generated with Codex's built-in ImageGen edit mode. Image 1 was the preceding
+model-locked lane study and Image 2 was
+[`../../uploads/site-reference/existing-brick-pattern-reference.jpg`](../../uploads/site-reference/existing-brick-pattern-reference.jpg).
 
 ### Front glass gable
 

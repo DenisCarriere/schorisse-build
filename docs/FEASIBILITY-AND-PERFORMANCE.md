@@ -68,7 +68,10 @@ Possible performance measures include:
 - responsibly sourced, EPD-backed facing brick and low-impact concrete mix
   options where technically suitable;
 - construction-waste sorting;
-- retained permeable landscape and rainwater management.
+- retained permeable landscape and rainwater management;
+- a grass-filled cellular-grid valley patio over an open-graded permeable base,
+  with no impermeable slab, subject to municipal acceptance and infiltration
+  design for the surveyed soil and slope.
 
 ## Glass-gable watch point
 

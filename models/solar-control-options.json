@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "base_model_revision": "08-photoreal-approved",
+  "status": "option-c-selected-for-rev09-geometry-review",
+  "design_intent": "Reduce high-angle summer solar gain at the valley-facing glass gable while retaining daylight, the full ground-floor glass wall and an unobstructed seated valley view.",
+  "shared_constraints": {
+    "ground_floor_glazing": "continuous full-width glass from finished floor to the 3.0 m transom",
+    "minimum_clear_shading_height": 3.0,
+    "valley_view": "no fixed shading element may cross the ground-floor vision zone",
+    "materials": "matte-black metal coordinated with the window surround and black Belgian roof",
+    "site": "retain the hedge, neighbouring brick building, narrow paved passage, lawn and valley outlook"
+  },
+  "camera": {
+    "eye": [-13.0, 2.2, 12.5],
+    "target": [4.0, 2.5, 3.75],
+    "focal": 610,
+    "omit_categories": []
+  },
+  "options": [
+    {
+      "id": "option_a_deep_roof_visor",
+      "name": "Deep roof visor",
+      "summary": "A 1.60 m extension of both roof planes at the valley gable. The glass remains completely open below and the architecture stays closest to a traditional Belgian barn.",
+      "strategy": "roof_only",
+      "valley_roof_projection": 1.6,
+      "solar_priority": "high-angle summer sun",
+      "view_priority": "maximum"
+    },
+    {
+      "id": "option_b_floating_brise_soleil",
+      "name": "Floating brise-soleil",
+      "summary": "A 1.00 m roof extension plus an open 1.25 m-deep horizontal blade canopy aligned just above the 3.0 m transom. The ground-floor glass and eye-level view remain untouched.",
+      "strategy": "horizontal_brise_soleil",
+      "valley_roof_projection": 1.0,
+      "canopy_projection": 1.25,
+      "canopy_blades": 6,
+      "canopy_height": 3.12,
+      "solar_priority": "strong high-angle control with filtered daylight",
+      "view_priority": "open below transom"
+    },
+    {
+      "id": "option_c_upper_gable_veil",
+      "name": "Upper-gable veil",
+      "summary": "A 1.25 m roof extension with spaced operable vertical fins over only the triangular upper glass. The complete rectangular ground-floor glass wall remains unobstructed.",
+      "strategy": "upper_gable_fins",
+      "valley_roof_projection": 1.25,
+      "fin_projection": 0.42,
+      "fin_count": 9,
+      "solar_priority": "adjustable glare and low-angle control at the upper gable",
+      "view_priority": "fully open ground-floor panorama"
+    }
+  ]
+}

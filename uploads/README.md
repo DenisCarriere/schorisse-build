@@ -10,10 +10,18 @@ The real site references are stored in `uploads/site-reference/`:
 - `photo-2-glass-gable-site.jpg` — future valley-facing glass gable. Preserve the retained brick building and narrow paved passage at right, and the mature hedge at left.
 - `photo-3-valley-outlook.jpg` — the actual view from beside the future glass gable. Use its field pattern, tree line and boundary hedge for interior outlooks.
 - `photo-4-cobbled-courtyard.jpg` — rear/private end and side-entrance context. Preserve the cobbled drive, curbs, clipped hedges, hydrangeas, mature trees and retained structures.
+- `photo-5-courtyard-full-width.jpg` — authoritative straight-on, full-width
+  side-entrance camera. It shows the complete 17 m courtyard elevation, central
+  approach through the clipped hedges, full cobbled forecourt, hydrangeas and
+  mature tree canopy. Use it instead of inferring the overall elevation from the
+  cropped Photo 4 view.
 - `birdseye-orientation-markup.png` — owner-supplied orientation authority used
   to resolve the valley gable, rear master/mezzanine end, both long walls and
   courtyard entrance. Its temporary colour annotations are superseded by the
   approved neutral model.
+- `existing-brick-pattern-reference.jpg` — retained-building material reference
+  for warm Belgian brick, flush vertical-brick soldier courses and restrained
+  blue-stone heads/sills. It guides material rhythm only, never new geometry.
 
 The dry grass may be shown as healthy green. Permanent hardscape, planting,
 access routes and neighboring/retained buildings must not move in design

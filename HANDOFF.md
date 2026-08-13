@@ -1,6 +1,6 @@
 # Model-first design handoff
 
-Status: **geometry approved; photoreal generation gate is open**
+Status: **geometry review pending; photoreal generation gate is blocked**
 
 The owner's bird's-eye markup is the orientation authority:
 
@@ -14,6 +14,28 @@ The owner's bird's-eye markup is the orientation authority:
 From a camera at the valley glass gable looking inward, the lane, kitchen and
 stair appear on the **left**; the courtyard and entrance appear on the
 **right**.
+
+The full-width courtyard photograph is the site-and-camera authority for the
+side entrance elevation:
+
+[`uploads/site-reference/photo-5-courtyard-full-width.jpg`](uploads/site-reference/photo-5-courtyard-full-width.jpg)
+
+Its complete 17 m wall, clipped hedge geometry, central cobbled approach,
+hydrangeas, mature tree trunks and canopy must be retained in that camera. Use
+[`models/generated/courtyard-full-width.svg`](models/generated/courtyard-full-width.svg)
+for the proposed window and entrance positions.
+
+Photo 1 is the site-and-camera authority for the shared tractor lane:
+
+[`uploads/site-reference/photo-1-shared-laneway.jpg`](uploads/site-reference/photo-1-shared-laneway.jpg)
+
+The camera stands at the **valley/pasture end** and looks back along the lane
+toward the rear gate. The full-height valley glass is therefore nearest and
+must be visible. Along the lane, the opening order recedes as kitchen picture
+window, tall stair window, then the two master-bedroom windows. The private
+mezzanine gable is at the far opposite end. Use
+[`models/generated/tractor-lane-photo1-oblique.svg`](models/generated/tractor-lane-photo1-oblique.svg)
+as the proposed geometry authority; never mirror this camera.
 
 ## Source of truth
 
@@ -55,6 +77,27 @@ guards, fire strategy, structure and all wall build-ups.
 Any future plan or render showing a second toilet conflicts with
 `models/design.json` and must be corrected.
 
+## Selected solar-control development
+
+Option C from [`models/solar-control-options.json`](models/solar-control-options.json)
+is integrated in the Rev 09 review model: a 1.25 m valley roof visor, nine
+operable fins confined above the 3.0 m transom, clear ground-floor glazing and a
+compact grass-filled cellular-grid patio with exactly two chairs and one coffee
+table. The grid sits on an unbound open-graded base with no impermeable slab;
+the final product and infiltration build-up require municipal acceptance. Rev 08
+remains the last approved baseline; the photoreal gate remains closed until the
+Rev 09 fixed-camera geometry is reviewed and approved.
+
+## Selected non-structural masonry direction
+
+The continuous warm Belgian brick veneer now uses a restrained version of the
+retained property's masonry rhythm: two flush soldier courses in the same brick
+at the conventional-window sill and head datums on both long elevations, plus
+slim Belgian blue-stone heads and sills at rectangular windows only. All deep
+jambs and glass surrounds remain matte black. The valley glass and triangular
+loft glass receive no stone or brick bands across their glazing. This is a
+material-only refinement and does not change `models/design.json` geometry.
+
 ## Rendering gate
 
 For every future photoreal concept:
@@ -72,9 +115,7 @@ For every future photoreal concept:
 The explicit gate is currently:
 
 ```json
-"geometry_approved_for_photoreal": true
+"geometry_approved_for_photoreal": false
 ```
 
-The owner approved this geometry on 2026-08-13. Future
-structural changes must close the gate again until their regenerated model views
-and plans are approved.
+Revision 09-solar-c-patio-review is awaiting owner approval; 08-photoreal-approved remains the last approved photoreal geometry authority. Do not treat Rev 09 structural additions as final photoreal authority until its regenerated views are approved. Non-structural material studies may reuse the last approved fixed-camera geometry.

@@ -51,6 +51,11 @@ Concept palette:
   lintels and connection zones;
 - one continuous coordinated non-load-bearing Belgian/Flemish brick veneer on
   every exterior wall, supported independently from the ICF facing;
+- two flush soldier-course bands in the same facing brick at coordinated sill
+  and head datums on the long walls, with movement joints and masonry support
+  resolved as part of the engineered veneer design;
+- optional slim Belgian blue-stone heads and sills at conventional rectangular
+  windows only, thermally and structurally isolated from the ICF opening bucks;
 - deep black-lined window and door reveals that express the wall thickness while
   leaving every glazed opening clear;
 - warm mineral-plaster interior finish, with a service strategy that protects the
@@ -127,6 +132,10 @@ properly tied around the opening.
 - Coordinate proprietary window and door bucks, reinforcement, fixings, flashings
   and cavity closers through the ICF/rainscreen build-up.
 - Coordinate the recessed courtyard entrance with retained cobbles and drainage.
+- Detail the valley patio as grass-filled cellular reinforcement over an
+  open-graded permeable base, without a concrete slab. Confirm subgrade bearing,
+  infiltration, edge restraint and chair-leg stability with the landscape and
+  drainage designers, then obtain municipal acceptance for the complete build-up.
 - Treat the smoked-oak boards as protected entrance-recess lining and joinery,
   not as a general rainscreen. Coordinate the deep black portal, door frame,
   fixings, threshold, concealed soffit light, airtightness and fire performance

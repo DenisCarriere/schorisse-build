@@ -142,12 +142,23 @@ continuous contemporary warm Belgian/Flemish brick veneer on every exterior
 wall. There is no fibre-cement or timber wall cladding and no material break
 between the living and private zones.
 
+The brickwork should not read as one uninterrupted generic field. Use a quiet
+contemporary interpretation of the retained property's masonry: two continuous,
+flush soldier courses of the same brick on the long elevations, aligned with
+the common sill and head datums of the conventional windows. Their vertical
+units create rhythm across the 17 m walls without becoming projecting string
+courses or ornamental historic reproduction. Conventional rectangular windows
+may receive slim Belgian blue-stone heads and sills; their deep jambs and full
+surrounds remain matte black. The full valley glass and triangular loft glass
+remain entirely black-framed, with no stone or brick edging across the glazing.
+
 Prominent matte-black aluminium or pressed-metal liners wrap the deep window and
 door reveals. The full glass gable uses the same black perimeter and slim black
 mullions. A black roof of small gently curved hollow ceramic Flemish tiles,
 black rainwater details and a smoked-oak courtyard entrance complete the exterior.
 The masonry is a non-load-bearing exterior finish over the ICF shell, not a
-reconstruction of the existing brickwork.
+reconstruction of the existing brickwork. The existing neighbouring masonry is
+the contextual reference for scale, colour and coursing rhythm only.
 
 Timber remains limited to the joinery and inner lining of the recessed entrance;
 it does not become a second exterior wall finish. The front gable piers receive

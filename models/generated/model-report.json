@@ -1,8 +1,8 @@
 {
-  "model_revision": "07-photoreal-approved",
+  "model_revision": "09-solar-c-patio-review",
   "source": "models/design.json",
   "status": "pass",
-  "photoreal_gate": "open",
+  "photoreal_gate": "blocked_pending_geometry_approval",
   "checks": [
     {
       "name": "external envelope",
@@ -20,6 +20,16 @@
       "detail": "x=0.00..17.00; y=0.00..5.20; z=0.00..7.50 m"
     },
     {
+      "name": "selected valley solar control",
+      "status": "pass",
+      "detail": "9 operable upper fins; fixed shading clear below 3.06 m; 1.25 m roof visor"
+    },
+    {
+      "name": "grass-grid valley patio",
+      "status": "pass",
+      "detail": "x=-3.40..-0.30; z=1.85..5.65 m; 11.78 m\u00b2 grass-filled grid; two chairs and one coffee table"
+    },
+    {
       "name": "courtyard entry host",
       "status": "pass",
       "detail": "courtyard_entry host = courtyard_zW"
@@ -35,6 +45,16 @@
       "detail": "rear_loft_window host = rear_gable_xL"
     },
     {
+      "name": "full-width courtyard camera",
+      "status": "pass",
+      "detail": "centred straight-on camera preserves the complete 17 m courtyard elevation"
+    },
+    {
+      "name": "Photo 1 lane camera orientation",
+      "status": "pass",
+      "detail": "camera starts at the valley/pasture end: glass gable nearest, then kitchen, stair and bedroom pair toward the rear gate"
+    },
+    {
       "name": "tractor_lane_z0 opening bounds",
       "status": "pass",
       "detail": "4 non-overlapping openings inside wall"
@@ -43,6 +63,16 @@
       "name": "courtyard_zW opening bounds",
       "status": "pass",
       "detail": "3 non-overlapping openings inside wall"
+    },
+    {
+      "name": "rear master window pair",
+      "status": "pass",
+      "detail": "2 non-overlapping ground-floor windows below the loft opening"
+    },
+    {
+      "name": "rear windows flank master bed",
+      "status": "pass",
+      "detail": "window clear bands end/start at z=2.25/5.25 m; bed spans z=2.85..4.65 m"
     },
     {
       "name": "interior door hosts",
@@ -150,12 +180,32 @@
       "detail": "present as named 3D element"
     },
     {
+      "name": "semantic element front_left_black_surround",
+      "status": "pass",
+      "detail": "present as named 3D element"
+    },
+    {
+      "name": "semantic element front_right_black_surround",
+      "status": "pass",
+      "detail": "present as named 3D element"
+    },
+    {
       "name": "semantic element courtyard_entry",
       "status": "pass",
       "detail": "present as named 3D element"
     },
     {
       "name": "semantic element rear_loft_window",
+      "status": "pass",
+      "detail": "present as named 3D element"
+    },
+    {
+      "name": "semantic element rear_master_window_lane",
+      "status": "pass",
+      "detail": "present as named 3D element"
+    },
+    {
+      "name": "semantic element rear_master_window_courtyard",
       "status": "pass",
       "detail": "present as named 3D element"
     },
@@ -190,6 +240,6 @@
       "detail": "hinged, pocket and sliding door elements are present in the 3D model"
     }
   ],
-  "semantic_elements": 165,
-  "triangles": 1988
+  "semantic_elements": 202,
+  "triangles": 2432
 }

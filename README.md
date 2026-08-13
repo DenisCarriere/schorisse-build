@@ -24,6 +24,8 @@ assets rather than gallery content.
 - [Architectural concept](docs/ARCHITECTURAL-CONCEPT.md)
 - [Conceptual floor plans](docs/CONCEPTUAL-FLOOR-PLANS.md)
 - [Model-first rendering workflow](docs/MODEL-FIRST-WORKFLOW.md)
+- [Valley glass solar-control options](docs/VALLEY-SOLAR-CONTROL-OPTIONS.md)
+- [Solar-control image studies and prompt record](renders/solar-control/README.md)
 - [Structure and envelope](docs/STRUCTURE-AND-ENVELOPE.md)
 - [Feasibility and performance](docs/FEASIBILITY-AND-PERFORMANCE.md)
 - [Cost assumptions](docs/COSTS.md)
@@ -41,10 +43,12 @@ assets rather than gallery content.
 - `renders/black-barn-icf/` — superseded full-black concept PNGs plus the current interior-loft study.
 - `renders/hybrid-barn-icf/` — superseded mixed-material concept PNGs.
 - `renders/brick-veil/` — developed front, side, back and interior-loft concept PNGs.
+- `renders/solar-control/` — Options A–C studies and the selected Option C grass-grid patio concept.
 - `renders/concepts/` — broader material explorations.
 - `renders/web/` — responsive JPEG derivatives and editable SVG floor plans used by the gallery.
-- `uploads/site-reference/` — four original property photographs plus the
-  owner-marked bird's-eye orientation record.
+- `uploads/site-reference/` — five original property photographs plus the
+  owner-marked bird's-eye orientation record and retained-building brick-pattern
+  reference.
 - `models/` — authoritative design JSON, semantic GLB, editable OBJ/MTL, STL,
   generated review views, validation report and dependency-free generator.
 
