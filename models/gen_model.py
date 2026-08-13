@@ -1019,6 +1019,8 @@ def export_camera_svg(scene, spec, camera, path):
             points = [project(p, eye, basis, focal=camera.get("focal", 650)) for p in tri]
             if any(p is None for p in points):
                 continue
+            if camera.get("mirror_horizontal"):
+                points = [(1400 - px, py, depth) for px, py, depth in points]
             depth = sum(p[2] for p in points) / 3
             coords = " ".join(f"{p[0]:.1f},{p[1]:.1f}" for p in points)
             color = MATERIALS[element["material"]]["color"]

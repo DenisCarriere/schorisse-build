@@ -55,6 +55,13 @@ black metal surround.
   the triangular loft window, and the entrance on the long courtyard wall. Its
   smoked-oak portal is a local accent within the otherwise continuous Belgian
   brick exterior.
+- `rev08-tractor-lane-photo1.png` — corrected Photo 1-oriented shared-lane view
+  from the private/rear end toward the pasture gate. The 17.0 m wall recedes
+  past the two bedroom windows, tall stair window and wide kitchen window; no
+  lane door or near glass gable is invented. The full-height glass facade
+  remains at the far valley end, where it faces away from this camera. The
+  hedge, grass tractor tracks, gate, neighbour-side privacy screen and mature
+  trees remain in place.
 
 All Rev 08 views use black metal surrounds on every window, warm 2700 K interior
 and exterior lighting, black Belgian roof tiles, and the retained site
@@ -74,10 +81,11 @@ matched property photograph governed all fixed site context.
   thick ICF reveals, discreet warm exterior lights and a green lawn; retain the
   unobstructed valley view and all hedges, neighbouring buildings and terrain.
 - **Tractor lane:** retain the full shared grass lane and tractor clearance.
-  Photo 1 is viewed from the pasture/valley end, so the near gable is the full
-  panoramic glass façade and the long-wall sequence recedes toward the gate as
-  the wide kitchen window, tall stair window and two bedroom windows in thick
-  black reveals, with no entrance on this elevation.
+  Photo 1 is viewed from the private/rear end toward the pasture gate, so the
+  near gable is the closed bedroom/mezzanine gable and the full valley glass is
+  at the far opposite end, facing away from the camera. From camera to gate,
+  the long-wall sequence is the bedroom pair, tall stair window and wide
+  kitchen window in thick black reveals, with no entrance on this elevation.
 - **Cobbled courtyard:** preserve the original cobbles, clipped hedges, mature
   trees and neighbouring structure; clearly identify the approved side entry
   with a recessed smoked-oak door and canopy, and show the rear triangular loft

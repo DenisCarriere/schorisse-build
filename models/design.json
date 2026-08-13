@@ -334,6 +334,15 @@
       "omit_categories": []
     },
     {
+      "id": "tractor_lane_photo1_oblique",
+      "purpose": "Photo 1 authority from the private/rear end looking down the shared tractor lane toward the pasture gate; bedroom pair nearest, then stair window, then kitchen window, with valley glass at the far end",
+      "eye": [24.0, 3.3, -11.5],
+      "target": [8.4, 1.75, 0.0],
+      "focal": 690,
+      "mirror_horizontal": true,
+      "omit_categories": []
+    },
+    {
       "id": "courtyard_exterior",
       "purpose": "cobbled-courtyard wall and entrance authority",
       "eye": [8.5, 3.4, 23.5],
