@@ -423,6 +423,14 @@
       "omit_categories": ["roof", "front_glazing", "site", "courtyard_wall_structure"]
     },
     {
+      "id": "interior_from_valley_entry",
+      "purpose": "entry-plane authority from the valley living hall: dog-leg stair on viewer left and the courtyard entrance set into the receding viewer-right side wall at x=10.7..11.7 m, never the transverse service wall",
+      "eye": [-5.0, 2.25, 1.35],
+      "target": [11.2, 1.85, 5.25],
+      "focal": 650,
+      "omit_categories": ["roof", "front_glazing", "site"]
+    },
+    {
       "id": "interior_toward_valley",
       "purpose": "reverse geometry authority looking from the service core toward the valley glass",
       "eye": [7.45, 1.65, 3.75],

@@ -55,6 +55,11 @@
       "detail": "camera starts at the valley/pasture end: glass gable nearest, then kitchen, stair and bedroom pair toward the rear gate"
     },
     {
+      "name": "interior courtyard-entry plane",
+      "status": "pass",
+      "detail": "door remains in the receding z=7.5 m courtyard side wall at x=10.7..11.7 m; dedicated valley camera retains that wall"
+    },
+    {
       "name": "tractor_lane_z0 opening bounds",
       "status": "pass",
       "detail": "4 non-overlapping openings inside wall"

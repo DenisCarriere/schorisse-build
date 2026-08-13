@@ -37,6 +37,7 @@ the entrance on the left are superseded and must not guide future renders.
 - [Upper-mezzanine plan](../renders/web/plan-mezzanine.svg)
 - [Bird's-eye model view](../models/generated/birdseye-orientation.svg)
 - [Interior-from-valley model view](../models/generated/interior-from-valley.svg)
+- [Interior-from-valley entry-plane view](../models/generated/interior-from-valley-entry.svg)
 - [Interior-toward-valley model view](../models/generated/interior-toward-valley.svg)
 - [Courtyard cutaway](../models/generated/courtyard-cutaway.svg)
 - [Validation report](../models/generated/model-report.json)
